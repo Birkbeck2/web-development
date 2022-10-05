@@ -12,7 +12,7 @@ For many people, “the internet” is the entirety of every website, every soci
 
 But if you want to be precise, [the internet is the underlying infrastructure](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/How_does_the_Internet_work) for worldwide activity to happen between computers. It is a global network of computers, of hardware.
 
-The activity that happens on top of the infrastructure is called the *world wide web*. The world wide web is the set of standards&mdash;the system of agreements or protocols&mdash;that makes it possible for signals to be exchanged and received in a way that machines can read them.
+The activity that happens on top of the infrastructure is called the *world wide web*. The world wide web is the set of standards&mdash;the system of agreements or protocols&mdash;that makes it possible for text and images and other files to be sent and received in a way that machines can read them, even if they are created by different people around the world.
 
 ## URLs
 Every time you load a website, your computer is participating in the world wide web as a *client*, requesting that another computer act as a *server* for that website.
