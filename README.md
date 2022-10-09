@@ -25,4 +25,4 @@ This repository holds some of the lecture notes for Web Development and User Exp
 The lectures here are not exhaustive as many of the lectures are given with slides instead. See the Moodle module for the complete collection of lecture slides and notes.
 
 ## Rights
-Lectures are copyright Birkbeck, University of London. Pictures and workshop documents are copyright Birkbeck, University of London unless otherwise stated.
+Lectures are copyright Birkbeck, University of London. Pictures and workshop documents are copyright Birkbeck, University of London unless otherwise stated where they are referenced in the lectures.
