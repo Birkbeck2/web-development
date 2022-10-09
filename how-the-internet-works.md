@@ -122,6 +122,8 @@ Antonio Daniele created the precursor to this lecture for Birkbeck's MA in Digit
 
 “URL,” Wikipedia, last upated 2022, https://en.wikipedia.org/wiki/URL.
 
+“How the web works,” Mozilla Developer Network, last modified September 13, 2022.
+
 “What are browser developer tools?,” Mozilla Developer Network, updated September 14, 2022, https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools
 
 ## Rights

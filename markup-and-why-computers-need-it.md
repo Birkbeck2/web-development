@@ -99,6 +99,10 @@ Oliver Laughland, Ramon Antonio Vargas, “Jury acquits New Orleans’ progressi
 
 “Introduction to HTML,” Mozilla Developer Network, last modified September 9, 2022, https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML.
 
+Elayne Petterson, “Are programming languages actually languages?,” LucidChart Techblog, December 21, 2021, https://www.lucidchart.com/techblog/2021/12/21/are-programming-languages-actually-languages/.
+
+Gretchen McCulloch, “Coding is for Everyone--As Long as You Speak English,” Wired, April 8, 2019, https://www.wired.com/story/coding-is-for-everyoneas-long-as-you-speak-english/.
+
 ## Rights
 Copyright Birkbeck, University of London
 

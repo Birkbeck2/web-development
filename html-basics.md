@@ -164,6 +164,10 @@ Walt Whitman, “Song of Myself,” *Leaves of Grass* 51, https://whitmanarchive
 
 *HTML: The Living Standard: Edition for Web Developers,* last updated September 28, 2022, https://html.spec.whatwg.org/dev/.
 
+Shaye Howe, “Building Your First Web Page,” *Learn to Code HTML and CSS*, https://learn.shayhowe.com/html-css/building-your-first-web-page/.
+
+Shaye Howe, “Getting to Know HTML,” *Learn to Code HTML and CSS*, https://learn.shayhowe.com/html-css/getting-to-know-html/.
+
 ## Rights
 Copyright Birkbeck, University of London
 

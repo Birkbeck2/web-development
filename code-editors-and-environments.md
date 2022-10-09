@@ -98,6 +98,9 @@ Use the element picker to look at the interpreted HTML underlying each part of t
 ## Credits
 Antonio Daniele created the precursor to this lecture for Birkbeck's MA in Digital Media Design in academic year 2021-22.
 
+“What are browser developer tools?,” Mozilla Developer Network, updated September 14, 2022, https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools
+
+
 ## Rights
 Copyright Birkbeck, University of London
 
