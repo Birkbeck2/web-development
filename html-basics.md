@@ -1,4 +1,4 @@
-![Birkbeck, University of London](media/birkbeck-logo.jpg)
+![Birkbeck, University of London](images/birkbeck-logo.jpg)
 
 Web Development and User Experience | Coding Session 1 | Joseph Muller
 
@@ -6,7 +6,7 @@ Web Development and User Experience | Coding Session 1 | Joseph Muller
 
 # HTML basics
 
-![Leaning Tower of Pisa surrounded by i html tags](media/pisa-i.jpg)
+![Leaning Tower of Pisa surrounded by i html tags](images/pisa-i.jpg)
 
 *"html tag italicized" by Jesper Rønn-Jensen is licensed under [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/?ref=openverse)*
 
@@ -47,13 +47,13 @@ Remember, the tags disappear when the page is rendered. This is what it looks li
 
 <p>Leaves are falling.</p>
 
-This is what it [sounds like read out loud by NVDA accessibility software (M4A)](media/leaves-are-falling.m4a)
+This is what it [sounds like read out loud by NVDA accessibility software (M4A)](images/leaves-are-falling.m4a)
 
 ## Common tags
 
 When you are defining HTML tags, remember what American poet Walt Whitman said in *Leaves of Grass*:
 
-![Do I contradict myself? Very well then I contradict myself. I am large, I contain multitudes.](media/whitman-i-contain-multitudes.png)
+![Do I contradict myself? Very well then I contradict myself. I am large, I contain multitudes.](images/whitman-i-contain-multitudes.png)
 
 The meaning of a tag is about what it contains, and some tags contain a lot.
 

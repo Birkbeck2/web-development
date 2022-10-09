@@ -1,4 +1,4 @@
-![Birkbeck, University of London](media/birkbeck-logo.jpg)
+![Birkbeck, University of London](images/birkbeck-logo.jpg)
 
 Web Development and User Experience | Coding Session 1 | Joseph Muller
 
@@ -6,7 +6,7 @@ Web Development and User Experience | Coding Session 1 | Joseph Muller
 
 # Markup and why computers need it
 
-![A text with colored lines and boxes drawn around it to mark pieces of it for bolding, highlighting, size increases, and indentation.](media/markup-lorem-ipsum.png)
+![A text with colored lines and boxes drawn around it to mark pieces of it for bolding, highlighting, size increases, and indentation.](images/markup-lorem-ipsum.png)
 
 In web development, we are in the business of making websites.
 
@@ -67,14 +67,14 @@ For humans, the spaces are often enough to interpret which parts of the text are
 
 In the same way, when we see the string of numbers and letters that make up the date, we know it’s a date because we know what dates look like.
 
-### Making it more machine readable with HTML
+### Making it more readable to computers with HTML
 If you pull in the CSS pane on the right, and the rendering pane on the bottom, you can see that the computer still doesn't see the parts of this text as distinct elements.
 
 (Don't worry about the CSS code right now&mdash;just know that it gives some look and feel instructions to the browser.)
 
 In most settings, computers need more than just white space to understand what's what. The line breaks help, but they don’t really spell out literally what each of the things on the page are. As literal beings, they need formal markup.
 
-That’s where HTML comes in. HTML stands for “HyperText Markup Language.” It’s a formal language for marking the parts of documents so computers can parse them. Let’s add some HTML to the document to make it more machine readable.
+That’s where HTML comes in. HTML stands for “HyperText Markup Language.” It’s a formal language for marking the parts of documents so computers can parse them. Let’s add some HTML to the document to make it more readable to computers.
 
 The basic element of HTML is the tag. Most tags are like bookends&mdash;they work in pairs to wrap a bit of text in an opening tag and a closing tag. Each tag has angle brackets to set it off. Closing tags have a forward slash as well.
 

@@ -1,4 +1,4 @@
-![Birkbeck, University of London](media/birkbeck-logo.jpg)
+![Birkbeck, University of London](images/birkbeck-logo.jpg)
 
 Web Development and User Experience | Coding Session 1 | Joseph Muller
 
@@ -42,7 +42,7 @@ When you finish a workshop, you may be able to submit your work on Moodle for fe
 
 8. Check the visual appearance of the page, or use your screen reader to listen to the result and navigate around it. Does it look or sound right? Did the browser understand what you wanted it to do with the text?
 
-    ![Hierarchy of road users (print version)](media/hierarchy-of-road-users.jpg)
+    ![Hierarchy of road users (print version)](images/hierarchy-of-road-users.jpg)
 
     *Crown copyright 2022*
 
@@ -55,7 +55,7 @@ When you finish a workshop, you may be able to submit your work on Moodle for fe
 
     Does it look similar to this?
 
-    ![Storing your fruit and veg (print version)](media/storing-your-fruit-and-veg.jpg)
+    ![Storing your fruit and veg (print version)](images/storing-your-fruit-and-veg.jpg)
 
     *Copyright OrganicLea 2022*
 
@@ -94,7 +94,7 @@ When you finish a workshop, you may be able to submit your work on Moodle for fe
 
     Does it look similar to this?
 
-    ![Usage dictionary entry on the word impatient with discussion about grammar and examples](media/impatient.jpg)
+    ![Usage dictionary entry on the word impatient with discussion about grammar and examples](images/impatient.jpg)
 
     *Copyright Merriam-Webster, 1994*
 
