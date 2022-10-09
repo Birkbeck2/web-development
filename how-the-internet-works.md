@@ -1,12 +1,12 @@
-![Birkbeck, University of London](media/birkbeck_logo.jpg)
+![Birkbeck, University of London](media/birkbeck-logo.jpg)
 
 Web Development and User Experience | Coding Session 1 | Joseph Muller
 
-[Previous](html_basics.md) | [All](README.md) | [Next](code_editors_and_environments.md)
+[Previous](html-basics.md) | [All](README.md) | [Next](code-editors-and-environments.md)
 
 # How the internet (actually the web) works
 
-![The front cover of a picture book called Internet (Scholastic: 2000) showing children surfing on computer keyboards and holding mice](media/internet_scholastic.jpg)
+![The front cover of a picture book called Internet (Scholastic: 2000) showing children surfing on computer keyboards and holding mice](media/internet-scholastic.jpg)
 
 For many people, “the internet” is the entirety of every website, every social media feed, and every smart device's connectivity. It's a catch-all for the thing that has transformed societies and cultures in the last 30 years.
 
@@ -49,14 +49,14 @@ Last, the *path* tells the server which webpage you want from the server. It ans
 
     ```
     news/
-       internet_invented.html
-       teens_surf_the_web.html
+       internet-invented.html
+       teens-surf-the-web.html
     games/                               <--this one!
        crossword/
        wordle/                           <--then this one!
-           past_wordles.html
+           past-wordles.html
            index.html                    <--and this one!
-           other_wordle_thing.html
+           other-wordle-thing.html
        checkers/
     videos/
        cats
@@ -64,7 +64,7 @@ Last, the *path* tells the server which webpage you want from the server. It ans
     ```
 
 ### Putting it together
-![A phone sends a request to a cell tower, which sends it to the DNS server, which sends back an IP address, which connects the cell tower to the server](media/dns_resolution.png)
+![A phone sends a request to a cell tower, which sends it to the DNS server, which sends back an IP address, which connects the cell tower to the server](media/dns-resolution.png)
 
 Once the server has found the files that make up the webpage specified in the URL, it sends an HTTP response back to the client (your computer).
 
@@ -84,7 +84,7 @@ Open your browser of choice, and find the developer tools. Here are instructions
 ### Watching network activity
 Find the section related to Network activity. Type a URL into the browser bar and go.
 
-![A browser developer pane showing the HTTP response parts, including IP address, for Wordle from nytimes.com](media/wordle_response.png)
+![A browser developer pane showing the HTTP response parts, including IP address, for Wordle from nytimes.com](media/wordle-response.png)
 
 You should see a flurry of HTTP requests and responses, with lots of technical information about each one.
 
@@ -96,7 +96,7 @@ The most valuable part of developer tools is the inspector pane. This lets you s
 
 You can expand and collapse each level of the tree, or use the element picker to go right to the part of the code you want to look at.
 
-![Element picker in Firefox](media/element_picker.png)
+![Element picker in Firefox](media/element-picker.png)
 
 ### Editing the HTML response
 Not only can you inspect any website, you can edit any website! Or at least, you can edit the version of any website that is loaded into your browser.

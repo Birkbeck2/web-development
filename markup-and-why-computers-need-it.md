@@ -1,12 +1,12 @@
-![Birkbeck, University of London](media/birkbeck_logo.jpg)
+![Birkbeck, University of London](media/birkbeck-logo.jpg)
 
 Web Development and User Experience | Coding Session 1 | Joseph Muller
 
-[All](README.md) | [Next](html_basics.md)
+[All](README.md) | [Next](html-basics.md)
 
 # Markup and why computers need it
 
-![A text with colored lines and boxes drawn around it to mark pieces of it for bolding, highlighting, size increases, and indentation.](media/markup_lorem_ipsum.png)
+![A text with colored lines and boxes drawn around it to mark pieces of it for bolding, highlighting, size increases, and indentation.](media/markup-lorem-ipsum.png)
 
 In web development, we are in the business of making websites.
 

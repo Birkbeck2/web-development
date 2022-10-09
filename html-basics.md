@@ -1,12 +1,12 @@
-![Birkbeck, University of London](media/birkbeck_logo.jpg)
+![Birkbeck, University of London](media/birkbeck-logo.jpg)
 
 Web Development and User Experience | Coding Session 1 | Joseph Muller
 
-[Previous](markup_and_why_computers_need_it.md) | [All](README.md) | [Next](how_the_internet_works.md)
+[Previous](markup-and-why-computers-need-it.md) | [All](README.md) | [Next](how-the-internet-works.md)
 
 # HTML basics
 
-![Leaning Tower of Pisa surrounded by i html tags](media/pisa_i.jpg)
+![Leaning Tower of Pisa surrounded by i html tags](media/pisa-i.jpg)
 
 *"html tag italicized" by Jesper Rønn-Jensen is licensed under [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/?ref=openverse)*
 
@@ -47,13 +47,13 @@ Remember, the tags disappear when the page is rendered. This is what it looks li
 
 <p>Leaves are falling.</p>
 
-This is what it [sounds like read out loud by NVDA accessibility software (M4A)](media/leaves_are_falling.m4a)
+This is what it [sounds like read out loud by NVDA accessibility software (M4A)](media/leaves-are-falling.m4a)
 
 ## Common tags
 
 When you are defining HTML tags, remember what American poet Walt Whitman said in *Leaves of Grass*:
 
-![Do I contradict myself? Very well then I contradict myself. I am large, I contain multitudes.](media/whitman_i_contain_multitudes.png)
+![Do I contradict myself? Very well then I contradict myself. I am large, I contain multitudes.](media/whitman-i-contain-multitudes.png)
 
 The meaning of a tag is about what it contains, and some tags contain a lot.
 
@@ -96,23 +96,9 @@ Most people use indentations and line breaks to visually represent the structure
 </body>
 ```
 
-Rendered HTML:
+This HTML renders like this in the browser, by default:
 
-___
-
-<body>
-  <h1>The seasons</h1>
-  <section>
-    <h2>Autumn</h2>
-    <p>Leaves are <em>falling</em>.</p>
-  </section>
-  <section>
-    <h2>Spring</h2>
-    <p>Leaves are <em>growing</em>.</p>
-  </section>
-</body>
-
-___
+![Leaves are falling rendered in the browser](images/leaves-are-falling.png)
 
 Here are the things to notice about nesting:
 
