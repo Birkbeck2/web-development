@@ -6,6 +6,7 @@
 #### [HTML basics](html-basics.md)
 #### [How the internet works](how-the-internet-works.md)
 #### [Code editors and environments](code-editors-and-environments.md)
+#### [Workshop 1](workshop-1.md)
 
 ## Week 3
 ### Coding session 2
