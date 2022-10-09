@@ -47,7 +47,7 @@ Remember, the tags disappear when the page is rendered. This is what it looks li
 
 <p>Leaves are falling.</p>
 
-This is what it [sounds like read out loud by NVDA accessibility software (M4A)](images/leaves-are-falling.m4a)
+This is what it [sounds like read out loud by NVDA accessibility software (M4A)](audio/leaves-are-falling.m4a)
 
 ## Common tags
 
