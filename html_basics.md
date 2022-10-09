@@ -68,6 +68,7 @@ The meaning of a tag is about what it contains, and some tags contain a lot.
 `h2` | a level-2 heading, or in other words a bit of text that introduces something to follow, but a smaller portion of the document than the level-1 heading
 `p` | a paragraph of text
 `em` | a bit of text that should be emphasized to the user, such as with italics
+`strong` | a bit of text that is very important, often rendered visually as bold
 
 ## Nesting
 
