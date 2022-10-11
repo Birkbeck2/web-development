@@ -32,7 +32,7 @@ When you finish a workshop, you may be able to submit your work on Moodle for fe
 
 4. Using your code editor, make a new file named “hierarchy-of-road-users.html” and save it in your workshop file.
 
-5. Copy the text from [“Hierarchy of road users”](text/hierarchy-of-road-users.txt) and paste it into your new file.
+5. Copy the text from [“Hierarchy of road users (TXT)”](text/hierarchy-of-road-users.txt) and paste it into your new file.
 
 6. Using your knowledge of HTML tags, elements, nesting, and page structure, mark up this excerpt from *The Highway Code*.
 
@@ -51,7 +51,7 @@ When you finish a workshop, you may be able to submit your work on Moodle for fe
 10. Fix any issues by changing the HTML file in the code editor, saving the file, and refreshing the browser. Do you see your changes take effect?
 
 ## Mark up another document
-11. Repeat steps 4-11 with another document, [“Storing your fruit and veg”](text/storing-your-fruit-and-veg.txt).
+11. Repeat steps 4-11 with another document, [“Storing your fruit and veg (TXT)”](text/storing-your-fruit-and-veg.txt).
 
     Does it look similar to this?
 
@@ -90,7 +90,7 @@ When you finish a workshop, you may be able to submit your work on Moodle for fe
 17. Repeat steps 13-16 for two other kinds of websites.
 
 ## Mark up a tricky document (if time)
-18. Repeat steps 4-11 with another document, a usage dictionary entry for [“impatient”](text/impatient.txt).
+18. Repeat steps 4-11 with another document, a usage dictionary entry for [“impatient (TXT)”](text/impatient.txt).
 
     Does it look similar to this?
 
