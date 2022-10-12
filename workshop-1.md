@@ -30,9 +30,12 @@ When you finish a workshop, you may be able to submit your work on Moodle for fe
 
 ## Mark up a document with HTML
 
-4. Using your code editor, make a new file named “hierarchy-of-road-users.html” and save it in your workshop file.
+4. Using your code editor, make a new file named “hierarchy-of-road-users.html” and save it in your workshop folder.
 
-5. Copy the text from [“Hierarchy of road users (TXT)”](text/hierarchy-of-road-users.txt) and paste it into your new file.
+5. Copy the text from “Hierarchy of road users” below and paste it into your new file.
+
+    > Hierarchy of road users The ‘hierarchy of road users’ is a concept that places those road users most at risk in the event of a collision at the top of the hierarchy. The hierarchy does not remove the need for everyone to behave responsibly. The road users most likely to be injured in the event of a collision are pedestrians, cyclists, horse riders and motorcyclists, with children, older adults and disabled people being more at risk. The following H rules clarify this concept. Rule H1 It is important that ALL road users are aware of The Highway Code, are considerate to other road users and understand their responsibility for the safety of others. Everyone suffers when road collisions occur, whether they are physically injured or not. But those in charge of vehicles that can cause the greatest harm in the event of a collision bear the greatest responsibility to take care and reduce the danger they pose to others. This principle applies most strongly to drivers of large goods and passenger vehicles, vans/minibuses, cars/taxis and motorcycles. Cyclists, horse riders and drivers of horse-drawn vehicles likewise have a responsibility to reduce danger to pedestrians. None of this detracts from the responsibility of ALL road users, including pedestrians, cyclists and horse riders, to have regard for their own and other road users’ safety. Always remember that the people you encounter may have impaired sight, hearing or mobility and that this may not be obvious.`
+
 
 6. Using your knowledge of HTML tags, elements, nesting, and page structure, mark up this excerpt from *The Highway Code*.
 
@@ -51,7 +54,9 @@ When you finish a workshop, you may be able to submit your work on Moodle for fe
 10. Fix any issues by changing the HTML file in the code editor, saving the file, and refreshing the browser. Do you see your changes take effect?
 
 ## Mark up another document
-11. Repeat steps 4-11 with another document, [“Storing your fruit and veg (TXT)”](text/storing-your-fruit-and-veg.txt).
+11. Repeat steps 4-11 with another document, “Storing your fruit and veg.”
+
+    > Storing your fruit and veg Organic fruit and vegetables haven't been chemically treated and so need to be stored correctly to help get the best life from it and avoid food waste. Potatoes and other root veg - the most important thing to remember when storing potatoes, carrots, parsnips, etc., is to keep them cool and dark. Ideally you should never wash your veg before storing: the soil acts as a natural preservative and washing them will cause them to go off quicker. Keep them wrapped in brown paper and keep in somewhere like a cool, dark cupboard or bottom of your fridge. If stored correctly your spuds will last many months, and if they begin to sprout, they are still edible, just knock the eyes off! Beetroot keeps best in the fridge, keeping them solid for longer. Leafy greens should be kept in the fridge. Wrapping in plastic will help to keep them succulent and fresh. Onions - these keep easily. Cool, dry and airy will do the trick. Squash - keep at room temperature with air to breathe; too much moisture may cause them to go off. If you do notice mould occurring, cut it off and the remaining squash will still be good to eat. Avocados and mangos - store at room temperatrue and do not squeeze the flesh as this will cause the fruit to become bruised and rot. Oranges, lemons, grapefruit, and apples are unwaxed and should be fine in a cool room for at least a week. In a hot room they could go off very quickly. Apples kept cool and dark will keep much longer. Kiwis are usually unripe and will ripen slowly in a warm (16°) room. You can feel when they are starting to get soft and they are usually at their best; this could take several weeks depending on the condition they arrive in. Bananas have to be harvested green for their 7-10 day boat trip. On arrival in UK they go into special ripening stores where they are held at 14°C. Usually they come to us ready ripened with just a hint of green, which allows a few days for consumer use. Sometimes due to problems of supply shortages they may not have been fully ripened before they arrive with us so we have to send them out green. They will ripen providing you: Wrap in plastic Place in a dark place Keep at 14°C They will ripen within a week or so. At cooler temperatures they will slowly ripen but lose flavour and become woody. Skin colour is not necessarily an indication of ripeness. The very richest flavour will be attained if the skin has dark brown spots (like freckles) all over.
 
     Does it look similar to this?
 
@@ -90,7 +95,9 @@ When you finish a workshop, you may be able to submit your work on Moodle for fe
 17. Repeat steps 13-16 for two other kinds of websites.
 
 ## Mark up a tricky document (if time)
-18. Repeat steps 4-11 with another document, a usage dictionary entry for [“impatient (TXT)”](text/impatient.txt).
+18. Repeat steps 4-11 with another document, a usage dictionary entry for “impatient (TXT)”.
+
+    > impatient When used with a preposition, impatient is most often followed by of: His sisters . . . were quite as impatient of his advice, quite as unyielding to his representation —Jane Austen, Mansfield Park, 1814 He was always impatient of delay —Edmund Wilson, A Piece of My Mind, 1956 Less frequently, impatient is used with for, to, or with, and occasionally with at: ... a Cadillac cowboy impatient for his father’s death —Current Biography, September 1964 Winterbourne was impatient to see her again —Henry James, Daisy Miller, 1879 ... had always been impatient with doctrines and systems —William H. Whyte, Jr. The Organization Man, 1956 ... impatient at Benson’s presence —George Meredith, The Ordeal of Richard Feverel, 1859
 
     Does it look similar to this?
 
