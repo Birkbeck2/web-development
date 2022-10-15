@@ -4,7 +4,7 @@
 ### Coding session 1
 #### [Markup and why computers need it](markup-and-why-computers-need-it.md)
 #### [HTML basics](html-basics.md)
-#### [How the internet works](how-the-internet-works.md)
+#### [How the internet (really the web) works](how-the-internet-works.md)
 #### [Code editors and environments](code-editors-and-environments.md)
 #### [Workshop 1](workshop-1.md)
 
