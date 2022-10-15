@@ -95,7 +95,7 @@ When you finish a workshop, you may be able to submit your work on Moodle for fe
 17. Repeat steps 13-16 for two other kinds of websites.
 
 ## Mark up a tricky document (if time)
-18. Repeat steps 4-11 with another document, a usage dictionary entry for “impatient (TXT).”
+18. Repeat steps 4-11 with another document, a usage dictionary entry for “impatient.”
 
     > impatient When used with a preposition, impatient is most often followed by of: His sisters . . . were quite as impatient of his advice, quite as unyielding to his representation —Jane Austen, Mansfield Park, 1814 He was always impatient of delay —Edmund Wilson, A Piece of My Mind, 1956 Less frequently, impatient is used with for, to, or with, and occasionally with at: ... a Cadillac cowboy impatient for his father’s death —Current Biography, September 1964 Winterbourne was impatient to see her again —Henry James, Daisy Miller, 1879 ... had always been impatient with doctrines and systems —William H. Whyte, Jr. The Organization Man, 1956 ... impatient at Benson’s presence —George Meredith, The Ordeal of Richard Feverel, 1859
 
