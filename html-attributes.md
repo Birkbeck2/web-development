@@ -2,7 +2,7 @@
 
 Web Development and User Experience | Coding Session 2 | Joseph Muller
 
-[Previous](workshop-1.md) | [All](README.md) | [Next](links-images-and-file-organization.md)
+[Previous](workshop-1.md) | [All](README.md) | [Next](html-links-images-and-file-organization.md)
 
 # HTML attributes
 
@@ -125,7 +125,7 @@ But the computer also knows that the second `p` is in Dutch. It inherited an Eng
     <p>De bladeren vallen</p>
     ```
 
-3. Say you want to tell the computer the entire HTML document is in British English. Would this work?
+3. If I wanted to declare the entire language of an entire document, could I do it like this?
 
     ```html
     <!DOCTYPE html>

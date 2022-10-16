@@ -2,7 +2,7 @@
 
 Web Development and User Experience | Coding Session 2 | Joseph Muller
 
-[Previous](workshop-1.md) | [All](README.md) | [Next]()
+[Previous](html-attributes.md) | [All](README.md) | [Next]()
 
 # HTML links, images, and file organization
 
@@ -29,8 +29,15 @@ The `img` element lets you insert images into your document. With `img`, you use
 
 ```html
     <p>Leaves are falling.</p>
-    <img src="images/leaf-shed-in-autumn.jpg" alt="A light brown maple leaf spread out on a white background">
+    <img
+        src="images/leaf-shed-in-autumn.jpg"
+        alt="A light brown maple leaf spread out on a white background"
+        width="400"
+        height="400"
+    >
 ```
+
+If you have a lot of attributes, you can add line breaks to line them up and make them easier to read.
 
 This is rendered visually:
 
@@ -64,6 +71,8 @@ This URL is absolute and will always refer to the same thing regardless of the H
 Both websites will send you to the right place:
 
 ![The leaf article on Wikipedia rendered in the browser](images/leaf-wikipedia.png)
+
+*[“Leaf”](https://en.wikipedia.org/wiki/Leaf) on Wikipedia is licensed under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/2.0/?ref=openverse)*
 
 But what if the URLs were shortened, or *relative*?
 
