@@ -2,9 +2,9 @@
 
 Web Development and User Experience | Coding Session 2 | Joseph Muller
 
-[Previous](workshop-1.md) | [All](README.md) | [Next]()
+[Previous](workshop-1.md) | [All](README.md) | [Next](links-images-and-file-organization.md)
 
-# HTML attributes, links, and images
+# HTML attributes
 
 You can see from the way HTML works that text is a primary concern. Most tags come in opening and closing pairs and expect to wrap some span of text.
 
@@ -48,7 +48,7 @@ With attributes, you can explicitly say what languages are being used. Here's ho
 <p lang="nl-NL">De bladeren vallen.</p>
 ```
 
-### Syntax
+## Syntax
 We've seen some of this syntax before--opening and closing tags, each with a name surrounded by angle brackets, and a slash in the closing tag.
 
 The new syntax for attributes involves an attribute name inside the opening tag, after the tag name
@@ -70,7 +70,7 @@ connected with an equals sign
 =
 ```
 
-### Multiple attributes, multiple values
+## Multiple attributes, multiple values
 You can set multiple attributes for a single element. Separate them with a space:
 
 ```html
@@ -85,7 +85,7 @@ You can set multiple values for certain attributes, such as `class`, which has n
 <p lang="nl-NL" class="body-text slytherin translation">De bladeren vallen.</p>
 ```
 
-### Attribute names and values
+## Restrictions on attribute names and values
 With HTML, there are some limitations on the attribute values and names you can use:
 
 1. You can only use attributes belonging to a prescribed set for each element.
@@ -96,7 +96,7 @@ With HTML, there are some limitations on the attribute values and names you can 
 
     For example, the `lang` attribute has to have a language code according to an [international standard called BCP 47](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang).
 
-### Attribute inheritance
+## Attribute inheritance
 When you declare an attribute, it goes into effect for that element and its children, unless the variable is overwritten on a child element.
 
 ```html
@@ -111,7 +111,7 @@ In this case, the computer knows the `h1` and first `p` are in English, because 
 
 But the computer also knows that the second `p` is in Dutch. It inherited an English-language attribute as a child of `section`, just like the other `p`, but then it got overwritten by the Dutch-language attribute.
 
-### Check your understanding
+## Check your understanding
 1. Would this work?
 
     ```html
@@ -139,161 +139,11 @@ But the computer also knows that the second `p` is in Dutch. It inherited an Eng
     </html>
     ```
 
-## Links and images
-
-HTML is *hypertext*, which means one document can link to other documents and data. How does it work?
-
-### The anchor element
-
-The `a` element creates an anchor to attach a URL to a part of the HTML document. It uses the `href` (hypertext reference) attribute to specify the URL.
-
-It looks like this:
-
-```html
-    <p>Leaves are falling.</p>
-    <p>For more information, see <a href="https://en.wikipedia.org/wiki/Leaf">“Leaf” on Wikipedia</a>.</p>
-```
-
-This is rendered visually:
-
-![The browser renders the anchor tag by turning wrapped text blue and underlining it](images/leaf-wikipedia-a-href.png)
-
-### The image element
-
-The `img` element lets you insert images into your document. With `img`, you use the `src` attribute to point to the path of the image.
-
-```html
-    <p>Leaves are falling.</p>
-    <img src="images/leaf-shed-in-autumn.jpg" alt="A light brown maple leaf spread out on a white background">
-```
-
-This is rendered visually:
-
-![The browser renders the img tag by showing the image at the path provided in src](images/leaves-are-falling-img-src.png)
-
-Three things to notice:
-
-1. With every image, you should always include alternative text inside the `alt` attribute. This is so that screen readers and search engines can understand the content via a text description.
-2. There is no closing tag on `img`, because this is a *self-closing* element. It does not wrap text but instead exists for the purpose of the things in the attributes.
-3. The value of the `src` attribute is not a complete path. This is because it is a relative path...
-
-### Absolute vs. relative URLs
-To use links and images well, you need to understand absolute and relative URLs.
-
-An absolute URL is complete and independent of the source. A relative URL is one that leaves off the parts that are shared with the current document, expecting the browser to fill them in.
-
-Let's say you have two webpages and on each webpage, there is a link in the HTML:
-
-1. In `https://en.wikipedia.org/`
-    ```html
-    <p>See <a href="https://en.wikipedia.org/wiki/Leaf">“Leaf”</a>.</p>
-    ```
-
-2. In `https://www.umich.edu/`
-    ```html
-    <p>See <a href="https://en.wikipedia.org/wiki/Leaf">“Leaf”</a>.</p>
-    ```
-
-This URL is absolute and will always refer to the same thing regardless of the HTML document you put it in.
-
-Both websites will send you to the right place:
-
-![The leaf article on Wikipedia rendered in the browser](images/leaf-wikipedia.png)
-
-But what if the URLs were shortened, or *relative*?
-
-1. In `https://en.wikipedia.org/`
-    ```html
-    <p>See <a href="wiki/Leaf">“Leaf”</a>.</p>
-    ```
-
-    Computer will try `https://en.wikipedia.org/wiki/Leaf`
-
-    OK
-
-2. In `https://www.umich.edu/`
-    ```html
-    <p>See <a href="wiki/Leaf">“Leaf”</a>.</p>
-    ```
-
-    Computer will try `https://www.umich.edu/wiki/Leaf`
-
-    Not found!
-
-In general, use absolute paths for content on different hosts.
-
-Use relative paths for content on the same host. This way, when you move the whole website to a new host (e.g. from your computer toa server), the paths will still work and you won't have to change them.
-
-### Organizing your files
-
-Most presentational websites are organized with subfolders for different content types.
-
-This helps things stay tidy and lets you use consistent relative paths.
-
-Here's an example:
-
-```
-index.html
-images/
-   fallen-leaf.png
-   new-leaf.jpg
-styles/
-   main.css
-scripts/
-   fancy-button.js
-```
-
-You'd import `new-leaf.jpg` in `index.html` this way:
-
-```html
-<img src="images/new-leaf.jpg" alt="A young Maple leaf growing on a branch in spring">
-```
-
-### Index.html
-What is `index.html`, by the way? It is a conventional name for the home page of the website.
-
-If you specify a path that just points to the folder a website is in, the computer will automatically look for a file named `index.html` at that location:
-
-`https://example.com/foo/bar/` --> `https://example.com/foo/bar/index.html`
-
-### Check your understanding
-What's wrong with this? There are four things.
-
-Inside `index.html`:
-
-```html
-<section>
-    <h2>Spring</h2>
-    <p>Leaves are growing.</p>
-    <img href="images/new-leaf.png">
-</section>
-```
-
-Files:
-
-```
-index.html
-pictures/
-   fallen-leaf.png
-   new-leaf.jpg
-```
-
-<!--
-1. images != pictures
-2. src not href
-3. jpg not png
-4. no alt text
--->
-
 ## References
 
 “lang,” Mozilla Developer Network, last modified September 14, 2022, [https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang).
 
 “The p element,” HTML: The Living Standard, Edition for Web Developers, last updated October 14, 2022, [https://html.spec.whatwg.org/dev/grouping-content.html#the-p-element](https://html.spec.whatwg.org/dev/grouping-content.html#the-p-element).
-
-“The <a> element,” Mozilla Developer Network, last modified October 10, 2022, [https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a).
-
-“Dealing with files,” Mozilla Developer Network, last modified September 13, 2022, [https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Dealing_with_files](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Dealing_with_files).
 
 ## Rights
 Copyright Birkbeck, University of London
