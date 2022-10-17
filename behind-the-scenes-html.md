@@ -33,8 +33,6 @@ The `head` element is the first candidate for HTML that works behind the scenes.
 
 After the `title`, which you already know, you typically see a series of `meta` elements in the head. These stand for `metadata`, which is data about the document.
 
-Note that `meta` is a self-closing tag--it doesn't wrap text, it's just there to hold the data in its main (“opening”) tag.
-
 ### Character set
 Here's the first `meta` element to know about:
 
@@ -42,9 +40,11 @@ Here's the first `meta` element to know about:
 <meta charset="utf-8">
 ```
 
+(Note that `meta` is a self-closing tag--it doesn't wrap text, it's just there to hold the data in its main (“opening”) tag.)
+
 This describes the character encoding of the document, which is about ones and zeros. When you are coding, you typically work in a world of plain text, but actually, the data is stored in rows of ones and zeros. Each one or zero is called a bit (a portmanteau of “binary digit”), and together they make up patterns that can express lots of different characters in human languages. The character encoding is how the computer translates between plain text and ones and zeros.
 
-UTF-8 is the main worldwide standard that includes nearly all major languages. You should generally always use utf-8 encoding unless you have a very good reason to use something else. If you specify the wrong encoding, the document may come out garbled, because the computer has tried to decode it in the wrong way.
+UTF-8 is the main worldwide character encoding standard that includes nearly all major human languages. You should generally always use UTF-8 encoding unless you have a very good reason to use something else. If you specify the wrong encoding, the document may come out garbled, because the computer has tried to decode it in the wrong way.
 
 ### Description
 
@@ -138,15 +138,15 @@ In `index.html`:
 In `main.css`:
 
 ```css
-    p { color: red; }
-    h2 { font-family: sans-serif; }
+p { color: red; }
+h2 { font-family: sans-serif; }
 ```
 
 These will both produce the same look and feel in the browser:
 
 ![The h1 element has sans-serif text and the p element has red text](images/autumn-link-css.png)
 
-While we're on style, you need to know about one other way to include it in HTML. Instead of declaring it in the head, you include CSS code as the value of the `style` *attribute* of the element you're trying to style:
+While we're on style, you need to know about one other way to include CSS in HTML. Instead of declaring it in the head, you include CSS code as the value of the `style` *attribute* of the element you're trying to style:
 
 ```html
 <body>
@@ -157,19 +157,21 @@ While we're on style, you need to know about one other way to include it in HTML
 
 This is called in-line CSS. It is the easy-at-first, nightmarish-in-the-end way of doing CSS. It's nice when you only have two lines of HTML, because you don't have to save a separate file or use CSS selectors (i.e. element names).
 
-But beware! You will regret it when your website gets bigger, or when you have to change the same CSS code on 16 `p` tags, three separate times over the course of your project.
+But beware! You will regret it when your website gets bigger, or when you have to change the same CSS code on 16 different `div` tags, three separate times over the course of your project.
 
 ### Scripts
 
 The `script` element works just like the `style` element, except it wraps *JavaScript* code.
 
+```html
 <head>
     <script>
         alert("Hello!");
     </script>
 </head>
+```
 
-You can also import JavaScript from a separate file. But rather than use a `link` element like you do with CSS, you use `script` with an `src` attribute:
+You can also import JavaScript from a separate file. But rather than use a `link` element like you do with CSS, you use `script` with a `src` attribute:
 
 Files:
 
@@ -245,6 +247,11 @@ Here are all these elements put together.
 <link src="stylesheet" content="styles/main.css">
 ```
 
+<!--
+1. Social media and search engine results
+2. No. Link needs rel not src, and href not content
+-->
+
 ## Hiding in the `body`
 
 Not done being sneaky? There are ways to hide things in the `body` as well.
@@ -272,9 +279,11 @@ They are not rendered for the user, but they are visible in the code inspector.
 
 You can also just make things disappear with an attribute called `hidden`.
 
+```html
 <h2>Autumn</h2>
 <p>Leaves are falling.</p>
 <p hidden>Or disappearing.</p>
+```
 
 This one is useful for hiding elements at first until they are called up by user interactivity, or for including data in a web form.
 
