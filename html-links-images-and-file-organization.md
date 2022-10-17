@@ -43,11 +43,12 @@ This is rendered visually:
 
 ![The browser renders the img tag by showing the image at the path provided in src](images/leaves-are-falling-img-src.png)
 
-Three things to notice:
+Things to notice:
 
 1. With every image, you should always include alternative text inside the `alt` attribute. This is so that screen readers and search engines can understand the content via a text description.
-2. There is no closing tag on `img`, because this is a *self-closing* element. It does not wrap text but instead exists for the purpose of the things in the attributes.
-3. The value of the `src` attribute is not a complete path. This is because it is a relative path...
+2. You should include the `width` and `height` attributes to tell the browser how much space the image will take up, before it loads. This prevents other content from jumping when the image loads.
+3. There is no closing tag on `img`, because this is a *self-closing* element. It does not wrap text but instead exists for the purpose of the things in the attributes.
+4. The value of the `src` attribute is not a complete path. This is because it is a relative path...
 
 ## Absolute vs. relative URLs
 To use links and images well, you need to understand absolute and relative URLs.
