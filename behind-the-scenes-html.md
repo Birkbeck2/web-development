@@ -294,6 +294,8 @@ Until you know how to do that, you may just find it useful to set some parts of 
 
 <a name="breen"></a>Benjamin Breen, “Victorian Occultism and the Art of Synesthesia,” _The Public Domain Review_, March 19, 2014, [https://publicdomainreview.org/essay/victorian-occultism-and-the-art-of-synesthesia](https://publicdomainreview.org/essay/victorian-occultism-and-the-art-of-synesthesia). This article was originally published in The Public Domain Review under a Creative Commons Attribution-ShareAlike 3.0. If you wish to reuse it please see [publicdomainreview.org/legal](https://publicdomainreview.org/legal/).
 
+*HTML: The Living Standard: Edition for Web Developers,* last updated September 28, 2022, https://html.spec.whatwg.org/dev/.
+
 ## Rights
 Copyright Birkbeck, University of London
 

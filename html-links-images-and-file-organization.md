@@ -2,9 +2,13 @@
 
 Web Development and User Experience | Coding Session 2 | Joseph Muller
 
-[Previous](html-attributes.md) | [All](README.md) | [Next]()
+[Previous](html-attributes.md) | [All](README.md) | [Next](behind-the-scenes-html.md)
 
 # HTML links, images, and file organization
+
+![Layers of blue leaf designs extend from one corner and spread up and across](images/blue-leaves.jpg)
+
+_"Blue Leaves Background Image" by allthesepieces is licensed under [CC BY-NC-SA 2.0](https://creativecommons.org/licenses/by-nc-sa/2.0/?ref=openverse)._
 
 HTML is *hypertext*, which means one document can link to other documents and data. How does it work?
 
@@ -46,7 +50,7 @@ This is rendered visually:
 Things to notice:
 
 1. With every image, you should always include alternative text inside the `alt` attribute. This is so that screen readers and search engines can understand the content via a text description.
-2. You should include the `width` and `height` attributes to tell the browser how much space the image will take up, before it loads. This prevents other content from jumping when the image loads.
+2. You should include the `width` and `height` attributes to tell the browser how much space the image will take up, before it loads, in number of pixels. This prevents other content from jumping when the image loads.
 3. There is no closing tag on `img`, because this is a *self-closing* element. It does not wrap text but instead exists for the purpose of the things in the attributes.
 4. The value of the `src` attribute is not a complete path. This is because it is a relative path...
 
@@ -196,6 +200,8 @@ pictures/
 “Dealing with files,” Mozilla Developer Network, last modified September 13, 2022, [https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Dealing_with_files](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Dealing_with_files).
 
 “URL,” Wikipedia, last upated 2022, https://en.wikipedia.org/wiki/URL.
+
+*HTML: The Living Standard: Edition for Web Developers,* last updated September 28, 2022, https://html.spec.whatwg.org/dev/.
 
 ## Rights
 Copyright Birkbeck, University of London

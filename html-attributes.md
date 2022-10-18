@@ -6,6 +6,10 @@ Web Development and User Experience | Coding Session 2 | Joseph Muller
 
 # HTML attributes
 
+![Four houses of different shapes and colors line a dock where a boat is anchored](images/colorful-houses.jpg)
+
+_"COLORFUL HOUSE" by Hsuanya Tsai is licensed under [CC BY-NC 2.0](https://creativecommons.org/licenses/by-nc/2.0/?ref=openverse)._
+
 You can see from the way HTML works that text is a primary concern. Most tags come in opening and closing pairs and expect to wrap some span of text.
 
 But really, marking up text is only the most basic functionality of HTML.
@@ -144,6 +148,8 @@ But the computer also knows that the second `p` is in Dutch. It inherited an Eng
 “lang,” Mozilla Developer Network, last modified September 14, 2022, [https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang).
 
 “The p element,” HTML: The Living Standard, Edition for Web Developers, last updated October 14, 2022, [https://html.spec.whatwg.org/dev/grouping-content.html#the-p-element](https://html.spec.whatwg.org/dev/grouping-content.html#the-p-element).
+
+*HTML: The Living Standard: Edition for Web Developers,* last updated September 28, 2022, https://html.spec.whatwg.org/dev/.
 
 ## Rights
 Copyright Birkbeck, University of London
