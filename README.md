@@ -10,6 +10,10 @@
 
 ## Week 3
 ### Coding session 2
+#### [HTML attributes](html-attributes.md)
+#### [HTML links, images, and file organization](html-links-images-and-file-organization.md)
+#### [Behind-the-scenes HTML](behind-the-scenes-html.md)
+#### [Meaning and presentation in HTML](meaning-and-presentation-in-html.md)
 
 ## Week 9
 ### Coding session 7

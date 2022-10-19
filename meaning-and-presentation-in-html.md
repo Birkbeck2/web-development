@@ -2,7 +2,7 @@
 
 Web Development and User Experience | Coding Session 2 | Joseph Muller
 
-[Previous](behind-the-scenes-html.md) | [All](README.md) | [Next](workshop-2.md)
+[Previous](behind-the-scenes-html.md) | [All](README.md) | [Next]()
 
 # Meaning and presentation in HTML
 
