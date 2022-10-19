@@ -10,6 +10,10 @@
 
 ## Week 3
 ### Coding session 2
+#### [HTML attributes](html-attributes.md)
+#### [HTML links, images, and file organization](html-links-images-and-file-organization.md)
+#### [Behind-the-scenes HTML](behind-the-scenes-html.md)
+#### [Meaning and presentation in HTML](meaning-and-presentation-in-html.md)
 
 ## Week 9
 ### Coding session 7
@@ -20,6 +24,7 @@
 ## Week 11
 ### Coding session 9
 
+## About this repository
 This repository holds some of the lecture notes for Web Development and User Experience, a module in the Department of Film, Media, and Cultural Studies at Birkbeck, University of London.
 
 The lectures here are not exhaustive as many of the lectures are given with slides instead. See the Moodle module for the complete collection of lecture slides and notes.
