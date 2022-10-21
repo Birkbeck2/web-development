@@ -14,6 +14,7 @@
 #### [HTML links, images, and file organization](html-links-images-and-file-organization.md)
 #### [Behind-the-scenes HTML](behind-the-scenes-html.md)
 #### [Meaning and presentation in HTML](meaning-and-presentation-in-html.md)
+#### [Workshop 2](workshop-2.md)
 
 ## Week 9
 ### Coding session 7
