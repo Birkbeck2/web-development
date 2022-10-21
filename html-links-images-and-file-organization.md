@@ -130,7 +130,10 @@ Browsers typically handle fragments by moving the viewport to the referenced ele
 
 You can also use fragments to create internal links as `href` attributes inside `anchor` tags. So, if a different part of the page had this link, it would point to the same `h2`.
 
+
+```html
 <a href="#Morphology">Go to section on morphology</a>
+```
 
 ## Organizing your files
 
