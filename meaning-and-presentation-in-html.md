@@ -48,7 +48,7 @@ When CSS grew in popularity, web designers began to separate content and style m
 
 HTML also had room to develop its *semantic* potential. *Semantic* means “having to do with meaning.” With the fifth official version of the language, HTML5, a number of new tags were added that explicitly focused on meaning, like `nav` and `article`.
 
-Now, after HTML5, in the era of what is called the [“Living Standard for HTML,”](https://html.spec.whatwg.org/dev/introduction.html#history-2), there are a range of elements in play, with varying semantic potential.
+Now, after HTML5, in the era of what is called the [“Living Standard for HTML,”](https://html.spec.whatwg.org/dev/introduction.html#history-2) there are a range of elements in play, with varying semantic potential.
 
 Let's go through a few familiar and a few new elements, discussing how they fit on the appearance-semantics continuum.
 
@@ -96,7 +96,7 @@ Or use CSS:
 ```
 
 ```css
-   .book-title { font-style: italic; }
+.book-title { font-style: italic; }
 ```
 
 ## Figures and captions
