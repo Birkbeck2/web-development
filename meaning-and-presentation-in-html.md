@@ -10,7 +10,7 @@ Web Development and User Experience | Coding Session 2 | Joseph Muller
 
 _"Optical Illusion" by Jeff Hester is licensed under [CC BY-NC-SA 2.0](https://creativecommons.org/licenses/by-nc-sa/2.0/?ref=openverse)._
 
-People who write HTML have always struggled to find the right place on spectrum between meaning and presentation.
+People who write HTML have always struggled to find the right place on the spectrum between meaning and presentation.
 
 What is the problem, and how can you solve it?
 
@@ -26,7 +26,7 @@ _Copyright Internet Archive 1996._
 
 What elements does this page use? Are they semantic or presentational? What attributes does it use?
 
-Most of the elements are use for presentation. They are there to control how the content will be rendered visually on the page.
+Most of the elements are used for presentation. They are there to control how the content will be rendered visually on the page.
 
 The headings of the news items don't use `h2` or another heading tag, but `strong`.
 
@@ -74,13 +74,13 @@ For importance, the semantic element is `strong`.
 <p><strong>Squash</strong> - keep at room temperature with air to breathe...</p>
 ```
 
-The only reason to use `b` would be if you want bold text when it is visually rendered.
+The only reason to use `b` would be if you want bold text when it is visually rendered, but you don't mean to mark the text as more important than its surrounding text.
 
 ## Emphasis
 For emphasis, the semantic element to use is `em`.
 
 ```html
-I wonder if people think about the word <em>squash</em> when they're eating squash.
+<p>I wonder if people think about the word <em>squash</em> when they're eating squash.</p>
 ```
 
 But if you just want italics to follow a style convention, use `i`, since it is purely presentational:
@@ -98,6 +98,8 @@ Or use CSS:
 ```css
 .book-title { font-style: italic; }
 ```
+
+(We'll get to `span` in a minute.)
 
 ## Figures and captions
 When you display images, you often want to provide context for them through a caption.
@@ -167,9 +169,9 @@ Ordered lists are automatically numbered by default:
 ![The list in the browser with numbers](images/steps-to-shops.png)
 
 ## Tables
-In the example of apple.com in 1996, a table was used so that the promo news items can be displayed in two columns. 
+In the example of apple.com in 1996, a table was used so that the promo news items can be displayed in two columns.
 
-Tables should only be used if there is data in a two-dimensional array, where the vertical and horizontal alignment conveys meaning.
+But tables should only be used if there is data in a two-dimensional array, where the vertical and horizontal alignment conveys meaning.
 
 You can mark up tables of data in HTML with a set of nested elements:
 
@@ -179,9 +181,9 @@ You can mark up tables of data in HTML with a set of nested elements:
 `tr` | a table row
 `th` | a table header (a top-row cell)
 `td` | a table datum (a cell)
-`thead` | a table datum (a cell)
-`tbody` | a table datum (a cell)
-`tfoot` | a table datum (a cell)
+`thead` | the table header
+`tbody` | the table body
+`tfoot` | the table footer
 
 Here is an example of some botanical data on Wikipedia.
 ```html
@@ -238,6 +240,7 @@ Things to notice about tables:
 1. The `thead`, `tbody`, and `tfoot` elements are optional.
 2. It is time-consuming to manually code tables in HTML!
 3. Tables can be difficult to create for mobile screens, because horizontal scrolling is discouraged.
+4. You can put all kinds of things in tables, though whether you should is always debatable.
 
 ## Div and span
 
@@ -285,7 +288,7 @@ But since HTML5, there are often better alternatives. The following quoted defin
 `section` | “a generic section of a document or application” for use where `article` would not work
 `footer` | a footer for its parent element or the `body` in general
 
-Together, the use of these semantic elements provide screen readers and search engines a way to understand the form of the page.
+Together, the use of these semantic elements provides screen readers and search engines a way to understand the form of the page.
 
 ![Two sets of boxes showing how a page is laid out, one where everything is a div, and one where there is a header, a nav, two articles, and a footer](images/html4-div-html5.png)
 
