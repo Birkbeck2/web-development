@@ -38,7 +38,7 @@ If there's time, you'll be asked to cure a case of divitis.
 - What will your webpage look like in a search result? When shared on social media?
 - How did you use semantic HTML?
 
-## Debug a buggy document with an HTML validator
+## Debug a buggy document with an HTML validator (if time)
 5. We have provided another set of files for an image gallery. You can download them from [design-typography.zip on GitHub](workshop-files/workshop-2/design-typography.zip).
 
 6. This time, you have the text marked up in HTML, but it's got lots and lots of bugs :bug::bug::bug::bug::bug:. Your task is to debug the file. There are a few ways to do this - give each one a try:
