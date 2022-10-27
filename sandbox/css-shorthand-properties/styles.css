@@ -1,0 +1,10 @@
+p {
+  font: italic 1.2em "Fira Sans", serif; 
+  margin: 100px 500px 50px 100px;
+}
+
+/* This is so we can see the boxes */
+p, h1, h2, section {
+  border: solid; 
+}
+

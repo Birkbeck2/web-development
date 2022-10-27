@@ -1,0 +1,8 @@
+p {
+  /* An inheriting property inherits the
+  computed value of its parent. */
+  color : green ;
+
+  /* A non-inheriting property does not inherit */
+  border : medium solid ;
+}
