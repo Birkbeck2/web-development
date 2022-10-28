@@ -1,0 +1,5 @@
+section {
+    border: 2px solid;
+    width: 100px;
+    overflow-x: auto;
+}

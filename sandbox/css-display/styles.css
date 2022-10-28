@@ -1,0 +1,36 @@
+.to-hide {
+    display: none;
+}
+
+.make-inline {
+    display: inline;
+}
+
+h2, img, p {
+    border: 2px solid;
+    padding: 5px;
+    font-family: sans-serif;
+}
+
+.box .thing {
+    border: 1px dotted;
+    min-width: 100px;
+    padding: 3px;
+    margin: 3px;
+    background-color: lightcoral;
+    flex-grow: 1;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.grod {
+    display: grid;
+}
+
+section {
+    margin: 10vw;
+}

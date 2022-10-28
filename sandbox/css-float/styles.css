@@ -1,0 +1,11 @@
+.autumn .special-leaves {
+    float: right ;
+    width: 200px;
+    margin: 20px;
+    background-color: aquamarine;
+}
+
+.spring {
+    clear: both;
+    background-color: lightsalmon;
+}

@@ -1,0 +1,11 @@
+body {
+    width: 2000px;
+    background-position: right-top;
+    background-attachment: scroll;
+    background-image: url("images/leaf.jpg");
+    background-repeat: repeat;
+}
+
+p {
+    color: white;
+}

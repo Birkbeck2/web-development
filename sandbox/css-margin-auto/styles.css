@@ -1,0 +1,6 @@
+body, h1, section, h2, p, img { 
+    margin: auto; 
+    width: 50vw;
+    border: 1px solid;
+    text-align: center;
+}
