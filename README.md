@@ -3,17 +3,41 @@
 ## Week 2
 ### Coding session 1
 #### [Markup and why computers need it](markup-and-why-computers-need-it.md)
+
+> markup, computers vs. people, HTML
+
 #### [HTML basics](html-basics.md)
+
+> tag, element, `<`, `>`, `/`, `html`, `head`, `body`, `title`, `section`, `h1`, `h2`, `h3`, `p`, `em`, `strong`
+
 #### [How the internet (really the web) works](how-the-internet-works.md)
+
+> URL, scheme, host, path, browser tools, HTTP request and response
+
 #### [Code editors and environments](code-editors-and-environments.md)
+
+> code editor, development environment, running HTML code, file organization, inspecting code
+
 #### [Workshop 1](workshop-1.md)
 
 ## Week 3
 ### Coding session 2
 #### [HTML attributes](html-attributes.md)
+
+> variable, attribute, `=`, `"`, attribute name, attribute value, `lang`
+
 #### [HTML links, images, and file organization](html-links-images-and-file-organization.md)
+
+> images, links, `a`, `href`, `img`, `src`, `alt`, `width`, `height`, absolute vs. relative URL, URL fragment, file organization, `index.html`
+
 #### [Behind-the-scenes HTML](behind-the-scenes-html.md)
+
+> social media, search results, `head`, `meta`, `name`, `content`, `title`, `description`, `og:image`, `twitter:image`, character encoding, `charset`, `utf-8`, `style`, `src`, `link`, `rel`, `href`, `script`, `defer`, comments, `<!-- -->`, `hidden`
+
 #### [Meaning and presentation in HTML](meaning-and-presentation-in-html.md)
+
+> meaning, presentation, semantic HTML, HTML history, `table`, `br`, `p`, `strong`, `b`, `em`, `i`, `figure`, `img`, `figcaption`, `ul`, `ol`, `li`, `div`, `span`, `header`, `nav`, `main`, `aside`, `article`, `section`, `footer`
+
 #### [Workshop 2](workshop-2.md)
 
 ## Week 9
