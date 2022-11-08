@@ -10,15 +10,32 @@ Web Development and User Experience | Coding Session 2 | Joseph Muller
 
 _“Behind the scenes Photographer Levitation Magic [explore #496]” by Louish Pixel is licensed under [CC BY-NC-ND 2.0](https://creativecommons.org/licenses/by-nc-nd/2.0/?ref=openverse)._
 
-Now that you know about attributes, you can see that a lot of the code in an HTML document never gets rendered. There's a lot that stays hidden, and works behind the scenes.
+Now that you know about attributes, you are ready to code some of the hidden, behind-the-scenes aspects of HTML.
 
-Let's dig into some more parts of HTML that are out of sight but should not be out of mind.
+For example, have you ever noticed that when you post a link to something on social media, or you send a link to a friend on a messenger app like WhatsApp, it automatically populates a box containing the title and description of the thing, along with a picture of it? 
 
-(Examples in this section use an [article on synesthesia by Benjamin Breen](#breen).)
+Here's an example from WhatsApp:
 
-## The head element
+![Whatsapp loads the image, title, and description of a link](images/whatsapp-fireworks-link.png)
 
-The `head` element is the first candidate for HTML that works behind the scenes.
+How does it get there? It gets there because WhatsApp does some things behind the scenes that it doesn't show you. WhatsApp opens the link, loads the HTML document, and looks inside the HTML `head` element for information about what image, title, and description to use to represent that webpage inside WhatsApp.
+
+This means that, as a web developer, you have to think about the instructions you give to third-party websites that link to your website. And the way you give those instructions has to do with attributes inside special elements in the `head` element.
+
+
+## Your web page on social media and in search results
+
+Let's get into this by looking through the `head` element. Let's say we are marking up an article called “Victorian Occultism and the Art of Synesthesia.”
+
+### Meta tags
+HTML gives you a special way to communicate metadata about your page, the `meta` tag. This stands for *metadata*, which is data about the document.
+
+Note that `meta` is a self-closing tag--it doesn't wrap text, it's just there to hold the data in its main (“opening”) tag.
+
+Most of the time, you only need to put `meta` tags in the head of your page.
+
+### Title
+We already know one thing that goes into the `head`, the `title`.
 
 ```html
 <!DOCTYPE html>
@@ -31,44 +48,43 @@ The `head` element is the first candidate for HTML that works behind the scenes.
 </html>
 ```
 
-After the `title`, which you already know, you typically see a series of `meta` elements in the head. These stand for `metadata`, which is data about the document.
+The title element does *not* render in the main webpage window of the browser.
 
-### Character set
-Here's the first `meta` element to know about:
+The title *does* render in the browser tab.
 
-```html
-<meta charset="utf-8">
-```
+![The title element renders in the browser tab](images/title-browser-tab-victorian.png)
 
-(Note that `meta` is a self-closing tag--it doesn't wrap text, it's just there to hold the data in its main (“opening”) tag.)
+It also renders in the social media card or browser search result for that webpage.
 
-This describes the character encoding of the document, which is about ones and zeros. When you are coding, you typically work in a world of plain text, but actually, the data is stored in rows of ones and zeros. Each one or zero is called a bit (a portmanteau of “binary digit”), and together they make up patterns that can express lots of different characters in human languages. The character encoding is how the computer translates between plain text and ones and zeros.
+![The Google search result for the article shows the title](images/synesthesia-signal-title.png)
 
-UTF-8 is the main worldwide character encoding standard that includes nearly all major human languages. You should generally always use UTF-8 encoding unless you have a very good reason to use something else. If you specify the wrong encoding, the document may come out garbled, because the computer has tried to decode it in the wrong way.
+![The Google search result for the article shows the title](images/synesthesia-google-title.png)
 
 ### Description
 
-![The Google search result for the article shows the description under the title](images/synesthesia-google.png)
-
 You can enter a description of your website that search engines will use in search results. Entering a good description using the key words from your page will dramatically enhance the search engine optimization (SEO) of your website.
 
- `https://publicdomainreview.org/essay/victorian-occultism-and-the-art-of-synesthesia`:
+*In `https://publicdomainreview.org/essay/victorian-occultism-and-the-art-of-synesthesia`:*
 
 ```html
 <meta name="description" content="Grounded in the theory that ideas, emotions, and even events, can manifest as visible auras, Annie Besant and Charles Leadbeater’s <em>Thought-Forms</em> (1901) is an odd and intriguing work. Benjamin Breen explores these “synesthetic” abstractions and asks to what extent they, and the Victorian mysticism of which they were born, influenced the Modernist movement that flourished in the following decades.">
 ```
 
-The description is entered using the `meta` element with two attributes, one for the name of the piece of metadata (`name`), and the other for the value (`content`).
+Note that the description is entered using the `meta` element with two attributes, one for the name of the piece of metadata (`name`), and the other for the value (`content`).
 
-### Social media images
+Here's how it looks:
 
-![The Signal messenger loads the image, title, and description of a link](images/synesthesia-signal.png)
+![The Google search result for the article shows the description under the title](images/synesthesia-signal-description.png)
+
+![The Google search result for the article shows the description under the title](images/synesthesia-google-description.png)
+
+### Images
 
 You can tell social media websites and messenger apps what image to show when people link to your site.
 
 You use the same `meta` element, but a slightly different set of attributes.
 
-For Facebook and many others, you use `property` instead of `name` to give the name of the piece of metadata, because this convention came about through the development of a different standard than HTML, the [Open Graph protocol](https://ogp.me/).
+For Facebook, WhatsApp, and many others, you use `property` instead of `name` to give the name of the piece of metadata, because this convention came about through the development of a different standard than HTML, the [Open Graph protocol](https://ogp.me/).
 
 You also include `og:` in the value of the `property` attribute to differentiate it from other standards that might use similar values. (This is called a _namespace._)
 
@@ -91,12 +107,66 @@ For Twitter, you use `name` and `content`, but you include `twitter:` inside the
 
 As with any image, you include alt text.
 
+![The Google search result for the article shows the description under the title](images/synesthesia-signal-image.png)
+
 As you can see, a lot of this code isn't behind the scenes at all, when your website goes live. In fact, in the case of the title, description, and social media photo, this might be the first thing that users will see when they encounter your content via a search or a share, so it's important not to forget about it.
 
-### Style
-Continuing our tour of the HTML `head`, you can include a `style` element as a wrapper for CSS code:
+### Check your understanding
+1. If somebody posts a link to the page below in a group on WhatsApp, what will the post look like in WhatsApp? Let's say the URL is `https://www.example.org/leaves/index.html`.
 
-By the way, don't worry about CSS syntax right now. The CSS code below turns paragraphs red and puts `h2`s in a sans-serif font.
+```html
+<html lang="en">
+    <head>
+    </head>
+    <body>
+        <img
+            src="images/leaf-shed-in-autumn.jpg"
+            alt="A light brown maple leaf spread out on a white background"
+            width="400"
+            height="400"
+        >
+    </body>
+</html>
+```
+
+<!-- It will just be the URL, no image, no title, no description, because that info is missing in the head. -->
+
+## Other `head` elements to know about
+
+There is a lot more that web developers put inside the `head` element to give the web browser information about how to load it.
+
+### Character encoding
+
+How does HTML handle languages? In addition to declaring the language of a document with something like `<html lang="en">`, you should declare the *character encoding*.
+
+Character encoding is a very technical piece of information related to how the computer makes the symbols of text on the page, and it influences how well your webpage can hold text in many world languages.
+
+As an example, consider the [Wikipedia article for Arabic, in Arabic](https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D9%84%D8%BA%D8%A9_%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9):
+
+![Arabic-language Wikipedia article about the Arabic language](images/arabic-wikipedia.png)
+
+In the early days of HTML, it would have been very difficult to create this webpage, because the sybmols needed were not included in the character set they used.
+
+Web developers were very Euro- and US-centric in the beginning, so the early character encoding standard, the American Standard Code for Information Interchange (ASCII), just included the letters, numbers, and punctuation needed in English and a few other European languages.
+
+But modern web developers use a form of encoding called [Unicode](https://home.unicode.org/), which supports nearly all the languages of the world.
+
+The Arabic-language article on Wikipedia uses Unicode, as does the [English-language article](https://en.wikipedia.org/wiki/Arabic).
+
+Unicode is now generally the best choice for every world language, and you should always use it unless you have a very good reason to use a different one.
+
+Unicode character encoding is most commonly declared as "utf-8" or "UTF-8", and using a `meta` element with attribute `charset`.
+
+```html
+<meta charset="utf-8">
+```
+
+You just need to add this line inside the `head` element of each HTML file.
+
+### Style
+Styling information is also something that you put in the HTML `head`.
+
+The first way to put style in the head is by wrapping CSS code with the `style` element:
 
 ```html
 <head>
@@ -111,7 +181,9 @@ By the way, don't worry about CSS syntax right now. The CSS code below turns par
 </body>
 ```
 
-But most of the time you will want to use another self-closing element, `link`, to import your CSS from a different file, so that you keep things organized and maintain the separation of content and style.
+![The h1 element has sans-serif text and the p element has red text](images/autumn-link-css.png)
+
+The second way to put style in the head is to refer to an external CSS file with a `link` element. This is usually better because it keeps things organized and maintains the separation of content and style.
 
 Files:
 
@@ -142,8 +214,6 @@ p { color: red; }
 h2 { font-family: sans-serif; }
 ```
 
-These will both produce the same look and feel in the browser:
-
 ![The h1 element has sans-serif text and the p element has red text](images/autumn-link-css.png)
 
 While we're on style, you need to know about one other way to include CSS in HTML. Instead of declaring it in the head, you include CSS code as the value of the `style` *attribute* of the element you're trying to style:
@@ -154,6 +224,8 @@ While we're on style, you need to know about one other way to include CSS in HTM
     <p style="color: red;">Leaves are falling.</p>
 </body>
 ```
+
+![The h1 element has sans-serif text and the p element has red text](images/autumn-link-css.png)
 
 This is called in-line CSS. It is the easy-at-first, nightmarish-in-the-end way of doing CSS. It's nice when you only have two lines of HTML, because you don't have to save a separate file or use CSS selectors (i.e. element names).
 
@@ -195,15 +267,15 @@ In `main.js`:
 alert("Hello!");
 ```
 
-Note the `defer` attribute on the `script` element. This tells the browser to wait until all the HTML is loaded before running the JavaScript file, boosting performance.
-
-(This attribute only requires its name (no `="some value"`) because it uses the Boolean data type (true or false).)
-
 Here's what the JavaScript does when the page is loaded:
 
 ![The browser opens up a pop-up pane saying Hello](images/js-alert-hello.png)
 
-### Putting the head together
+Note the `defer` attribute on the `script` element. This tells the browser to wait until all the HTML is loaded before running the JavaScript file, boosting performance.
+
+(This attribute only requires its name (no `="some value"`) because it uses the Boolean data type (true or false).)
+
+## Putting the `head` together
 
 Here are all these elements put together.
 
@@ -241,15 +313,13 @@ Here are all these elements put together.
 ```
 
 ### Check your understanding
-1. Where does content in your `meta` elements show up?
-2. Would this work?
+Would this work?
 ```html
 <link src="stylesheet" content="styles/main.css">
 ```
 
 <!--
-1. Social media and search engine results
-2. No. Link needs rel not src, and href not content
+No. Link needs rel not src, and href not content
 -->
 
 ## Hiding in the `body`
