@@ -22,7 +22,6 @@ How does it get there? It gets there because WhatsApp does some things behind th
 
 This means that, as a web developer, you have to think about the instructions you give to third-party websites that link to your website. And the way you give those instructions has to do with attributes inside special elements in the `head` element.
 
-
 ## Your web page on social media and in search results
 
 Let's get into this by looking through the `head` element. Let's say we are marking up an article called “Victorian Occultism and the Art of Synesthesia.”
@@ -112,7 +111,7 @@ As with any image, you include alt text.
 As you can see, a lot of this code isn't behind the scenes at all, when your website goes live. In fact, in the case of the title, description, and social media photo, this might be the first thing that users will see when they encounter your content via a search or a share, so it's important not to forget about it.
 
 ### Check your understanding
-1. If somebody posts a link to the page below in a group on WhatsApp, what will the post look like in WhatsApp? Let's say the URL is `https://www.example.org/leaves/index.html`.
+If somebody posts a link to the page below in a group on WhatsApp, what will the post look like in WhatsApp? Let's say the URL is `https://www.example.org/leaves/index.html`.
 
 ```html
 <html lang="en">
