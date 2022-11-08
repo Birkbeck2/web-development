@@ -12,7 +12,7 @@
 
 #### [How the internet (really the web) works](how-the-internet-works.md)
 
-> URL, scheme, host, path, browser tools, HTTP request and response
+> URL, `/`, scheme, host, path, browser tools, HTTP request and response
 
 #### [Code editors and environments](code-editors-and-environments.md)
 
