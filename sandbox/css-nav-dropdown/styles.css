@@ -6,7 +6,7 @@ body {
     font-size: 1.5rem;
 }
 
-nav {
+nav, nav li {
     height: 4rem;
     background-color: brown;
 }
@@ -23,7 +23,7 @@ li {
     float: left;
 }
 
-li a {
+nav li a, nav li button {
     font-family:Arial, Helvetica, sans-serif;
     display: block;
     height: 4rem;
@@ -34,16 +34,41 @@ li a {
     color: wheat;
 }
 
-li a:hover {
+nav li button {
+    font-size: inherit;
+    border: none;
+    background-color: inherit;
+}
+
+nav li a:hover, nav li button:hover {
     background-color: #555;
     color: white;
 }
 
-li a:active, li a.selected {
+li a:active, .selected {
     background-color: #660033;
     color: white;
 }
 
 h1 {
     clear: both; /* Clear float */
+}
+
+/* Dropdown */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ivory;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
