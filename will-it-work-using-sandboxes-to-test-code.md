@@ -40,6 +40,8 @@ Once you have the template set up, it is trivial to switch into a new sandbox de
 
     ![Copying and renaming the template folder](images/sandbox-copy-vs-code.gif)
 
+    Note: to turn off GIF autoplay on GitHub, adjust your Motion preference on the [Accessibility page](https://github.com/settings/accessibility).
+
 3. Open up the relevant files in the new sandbox and conduct your experiment.
 
 4. Observe the results. Was your hypothesis correct? If not, start again with step 1.
