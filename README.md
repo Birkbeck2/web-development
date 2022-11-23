@@ -46,6 +46,8 @@
 > sandboxes
 
 ### Coding Session 6
+#### [Using Git and GitHub with VS Code](will-it-work-using-sandboxes-to-test-code.md)
+> Git, GitHub, code editor
 
 ## Week 9
 ### Coding session 7
