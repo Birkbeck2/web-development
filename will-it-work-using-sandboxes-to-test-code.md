@@ -4,17 +4,17 @@ Web Development and User Experience | Coding Session 5 | Joseph Muller
 
 [Previous](workshop-2.md) | [All](README.md)
 
-# Will It Work? Using Sandboxes to Test Code
+# Will it work? Using sandboxes to run code experiments
 
 When you get stuck, there are many ways to get unstuck. You can search online, review readings and lecture notes, ask a colleague, or sleep on it to see if fresh eyes will help you see the problem.
 
 If the problem is whether something will work, you have one more tool. You can test it, like a scientist, in a controlled environment.
 
-In web development, such environments are often called "sandboxes" because they are designed to be safe to play around in. By isolating one bit of code in a sandbox, you don't have to worry about a mistake in the sandbox affecting your other code, and you can also minimize the interference from other parts of your code on what you test.
+In web development, such environments are often called "sandboxes" because they are meant to be safe places to play around in. By isolating one bit of code in a sandbox, you don't have to worry about a mistake in the sandbox affecting your other code, and you can also minimize the interference from other parts of your code on what you test.
 
 ## Setting up a sandbox template
 
-Sandboxes need to be easy to create, because you don't want to lose time switching from the main project. If it's too difficult, you won't use them.
+Sandboxes need to be easy to create, because you don't want to lose time switching from the main project. If it's too difficult, you won't do it.
 
 To make it easy for yourself, create a folder called `sandbox` inside or near your project folder, so that it is always ready to hand.
 
@@ -32,7 +32,7 @@ You can make your own, or you can use [my sandbox on GitHub](sandbox) and modify
 
 ## Running experiments
 
-Once you have the template set up, it is trivial to switch into a new sandbox dedicated to a "Will it work?" question.
+Once you have the template set up, it is trivial to create a new sandbox dedicated to your burning "Will it work?" question.
 
 1. Formulate a hypothesis. What do you want to test? Narrow it down to just one thing per sandbox, so that you don't have interference between pieces of code.
 
@@ -40,7 +40,7 @@ Once you have the template set up, it is trivial to switch into a new sandbox de
 
     ![Copying and renaming the template folder](images/sandbox-copy-vs-code.gif)
 
-    Note: to turn off GIF autoplay on GitHub, adjust your Motion preference on the [Accessibility page](https://github.com/settings/accessibility).
+    Note: to turn off GIF autoplay on GitHub, adjust your Motion preference in the [Accessibility settings](https://github.com/settings/accessibility).
 
 3. Open up the relevant files in the new sandbox and conduct your experiment.
 
