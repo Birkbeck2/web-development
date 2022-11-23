@@ -2,7 +2,7 @@
 
 Web Development and User Experience | Coding Session 2 | Joseph Muller
 
-[Previous](meaning-and-presentation-in-html.md) | [All](README.md)
+[Previous](meaning-and-presentation-in-html.md) | [All](README.md) | [Next](will-it-work-using-sandboxes-to-test-code.md)
 
 # Coding workshop 2
 
