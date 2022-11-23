@@ -40,6 +40,13 @@
 
 #### [Workshop 2](workshop-2.md)
 
+## Week 8
+### Coding Session 5
+#### [Will it work? Using sandboxes to run code experiments](will-it-work-using-sandboxes-to-test-code.md)
+> sandboxes
+
+### Coding Session 6
+
 ## Week 9
 ### Coding session 7
 
