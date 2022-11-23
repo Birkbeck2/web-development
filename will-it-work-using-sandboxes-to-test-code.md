@@ -2,11 +2,11 @@
 
 Web Development and User Experience | Coding Session 5 | Joseph Muller
 
-[Previous](workshop-2.md) | [All](README.md)
+[Previous](workshop-2.md) | [All](README.md) | [Next](using-git-and-github.md)
 
 # Will it work? Using sandboxes to run code experiments
 
-When you get stuck, there are many ways to get unstuck. You can search online, review readings and lecture notes, ask a colleague, or sleep on it to see if fresh eyes will help you see the problem.
+When you get stuck, there are many ways to get unstuck. You can search online, review readings and lecture notes, ask a colleague, or sleep on it to see if fresh eyes will help you see things differently.
 
 If the problem is whether something will work, you have one more tool. You can test it, like a scientist, in a controlled environment.
 
