@@ -1,4 +1,4 @@
-# HTML lectures for Web Development and User Experience
+# Lectures for Web Development and User Experience
 
 ## Week 2
 ### Coding session 1
