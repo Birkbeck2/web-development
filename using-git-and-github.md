@@ -2,7 +2,7 @@
 
 Web Development and User Experience | Coding Session 6 | Joseph Muller
 
-[Previous](will-it-work-using-sandboxes-to-test-code.md) | [All](README.md)
+[Previous](html-page-structures.md) | [All](README.md)
 
 # Using Git and GitHub with VS Code
 
