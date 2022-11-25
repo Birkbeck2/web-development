@@ -1,7 +1,7 @@
-# HTML lectures for Web Development and User Experience
+# Lectures for Web Development and User Experience
 
 ## Week 2
-### Coding session 1
+### Coding session 1 - Getting started with coding and HTML
 #### [Markup and why computers need it](markup-and-why-computers-need-it.md)
 
 > markup, computers vs. people, HTML
@@ -21,7 +21,7 @@
 #### [Workshop 1](workshop-1.md)
 
 ## Week 3
-### Coding session 2
+### Coding session 2 - Boosting HTML
 #### [HTML attributes](html-attributes.md)
 
 > variable, attribute, `=`, `"`, attribute name, attribute value, `lang`
@@ -41,16 +41,24 @@
 #### [Workshop 2](workshop-2.md)
 
 ## Week 8
-### Coding Session 5
+### Coding Session 5 - CSS boost 2
+
 #### [Will it work? Using sandboxes to run code experiments](will-it-work-using-sandboxes-to-test-code.md)
 > sandboxes
 
-### Coding Session 6
-#### [Using Git and GitHub with VS Code](using-git-and-github.md)
-> Git, GitHub, code editor
+### Coding Session 6 - Responsive Web Design
 
 ## Week 9
-### Coding session 7
+### Coding session 7 - HTML forms and page structures
+
+#### [HTML forms](html-forms.md)
+> HTTP request methods, `form`, `method`, `action`, `type`, `label`, `for`, `input`, `name`, `button`
+
+#### [HTML page structures](html-page-structures.md)
+> layouts, `body`, `header`, `nav`, `main`, `article`, `section`, `footer`, `ul`
+
+#### [Using Git and GitHub with VS Code](using-git-and-github.md)
+> Git, GitHub, code editor
 
 ## Week 10
 ### Coding session 8
