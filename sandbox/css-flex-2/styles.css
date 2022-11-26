@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#left-column {
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+}
+
+#the-rest {
+  width: 60vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#the-rest img {
+  width: 20vw;
+}
