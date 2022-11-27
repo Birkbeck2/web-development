@@ -1,0 +1,15 @@
+#a {
+  display: block;
+  width: 90%;
+  margin: auto;
+  border: 1px solid black;
+}
+
+#b {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  border: 1px solid black;
+
+}
+
