@@ -1,8 +1,8 @@
 ![Birkbeck, University of London](images/birkbeck-logo.jpg)
 
-Web Development and User Experience | Coding Session 6 | Joseph Muller
+Web Development and User Experience | Coding Sessions | Joseph Muller
 
-[Previous](html-page-structures.md) | [All](README.md)
+[Previous](html-page-structures.md) | [All](README.md) | [Next](workshop-7.md)
 
 # Using Git and GitHub with VS Code
 

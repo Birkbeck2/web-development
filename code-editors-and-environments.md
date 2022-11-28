@@ -1,6 +1,6 @@
 ![Birkbeck, University of London](images/birkbeck-logo.jpg)
 
-Web Development and User Experience | Coding Session 1 | Joseph Muller
+Web Development and User Experience | Coding Sessions | Joseph Muller
 
 [Previous](how-the-internet-works.md) | [All](README.md) | [Next](workshop-1.md)
 
