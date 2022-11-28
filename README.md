@@ -1,4 +1,6 @@
-# Lectures for Web Development and User Experience
+![Birkbeck, University of London](images/birkbeck-logo.jpg)
+
+# Web Development and User Experience
 
 ## Week 2
 ### Coding session 1 - Getting started with coding and HTML
@@ -60,6 +62,8 @@
 #### [Using Git and GitHub with VS Code](using-git-and-github.md)
 > Git, GitHub, code editor
 
+#### [Workshop 7](workshop-7.md)
+
 ## Week 10
 ### Coding session 8
 
@@ -73,3 +77,5 @@ The lectures here are not exhaustive as many of the lectures are given with slid
 
 ## Rights
 Lectures are copyright Birkbeck, University of London. Pictures and workshop documents are copyright Birkbeck, University of London unless otherwise stated where they are referenced in the lectures.
+
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Licence" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
