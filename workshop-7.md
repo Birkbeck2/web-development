@@ -13,7 +13,7 @@ First we'd like you to practice creating a Git repository and publishing it to G
 
 If your computer doesn't have Git, try installing it. If you can't install Git (working on a lab computer), skip this part, work outside Git for the rest of the workshop, and try this later on a computer you can install Git on.
 
-If you get stuck on any of these steps, refer to the video at [https://code.visualstudio.com/docs/sourcecontrol/overview](https://code.visualstudio.com/docs/sourcecontrol/overview).
+If you get stuck on any of these steps, refer to the video [“Using Git with Visual Studio Code”](https://code.visualstudio.com/docs/sourcecontrol/overview).
 
 1. Most developers have a folder on their computer where they keep all their Git repositories. Do you already have such a folder? If not, make one. You can call it `repos` or `git` or another name that makes sense to you.
 
@@ -37,7 +37,7 @@ If you get stuck on any of these steps, refer to the video at [https://code.visu
 
 If you can't get Git installed, skip this section too.
 
-In the next part of the workshop, you'll be asked to make a contact form. There is an assignment on GitHub for submitting your code for this. In this case, it's best to work in the repository, on your computer. So, let's get it pulled down to your computer. This will give you useful practice pulling down (a.k.a. cloning) repositories that already exist and modifying them before pushing them back up to GitHub.
+In the next part of the workshop, you'll be asked to make a contact form. There is an (optional) assignment on GitHub for submitting your code for this. If you can, it's best to work in the repository, on your computer. So, let's get it pulled down to your computer. This will give you useful practice pulling down (a.k.a. “cloning”) repositories that already exist and modifying them before pushing them back up to GitHub.
 
 10. Go to Moodle and click on the Github assignment link for submitting the contact form under Coding Workshop 7.
 
@@ -45,7 +45,7 @@ In the next part of the workshop, you'll be asked to make a contact form. There 
 
 12. On the page for your new repository on GitHub, it should show some setup instructions including a link at the top ending in `.git`. Copy this link.
 
-13. Open a new window in VS Code. Close out of any open folder. Go to source control, and select "Clone Repository". Paste in the link you copied, and press Enter.
+13. Open a new window in VS Code. Close out of any open project folder. Go to source control, and select "Clone Repository". Paste in the link you copied, and press Enter.
 
 15. When prompted to select the repository location, select the folder you made for Git repositories (e.g. `repos`), and continue.
 
@@ -55,13 +55,13 @@ In the next part of the workshop, you'll be asked to make a contact form. There 
 
 In this section you'll be making a contact form in HTML.
 
-17. Working in the repository you cloned, or in a different folder otherwise, make a contact form with fields for first name, last name, email address, and message.
+17. Working in the repository you cloned (if using Git), make a contact form with fields for first name, last name, email address, and message.
 
 18. Try styling the form, paying extra attention to the way the fields and buttons look.
 
-19. Without a working URL to submit the form to, it's difficult to test your form. Instead of testing it manually, upload it to the Nu HTML checker to validate the HTML.
+19. Without a working URL in the form's `action`, it's difficult to test your form. Instead of testing it manually, upload it to the [Nu HTML checker](https://validator.w3.org/nu/) to validate the HTML.
 
-20. When you are done, stage and commit the files to your Git history, push the commits to GitHub, and submit the assignment. This is optional, but it's good practice for the assessment workflow.
+20. When you are done, if you are using Git, stage and commit the files to the repository history, push the commits to GitHub, and submit the assignment. Again, this is optional, but it's good practice for the assessment workflow.
 
 ## Work on your website
 
