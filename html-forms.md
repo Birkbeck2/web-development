@@ -1,6 +1,6 @@
 ![Birkbeck, University of London](images/birkbeck-logo.jpg)
 
-Web Development and User Experience | Coding Session 2 | Joseph Muller
+Web Development and User Experience | Coding Sessions | Joseph Muller
 
 [Previous](will-it-work-using-sandboxes-to-test-code.md) | [All](README.md) | [Next](html-page-structures.md)
 
