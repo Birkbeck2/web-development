@@ -2,7 +2,7 @@
 
 Web Development and User Experience | Coding Sessions | Joseph Muller
 
-[Previous](code-editors-and-environments.md) | [All](README.md)
+[Previous](code-editors-and-environments.md) | [All](README.md) | [Next](html-attributes.md)
 
 # Coding workshop 1
 
