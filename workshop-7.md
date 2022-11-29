@@ -29,7 +29,16 @@ If you get stuck on any of these steps, refer to the video [“Using Git with Vi
 
 7. Stage the README file, enter a commit message like "First commit", and commit the file.
 
-8. Push the repository to a private repository on GitHub with "Publish Branch." You may be prompted to sign in to GitHub, or you may need to select GitHub from a set of options and then sign in.
+8. Push the repository to a private repository on GitHub with "Publish Branch." If VS Code says "Make sure you configure your 'user.name' and 'user.email' in git", follow these steps:
+    i. Select **Open Git Log**.
+    ii. Select the **Terminal** tab of the console pane that opens at the bottom of VS Code.
+    iii. Paste `git config --global user.name "FIRST_NAME LAST_NAME"` into the command line, edit it so that it has your first and last names between the quotation marks, and press enter.
+    iv. Do the same thing with `git config --global user.email "MY_NAME@example.com"`, putting in you Birkbeck email address in the quotation marks.
+    v. Close the console pane.
+
+  You may be prompted to sign in to GitHub, or you may need to select GitHub from a set of options and then sign in.
+  
+  You may also be prompted to update VS Code if you're working on a lab computer. Go ahead and do so if it lets you.
 
 9. Open the repository on github.com and see if it looks the way it should. GitHub automatically displays the contents of any file called "README.md" on the repository landing page.
 
