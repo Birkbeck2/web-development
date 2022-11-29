@@ -34,7 +34,7 @@ If you get stuck on any of these steps, refer to the video [“Using Git with Vi
     2. Select the **Terminal** tab of the console pane that opens at the bottom of VS Code.
     3. Paste `git config --global user.name "FIRST_NAME LAST_NAME"` into the command line, edit it so that it has your first and last names between the quotation marks, and press enter.
     4. Do the same thing with `git config --global user.email "MY_NAME@example.com"`, putting in you Birkbeck email address in the quotation marks.
-    5. Close the console pane.
+    5. Close the console pane, and try pushing again.
 
   You may be prompted to sign in to GitHub, or you may need to select GitHub from a set of options and then sign in.
   
