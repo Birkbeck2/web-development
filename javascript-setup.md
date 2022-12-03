@@ -47,9 +47,6 @@ The code `console.log();` is a JavaScript function that provides that instructio
 
 It will take a few weeks to understand how this works, but you don't need to understand that yet to use it, and it's very useful!
 
-## References
-Marijn Haverbeke, *Eloquent JavaScript: A Modern Introduction to Programming*, third edition, 2018, [https://eloquentjavascript.net/](https://eloquentjavascript.net/).
-
 ## Rights
 Copyright Birkbeck, University of London
 

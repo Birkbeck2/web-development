@@ -6,11 +6,9 @@ Web Development and User Experience | Coding Sessions | Joseph Muller
 
 # JavaScript evaluation with operators
 
-At this point you know what data types are, but you may be wondering, why do they matter? Why is it important for JavaScript to interpret `2` as a number and `"2"` as a string?
+Operators are the most basic ways that we can begin to do something with values and data types.
 
-It has to do with how the values are used in the program. Many uses depend on a particular data type, so the language allows, and often requires, that you explicitly set data types through the syntax you use.
-
-Let's look at some of the basic ways to use values, with *operators*.
+They let us combine values into expressions that can be evaluated to new values.
 
 ## Combining and adding
 
@@ -32,14 +30,14 @@ The output should be `22`.
 
 The plus sign (`+`) is an *operator* that combines strings together or finds the sum of numbers, depending on the data types.
 
-Combining strings, also called “concatenation”:
+When the values are strings, the operation is *concatenation*:
 
 ```js
 "My name is " + "Joe" + ". What is your name?"
 'WC1E ' + '7HX'
 ```
 
-Doing sums:
+When they are numbers, the operation is summation:
 
 ```js
 1203910516 + 150151956
@@ -47,7 +45,7 @@ Doing sums:
 23913 + 42 + 95
 ```
 
-If you use `+` with a string and a number, JavaScript will first turn the number into a string and then combine them:
+If you use `+` with a string and a number, JavaScript will first turn the number into a string and then combine them (concatenation):
 
 ```js
 "She's turning " + 72

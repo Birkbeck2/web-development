@@ -145,7 +145,7 @@ What data types does JavaScript think these things are?
 3. `'False'`
 4. `"on"`
 
-## The `undefined` type
+## `undefined` and `null` values
 
 In the absence of a working value, JavaScript will substitute the keyword `undefined`, which is its own data type.
 
@@ -158,6 +158,16 @@ True
 orange
 l0
 ```
+
+You can also refer to and work with an empty value called `null`:
+
+```js
+null
+```
+
+This just lets you explicitly write that rather than a string, number, or boolean, you're declaring a blank, meaningless value.
+
+At the moment, it might be unclear why this is useful, but you will see soon. For now, know it exists.
 
 ## The `typeof` operator
 
@@ -174,6 +184,14 @@ console.log(typeof 'blah blah');
 ```
 
 ![Logging typeof to the console](images/js-typeof-blah.png)
+
+## But why?
+
+At this point you know what data types are, but you may be wondering, why do they matter? Why is it important for JavaScript to interpret `2` as a number and `"2"` as a string?
+
+It has to do with how the values are used in the program. Many uses depend on a particular data type, so the language allows, and often requires, that you explicitly set data types through the syntax you use.
+
+In the next section, things will become clearer when we look at some of the basic ways to use values, with *operators*.
 
 ## References
 Marijn Haverbeke, *Eloquent JavaScript: A Modern Introduction to Programming*, third edition, 2018, [https://eloquentjavascript.net/](https://eloquentjavascript.net/).

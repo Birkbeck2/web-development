@@ -67,11 +67,11 @@
 ## Week 10
 ### Coding session 8 - Introduction to Programming with JavaScript
 
-#### [JavaScript setup](introduction-to-programming-with-javascript.md)
+#### [JavaScript setup](javascript-setup.md)
 > programming language, running JavaScript code, `console.log`
 
 #### [JavaScript values and data types](javascript-values-and-data-types.md)
-> values, data types, strings, `'`, `"`, escaping, `\`, numbers, booleans, `true`, `false`, `undefined`, `typeof`
+> values, data types, strings, `'`, `"`, escaping, `\`, numbers, booleans, `true`, `false`, `undefined`, `null`, `typeof`
 
 #### [JavaScript evaluation with operators](javascript-evaluation-with-operators.md)
 > operators, `+`, `==`, `!=`, `<`, `>`, `-`, `/`, `*`
