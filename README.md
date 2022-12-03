@@ -65,7 +65,16 @@
 #### [Workshop 7](workshop-7.md)
 
 ## Week 10
-### Coding session 8
+### Coding session 8 - Introduction to Programming with JavaScript
+
+#### [JavaScript setup](introduction-to-programming-with-javascript.md)
+> programming language, running JavaScript code, `console.log`
+
+#### [JavaScript values and data types](javascript-values-and-data-types.md)
+> values, data types, strings, `'`, `"`, escaping, `\`, numbers, booleans, `true`, `false`, `undefined`, `typeof`
+
+#### [JavaScript evaluation with operators](javascript-evaluation-with-operators.md)
+> operators, `+`, `==`, `!=`, `<`, `>`, `-`, `/`, `*`
 
 ## Week 11
 ### Coding session 9
