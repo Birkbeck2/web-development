@@ -2,7 +2,7 @@
 
 Web Development and User Experience | Coding Sessions | Joseph Muller
 
-[Previous](using-git-and-github.md) | [All](README.md)
+[Previous](using-git-and-github.md) | [All](README.md) | [Next](javascript-setup.md)
 
 # Coding workshop 7
 
