@@ -151,9 +151,9 @@ If you're not fond of math, don't worry--these are only used in simple ways in m
 
 What's the result?
 
-1. 3 * 3
-2. 6 / 2
-3. 10 - 5
+1. `3 * 3`
+2. `6 / 2`
+3. `10 - 5`
 
 ## References
 Marijn Haverbeke, *Eloquent JavaScript: A Modern Introduction to Programming*, third edition, 2018, [https://eloquentjavascript.net/](https://eloquentjavascript.net/).
