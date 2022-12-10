@@ -37,7 +37,7 @@ You can also run JavaScript at the command line and through code editors like VS
 
 When a program runs, by default, nothing changes on the screen unless the program says to.
 
-This is different from HTML and CSS, which are by nature presentational, so all we needed to do was open the HTML file in the browser to see the effects of the code?
+This is different from HTML and CSS, which are by nature presentational, so all we needed to do was open the HTML file in the browser to see the effects of the code.
 
 To *see* a simple JavaScript program run, we need to put explicit output instructions in the program.
 
