@@ -79,7 +79,7 @@
 #### [JavaScript evaluation with operators](javascript-evaluation-with-operators.md)
 > operators, `+`, `==`, `!=`, `<`, `>`, `-`, `/`, `*`
 
-#### [Workshop 9]
+#### Workshop 9
 > See Moodle for workshop assignment link
 
 ## About this repository
