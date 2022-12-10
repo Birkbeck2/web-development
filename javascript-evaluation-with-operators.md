@@ -10,6 +10,8 @@ Operators are the most basic ways that we can begin to do something with values 
 
 They let us combine values into expressions that can be evaluated to new values.
 
+In doing so, operators demonstrate how data types are used in JavaScript, showing why they matter.
+
 ## Combining and adding
 
 Say you're programming a calculator. The user enters an equation.

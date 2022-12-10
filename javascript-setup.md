@@ -47,6 +47,30 @@ The code `console.log();` is a JavaScript function that provides that instructio
 
 It will take a few weeks to understand how this works, but you don't need to understand that yet to use it, and it's very useful!
 
+## Comments in JavaScript
+
+You already know how to write comments for other humans in HTML, using `<!--   -->`, and in CSS, using `/*    */`.
+
+In JavaScript, you can use a double slash (`//`) to comment everything to the right of it, for the rest of the line:
+
+```js
+console.log('This will run');
+// console.log('This will not run');
+console.log('This will run'); // But not this comment
+```
+
+You can also use the same syntax as CSS to make block comments:
+
+```js
+console.log('This will run');
+/*
+This is a block comment that
+won't run.
+Neither will this line.
+console.log('or this');
+*/
+```
+
 ## Rights
 Copyright Birkbeck, University of London
 

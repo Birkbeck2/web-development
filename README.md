@@ -65,10 +65,13 @@
 #### [Workshop 7](workshop-7.md)
 
 ## Week 10
-### Coding session 8 - Introduction to Programming with JavaScript
+### Coding session 8 - CANCELLED
+
+## Week 11
+### Coding session 9 - Introduction to Programming with JavaScript
 
 #### [JavaScript setup](javascript-setup.md)
-> programming language, running JavaScript code, `console.log`
+> programming language, running JavaScript code, `console.log`, comments, '//', '/* */'
 
 #### [JavaScript values and data types](javascript-values-and-data-types.md)
 > values, data types, strings, `'`, `"`, escaping, `\`, numbers, booleans, `true`, `false`, `undefined`, `null`, `typeof`
@@ -76,8 +79,8 @@
 #### [JavaScript evaluation with operators](javascript-evaluation-with-operators.md)
 > operators, `+`, `==`, `!=`, `<`, `>`, `-`, `/`, `*`
 
-## Week 11
-### Coding session 9
+#### Workshop 9
+> See Moodle for workshop assignment link
 
 ## About this repository
 This repository holds some of the lecture notes for Web Development and User Experience, a module in the Department of Film, Media, and Cultural Studies at Birkbeck, University of London.
