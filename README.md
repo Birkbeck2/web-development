@@ -71,7 +71,7 @@
 ### Coding session 9 - Introduction to Programming with JavaScript
 
 #### [JavaScript setup](javascript-setup.md)
-> programming language, running JavaScript code, `console.log`, comments, '//', '/* */'
+> programming language, running JavaScript code, `console.log`, comments, `//`, `/* */`
 
 #### [JavaScript values and data types](javascript-values-and-data-types.md)
 > values, data types, strings, `'`, `"`, escaping, `\`, numbers, booleans, `true`, `false`, `undefined`, `null`, `typeof`
