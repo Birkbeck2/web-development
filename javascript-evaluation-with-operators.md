@@ -94,7 +94,7 @@ Here's one more example that evaluates to `false`:
 This one is `true`:
 
 ```js
-`hope` == `hope`
+'hope' == 'hope'
 ```
 
 Here's one with numbers:
@@ -106,7 +106,7 @@ Here's one with numbers:
 To check that things are *not* the same, you can put an exclamation point in front of an equals sign (`!=`):
 
 ```js
-`orange` != `purple`
+'orange' != 'purple'
 ```
 
 The above code evaluates to `true` because they are not the same word.
