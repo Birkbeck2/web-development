@@ -79,8 +79,7 @@
 #### [JavaScript evaluation with operators](javascript-evaluation-with-operators.md)
 > operators, `+`, `==`, `!=`, `<`, `>`, `-`, `/`, `*`
 
-#### Workshop 9
-> See Moodle for workshop assignment link
+#### [Workshop 9](https://github.com/Birkbeck2/wdux2223-workshop-js-values)
 
 ## About this repository
 This repository holds some of the lecture notes for Web Development and User Experience, a module in the Department of Film, Media, and Cultural Studies at Birkbeck, University of London.
