@@ -1,0 +1,19 @@
+/* Code outside a media query */
+p {
+  background-color: lightseagreen
+}  
+
+/* media query for tablets */
+@media screen and (min-width: 600px) {
+p {
+    background-color : pink ;
+    border-radius : 12px ;
+  }
+}
+
+/* media query for wider screens */
+@media screen and (min-width: 1200px) {
+  p {
+    background-color: aqua;
+  }
+}
