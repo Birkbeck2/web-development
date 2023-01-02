@@ -22,11 +22,9 @@ You can do lots and lots of things with JavaScript, including altering HTML and 
 Like HTML and CSS, JavaScript is supported by all major web browsers, so all you need to run JavaScript code is a web browser.
 
 For example, if you open up your inspector pane, navigate to the Console, type this in, and press Enter, the browser will say “Hello” back to you.
-
 ```js
 console.log('Hello');
 ```
-
 ![Running JavaScript in the browser](images/javascript-run-in-browser.png)
 
 You can also run JavaScript at the command line and through code editors like VS Code, which has a button for running the currently opened `.js` file.
@@ -52,15 +50,12 @@ It will take a few weeks to understand how this works, but you don't need to und
 You already know how to write comments for other humans in HTML, using `<!--   -->`, and in CSS, using `/*    */`.
 
 In JavaScript, you can use a double slash (`//`) to comment everything to the right of it, for the rest of the line:
-
 ```js
 console.log('This will run');
 // console.log('This will not run');
 console.log('This will run'); // But not this comment
 ```
-
 You can also use the same syntax as CSS to make block comments:
-
 ```js
 console.log('This will run');
 /*
@@ -70,7 +65,6 @@ Neither will this line.
 console.log('or this');
 */
 ```
-
 ## Rights
 Copyright Birkbeck, University of London
 
