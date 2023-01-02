@@ -16,7 +16,7 @@ In doing so, operators demonstrate how data types are used in JavaScript, showin
 
 Say you're programming a calculator. The user enters an equation.
 
-```javascript
+```js
 2 + 2
 ```
 
@@ -24,7 +24,7 @@ The output should be `4`.
 
 On the other hand, let's say you're programming a messaging app. The user types 2, and then another 2.
 
-```javascript
+```js
 "2" + "2"
 ```
 
@@ -34,14 +34,14 @@ The plus sign (`+`) is an *operator* that combines strings together or finds the
 
 When the values are strings, the operation is *concatenation*:
 
-```javascript
+```js
 "My name is " + "Joe" + ". What is your name?"
 'WC1E ' + '7HX'
 ```
 
 When they are numbers, the operation is summation:
 
-```javascript
+```js
 1203910516 + 150151956
 -294 + 24
 23913 + 42 + 95
@@ -49,7 +49,7 @@ When they are numbers, the operation is summation:
 
 If you use `+` with a string and a number, JavaScript will first turn the number into a string and then combine them (concatenation):
 
-```javascript
+```js
 "She's turning " + 72
 ```
 
@@ -77,7 +77,7 @@ What's the evaluated value of each of these expressions?
 
 To check if two things are the same, you can use the double equals sign operator (`==`):
 
-```javascript
+```js
 'orange' == 'purple'
 ```
 
@@ -87,25 +87,25 @@ JavaScript doesn't know what 'orange' and 'purple' mean, but it knows they are n
 
 Here's one more example that evaluates to `false`:
 
-```javascript
+```js
 'London' == 'the UK capital'
 ```
 
 This one is `true`:
 
-```javascript
+```js
 'hope' == 'hope'
 ```
 
 Here's one with numbers:
 
-```javascript
+```js
 1900 == 1899
 ```
 
 To check that things are *not* the same, you can put an exclamation point in front of an equals sign (`!=`):
 
-```javascript
+```js
 'orange' != 'purple'
 ```
 
@@ -113,7 +113,7 @@ The above code evaluates to `true` because they are not the same word.
 
 You can also use `<` and `>` to compare numeric values:
 
-```javascript
+```js
 1900 > 1899
 1 > 4
 ```
@@ -133,7 +133,7 @@ Do these evaluate to `true` or `false`?
 
 JavaScript has operators for mathematics: `+`, `-`, `/`, `*`.
 
-```javascript
+```js
 1 + 5 - 2
 100 / 5
 2 * 6 / 3 + 1
@@ -141,7 +141,7 @@ JavaScript has operators for mathematics: `+`, `-`, `/`, `*`.
 
 Like in math, you can use parentheses to control the order of operations:
 
-```javascript
+```js
 2 * 6 / (3 + 1)
 ```
 
