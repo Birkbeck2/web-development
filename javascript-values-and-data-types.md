@@ -24,7 +24,7 @@ Strings are the first JavaScript data type to know about. A string can be nearly
 
 These are all valid strings:
 
-```js
+```javascript
 'Hello'
 "Hello"
 'bbk.ac.uk'
@@ -46,21 +46,21 @@ There are two basic rules for forming strings:
 
     - You can alternate the marks inside the string so that they are different from the start and end marks. For example, use double on the outside, and single on the inside, or vice versa:
 
-        ```js
+        ```javascript
         "How do you say 'hello' in Korean?"
         'How do you say "hello" in Korean?'
         ```
 
     - You can use the same mark, but put a backslash (`\`) in front of it, so that it eludes or *escapes* the algorithm that JavaScript uses to figure out which things are strings:
 
-        ```js
+        ```javascript
         "How do you say \"hello\" in Korean?"
         'How do you say \'hello\' in Korean?'
         ```
 
         What if you have a string that has a backslash in it? Escape it as well by putting another one in front of it:
 
-        ```js
+        ```javascript
         "The files are located at C:\\Users\\Documents"
         ```
 
@@ -70,19 +70,19 @@ There are two basic rules for forming strings:
 
 1. Can you make a string like this?
 
-    ```js
+    ```javascript
     'Hello"
     ```
 
 2. How many valid strings does this line have? Where do they start and end?
 
-    ```js
+    ```javascript
     "There are many "ways" you can "interpret" things."
     ```
 
 3. Is this a valid string?
 
-    ```js
+    ```javascript
     "I told him I'm \"excited\" 🙄"
     ```
 
@@ -91,7 +91,7 @@ After strings, numbers are the next most common data type.
 
 Numbers are declared in your code without any quotation marks, with `-` if they are negative, and with `.` as a decimal point for fractional numbers:
 
-```js
+```javascript
 3
 8519
 -62
@@ -101,7 +101,7 @@ Numbers are declared in your code without any quotation marks, with `-` if they 
 
 If you put quotation marks around numbers, JavaScript thinks they are strings:
 
-```js
+```javascript
 '8'
 "105"
 '-2'
@@ -111,13 +111,13 @@ If you put quotation marks around numbers, JavaScript thinks they are strings:
 
 1. Does JavaScript think this is a number?
 
-    ```js
+    ```javascript
     "8,325"
     ```
 
 2. How about this?
 
-    ```js
+    ```javascript
     -39.2301
     ```
 
@@ -129,7 +129,7 @@ There is a special data type for these values, the *boolean* type.
 
 These values are represented with keywords `true` and `false`:
 
-```js
+```javascript
 true
 false
 ```
@@ -153,7 +153,7 @@ This might happen if a string, boolean or number doesn't get set up the right wa
 
 All of the following evaluate to `undefined`:
 
-```js
+```javascript
 True
 orange
 l0
@@ -161,7 +161,7 @@ l0
 
 You can also refer to and work with an empty value called `null`:
 
-```js
+```javascript
 null
 ```
 
@@ -173,13 +173,13 @@ At the moment, it might be unclear why this is useful, but you will see soon. Fo
 
 Like with `console.log();`, you can have JavaScript tell you the type of a value. Put `typeof` before the value, and JavaScript will evaluate its type.
 
-```js
+```javascript
 typeof 'blah blah'
 ```
 
 By combining this with `console.log();`, you can check the type of anything:
 
-```js
+```javascript
 console.log(typeof 'blah blah');
 ```
 

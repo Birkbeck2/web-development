@@ -23,7 +23,7 @@ Like HTML and CSS, JavaScript is supported by all major web browsers, so all you
 
 For example, if you open up your inspector pane, navigate to the Console, type this in, and press Enter, the browser will say “Hello” back to you.
 
-```js
+```javascript
 console.log('Hello');
 ```
 
@@ -53,7 +53,7 @@ You already know how to write comments for other humans in HTML, using `<!--   -
 
 In JavaScript, you can use a double slash (`//`) to comment everything to the right of it, for the rest of the line:
 
-```js
+```javascript
 console.log('This will run');
 // console.log('This will not run');
 console.log('This will run'); // But not this comment
@@ -61,7 +61,7 @@ console.log('This will run'); // But not this comment
 
 You can also use the same syntax as CSS to make block comments:
 
-```js
+```javascript
 console.log('This will run');
 /*
 This is a block comment that
