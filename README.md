@@ -132,7 +132,7 @@ npm run test
 
 You should then see a summary in the terminal with the test results:
 
-[Vitest results](lecturers/images/vitest-report.png)
+![Vitest results](lectures/images/vitest-report.png)
 
 To run tests on [Gradescope](https://gradescope-autograders.readthedocs.io/en/latest/), you must upload a ZIP file containing the test files
 and a shell script to install dependencies in an Ubuntu 22.04 environment.
