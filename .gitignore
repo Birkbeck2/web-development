@@ -1,6 +1,9 @@
 # Custom
 demo
-answers
+submission
+autograder/results/
+*.zip
+results.json
 
 # Logs
 logs

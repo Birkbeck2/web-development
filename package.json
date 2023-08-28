@@ -4,7 +4,10 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "vitest"
+    "test": "vitest",
+    "gradescope": "vitest run --reporter=./source/reporter.js --outputFile.json=./results/results.json",
+    "gradescope-local": "vitest run --reporter=./gradescope/reporter.js --outputFile.json=./gradescope/results.json",
+    "zip": "node gradescope/create-zips.js"
   },
   "repository": {
     "type": "git",
@@ -23,9 +26,12 @@
   "homepage": "https://github.com/Birkbeck2/web-development#readme",
   "type": "module",
   "devDependencies": {
+  },
+  "dependencies": {
     "html-validator": "^6.0.1",
     "jsdom": "^22.1.0",
     "vite": "^4.3.9",
-    "vitest": "^0.33.0"
+    "vitest": "^0.34.3",
+    "adm-zip": "^0.5.10"
   }
 }

@@ -109,13 +109,13 @@ subfolders. The test utils expect this structure:
    └─ basic-html
       ├─ basic-html-instructions.md
       ├─ road-users.test.js                       // first part of filename should match file to test
-      └─ answers                                  // the contents of this folder are git-ignored
+      └─ submission                               // the contents of this folder are git-ignored
          ├─ web-development-basic-html-student1   // this can be a Git repository
          │  └─ road-users.html                    // this file will be tested
          ├─ web-development-basic-html-student2
          │  └─ road-users.html                    // this file will be tested too
-         └─ web-development-basic-html-instructor // make an private/internal instructor repository
-            │                                     // with correct answers, to test your tests
+         └─ web-development-basic-html-instructor // make a private/internal instructor repository
+            │                                     // with correct submission, to test your tests
             └─ road-users.html                    // this file will be tested too
 ```
 
@@ -134,8 +134,16 @@ You should then see a summary in the terminal with the test results:
 
 ![Vitest results](lectures/images/vitest-report.png)
 
-To run tests on [Gradescope](https://gradescope-autograders.readthedocs.io/en/latest/), you must upload a ZIP file containing the test files
-and a shell script to install dependencies in an Ubuntu 22.04 environment.
+To run tests on
+[Gradescope](https://gradescope-autograders.readthedocs.io/en/latest/),
+create a zip file for each workshop using this script:
+
+```shell
+npm run zip
+```
+
+Then upload the zip file to the Gradescope assignment and check that it
+has built the testing environment successfully.
 
 ## Rights
 

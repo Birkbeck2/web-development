@@ -1,11 +1,10 @@
-import { cwd } from 'node:process'
 import { opendir } from 'node:fs/promises'
 import { join, dirname } from 'node:path'
 import { readFileSync } from 'node:fs'
 
 const showValidationErrors = true
 
-async function * walk (dir) {
+export async function * walk (dir) {
   for await (const d of await opendir(dir)) {
     if (!d.name.startsWith('.')) {
       const entry = join(dir, d.name)
@@ -15,11 +14,21 @@ async function * walk (dir) {
   }
 }
 
-export async function * findAnswers (workshopName, answerFile) {
-  const answerDir = join(cwd(), 'workshops', workshopName, 'answers')
-  for await (const submission of walk(answerDir)) {
+async function determineSubmissionDir (workshopDir) {
+  try {
+    await opendir('submission')
+    return 'submission'
+  } catch (error) {
+    return join(workshopDir, 'submission')
+  }
+}
+
+export async function * findSubmissions (workshopDir, submissionFile) {
+  const submissionDir = await determineSubmissionDir(workshopDir)
+  console.info(submissionDir)
+  for await (const submission of walk(submissionDir)) {
     const coder = dirname(submission).split('-').pop()
-    if (submission.endsWith(answerFile)) yield [coder, submission]
+    if (submission.endsWith(submissionFile)) yield [coder, submission]
   }
 }
 
@@ -42,7 +51,7 @@ export async function validateHtml (filePath) {
 function logValidationErrors (result, filePath) {
   if (!result.isValid && showValidationErrors) {
     for (const error of result.errors) {
-      error.answerFile = filePath
+      error.submissionFile = filePath
       console.error(error)
     }
   }
