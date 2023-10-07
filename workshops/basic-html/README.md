@@ -1,4 +1,4 @@
-![Birkbeck, University of London](../lectures/images/birkbeck-logo.jpg)
+![Birkbeck, University of London](../../lectures/images/birkbeck-logo.jpg)
 
 Web Development and User Experience | Coding Sessions | Joseph Muller
 
@@ -44,7 +44,7 @@ When you finish a workshop, you may be required to submit your work as a homewor
 
 8. Check the visual appearance of the page, or use your screen reader to listen to the result and navigate around it. Does it look or sound right? Did the browser understand what you wanted it to do with the text? Note that some things will be different, like the text color and font, and that's OK.
 
-    ![Hierarchy of road users (print version)](../lectures/images/hierarchy-of-road-users.jpg)
+    ![Hierarchy of road users (print version)](../../lectures/images/hierarchy-of-road-users.jpg)
 
     *Crown copyright 2022*
 
@@ -61,7 +61,7 @@ When you finish a workshop, you may be required to submit your work as a homewor
 
     Does it look similar to this? It probably won't, and that's OK. You don't need to make the two columns or put pictures in.
 
-    ![Storing your fruit and veg (print version)](../lectures/images/storing-your-fruit-and-veg.jpg)
+    ![Storing your fruit and veg (print version)](../../lectures/images/storing-your-fruit-and-veg.jpg)
 
     *Copyright OrganicLea 2022*
 
@@ -104,7 +104,7 @@ When you finish a workshop, you may be required to submit your work as a homewor
 
     Does it look similar to this?
 
-    ![Usage dictionary entry on the word impatient with discussion about grammar and examples](../lectures/images/impatient.jpg)
+    ![Usage dictionary entry on the word impatient with discussion about grammar and examples](../../lectures/images/impatient.jpg)
 
     *Copyright Merriam-Webster, 1994*
 
