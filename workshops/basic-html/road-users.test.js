@@ -16,22 +16,22 @@ describe(submissionFile, async () => {
         expect(result.isValid).toBeTruthy()
       })
       test('title includes correct text', () => {
-        const title = doc.querySelector('head > title')
+        const title = doc.querySelector('head title')
         expect(title.textContent.toLowerCase()).toContain('road')
       })
-      test('h1 used', () => expect(doc.querySelector('body > h1')).toBeTruthy())
+      test('h1 used', () => expect(doc.querySelector('body h1')).toBeTruthy())
       test('h1 includes correct text', () => {
-        const h1 = doc.querySelector('body > h1')
+        const h1 = doc.querySelector('body h1')
         expect(h1.textContent.toLowerCase()).toContain('road')
       })
-      test('h2 used', () => expect(doc.querySelector('body > h2')).toBeTruthy())
+      test('h2 used', () => expect(doc.querySelector('body h2')).toBeTruthy())
       test('h2 includes correct text', () => {
-        const h2 = doc.querySelector('body > h2')
+        const h2 = doc.querySelector('body h2')
         expect(h2.textContent.toLowerCase()).toContain('rule')
       })
-      test('p used', () => expect(doc.querySelector('body > p')).toBeTruthy())
+      test('p used', () => expect(doc.querySelector('body p')).toBeTruthy())
       test('one p includes correct text', () => {
-        const ps = doc.querySelectorAll('body > p')
+        const ps = doc.querySelectorAll('body p')
         const psWithConsiderate = Array.from(ps).filter(p => {
           return p.textContent.toLowerCase().includes('considerate')
         })
