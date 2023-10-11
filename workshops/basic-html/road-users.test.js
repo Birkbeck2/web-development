@@ -11,10 +11,12 @@ describe(submissionFile, async () => {
   for await (const [coder, submission] of findSubmissions(__dirname, submissionFile)) {
     describe(coder, async () => {
       const doc = await JSDOM.fromFile(submission).then(dom => dom.window.document)
-      test('HTML is valid', async () => {
-        const result = await validateHtml(submission)
-        expect(result.isValid).toBeTruthy()
-      })
+      // Turning this test off as it's week one
+      // but students don't know about the lang attribute yet
+      // test('HTML is valid', async () => {
+      //   const result = await validateHtml(submission)
+      //   expect(result.isValid).toBeTruthy()
+      // })
       test('title includes correct text', () => {
         const title = doc.querySelector('head title')
         expect(title.textContent.toLowerCase()).toContain('road')
