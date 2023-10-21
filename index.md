@@ -2,11 +2,11 @@
 layout: home
 
 hero:
-  name: Web Development
-  tagline: Notes and workshops for the Birkbeck MA module
+  name: Web development
+  tagline: Materials and workshops for the MA course at Birkbeck, University of London
   image:
-    src: /lectures/images/birkbeck-logo.jpg
-    alt: Birkbeck, University of London
+    dark: /lectures/images/birkbeck-logo-white-with-transparent-black-around.png
+    light: /lectures/images/birkbeck-logo-transparent-white-with-black-around.png
   actions:
     - theme: brand
       text: Lectures
