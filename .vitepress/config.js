@@ -13,7 +13,8 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: 'Lectures', link: '/lectures/index.html' },
       { text: 'Workshops', link: '/workshops/index.html' },
-      { text: 'Moodle', link: 'https://moodle.bbk.ac.uk/my/' }
+      { text: 'Moodle', link: 'https://moodle.bbk.ac.uk/my/' },
+      { text: 'Gradescope', link: 'https://www.gradescope.eu/' }
     ],
     search: {
       provider: 'local'
