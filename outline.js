@@ -32,7 +32,7 @@ export const outline = [
       },
       {
         text: 'Workshop on semantic HTML',
-        link: '/workshops/workshop-2.html',
+        link: '/workshops/workshop-2/workshop-2.html',
         lecturer: 'Joseph Muller'
       },
       {
