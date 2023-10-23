@@ -1,16 +1,15 @@
 // @vitest-environment jsdom
 
 import { describe, expect, test } from 'vitest'
-import { JSDOM } from 'jsdom'
-import { findSubmissions, validateHtml } from '../test-utils.js'
+import { findSubmissions, validateHtml, loadDoc } from '../test-utils.js'
 
 const submissionFile = 'fruit-and-veg.html'
 
 describe(submissionFile, async () => {
-  let filesFound = 0
   for await (const [coder, submission] of findSubmissions(__dirname, submissionFile)) {
     describe(coder, async () => {
-      const doc = await JSDOM.fromFile(submission).then(dom => dom.window.document)
+      test('file named correctly', () => expect(submission).toBeTruthy())
+      const doc = await loadDoc(submission)
       // Turning this test off as it's week one
       // but students don't know about the lang attribute yet
       // test('HTML is valid', async () => {
@@ -46,9 +45,5 @@ describe(submissionFile, async () => {
         expect(strongOrBsWithLeafy).toHaveLength(1)
       })
     })
-    filesFound += 1
   }
-  test('file named correctly', () => {
-    expect(filesFound).toBeGreaterThan(0)
-  })
 })
