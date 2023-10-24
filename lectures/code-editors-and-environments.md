@@ -1,9 +1,3 @@
-![Birkbeck, University of London](images/birkbeck-logo.jpg)
-
-Web Development and User Experience | Coding Sessions | Joseph Muller
-
-[Previous](how-the-internet-works.md) | [All](README.md) | [Next](workshop-1.md)
-
 # Code editors and environments
 
 ![Meme of Nicolas Cage faces reacting to scenarios in which code runs and he doesn't know why, code doesn't run and he knows why, and code doesn't run and he doesn't know why](images/code-run-why-nicolas-cage.png)

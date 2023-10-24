@@ -5,8 +5,8 @@ hero:
   name: Web development
   tagline: Materials and workshops for the MA course at Birkbeck, University of London
   image:
-    dark: /lectures/images/birkbeck-logo-white-with-transparent-black-around.png
-    light: /lectures/images/birkbeck-logo-transparent-white-with-black-around.png
+    dark: /birkbeck-logo-white-with-transparent-black-around.png
+    light: /birkbeck-logo-transparent-white-with-black-around.png
   actions:
     - theme: brand
       text: Lectures

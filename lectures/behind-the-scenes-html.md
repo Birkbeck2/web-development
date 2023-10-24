@@ -1,9 +1,3 @@
-![Birkbeck, University of London](images/birkbeck-logo.jpg)
-
-Web Development and User Experience | Coding Sessions | Joseph Muller
-
-[Previous](html-links-images-and-file-organization.md) | [All](README.md) | [Next](meaning-and-presentation-in-html.md)
-
 # Behind-the-scenes HTML
 
 ![Two people who appear to be levitating in mid-air are actually supported by a chair and a ladder](images/levitation-magic.jpg)

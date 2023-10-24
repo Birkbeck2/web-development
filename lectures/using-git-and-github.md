@@ -1,9 +1,3 @@
-![Birkbeck, University of London](images/birkbeck-logo.jpg)
-
-Web Development and User Experience | Coding Sessions | Joseph Muller
-
-[Previous](html-page-structures.md) | [All](README.md) | [Next](workshop-7.md)
-
 # Using Git and GitHub with VS Code
 
 Developers use Git to keep track of versions of a project, sync changes between different members of the team, and look through the history of the project to fix bugs.

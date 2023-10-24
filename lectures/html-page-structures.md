@@ -1,9 +1,3 @@
-![Birkbeck, University of London](images/birkbeck-logo.jpg)
-
-Web Development and User Experience | Coding Sessions | Joseph Muller
-
-[Previous](html-forms.md) | [All](README.md) | [Next](using-git-and-github.md)
-
 # HTML page structures
 
 HTML provides almost endless possibilities for formal variation.

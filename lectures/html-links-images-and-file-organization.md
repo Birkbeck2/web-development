@@ -1,9 +1,3 @@
-![Birkbeck, University of London](images/birkbeck-logo.jpg)
-
-Web Development and User Experience | Coding Sessions | Joseph Muller
-
-[Previous](html-attributes.md) | [All](README.md) | [Next](behind-the-scenes-html.md)
-
 # HTML links, images, and file organization
 
 ![Layers of blue leaf designs extend from one corner and spread up and across](images/blue-leaves.jpg)

@@ -1,9 +1,3 @@
-![Birkbeck, University of London](images/birkbeck-logo.jpg)
-
-Web Development and User Experience | Coding Sessions | Joseph Muller
-
-[Previous](javascript-values-and-data-types.md) | [All](README.md)
-
 # JavaScript evaluation with operators
 
 Operators are the most basic ways that we can begin to do something with values and data types.

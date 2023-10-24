@@ -1,9 +1,3 @@
-![Birkbeck, University of London](images/birkbeck-logo.jpg)
-
-Web Development and User Experience | Coding Sessions | Joseph Muller
-
-[Previous](javascript-setup.md) | [All](README.md) | [Next](javascript-evaluation-with-operators.md)
-
 # JavaScript values and data types
 
 To get started with JavaScript, let's learn about values and data types.

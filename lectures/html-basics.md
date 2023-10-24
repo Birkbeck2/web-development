@@ -1,9 +1,3 @@
-![Birkbeck, University of London](images/birkbeck-logo.jpg)
-
-Web Development and User Experience | Coding Sessions | Joseph Muller
-
-[Previous](markup-and-why-computers-need-it.md) | [All](README.md) | [Next](how-the-internet-works.md)
-
 # HTML basics
 
 ![Leaning Tower of Pisa surrounded by i html tags](images/pisa-i.jpg)

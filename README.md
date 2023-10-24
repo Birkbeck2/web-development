@@ -1,4 +1,4 @@
-![Birkbeck, University of London](images/birkbeck-logo.jpg)
+![Birkbeck, University of London](lectures/images/birkbeck-logo.jpg)
 
 # Web Development and User Experience
 
@@ -11,8 +11,10 @@ Are you new to GitHub? You may find what you need in the [GitHub Documentation](
 
 ## Viewing lectures and workshops
 
-Try out the [http://birkbeck2.github.io/web-development](website) where
-you can search and read the content more easily than via GitHub.
+Try out the
+[https://birkbeck2.github.io/web-development](https://birkbeck2.github.io/web-development)
+website where you can search and read the content more easily than via
+GitHub.
 
 ## Running auto-markers (for lecturers)
 

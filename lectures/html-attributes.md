@@ -1,9 +1,3 @@
-![Birkbeck, University of London](images/birkbeck-logo.jpg)
-
-Web Development and User Experience | Coding Sessions | Joseph Muller
-
-[Previous](workshop-1.md) | [All](README.md) | [Next](html-links-images-and-file-organization.md)
-
 # HTML attributes
 
 ![Four houses of different shapes and colors line a dock where a boat is anchored](images/colorful-houses.jpg)

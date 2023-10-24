@@ -1,7 +1,3 @@
-![Birkbeck, University of London](../../lectures/images/birkbeck-logo.jpg)
-
-Web Development and User Experience | Coding Sessions | Joseph Muller
-
 # Coding workshop 1: Basic HTML
 
 ## About workshops
