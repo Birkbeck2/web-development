@@ -1,4 +1,4 @@
-![Birkbeck, University of London](lectures/images/birkbeck-logo.jpg)
+![Birkbeck, University of London](/birkbeck-logo.jpg)
 
 # Web Development and User Experience
 
