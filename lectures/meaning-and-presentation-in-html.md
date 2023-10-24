@@ -1,9 +1,3 @@
-![Birkbeck, University of London](images/birkbeck-logo.jpg)
-
-Web Development and User Experience | Coding Sessions | Joseph Muller
-
-[Previous](behind-the-scenes-html.md) | [All](README.md) | [Next](workshop-2.md)
-
 # Meaning and presentation in HTML
 
 ![An optical illusion in which grass seems to form a sphere even as it lies in the middle of a public square](images/illusion-hester.jpg)

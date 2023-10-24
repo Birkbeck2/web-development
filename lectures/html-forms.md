@@ -1,9 +1,3 @@
-![Birkbeck, University of London](images/birkbeck-logo.jpg)
-
-Web Development and User Experience | Coding Sessions | Joseph Muller
-
-[Previous](will-it-work-using-sandboxes-to-test-code.md) | [All](README.md) | [Next](html-page-structures.md)
-
 # HTML forms
 
 So far we have covered how to present information on a webpage.

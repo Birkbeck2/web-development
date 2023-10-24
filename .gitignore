@@ -4,6 +4,8 @@ submission
 autograder/results/
 *.zip
 results.json
+.vitepress/cache
+.vitepress/dist
 
 # Logs
 logs

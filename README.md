@@ -1,96 +1,20 @@
-![Birkbeck, University of London](images/birkbeck-logo.jpg)
+![Birkbeck, University of London](lectures/images/birkbeck-logo.jpg)
 
 # Web Development and User Experience
 
 This repository holds lecture notes, code examples, workshops, and
 auto-markers for the corresponding MA module.
 
-We try not to duplicate information here that you can get in Moodle.
-Please check Moodle first each week, as we’ll send you back here if
-needed.
-
 ## Getting started
 
 Are you new to GitHub? You may find what you need in the [GitHub Documentation](https://docs.github.com/).
 
-## Week 2
-### Coding session 1 - Getting started with coding and HTML
-#### [Markup and why computers need it](markup-and-why-computers-need-it.md)
+## Viewing lectures and workshops
 
-> markup, computers vs. people, HTML
-
-#### [HTML basics](html-basics.md)
-
-> tag, element, `<`, `>`, `/`, `html`, `head`, `body`, `title`, `section`, `h1`, `h2`, `h3`, `p`, `em`, `strong`
-
-#### [How the internet (really the web) works](how-the-internet-works.md)
-
-> URL, `/`, scheme, host, path, browser tools, HTTP request and response
-
-#### [Code editors and environments](code-editors-and-environments.md)
-
-> code editor, development environment, running HTML code, file organization, inspecting code
-
-#### [Workshop 1](workshop-1.md)
-
-## Week 3
-### Coding session 2 - Boosting HTML
-#### [HTML attributes](html-attributes.md)
-
-> variable, attribute, `=`, `"`, attribute name, attribute value, `lang`
-
-#### [HTML links, images, and file organization](html-links-images-and-file-organization.md)
-
-> images, links, `a`, `href`, `img`, `src`, `alt`, `width`, `height`, absolute vs. relative URL, URL fragment, file organization, `index.html`
-
-#### [Behind-the-scenes HTML](behind-the-scenes-html.md)
-
-> social media, search results, `head`, `meta`, `name`, `content`, `title`, `description`, `og:image`, `twitter:image`, character encoding, `charset`, `utf-8`, `style`, `src`, `link`, `rel`, `href`, `script`, `defer`, comments, `<!-- -->`, `hidden`
-
-#### [Meaning and presentation in HTML](meaning-and-presentation-in-html.md)
-
-> meaning, presentation, semantic HTML, HTML history, `table`, `br`, `p`, `strong`, `b`, `em`, `i`, `figure`, `img`, `figcaption`, `ul`, `ol`, `li`, `div`, `span`, `header`, `nav`, `main`, `aside`, `article`, `section`, `footer`
-
-#### [Workshop 2](workshop-2.md)
-
-## Week 8
-### Coding session 5 - CSS boost 2
-
-#### [Will it work? Using sandboxes to run code experiments](will-it-work-using-sandboxes-to-test-code.md)
-> sandboxes
-
-### Coding session 6 - Responsive Web Design
-
-## Week 9
-### Coding session 7 - HTML forms and page structures
-
-#### [HTML forms](html-forms.md)
-> HTTP request methods, `form`, `method`, `action`, `type`, `label`, `for`, `input`, `name`, `button`
-
-#### [HTML page structures](html-page-structures.md)
-> layouts, `body`, `header`, `nav`, `main`, `article`, `section`, `footer`, `ul`
-
-#### [Using Git and GitHub with VS Code](using-git-and-github.md)
-> Git, GitHub, code editor
-
-#### [Workshop 7](workshop-7.md)
-
-## Week 10
-### Coding session 8 - CANCELLED
-
-## Week 11
-### Coding session 9 - Introduction to Programming with JavaScript
-
-#### [JavaScript setup](javascript-setup.md)
-> programming language, running JavaScript code, `console.log`, comments, `//`, `/* */`
-
-#### [JavaScript values and data types](javascript-values-and-data-types.md)
-> values, data types, strings, `'`, `"`, escaping, `\`, numbers, booleans, `true`, `false`, `undefined`, `null`, `typeof`
-
-#### [JavaScript evaluation with operators](javascript-evaluation-with-operators.md)
-> operators, `+`, `==`, `!=`, `<`, `>`, `-`, `/`, `*`
-
-#### [Workshop 9](https://github.com/Birkbeck2/wdux2223-workshop-js-values)
+Try out the
+[https://birkbeck2.github.io/web-development](https://birkbeck2.github.io/web-development)
+website where you can search and read the content more easily than via
+GitHub.
 
 ## Running auto-markers (for lecturers)
 
@@ -119,7 +43,7 @@ subfolders. The test utils expect this structure:
             └─ road-users.html                    // this file will be tested too
 ```
 
-Here are all the instructor repositories:
+Here are all the instructor repositories, which are kept private so that students cannot see them:
 
 - [web-development-basic-html-instructor](https://github.com/Birkbeck2/web-development-basic-html-instructor)
 
@@ -149,6 +73,10 @@ has built the testing environment successfully.
 
 Lectures are copyright Birkbeck, University of London. Pictures and
 workshop documents are copyright Birkbeck, University of London unless
-otherwise stated where they are referenced in the lectures.
+otherwise stated.
 
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Licence" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+Original content is licensed under the
+[Creative Commons Attribution 4.0 International
+License](http://creativecommons.org/licenses/by/4.0/).
+Original code is licensed under the [GNU Affero General Public License
+3.0](LICENSE.md).

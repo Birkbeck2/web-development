@@ -1,9 +1,3 @@
-![Birkbeck, University of London](images/birkbeck-logo.jpg)
-
-Web Development and User Experience | Coding Sessions | Joseph Muller
-
-[Previous](using-git-and-github.md) | [All](README.md) | [Next](javascript-setup.md)
-
 # Coding workshop 7
 
 In this workshop we'd like you to get some practice with basic Git and GitHub operations, make a simple contact form, and then use the rest of the time working on your assessment website.

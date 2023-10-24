@@ -1,9 +1,3 @@
-![Birkbeck, University of London](images/birkbeck-logo.jpg)
-
-Web Development and User Experience | Coding Sessions | Joseph Muller
-
-[Previous](html-basics.md) | [All](README.md) | [Next](code-editors-and-environments.md)
-
 # How the internet (actually the web) works
 
 ![The front cover of a picture book called Internet (Scholastic: 2000) showing children surfing on computer keyboards and holding mice](images/internet-scholastic.jpg)

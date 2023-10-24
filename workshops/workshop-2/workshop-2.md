@@ -1,9 +1,3 @@
-![Birkbeck, University of London](images/birkbeck-logo.jpg)
-
-Web Development and User Experience | Coding Sessions | Joseph Muller
-
-[Previous](meaning-and-presentation-in-html.md) | [All](README.md) | [Next](will-it-work-using-sandboxes-to-test-code.md)
-
 # Coding workshop 2
 
 In this workshop you have a chance to practice marking up a full web page with metadata, pictures, and external links.
@@ -16,7 +10,7 @@ If there's time, you'll be asked to cure a case of divitis.
 
 1. We have provided the text and images for an article about sea serpents in the 16th century. Download it by visiting the [olaus-magnus.zip on GitHub](workshop-files/workshop-2/olaus-magnus.zip). The download button is hard to spot - it's on the far right:
 
-    ![The GitHub interface for a zip file with Download button](images/github-zip.png)
+    ![The GitHub interface for a zip file with Download button](../../lectures/images/github-zip.png)
 
 2. Unzip or extract the files in your preferred coding folder. Using your knowledge of website file organization, get the files organized in the appropriate folders.
 

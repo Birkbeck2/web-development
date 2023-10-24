@@ -1,9 +1,3 @@
-![Birkbeck, University of London](images/birkbeck-logo.jpg)
-
-Web Development and User Experience | Coding Sessions | Joseph Muller
-
-[Previous](workshop-2.md) | [All](README.md) | [Next](html-forms.md)
-
 # Will it work? Using sandboxes to run code experiments
 
 When you get stuck, there are many ways to get unstuck. You can search online, review readings and lecture notes, ask a colleague, or sleep on it to see if fresh eyes will help you see things differently.
@@ -28,7 +22,9 @@ For example, if you are testing CSS or JavaScript, make an empty `styles.css`, a
 
 ![A sandbox folder in VS Code with template files](images/sandbox-template-vs-code.png)
 
-You can make your own, or you can use [my sandbox on GitHub](sandbox) and modify it to suit your needs.
+You can make your own, or you can use
+[my sandbox on GitHub](https://github.com/Birkbeck2/web-development/tree/main/sandbox/template)
+and modify it to suit your needs.
 
 ## Running experiments
 

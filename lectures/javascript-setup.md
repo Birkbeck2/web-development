@@ -1,9 +1,3 @@
-![Birkbeck, University of London](images/birkbeck-logo.jpg)
-
-Web Development and User Experience | Coding Sessions | Joseph Muller
-
-[Previous](workshop-7.md) | [All](README.md) | [Next](javascript-values-and-data-types.md)
-
 # JavaScript setup
 
 ## JavaScript as a programming language
