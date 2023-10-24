@@ -1,4 +1,5 @@
 <script setup>
+  import VPLink from '../../node_modules/vitepress/dist/client/theme-default/components/VPLink.vue'
   const props = defineProps({
     meetings: Object
   })
@@ -8,7 +9,7 @@
   <div v-for="meeting of meetings.data">
     <h2>{{ meeting.text }}</h2>
     <div v-for="item of meeting.items">
-      <h3><a :href="item.link">{{ item.text }}</a></h3>
+      <h3><VPLink :href="item.link">{{ item.text }}</VPLink></h3>
       <p v-if="item.lecturer">{{ item.lecturer }}</p>
       <p v-if="item.concepts">Concepts: {{ item.concepts }}</p>
       <p v-if="item.code">Code: <code>{{ item.code }}</code></p>
