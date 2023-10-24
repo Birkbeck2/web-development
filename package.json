@@ -44,5 +44,6 @@
       "tailwindcss": {},
       "autoprefixer": {}
     }
-  }
+  },
+  "packageManager": "pnpm@8.9.2"
 }
