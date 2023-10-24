@@ -9,11 +9,8 @@ hero:
     light: /birkbeck-logo-transparent-white-with-black-around.png
   actions:
     - theme: brand
-      text: Lectures
-      link: /lectures/index.html
-    - theme: alt
-      text: Workshops
-      link: /workshops/index.html
+      text: Outline
+      link: /outline.html
 
 features:
   - title: What is this website?
