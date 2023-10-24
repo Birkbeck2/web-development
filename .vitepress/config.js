@@ -27,7 +27,7 @@ export default defineConfig({
       }
     ],
     footer: {
-      message: 'CC BY 4.0',
+      message: 'Content CC BY 4.0 | Code AGPL 3.0',
       copyright: 'Copyright Birkbeck, University of London'
     }
   }

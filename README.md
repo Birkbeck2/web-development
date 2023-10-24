@@ -71,12 +71,10 @@ has built the testing environment successfully.
 
 Lectures are copyright Birkbeck, University of London. Pictures and
 workshop documents are copyright Birkbeck, University of London unless
-otherwise stated where they are referenced in the lectures.
+otherwise stated.
 
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
-  <img
-    alt="Creative Commons Licence"
-    src="https://i.creativecommons.org/l/by/4.0/88x31.png" />
-</a>
-<br>
-This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+Original content is licensed under the
+[Creative Commons Attribution 4.0 International
+License](http://creativecommons.org/licenses/by/4.0/).
+Original code is licensed under the [GNU Affero General Public License
+3.0](LICENSE.md).
