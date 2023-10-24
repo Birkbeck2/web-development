@@ -12,8 +12,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Lectures', link: '/lectures/index.html' },
-      { text: 'Workshops', link: '/workshops/index.html' },
+      { text: 'Outline', link: '/outline.html' },
       { text: 'Moodle', link: 'https://moodle.bbk.ac.uk/my/' },
       { text: 'Gradescope', link: 'https://www.gradescope.eu/' }
     ],
