@@ -47,9 +47,9 @@ function loadGradescopeMetadata (submissionDir) {
 
 function identifyCoder (submission, metadata) {
   const folder = submission.split(sep).pop()
-  console.info(folder)
+  // console.info(folder)
   if (metadata && metadata[folder]) {
-    console.info(metadata[folder])
+    // console.info(metadata[folder])
     return metadata[folder][':submitters'][0][':name']
   } else {
     if (folder.includes('-')) {
@@ -98,7 +98,7 @@ export async function validateHtml (filePath) {
     logValidationErrors(result, filePath)
     return result
   } catch (error) {
-    console.error(error)
+    console.info(error)
   }
 }
 
