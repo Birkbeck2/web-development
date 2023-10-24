@@ -7,6 +7,7 @@ export default defineConfig({
   lang: 'en-GB',
   lastUpdated: true,
   description: 'Course materials for Web Development and User Experience, a module in the Birkbeck School of Creative Arts, Culture and Communication',
+  base: '/web-development/',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
