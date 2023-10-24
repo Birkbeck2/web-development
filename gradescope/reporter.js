@@ -13,6 +13,9 @@ export default class GradescopeReporter extends JsonReporter {
         total += 1
         report.testResults[resultSet].assertionResults[test].name = result.fullName
         delete report.testResults[resultSet].assertionResults[test].fullName
+        if (result.title === 'HTML is valid') {
+          report.testResults[resultSet].assertionResults[test].visibility = 'visible'
+        }
         report.tests.push(report.testResults[resultSet].assertionResults[test])
       }
     }
