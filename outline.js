@@ -1,5 +1,15 @@
 export const outline = [
   {
+    text: 'Basic HTML',
+    items: [
+      {
+        text: 'Workshop on basic HTML',
+        link: '/workshops/basic-html/index.html',
+        lecturer: 'Helena Wee'
+      }
+    ]
+  },
+  {
     text: 'Semantic HTML',
     items: [
       {
