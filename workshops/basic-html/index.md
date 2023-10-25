@@ -122,8 +122,3 @@ The documents referenced in this workshop are partially reproduced in this repos
 “Storing your fruit and veg,” in *Welcome to OrganicLea’s box scheme: Fresh, local, organic fruit and veg in Waltham Forest* (OrganicLea).
 
 “impatient” in *Merriam-Webster’s Dictionary of English Usage* (Springfield, MA: Merriam-Webster, 1994).
-
-## Rights
-Copyright Birkbeck, University of London
-
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Licence" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
