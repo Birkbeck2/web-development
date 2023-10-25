@@ -12,19 +12,21 @@ What if you want to include images, videos, or audio? What if you want links, bu
 
 HTML provides a basis for all these things as well, and the key to unlocking them is HTML *attributes*.
 
-## An aside on variables in programming
+## Variables
 
 To understand attributes, you need to know what variables are in programming.
 
-The *variable* is a fundamental concept in computer programming. A variable is a unit that lets you give a name to a specific piece of data and refer to it by its name throughout your code, rather than typing out the data again every time.
+A *variable* in computer programming is like a label for a container of information. Here’s an example where the information “COLORFUL HOUSE” is being tied to the variable `pictureName`.
 
-Say you're making a website about birds, but you don't know what the eventual bird names will be, and you want to make it easy to add new bird names as you change your website.
+```
+pictureName="COLORFUL HOUSE"
+```
 
-Rather than writing the name of each bird every time you need it in your code, you code a variable called `bird_name`.
+When you write label in your code and tie it to the information, we say you “declare” the variable.
 
-Then you give that variable the value of 'Stork' on your page about storks, and you define it as 'Heron' on your page about herons.
+The label is called the variable *name*, and the information is called the variable *value*.
 
-In both cases, you can just write `bird_name` in your code instead of writing the actual bird name. Variables give you flexibility and reduce busywork.
+This is often useful because the computer is expecting a specific variable. If you just wrote “COLORFUL HOUSE” in your code, the computer would not know what to do with that information. It only knows what to do with the value when you pass it an expected name.
 
 ## How attributes work
 
@@ -46,68 +48,107 @@ With attributes, you can explicitly say what languages are being used. Here's ho
 <p lang="nl-NL">De bladeren vallen.</p>
 ```
 
-## Syntax
-We've seen some of this syntax before--opening and closing tags, each with a name surrounded by angle brackets, and a slash in the closing tag.
+When this information is provided, the computer knows what language is being used, so it can read the text aloud for people using screen readers. It can also populate search engine results properly.
 
-The new syntax for attributes involves an attribute name inside the opening tag, after the tag name
+## Visual rendering
+
+How do attributes affect the visual appearance of the webpage?
+
+Usually they don’t, except when used with CSS. The `lang` attribute, for example, does not affect the look of the page at all.
+
+![The words “leaves are falling” on a white background](images/leaves-are-falling-p.png)
+
+## Syntax
+
+Which pieces of this code are new?
+
+```html
+<p lang="nl-NL">De bladeren vallen.</p>
+```
+
+We have seen `<` and `>` and `/` before. The new syntax for attributes involves an attribute name inside the opening tag, after the tag name:
 
 ```html
 lang
 ```
 
-and an attribute value, wrapped in quotation marks
+And an attribute value, wrapped in quotation marks:
 
 ```html
 "en-GB"
 "nl-NL"
 ```
 
-connected with an equals sign
+Connected with an equals sign:
 
 ```html
 =
 ```
 
-## Multiple attributes, multiple values
-You can set multiple attributes for a single element. Separate them with a space:
+## Common attributes
+
+### IDs
+
+The `id` attribute uniquely identifies the element.
 
 ```html
-<p lang="en-GB" id="1" class="body-text">Leaves are falling.</p>
-<p lang="nl-NL" id="2" class="body-text">De bladeren vallen.</p>
+<p id="p1">Leaves are falling.</p>
+<p id="p2">De bladeren vallen.</p>
 ```
 
-You can set multiple values for certain attributes, such as `class`, which has no restrictions on how you form the value and is used extensively in concert with CSS code:
+Like with many attributes, there are rules for `id` values:
+1. You should always start an `id` value with a letter
+2. There should not be any spaces.
+3. It is best to use underscores if you want to separate parts.
+4. Each `id` value should be unique within the webpage.
 
 ```html
-<p lang="en-GB" class="body-text slytherin original">Leaves are falling.</p>
-<p lang="nl-NL" class="body-text slytherin translation">De bladeren vallen.</p>
+<p id="para 2">Leaves are falling.</p>  // [!code error]
+<p id="3">Leaves are falling.</p>       // [!code error]
+<p id="para_4">Leaves are falling.</p>
+<p id="para_4">Leaves are falling.</p>      // [!code error]
 ```
 
-## Restrictions on attribute names and values
-With HTML, there are some limitations on the attribute values and names you can use:
+### Classes
 
-1. You can only use attributes belonging to a prescribed set for each element.
-
-    For example, you can set the `lang` attribute on a `p` element, but you cannot set the `onplay` attribute on a `p` element, becuase `onplay` is for giving instructions about what should happen when video and audio elements are played. It's not for text.
-
-2. Sometimes there are limitations on the *value* to which you can set each attribute.
-
-    For example, the `lang` attribute has to have a language code according to an [international standard called BCP 47](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang).
-
-## Attribute inheritance
-When you declare an attribute, it goes into effect for that element and its children, unless the variable is overwritten on a child element.
+The `class` attribute is used to put elements in categories for use in CSS code.
 
 ```html
-<section lang="en-GB">
-  <h2>Autumn</h2>
-  <p>Leaves are falling.</p>
-  <p lang="nl-NL">De bladeren vallen.</p>
-</section>
+<p class="body-text">Leaves are falling.</p>
 ```
 
-In this case, the computer knows the `h1` and first `p` are in English, because they are children of the `section` where the language is declared. The attribute is *inherited* from the parent element.
+You can put the same class on more than one element.
 
-But the computer also knows that the second `p` is in Dutch. It inherited an English-language attribute as a child of `section`, just like the other `p`, but then it got overwritten by the Dutch-language attribute.
+```html
+<p class="body-text">Leaves are falling.</p>
+<p class="body-text">Leaves are falling.</p>
+```
+
+You can put multiple classes on a single element, separated by a space inside the quotation marks.
+
+```html
+<p class="body-text first-para">Leaves are falling.</p>
+<p class="body-text last-para">Leaves are falling.</p>
+```
+
+### Links
+
+Links in HTML are created by anchoring a URL to a bit of text:
+
+![The browser renders the anchor tag by turning wrapped text blue and underlining it](images/leaf-wikipedia-a-href.png)
+
+This is done with the `a` element (short for “anchor”) and the `href` attribute (short for “hypertext reference”).
+
+```html{3-5}
+<p>Leaves are falling.</p>
+<p>For more information, see
+  <a href="https://en.wikipedia.org/wiki/Leaf">
+    “Leaf” on Wikipedia
+  </a>.
+</p>
+```
+
+Notice that you have to put the text you want to be linked after the opening tag `<a>` and before the closing tag `</a>`.
 
 ## Check your understanding
 1. Would this work?
@@ -116,26 +157,35 @@ But the computer also knows that the second `p` is in Dutch. It inherited an Eng
     <p>Les parisiens</p lang:Francais>
     ```
 
-2. What language does the computer think the second `p` is in?
+2. What would this look like in the browser? What would happen when you click on it?
 
     ```html
-    <p lang="en-GB">Leaves are falling.</p>
-    <p>De bladeren vallen</p>
+    <a href="My website">
+      https://example.org
+    </a>
     ```
 
-3. If I wanted to declare the entire language of an entire document, could I do it like this?
+3. Are there any errors in this HTML?
 
     ```html
     <!DOCTYPE html>
     <html lang="en-GB">
-        <head>
-            <title>Leaves</title>
-        </head>
-        <body>
-            (other elements ... blah blah)
-        </body>
+      <head>
+        <title>Leaves</title>
+      </head>
+      <body>
+        <h1 id="heading">Leaves</h1>
+        <p id:"reference" class="body-text has-link">
+          Leaves are <a> href="https://example.org" falling<a>.
+        </p>
+        <p id="heading" class=body-text normal">
+          Leaves are falling.
+        </p>
+      </body>
     </html>
     ```
+
+Try fixing any errors in the examples above.
 
 ## References
 
@@ -144,8 +194,3 @@ But the computer also knows that the second `p` is in Dutch. It inherited an Eng
 “The p element,” HTML: The Living Standard, Edition for Web Developers, last updated October 14, 2022, [https://html.spec.whatwg.org/dev/grouping-content.html#the-p-element](https://html.spec.whatwg.org/dev/grouping-content.html#the-p-element).
 
 *HTML: The Living Standard: Edition for Web Developers,* last updated September 28, 2022, https://html.spec.whatwg.org/dev/.
-
-## Rights
-Copyright Birkbeck, University of London
-
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Licence" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
