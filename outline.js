@@ -40,11 +40,11 @@ export const outline = [
         concepts: 'HTTP request methods, front end and back end',
         code: 'form, method, action, type, label, for, input, name, button'
       },
-      {
-        text: 'Workshop on semantic HTML',
-        link: '/workshops/workshop-2/workshop-2.html',
-        lecturer: 'Joseph Muller'
-      },
+      // {
+      //   text: 'Workshop on semantic HTML',
+      //   link: '/workshops/workshop-2/workshop-2.html',
+      //   lecturer: 'Joseph Muller'
+      // },
       // {
       //   text: 'Will it work? Using sandboxes to run code experiments',
       //   link: '/lectures/will-it-work-using-sandboxes-to-test-code.html',
