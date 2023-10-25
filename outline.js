@@ -7,14 +7,14 @@ export const outline = [
         link: '/lectures/html-attributes.html',
         lecturer: 'Joseph Muller',
         concepts: 'variable, attribute, attribute name, attribute value',
-        code: '= " lang'
+        code: '= " lang id class a href'
       },
       {
-        text: 'HTML links, images, and file organization',
-        link: '/lectures/html-links-images-and-file-organization.html',
+        text: 'Images and other files in HTML',
+        link: '/lectures/images-and-other-files-in-html.html',
         lecturer: 'Joseph Muller',
-        concepts: 'images, links, URLs, absolute and relative paths, file organization',
-        code: 'a href img src alt width height index.html'
+        concepts: 'alt text, absolute and relative paths, files',
+        code: 'img src alt width height index.html'
       },
       {
         text: 'Behind-the-scenes HTML',
