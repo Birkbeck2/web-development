@@ -1,5 +1,6 @@
 <script setup>
   import VPLink from '../../node_modules/vitepress/dist/client/theme-default/components/VPLink.vue'
+  import slugify from 'slugify'
   const props = defineProps({
     meetings: Object
   })
@@ -7,7 +8,9 @@
 
 <template>
   <div v-for="meeting of meetings.data">
-    <h2>{{ meeting.text }}</h2>
+    <h2 :id="slugify(meeting.text)">
+      <a :href="'#'+slugify(meeting.text)">{{ meeting.text }}</a>
+    </h2>
     <div v-for="item of meeting.items">
       <h3><VPLink :href="item.link">{{ item.text }}</VPLink></h3>
       <p v-if="item.lecturer">{{ item.lecturer }}</p>
