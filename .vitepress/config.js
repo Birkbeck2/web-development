@@ -6,7 +6,6 @@ export default defineConfig({
   title: 'Web Development',
   lang: 'en-GB',
   lastUpdated: true,
-  head: [['link', { rel: 'icon', href: '/favicon-16x16.png' }]],
   description: 'Course materials for Web Development and User Experience, a module in the Birkbeck School of Creative Arts, Culture and Communication',
   base: '/web-development/',
   themeConfig: {
