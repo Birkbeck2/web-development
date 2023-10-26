@@ -62,7 +62,10 @@ function identifyCoder (submission, metadata) {
 
 export async function loadDoc (submission) {
   try {
-    return await JSDOM.fromFile(submission).then(dom => dom.window.document)
+    const options = {
+      resources: 'usable'
+    }
+    return await JSDOM.fromFile(submission, options).then(dom => dom.window.document)
   } catch (error) {
     const dom = new JSDOM('')
     return dom.window.document
