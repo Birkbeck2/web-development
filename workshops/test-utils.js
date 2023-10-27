@@ -1,15 +1,15 @@
 import { opendir } from 'node:fs/promises'
-import { join, sep } from 'node:path'
+import path from 'node:path'
 import { readFileSync } from 'node:fs'
 import { JSDOM } from 'jsdom'
-import { parse } from 'yaml'
+import yaml from 'yaml'
 
 const showValidationErrors = true
 
 async function * getDirectories (dir) {
   for await (const d of await opendir(dir)) {
     if (!d.name.startsWith('.')) {
-      const entry = join(dir, d.name)
+      const entry = path.join(dir, d.name)
       if (d.isDirectory()) yield entry
     }
   }
@@ -18,7 +18,7 @@ async function * getDirectories (dir) {
 export async function * walk (dir) {
   for await (const d of await opendir(dir)) {
     if (!d.name.startsWith('.')) {
-      const entry = join(dir, d.name)
+      const entry = path.join(dir, d.name)
       if (d.isDirectory()) yield * walk(entry)
       else if (d.isFile()) yield entry
     }
@@ -30,15 +30,15 @@ async function determineSubmissionDir (workshopDir) {
     await opendir('submission')
     return 'submission'
   } catch (error) {
-    return join(workshopDir, 'submission')
+    return path.join(workshopDir, 'submission')
   }
 }
 
 function loadGradescopeMetadata (submissionDir) {
-  const metadataFilename = join(submissionDir, 'submission_metadata.yml')
+  const metadataFilename = path.join(submissionDir, 'submission_metadata.yml')
   try {
-    const yaml = readFileSync(metadataFilename, 'utf8')
-    const metadata = parse(yaml)
+    const yamlMetadata = readFileSync(metadataFilename, 'utf8')
+    const metadata = yaml.parse(yamlMetadata)
     return metadata
   } catch (error) {
     console.info('No Gradescope metadata file')
@@ -46,7 +46,7 @@ function loadGradescopeMetadata (submissionDir) {
 }
 
 function identifyCoder (submission, metadata) {
-  const folder = submission.split(sep).pop()
+  const folder = submission.split(path.sep).pop()
   // console.info(folder)
   if (metadata && metadata[folder]) {
     // console.info(metadata[folder])
@@ -62,7 +62,10 @@ function identifyCoder (submission, metadata) {
 
 export async function loadDoc (submission) {
   try {
-    return await JSDOM.fromFile(submission).then(dom => dom.window.document)
+    const options = {
+      resources: 'usable'
+    }
+    return await JSDOM.fromFile(submission, options).then(dom => dom.window.document)
   } catch (error) {
     const dom = new JSDOM('')
     return dom.window.document
@@ -77,7 +80,9 @@ export async function * findSubmissions (workshopDir, submissionFile) {
     const coder = identifyCoder(submission, metadata)
     let fileFound = false
     for await (const filename of walk(submission)) {
-      if (filename.endsWith(submissionFile)) {
+      const base = path.parse(filename).base
+      if (base === submissionFile) {
+        // console.info(filename)
         fileFound = true
         yield [coder, filename]
       }

@@ -1,6 +1,6 @@
 # Custom
 demo
-submission
+workshops/**/submission
 autograder/results/
 *.zip
 results.json

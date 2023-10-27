@@ -34,17 +34,17 @@ export const outline = [
         code: 'table br p strong b em i figure img figcaption ul ol li div span header nav main aside article section footer'
       },
       {
-        text: 'HTML forms',
+        text: 'Forms',
         link: '/lectures/html-forms.html',
         lecturer: 'Joseph Muller',
         concepts: 'HTTP request methods, front end and back end',
-        code: 'form, method, action, type, label, for, input, name, button'
+        code: 'form, method, action, type, label, for, input, textarea, name, button'
       },
-      // {
-      //   text: 'Workshop on semantic HTML',
-      //   link: '/workshops/workshop-2/workshop-2.html',
-      //   lecturer: 'Joseph Muller'
-      // },
+      {
+        text: 'Workshop on semantic HTML',
+        link: '/workshops/semantic-html/index.html',
+        lecturer: 'Joseph Muller'
+      },
       // {
       //   text: 'Will it work? Using sandboxes to run code experiments',
       //   link: '/lectures/will-it-work-using-sandboxes-to-test-code.html',
