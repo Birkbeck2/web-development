@@ -24,11 +24,11 @@ export const outline = [
         code: 'table br p strong b em i figure img figcaption ul ol li div span header nav main aside article section footer'
       },
       {
-        text: 'HTML forms',
+        text: 'Forms',
         link: '/lectures/html-forms.html',
         lecturer: 'Joseph Muller',
         concepts: 'HTTP request methods, front end and back end',
-        code: 'form, method, action, type, label, for, input, name, button'
+        code: 'form, method, action, type, label, for, input, textarea, name, button'
       },
       {
         text: 'Workshop on semantic HTML',

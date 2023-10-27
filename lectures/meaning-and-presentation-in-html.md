@@ -211,7 +211,7 @@ You can mark up tables of data in HTML with a set of nested elements:
 
 Here is an example of some botanical data on Wikipedia.
 ```html
-<table class="wikitable sortable centre jquery-tablesorter">
+<table>
   <thead>
     <tr>
       <th>Image</th>
@@ -241,7 +241,7 @@ Here is an example of some botanical data on Wikipedia.
           width="64"
           height="38">
       </td>
-      <td><span class="anchor" id="Ciliate"></span>Ciliate</td>
+      <td><span id="Ciliate"></span>Ciliate</td>
       <td><i>Ciliata</i></td>
       <td>Fringed with hairs</td>
     </tr>

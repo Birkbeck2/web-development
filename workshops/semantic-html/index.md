@@ -51,12 +51,12 @@ with a nav bar, pictures, and external links.
     Trading places: migration and new businesses
 
     While settling in new nations, people who are refugees
-    or have migrated have been setting up and working in new businesses. 
+    or have migrated have been setting up and working in new businesses.
     This gallery shows stores, cafes, restaurant, bakeries and more bringing
     benefits to their communities.
 
     17 items
-    
+
     Romanian stores in Dublin
 
     Europeana Foundation
@@ -112,7 +112,8 @@ with a nav bar, pictures, and external links.
 
     - Specify a form method.
 
-    - Choose the appropriate element for each input type.
+    - Choose the appropriate HTML elements and attributes for
+      each piece of information in the form.
 
     - Give each input an appropriate name to serve as the variable name for the data.
 
