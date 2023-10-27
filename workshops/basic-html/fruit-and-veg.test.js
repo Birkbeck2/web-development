@@ -8,7 +8,7 @@ const submissionFile = 'fruit-and-veg.html'
 describe(submissionFile, async () => {
   for await (const [coder, submission] of findSubmissions(__dirname, submissionFile)) {
     describe(coder, async () => {
-      test('file named correctly', () => expect(submission).toBeTruthy())
+      test(`file named '${submissionFile}'`, () => expect(submission).toBeTruthy())
       const doc = await loadDoc(submission)
       // Turning this test off as it's week one
       // but students don't know about the lang attribute yet

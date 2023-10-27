@@ -6,33 +6,33 @@ What if you want to collect information from visitors? This could be text they t
 
 HTML provides the `form` element for all of these use cases.
 
-## GET and POST request methods
+## Get and post request methods
 
 To use forms effectively, you need to know about HTTP request methods, which are ways the client browser categorizes the requests it makes to the server.
 
-You've already been writing web pages that use one of these methods, the GET method.
+You've already been writing web pages that use one of these methods, the get method.
 
-The GET method is just for getting information from the server, not for sending information to the server.
+The get method is just for getting information from the server, not for sending information to the server.
 
-Whenever you ask a webpage to load for the first time, the browser sends a GET request.
+Whenever you ask a webpage to load for the first time, the browser sends a get request.
 
-Another example of a GET method: you have a button that filters down a list of baking recipes by some aspect of the recipe, like whether it has cinnamon. This doesn't change any data on the server, it just asks the server to only send back data for cinnamon-related recipes to populate the HTML in the browser.
+Another example of a get method: you have a button that filters down a list of baking recipes by some aspect of the recipe, like whether it has cinnamon. This doesn't change any data on the server, it just asks the server to only send back data for cinnamon-related recipes to populate the HTML in the browser.
 
 You can inspect the method in the network activity pane of the browser.
 
-![The inspector pane of Firefox showing a GET request](images/get-method-network-activity.png).
+![The inspector pane of Firefox showing a get request](images/get-method-network-activity.png).
 
-By contrast, the POST method sends data to the server, resulting in a change on the server that persists beyond the response to the client.
+By contrast, the post method sends data to the server, resulting in a change on the server that persists beyond the response to the client.
 
-For example, if a user signs up for an account, the data is sent via a POST request and the server stores the information for later logins.
+For example, if a user signs up for an account, the data is sent via a post request and the server stores the information for later logins.
 
-If the user buys something, that's another POST request, because the server has to remember what they ordered, when it's supposed to be sent, and how they are going to pay for it.
+If the user buys something, that's another post request, because the server has to remember what they ordered, when it's supposed to be sent, and how they are going to pay for it.
 
-![You can see POST requests happen in the network activity tab of your browser inspector](images/post-method-network-activity.png).
+![You can see post requests happen in the network activity tab of your browser inspector](images/post-method-network-activity.png).
 
 ### Check your understanding
-1. If I like or comment on something on social media, does that use a GET or POST method?
-2. If I look up some information on a government website, does that use GET or POST?
+1. If I like or comment on something on social media, does that use a get or post method?
+2. If I look up some information on a government website, does that use get or post?
 
 <!--
 1. post, probably
@@ -72,7 +72,7 @@ Use the `method` attribute on the `form` element to say which request method to 
 <form method="post"></form>
 ```
 
-For the birthday form above, we need `post` (or `POST`--it's case-insensitive) because we are sending the user's name and birthday.
+For the birthday form above, we need `post` because we are sending the user's name and birthday.
 
 The `action` attribute tells the browser what URL to send the data to. It can be relative or absolute. If you leave it out, the data will be returned to the same URL as the form page.
 

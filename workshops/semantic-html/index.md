@@ -114,9 +114,11 @@ with a nav bar, pictures, and external links.
 
     - Choose the appropriate element for each input type.
 
+    - Give each input an appropriate name to serve as the variable name for the data.
+
     - Make sure each input has a label that is fully accessible.
 
-    - Make sure the submit button submits the form.
+    - Include a button for submitting the form with the appropriate markup.
 
 ## Start working on the HTML for your portfolio website (if time)
 

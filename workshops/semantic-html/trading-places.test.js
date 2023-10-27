@@ -2,7 +2,7 @@
 
 import { describe, expect, test } from 'vitest'
 import { findSubmissions, validateHtml, loadDoc } from '../test-utils.js'
-import { parse, isAbsolute } from 'node:path'
+import path from 'node:path'
 import { readFileSync } from 'node:fs'
 import url from 'node:url'
 import { createHash } from 'node:crypto'
@@ -13,7 +13,7 @@ const submissionFile = 'trading-places.html'
 describe(submissionFile, async () => {
   for await (const [coder, submission] of findSubmissions(__dirname, submissionFile)) {
     describe(coder, async () => {
-      test('file named correctly', () => expect(submission).toBeTruthy())
+      test(`file named '${submissionFile}'`, () => expect(submission).toBeTruthy())
       const doc = await loadDoc(submission)
       test('HTML is valid', async () => {
         const result = await validateHtml(submission)
@@ -65,7 +65,7 @@ describe(submissionFile, async () => {
         const imgs = doc.querySelectorAll('img')
         expect(Array.from(imgs).length).toBeGreaterThan(0)
         Array.from(imgs).forEach(img => {
-          const pathObj = parse(img.getAttribute('src'))
+          const pathObj = path.parse(img.getAttribute('src'))
           expect(pathObj.dir.length).toBeGreaterThan(1)
         })
       })
@@ -73,7 +73,7 @@ describe(submissionFile, async () => {
         const imgs = doc.querySelectorAll('img')
         expect(Array.from(imgs).length).toBeGreaterThan(0)
         Array.from(imgs).forEach(img => {
-          expect(isAbsolute(img.getAttribute('src'))).toBeFalsy()
+          expect(path.isAbsolute(img.getAttribute('src'))).toBeFalsy()
         })
       })
       test('links and filepaths are well formed', () => {
@@ -87,8 +87,6 @@ describe(submissionFile, async () => {
         Array.from(as).forEach(a => {
           const href = a.getAttribute('href')
           expect(href.length).toBeGreaterThan(0)
-          console.log(href)
-          console.log(href.length)
         })
       })
       test('images load correctly', async () => {
