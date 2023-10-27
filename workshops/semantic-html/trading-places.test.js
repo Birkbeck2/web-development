@@ -25,7 +25,9 @@ describe(submissionFile, async () => {
       })
       test('top page region uses semantic element', () => {
         const header = doc.querySelector('body header')
-        expect(header.textContent.toLowerCase()).toContain('collections')
+        const nav = doc.querySelector('body nav')
+        const headerAndNav = header.textContent + nav.textContent
+        expect(headerAndNav.toLowerCase()).toContain('collections')
       })
       test('middle page region uses semantic element', () => {
         const main = doc.querySelector('body main')
