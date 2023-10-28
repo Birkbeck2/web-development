@@ -3,6 +3,7 @@ import path from 'node:path'
 import { readFileSync } from 'node:fs'
 import { JSDOM } from 'jsdom'
 import yaml from 'yaml'
+import AdmZip from 'adm-zip'
 
 const showValidationErrors = true
 
@@ -16,14 +17,28 @@ function onGradescope () {
   }
 }
 
+async function extractZipAt (dir) {
+  for await (const d of await opendir(dir)) {
+    if (!d.name.startsWith('.') && d.name.endsWith('.zip')) {
+      const zip = new AdmZip(path.join(dir, d.name))
+      const zipBaseWithoutExt = path.parse(d.name).base.replace(path.extname(d.name), '')
+      zip.extractAllTo(path.join(dir, zipBaseWithoutExt), true)
+    }
+  }
+}
+
 async function * yieldSubmissions (dir) {
   if (onGradescope()) {
+    extractZipAt(dir)
     yield dir
   } else {
     for await (const d of await opendir(dir)) {
       if (!d.name.startsWith('.')) {
         const entry = path.join(dir, d.name)
-        if (d.isDirectory()) yield entry
+        if (d.isDirectory()) {
+          extractZipAt(entry)
+          yield entry
+        }
       }
     }
   }

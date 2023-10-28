@@ -114,7 +114,7 @@ With these paths, the host is different from the HTML document’s host, so you 
 Paths should not include spaces:
 
 ```html
-<img src="Finalised Images /My Special Leaf.jpg" // [!code error]
+<img src="Finalised Images /My Special Leaf.jpg"> // [!code error]
 ```
 
 Why? This is an age-old requirement in computing. From the early days, computers tended to read spaces as hard boundaries between things. We want the computers processing our HTML to think of each path as a single thing.
@@ -122,7 +122,7 @@ Why? This is an age-old requirement in computing. From the early days, computers
 Use dashes to separate words:
 
 ```html
-<img src="Finalised-Images/My-Special-Leaf.jpg"
+<img src="Finalised-Images/My-Special-Leaf.jpg">
 ```
 
 Why? Why not underscores like `My-Special-Leaf.jpg`? This one has to do with search optimization. Search engines will break apart the path on `-` and process each word as a potential search term.
@@ -130,7 +130,7 @@ Why? Why not underscores like `My-Special-Leaf.jpg`? This one has to do with sea
 Paths should use lowercase letters, ideally:
 
 ```html
-<img src="images/my-special-leaf.jpg"
+<img src="images/my-special-leaf.jpg">
 ```
 
 Why? It is not a rule, but it helps a lot, because it reduces the possibility of mistakes causing bugs in your code. What if you type an uppercase letter on a file name and a lowercase one in the path? The path will break.
@@ -156,9 +156,32 @@ project
 
 This is not the only way to organize your files.
 
-The only general rule is to group like things with like. If you have a lot of files of the same kind, whether that’s images, or components, or style sheets, they should be together in a subfolder.
+The only general rule is to group like things with like. If you have
+a lot of files of the same kind, whether that’s images, or components,
+or style sheets, they should be together in a subfolder.
 
-What is `index.html`, by the way? It is a conventional name for the entry point to a website. For JavaScript-powered sites, it is often `index.js`.
+What is `index.html`, by the way? It is a conventional name for the
+entry point to a website. For JavaScript-powered sites, it is often `index.js`.
+
+## Zip files
+
+Because the relations between the files are essential, when you send
+or receive a website’s files, you need to do so at the project level.
+That way you maintain the exact layout and all the paths still work.
+
+You often cannot upload, download, or attach a folder, but you
+can create a ZIP file, which is a container for a bunch of files that can
+be moved around and treated like a single file, with the extension `.zip`.
+
+Generally you can make a ZIP like this:
+
+<video controls>
+<source src="images/saving-zip-file-homework-2.webm" alt="Creating a zip file on Ubuntu">
+</video>
+
+1) Select all the files and folders you want
+2) Right-click, then “Send to compressed folder” or “Compress”
+3) Name it
 
 ## Check your understanding
 

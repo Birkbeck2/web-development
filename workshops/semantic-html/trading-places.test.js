@@ -75,6 +75,7 @@ describe(submissionFile, async () => {
         expect(imgsWithHeightAndWidth).toHaveLength(3)
       })
       test('images have correct dimensions', () => {
+        expect(imgsWithHeightAndWidth).toHaveLength(3)
         imgsWithHeightAndWidth.forEach(img => {
           const imgUrl = new url.URL(img.src)
           const dimensions = sizeOf(imgUrl.pathname)
