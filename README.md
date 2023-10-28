@@ -24,7 +24,7 @@ Vue.js.
 
 The tests are located in their corresponding workshop files, and there’s
 one `test-utils.js` module that helps you run the tests on any
-number of example or student repositories found in `answers`
+number of example or student repositories found in `submission`
 subfolders. The test utils expect this structure:
 
 ```
@@ -47,11 +47,12 @@ Here are all the instructor repositories, which are kept private so that student
 
 - [web-development-basic-html-instructor](https://github.com/Birkbeck2/web-development-basic-html-instructor)
 
-To run tests on all the matching files in `answers` subfolders, clone the repository, install dependencies, and run the test command:
+To run tests on all the matching files in subfolders of `submission`, clone
+the repository, install dependencies, and run the test command:
 
 ```shell
-npm install
-npm run test
+pnpm install
+pnpm run test
 ```
 
 You should then see a summary in the terminal with the test results:
@@ -60,14 +61,14 @@ You should then see a summary in the terminal with the test results:
 
 To run tests on
 [Gradescope](https://gradescope-autograders.readthedocs.io/en/latest/),
-create a zip file for each workshop using this script:
+generate zip files for the workshops using this script:
 
 ```shell
-npm run zip
+pnpm run zip
 ```
 
-Then upload the zip file to the Gradescope assignment and check that it
-has built the testing environment successfully.
+Then upload the correct zip file to the Gradescope assignment and check
+that it has built the testing environment successfully.
 
 ## Rights
 
