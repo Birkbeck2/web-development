@@ -34,11 +34,11 @@ describe(submissionFile, async () => {
         expect(psWithConsiderate).toHaveLength(1)
       })
       test('strong or b used', () => {
-        const strongOrB = doc.querySelector('body p strong') ?? doc.querySelector('body > p > b')
+        const strongOrB = doc.querySelector('body p strong, body p b')
         expect(strongOrB).toBeTruthy()
       })
       test('one strong or b includes correct text', () => {
-        const strongOrB = doc.querySelectorAll('body p strong') ?? doc.querySelectorAll('body > p > b')
+        const strongOrBs = doc.querySelectorAll('body p strong, body p b')
         const strongOrBsWithLeafy = Array.from(strongOrB).filter(strong => {
           return strong.textContent.toLowerCase().includes('leafy')
         })

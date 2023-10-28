@@ -1,7 +1,7 @@
 // @vitest-environment jsdom
 
 import { describe, expect, test } from 'vitest'
-import { findSubmissions, validateHtml, loadDoc } from '../test-utils.js'
+import { findSubmissions, validateHtml, loadDoc, hasUniqueAttribute } from '../test-utils.js'
 import path from 'node:path'
 import { readFileSync } from 'node:fs'
 import url from 'node:url'
@@ -38,72 +38,73 @@ describe(submissionFile, async () => {
         const footer = doc.querySelector('body footer')
         expect(footer.textContent.toLowerCase()).toContain('expertise')
       })
-      test('images have alt text', () => {
-        const imgs = doc.querySelectorAll('img')
-        const imgsWithAlt = Array.from(imgs).filter(img => img.alt)
-        expect(imgsWithAlt).toHaveLength(3)
-        imgsWithAlt.forEach(img => {
-          imgsWithAlt.forEach(otherImg => {
-            if (img !== otherImg) {
-              expect(img.alt).not.toEqual(otherImg.alt)
-            }
-          })
-        })
-      })
-      test('images have dimensions', () => {
-        const imgs = doc.querySelectorAll('img')
-        const imgsWithHeightAndWidth = Array.from(imgs).filter(img => {
-          return img.height && img.width
-        })
-        expect(imgsWithHeightAndWidth).toHaveLength(3)
-        imgsWithHeightAndWidth.forEach(img => {
+      const imgs = Array.from(doc.querySelectorAll('img'))
+      test('images load', async () => {
+        expect(imgs.length).toBeGreaterThan(0)
+        Array.from(imgs).forEach(img => {
           const imgUrl = new url.URL(img.src)
-          const dimensions = sizeOf(imgUrl.pathname)
-          expect(img.width).toEqual(dimensions.width)
-          expect(img.height).toEqual(dimensions.height)
+          expect(() => readFileSync(imgUrl.pathname)).not.toThrowError()
         })
       })
-      test('images are in subfolder', () => {
-        const imgs = doc.querySelectorAll('img')
-        expect(Array.from(imgs).length).toBeGreaterThan(0)
-        Array.from(imgs).forEach(img => {
-          const pathObj = path.parse(img.getAttribute('src'))
-          expect(pathObj.dir.length).toBeGreaterThan(1)
-        })
-      })
-      test('image filepaths are relative', () => {
-        const imgs = doc.querySelectorAll('img')
-        expect(Array.from(imgs).length).toBeGreaterThan(0)
-        Array.from(imgs).forEach(img => {
-          expect(path.isAbsolute(img.getAttribute('src'))).toBeFalsy()
-        })
-      })
-      test('links and filepaths are well formed', () => {
-        const imgs = doc.querySelectorAll('img')
-        expect(Array.from(imgs).length).toBeGreaterThan(0)
-        Array.from(imgs).forEach(img => {
-          expect(img.getAttribute('src')).not.toMatch(/ |_/)
-        })
-        const as = doc.querySelectorAll('a')
-        expect(Array.from(as).length).toBeGreaterThan(0)
-        Array.from(as).forEach(a => {
-          const href = a.getAttribute('href')
-          expect(href.length).toBeGreaterThan(0)
-        })
-      })
-      test('images load correctly', async () => {
-        const imgs = doc.querySelectorAll('img')
-        expect(Array.from(imgs).length).toBeGreaterThan(0)
+      test('image files are correct', async () => {
+        expect(imgs.length).toBeGreaterThan(0)
         const checksums = [
           '090147bda9b96bebacaf595bbcb0f142',
           '471ca16ecfc4c339ad699a6a618a233c',
           'f4e0ea63e8cb0823577481ebd59d0d43'
         ]
-        Array.from(imgs).forEach(async img => {
+        Array.from(imgs).forEach(img => {
           const imgUrl = new url.URL(img.src)
+          expect(() => readFileSync(imgUrl.pathname)).not.toThrowError()
           const content = readFileSync(imgUrl.pathname)
           const hash = createHash('md5').update(content).digest('hex')
           expect(checksums).toContain(hash)
+        })
+      })
+      const imgsWithAlt = Array.from(doc.querySelectorAll('img[alt]'))
+      test('images have alt text', () => {
+        expect(imgsWithAlt).toHaveLength(3)
+        imgsWithAlt.forEach(img => {
+          expect(hasUniqueAttribute(img, 'alt', imgsWithAlt)).toBeTruthy()
+        })
+      })
+      const imgsWithHeightAndWidth = Array.from(
+        doc.querySelectorAll('img[height][width]')
+      )
+      test('images have dimensions', () => {
+        expect(imgsWithHeightAndWidth).toHaveLength(3)
+      })
+      test('images have correct dimensions', () => {
+        imgsWithHeightAndWidth.forEach(img => {
+          const imgUrl = new url.URL(img.src)
+          const dimensions = sizeOf(imgUrl.pathname)
+          expect(img.width).toBe(dimensions.width)
+          expect(img.height).toBe(dimensions.height)
+        })
+      })
+      test('images are in subfolder', () => {
+        expect(imgs.length).toBeGreaterThan(0)
+        imgs.forEach(img => {
+          const pathObj = path.parse(img.getAttribute('src'))
+          expect(pathObj.dir.length).toBeGreaterThan(1)
+        })
+      })
+      test('image filepaths are relative', () => {
+        expect(imgs.length).toBeGreaterThan(0)
+        imgs.forEach(img => {
+          expect(path.isAbsolute(img.getAttribute('src'))).toBeFalsy()
+        })
+      })
+      test('links and filepaths are well formed', () => {
+        expect(imgs.length).toBeGreaterThan(0)
+        imgs.forEach(img => {
+          expect(img.getAttribute('src')).not.toMatch(/ |_/)
+        })
+        const as = Array.from(doc.querySelectorAll('a'))
+        expect(as.length).toBeGreaterThan(0)
+        as.forEach(a => {
+          const href = a.getAttribute('href')
+          expect(href.length).toBeGreaterThan(0)
         })
       })
       test('links in the top region of the page', () => {
