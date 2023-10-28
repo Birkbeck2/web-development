@@ -6,11 +6,25 @@ import yaml from 'yaml'
 
 const showValidationErrors = true
 
-async function * getDirectories (dir) {
-  for await (const d of await opendir(dir)) {
-    if (!d.name.startsWith('.')) {
-      const entry = path.join(dir, d.name)
-      if (d.isDirectory()) yield entry
+// Figure out if this is running on Gradescope's servers
+// or a local instructor laptop
+function onGradescope () {
+  if (__dirname.includes('/autograder/')) {
+    return true
+  } else {
+    return false
+  }
+}
+
+async function * yieldSubmissions (dir) {
+  if (onGradescope()) {
+    yield dir
+  } else {
+    for await (const d of await opendir(dir)) {
+      if (!d.name.startsWith('.')) {
+        const entry = path.join(dir, d.name)
+        if (d.isDirectory()) yield entry
+      }
     }
   }
 }
@@ -26,10 +40,9 @@ export async function * walk (dir) {
 }
 
 async function determineSubmissionDir (workshopDir) {
-  try {
-    await opendir('submission')
+  if (onGradescope()) {
     return 'submission'
-  } catch (error) {
+  } else {
     return path.join(workshopDir, 'submission')
   }
 }
@@ -48,7 +61,9 @@ function loadGradescopeMetadata (submissionDir) {
 function identifyCoder (submission, metadata) {
   const folder = submission.split(path.sep).pop()
   // console.info(folder)
-  if (metadata && metadata[folder]) {
+  if (onGradescope()) {
+    return folder
+  } else if (metadata && metadata[folder]) {
     // console.info(metadata[folder])
     return metadata[folder][':submitters'][0][':name']
   } else {
@@ -74,15 +89,13 @@ export async function loadDoc (submission) {
 
 export async function * findSubmissions (workshopDir, submissionFile) {
   const submissionDir = await determineSubmissionDir(workshopDir)
-  // console.info(submissionDir)
   const metadata = loadGradescopeMetadata(submissionDir)
-  for await (const submission of getDirectories(submissionDir)) {
+  for await (const submission of yieldSubmissions(submissionDir)) {
     const coder = identifyCoder(submission, metadata)
     let fileFound = false
     for await (const filename of walk(submission)) {
       const base = path.parse(filename).base
       if (base === submissionFile) {
-        // console.info(filename)
         fileFound = true
         yield [coder, filename]
       }
@@ -114,4 +127,16 @@ function logValidationErrors (result, filePath) {
       console.error(error)
     }
   }
+}
+
+export function hasUniqueAttribute (el, attr, group) {
+  let unique = true
+  Array.from(group).forEach(other => {
+    if (el !== other) {
+      if (el.getAttribute(attr) === other.getAttribute(attr)) {
+        unique = false
+      }
+    }
+  })
+  return unique
 }
