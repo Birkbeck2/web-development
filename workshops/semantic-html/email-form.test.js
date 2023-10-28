@@ -1,7 +1,7 @@
 // @vitest-environment jsdom
 
 import { describe, expect, test } from 'vitest'
-import { findSubmissions, validateHtml, loadDoc } from '../test-utils.js'
+import { findSubmissions, validateHtml, loadDoc, hasUniqueAttribute } from '../test-utils.js'
 
 const submissionFile = 'email-form.html'
 
@@ -35,11 +35,7 @@ describe(submissionFile, async () => {
         expect(inputsWithName.length).toBeGreaterThanOrEqual(4)
         Array.from(inputsWithName).forEach(input => {
           expect(input.name).not.toMatch(/ /)
-          Array.from(inputsWithName).forEach(otherInput => {
-            if (input !== otherInput) {
-              expect(input.name).not.toEqual(otherInput.name)
-            }
-          })
+          expect(hasUniqueAttribute(input, 'name', inputsWithName)).toBeTruthy()
         })
       })
       const labels = doc.querySelectorAll('form label')
@@ -63,7 +59,7 @@ describe(submissionFile, async () => {
       })
       test('button properly marked up', () => {
         const button = doc.querySelector('form button')
-        expect(button.type).toEqual('submit')
+        expect(button.type).toBe('submit')
         expect(button.textContent.length).toBeGreaterThan(0)
       })
     })
