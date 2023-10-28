@@ -175,9 +175,7 @@ be moved around and treated like a single file, with the extension `.zip`.
 
 Generally you can make a ZIP like this:
 
-<video controls>
-<source src="images/saving-zip-file-homework-2.webm" alt="Creating a zip file on Ubuntu">
-</video>
+![Creating a zip file on Ubuntu](images/saving-zip.png)
 
 1) Select all the files and folders you want
 2) Right-click, then “Send to compressed folder” or “Compress”
