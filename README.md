@@ -43,9 +43,11 @@ subfolders. The test utils expect this structure:
             └─ road-users.html                    // this file will be tested too
 ```
 
-Here are all the instructor repositories, which are kept private so that students cannot see them:
+Here are all the instructor answer repositories, which are set as
+`internal` to the `birkbeck2` GitHub organization:
 
 - [web-development-basic-html-instructor](https://github.com/Birkbeck2/web-development-basic-html-instructor)
+- [web-development-semantic-html-instructor](https://github.com/Birkbeck2/web-development-semantic-html-instructor)
 
 To run tests on all the matching files in subfolders of `submission`, clone
 the repository, install dependencies, and run the test command:
