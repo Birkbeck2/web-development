@@ -39,7 +39,7 @@ describe(submissionFile, async () => {
       })
       test('one strong or b includes correct text', () => {
         const strongOrBs = doc.querySelectorAll('body p strong, body p b')
-        const strongOrBsWithLeafy = Array.from(strongOrB).filter(strong => {
+        const strongOrBsWithLeafy = Array.from(strongOrBs).filter(strong => {
           return strong.textContent.toLowerCase().includes('leafy')
         })
         expect(strongOrBsWithLeafy).toHaveLength(1)
