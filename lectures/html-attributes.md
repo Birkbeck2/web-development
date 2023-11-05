@@ -45,7 +45,7 @@ With attributes, you can explicitly say what languages are being used. Here's ho
 
 ```html
 <p lang="en-GB">Leaves are falling.</p>
-<p lang="nl-NL">De bladeren vallen.</p>
+<p lang="nl">De bladeren vallen.</p>
 ```
 
 When this information is provided, the computer knows what language is being used, so it can read the text aloud for people using screen readers. It can also populate search engine results properly.
@@ -63,7 +63,7 @@ Usually they don’t, except when used with CSS. The `lang` attribute, for examp
 Which pieces of this code are new?
 
 ```html
-<p lang="nl-NL">De bladeren vallen.</p>
+<p lang="nl">De bladeren vallen.</p>
 ```
 
 We have seen `<` and `>` and `/` before. The new syntax for attributes involves an attribute name inside the opening tag, after the tag name:
@@ -76,7 +76,7 @@ And an attribute value, wrapped in quotation marks:
 
 ```html
 "en-GB"
-"nl-NL"
+"nl"
 ```
 
 Connected with an equals sign:

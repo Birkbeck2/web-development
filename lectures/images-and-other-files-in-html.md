@@ -82,7 +82,7 @@ scheme      host           path
 You may have noticed that the leaf image above did not have a complete URL in `src`
 
 ```html
-<img src="images/leaf-small.jpg"
+<img src="images/leaf-small.jpg">
 ```
 
 It works by getting the image file *relative to* the location of the HTML file, assuming that the `scheme` and `host` of the URL are the same.
@@ -195,13 +195,7 @@ Files:
 
 Inside `index.html`:
 
-```html
-<section>
-  <h2>Spring</h2>
-  <p>Leaves are growing.</p>
-  <img href="nytimes.com/images/leaf Small.png">
-</section>
-```
+<<< @/public/sandbox/images-and-other-paths/index.html{html}
 
 <!--
 1. images != pictures
@@ -211,6 +205,8 @@ Inside `index.html`:
 5. spaces and capitals in paths
 6. wrong host
 -->
+
+[Open in sandbox](/sandbox/images-and-other-paths/index.html){target="_self"}
 
 ## References
 

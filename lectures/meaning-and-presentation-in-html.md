@@ -128,7 +128,7 @@ referring to the image.
 <p>Leaves are falling.</p>
 <img src="images/leaf-shed-in-autumn.jpg">
 <p>This leaf has 16 points.</p>
-<p>Tomorrow it might rain.<p>
+<p>Tomorrow it might rain.</p>
 ```
 
 For this, HTML5 provides `figure`, which is a wrapper
