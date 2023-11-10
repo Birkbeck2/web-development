@@ -16,7 +16,7 @@ and add CSS rules to your own stylesheet to make your html page look like the or
   -	Make the other text a specific color using an element selector.
   -	Make dates and the date table header label right aligned.
   -	Use an id selector to make the table cell with the description of the utsuro-bune have a different background-color.
-4)	Internal and inline CSS. First let’s put some CSS in a <style> tag inside the head. This is called internal CSS:
+4)	Internal and inline CSS. First let’s put some CSS in a ```<style>``` tag inside the head. This is called internal CSS:
   -	Using the text-decoration property, underline the heading of the article.
   -	Now change the heading to a different web safe font, including the appropriate fallback fonts in case a user doesn’t have the preferred font.
 5)	For the following tasks use inline CSS. If you want to only style one part of a paragraph instead of all of it, use the ```<span>``` tag.
