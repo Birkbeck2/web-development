@@ -1,4 +1,4 @@
-# Workshop on Introduction to CSS
+# Workshop: Introduction to CSS
 
 ## Style an HTML page:
 
