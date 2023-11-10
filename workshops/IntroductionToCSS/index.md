@@ -5,7 +5,7 @@
 1)	Add a link to a stylesheet file in the head of the ufo-Utsuro-bune.html file. You can name the stylesheet anything you want, but often it is called styles.css. This CSS file will be your external stylesheet. Make sure your stylesheet file is in the correct location in your folder system for your html file to correctly link to it.
 2)	Look at the original article called “Unidentified Floating Object: Edo Images of Utsuro-bune”: https://publicdomainreview.org/collection/utsuro-bune/
 and add CSS rules to your own stylesheet to make your html page look like the original in the following way:
-> -	Make the header image page width (approx., or the widest image on the page)
+  -	Make the header image page width (approx., or the widest image on the page)
   -	Centre all images and text
   -	Replace the style=”font-style: italic;” in all the <span> tags with a class for italic style fonts instead.
   -	Make the heading text, blockquote text and main body text a serif font (you don’t have to use exactly the same font as in the original page)
