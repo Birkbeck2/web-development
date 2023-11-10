@@ -19,7 +19,7 @@ and add CSS rules to your own stylesheet to make your html page look like the or
 4)	Internal CSS. First let’s put some CSS in a ```<style>``` tag inside the head. This is called internal CSS:
   -	Using the text-decoration property, underline the heading of the article.
   -	Now change the heading to a different web safe font, including the appropriate fallback fonts in case a user doesn’t have the preferred font.
-5)	Inline CSS. If you want to only style one part of a paragraph instead of all of it, use the ```<span>``` tag.
+5)	Inline CSS. If you want to only style one part of a paragraph instead of all of it, use the ```<span>``` tag. Do the following using only inline CSS:
   -	Give the blockquote a different background color (make sure the text is readable against the new background color).
   -	Change the width and height of the first paragraph of text to 50px. Notice what happens when the amount of text is too much for its container. Then change the width and height of the article to a suitable amount so that all the text is visible. Try using different units for the widths and heights and see what happens (px, em, %, auto).
   -	Apply text-transform to the first paragraph to see what it does. Try out all three transforms on the first paragraph: lowercase, uppercase, capitalize; sticking with the text-transform you prefer from a design point of view.
