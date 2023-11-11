@@ -52,7 +52,7 @@ export const outline = [
     items: [
       {
         text: 'Workshop on Intro CSS',
-        link: '/workshops/IntroductionToCSS/index.html',
+        link: '/workshops/intro-css/index.html',
         lecturer: 'Helena Wee',
         concepts: 'stylesheets, box model, margins, padding, borders, alignment, hover states',
         // code: ''
