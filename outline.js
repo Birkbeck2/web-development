@@ -44,7 +44,19 @@ export const outline = [
         text: 'Workshop on semantic HTML',
         link: '/workshops/semantic-html/index.html',
         lecturer: 'Joseph Muller'
-      },
+      }
+    ]
+  },
+  {
+    text: 'Intro to CSS',
+    items: [
+      {
+        text: 'Workshop on Intro CSS',
+        link: '/workshops/IntroductionToCSS/index.html',
+        lecturer: 'Helena Wee',
+        concepts: 'stylesheets, box model, margins, padding, borders, alignment, hover states',
+        // code: ''
+      }
       // {
       //   text: 'Will it work? Using sandboxes to run code experiments',
       //   link: '/lectures/will-it-work-using-sandboxes-to-test-code.html',
