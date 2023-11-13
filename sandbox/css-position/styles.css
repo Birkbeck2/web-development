@@ -1,0 +1,37 @@
+#relative {
+    position: relative;
+    top: 50px; 
+    left: 50px;
+    background-color: yellowgreen;
+}
+
+#absolute {
+    position: absolute;
+    top: 550px;
+    left: 300px;
+    background-color: blueviolet;
+}
+
+#fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: cornflowerblue;
+}
+
+
+#sticky {
+    position: sticky;
+    top: 0;
+    background-color: red;
+}
+
+p {
+    font-size: 3em;
+    padding: 5px;
+    margin: 5px;
+    background-color: lightseagreen;
+    border: 1px dotted;
+    width: 180px;
+}
+

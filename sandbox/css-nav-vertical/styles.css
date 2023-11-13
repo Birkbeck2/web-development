@@ -1,0 +1,35 @@
+/* Note: The following shows how to make a nav using float, not flex.
+But flex is the best way to do it, not float. */
+
+
+body {
+    margin: 0 auto;
+    font-size: 1.5rem;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: lightpink;
+}
+
+li a {
+    font-family:Arial, Helvetica, sans-serif;
+    display: block;
+    text-decoration: none;
+    background-color: lightpink;
+    padding: 1rem;
+    text-align: center;
+}
+
+li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+li a:active {
+    background-color: #660033;
+    color: white;
+}

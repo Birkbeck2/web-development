@@ -1,0 +1,25 @@
+#container {
+  display: grid;
+  grid-template-rows: 100px 100px 100px 100px;
+  grid-template-columns: 150px auto 150px;
+  background-color: lightblue;
+  grid-gap: 20px 30px;
+}
+
+#container div {
+  max-width: 100%;
+  margin: 0;
+  background-color: lightgreen;
+  border: 5px solid black;
+  max-height: 100%;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.big {
+  grid-column: 1 / 4;
+}
+
+body {
+  margin: 0;
+}

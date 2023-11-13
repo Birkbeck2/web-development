@@ -1,0 +1,16 @@
+/* ruleset */
+
+header, p.intro {
+  background-color : pink ;
+  border-radius : 3px ;
+}
+
+
+/* at-rules */
+
+@media screen and (min-width: 900px) {
+  header, p.intro {
+    background-color : lightblue ;
+    border-radius : 12px ;
+  }
+}

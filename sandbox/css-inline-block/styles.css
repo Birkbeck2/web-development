@@ -1,0 +1,47 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.col-2-5 {
+  width: 40%;
+  border: red dotted;
+}
+
+.col-3-5 {
+  width: 60%;
+  border: green dotted;
+}
+
+.col-2-5,
+.col-3-5 {
+  display: inline-block; /* Act like a block but on your line */
+  vertical-align: top; /* Hug the top of the containing element */
+}
+
+.grid,
+.col-2-5,
+.col-3-5 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.container,
+.grid {
+  margin: 0 auto;
+  /* max-width: 960px; */ /* This resulted in strange behavior */
+}
+
+.container {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.container {
+  border: blue dotted;
+}
+
+.grid {
+  border: pink dotted;
+}

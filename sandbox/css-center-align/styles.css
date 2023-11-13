@@ -1,0 +1,17 @@
+h1, h2 {
+    margin: auto;
+    width: 70%;
+    border: 3px solid purple;
+    padding: 15px;
+}
+
+p {
+    text-align: center;
+    border: 3px solid purple;
+}
+
+img {
+    display: block;
+    margin: auto;
+    width: 60%;
+}

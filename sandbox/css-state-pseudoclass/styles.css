@@ -1,0 +1,19 @@
+a {
+    font-size: 8em;
+}
+
+a:link {
+    background-color: blue;
+}
+
+a:visited {
+    background-color: #7030A0;
+}
+
+a:hover {
+    background-color: green;
+}
+
+a:active {
+    background-color: brown;
+}

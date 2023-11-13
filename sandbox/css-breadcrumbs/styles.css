@@ -1,0 +1,98 @@
+/* Note: The following shows how to make a nav using float, not flex.
+But flex is the best way to do it, not float. */
+
+body {
+    margin: 0 auto;
+    font-size: 1.5rem;
+}
+
+nav, nav li {
+    height: 4rem;
+    background-color: brown;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    float: left;
+}
+
+nav li {
+    border-right: 1px solid #ccc;
+}
+
+nav li a, nav li button {
+    font-family:Arial, Helvetica, sans-serif;
+    display: block;
+    height: 4rem;
+    line-height: 4rem;
+    padding: 0 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: wheat;
+}
+
+nav li button {
+    font-size: inherit;
+    border: none;
+    background-color: inherit;
+}
+
+nav li a:hover, nav li button:hover {
+    background-color: #555;
+    color: white;
+}
+
+li a:active, .selected {
+    background-color: #660033;
+    color: white;
+}
+
+h1 {
+    clear: both; /* Clear float */
+}
+
+/* Dropdown */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ivory;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Breadcrumbs */
+
+ul.breadcrumbs {
+    height: 2rem;
+    line-height: 2rem;
+    display: block;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    background-color: #ffe6e6;
+}
+
+ul.breadcrumbs li+li::before {
+    padding: 0 1rem;
+    color: black;
+    content: "/ \00a0 ";
+}
+
+ul.breadcrumbs li a {
+    color: #cc0066;
+}

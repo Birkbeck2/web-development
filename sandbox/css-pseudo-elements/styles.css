@@ -1,0 +1,10 @@
+figure::after {
+  content: url('images/leaf-small.jpg');
+  display: inline-block;
+  rotate: 60deg;
+}
+
+p::selection {
+  color: brown;
+  background-color: beige;
+}

@@ -1,0 +1,13 @@
+body {
+    background-color: brown;
+}
+
+ul {
+    list-style-type: square;
+    list-style-image: url("images/leaf-small.jpg");
+    list-style-position: inside;
+}
+
+ul li {
+    color: darkblue;
+}

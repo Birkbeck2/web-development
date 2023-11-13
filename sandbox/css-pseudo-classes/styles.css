@@ -1,0 +1,7 @@
+p:hover {
+    background-color: lightsalmon;
+}
+
+h1:active {
+    background-color: aqua;
+}

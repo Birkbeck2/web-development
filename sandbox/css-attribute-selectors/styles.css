@@ -1,0 +1,7 @@
+[src*="leaf"] {
+    width: 200px;
+}
+
+a[href$="jpg"] {
+    color: brown;
+}
