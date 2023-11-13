@@ -60,35 +60,35 @@ Once you have Git and NPM, here are the installation steps:
    a folder called “repos” for your repositories inside your home
    directory (which is represented by `~`):
 
-```
-cd ~/repos/
-```
+   ```
+   cd ~/repos/
+   ```
 
 2. Clone this repository with SSH:
 
-```
-git clone git@github.com:Birkbeck2/web-development.git
-```
+   ```
+   git clone git@github.com:Birkbeck2/web-development.git
+   ```
 
-Or, if you don’t have an SSH key set up, clone it with HTTPS:
+   Or, if you don’t have an SSH key set up, clone it with HTTPS:
 
-```
-git clone https://github.com/Birkbeck2/web-development.git
-```
+   ```
+   git clone https://github.com/Birkbeck2/web-development.git
+   ```
 
 3. Navigate inside the repository and install the dependencies:
 
-```
-cd web-development
-npm install
-```
+   ```
+   cd web-development
+   npm install
+   ```
 
 4. If the installation was successful, you should see a bunch of
    dependencies installed in `node_modules`. List them to see:
 
-```
-ls node_modules
-```
+   ```
+   ls node_modules
+   ```
 
 ## Running the website
 
@@ -99,15 +99,15 @@ with a single terminal command.
 1. Navigate to the project folder. It would be this command if you have
    a “repos” folder inside your home (`~`) directory.
 
-```
-cd ~/git/repos/web-development
-```
+   ```
+   cd ~/repos/web-development
+   ```
 
 2. Run the development server
 
-```
-npm run dev
-```
+   ```
+   npm run dev
+   ```
 
 3. Open a browser to the URL provided in your terminal. Probably
    it’s `http://localhost:5173/web-development/`. You should then see the
@@ -126,17 +126,17 @@ locally (that is, converting the Markdown files to static HTML files).
 
 1. Try building with this command:
 
-```
-npm run build
-```
+   ```
+   npm run build
+   ```
 
 2. Check the build worked by running the preview server, which draws on
    the static built HTML files rather than dynamically updating them like
    the run command does.
 
-```
-npm run preview
-```
+   ```
+   npm run preview
+   ```
 
 3. Open a browser to the URL provided. Note the port number is different
    from the development server.
@@ -150,14 +150,16 @@ maintainer (currently Joseph Muller) as a reviewer.
 
 ## Teaching with sandboxes (for lecturers)
 
-The `/public/sandbox/` folder has demo code showing a variety of concepts and
-patterns. Here’s one good workflow for tinkering with these during
-lectures and workshops.
+The `/public/sandbox/` folder has demo code showing a variety of concepts
+and patterns. Here’s one good workflow for using these during lectures and
+workshops.
 
 1. In class, run the development server (steps above) and open it in the
-   browser on the projector screen. Navigate to the sandbox you want,
-   using the same relative path as in the repo, but removing `public` from
-   the URL (see [“The Public Directory”](https://vitepress.dev/guide/asset-handling#the-public-directory) for why). For example:
+   browser on the projector screen. Navigate to the sandbox you want using
+   the same relative path as in the repo, but removing `public` from the
+   URL (see [“The Public
+   Directory”](https://vitepress.dev/guide/asset-handling#the-public-directory)
+   for why). For example:
 
    ``` 
    http://localhost:5173/web-development/sandbox/css-hover/index.html
