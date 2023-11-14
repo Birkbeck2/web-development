@@ -38,7 +38,7 @@ export const outline = [
         link: '/lectures/html-forms.html',
         lecturer: 'Joseph Muller',
         concepts: 'HTTP request methods, front end and back end',
-        code: 'form, method, action, type, label, for, input, textarea, name, button'
+        code: 'form method action type label for input textarea name button'
       },
       {
         text: 'Workshop on semantic HTML',
@@ -49,27 +49,26 @@ export const outline = [
   },
   {
     text: 'Intro to CSS',
+    // concepts: 'stylesheets, style and content, internal and external CSS, selector, declaration, property, value, cascade, fonts, box model, margins, padding, borders, alignment, hover, display',
+    // code: '{ } . # ; " class id color background-color width height text-align text-decoration font-family margin padding border :hover display'
     items: [
       {
         text: 'Workshop on Intro CSS',
         link: '/workshops/intro-css/index.html',
         lecturer: 'Helena Wee',
-        concepts: 'stylesheets, box model, margins, padding, borders, alignment, hover states',
-        // code: ''
       }
-      // {
-      //   text: 'Will it work? Using sandboxes to run code experiments',
-      //   link: '/lectures/will-it-work-using-sandboxes-to-test-code.html',
-      //   lecturer: 'Joseph Muller',
-      //   concepts: 'sandboxes'
-      // },
-      // {
-      //   text: 'Behind-the-scenes HTML',
-      //   link: '/lectures/behind-the-scenes-html.html',
-      //   lecturer: 'Joseph Muller',
-      //   concepts: 'social media cards, web search indexing, code comments, character encoding',
-      //   code: 'head meta name content title description og:image twitter:image charset utf-8 style src link rel href script defer <!-- --> hidden'
-      // },
+    ]
+  },
+  {
+    text: 'Responsive CSS',
+    // concepts: 'responsive design, media queries, flexible layouts, grid layouts',
+    // code: 'media flex grid'
+    items: [
+      {
+        text: 'Workshop: Responsive CSS',
+        link: '/workshops/responsive/index.html',
+        lecturer: 'Helena Wee',
+      }
     ]
   }
 ]
@@ -84,3 +83,18 @@ export function filterClassMeeting (meetings, pathStart) {
   })
   return filteredItems
 }
+
+// {
+//   text: 'Will it work? Using sandboxes to run code experiments',
+//   link: '/lectures/will-it-work-using-sandboxes-to-test-code.html',
+//   lecturer: 'Joseph Muller',
+//   concepts: 'sandboxes'
+// },
+// {
+//   text: 'Behind-the-scenes HTML',
+//   link: '/lectures/behind-the-scenes-html.html',
+//   lecturer: 'Joseph Muller',
+//   concepts: 'social media cards, web search indexing, code comments, character encoding',
+//   code: 'head meta name content title description og:image twitter:image charset utf-8 style src link rel href script defer <!-- --> hidden'
+// },
+
