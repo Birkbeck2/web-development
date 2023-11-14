@@ -143,6 +143,64 @@ locally (that is, converting the Markdown files to static HTML files).
 
 See other available commands inside the scripts listed in `package.json`.
 
+## Adding lectures and workshops
+
+You can add a new lecture part by adding a Markdown file inside
+`/lectures/`. It should then be available as an HTML file at the same
+relative path on the website.
+
+Workshops require a bit more structure.
+
+1. Add a subfolder named with the short name of your workshop in
+   `/workshops/`.
+
+2. Add an `index.md` inside that folder. This will hold the workshop
+   instructions for students to read during the workshop.
+
+3. If you have starter files for the workshop that you want students to
+   download, you can provide them in a subfolder called `starter-files`
+   (actually you can name it anything). Consider zipping them so that you
+   can create an easy download link in `index.md`.
+
+## Adding navigation for lectures and workshops
+
+Lectures and workshops should be added to the lecture list or workshop
+list, as well as the sidebar on the left.
+
+All three places are generated from `outline.js`. This expects a JSON-like
+entry for each class meeting, with relevant lecture and workshop parts
+nested under it.
+
+```js
+{
+  text: 'Semantic HTML',
+  items: [
+    {
+      text: 'HTML attributes',
+      link: '/lectures/html-attributes.html',
+      lecturer: 'Joseph Muller',
+      concepts: 'variable, attribute, attribute name, attribute value',
+      code: '= " lang id class a href'
+    },
+    {
+      text: 'Workshop on semantic HTML',
+      link: '/workshops/semantic-html/index.html',
+      lecturer: 'Joseph Muller'
+    }
+  ]
+},
+```
+
+These entries will automatically show up on the right list (that is,
+“Lectures” or “Workshops”), based on the keyword `lectures` or `workshops`
+in the `link`.
+
+For the `code` property of lectures, write actual punctuation marks or
+reserved keywords - the idea here is to provide a visual cue if someone
+is looking for help with a particular mark or word they encounter or are
+expected to use in code. It will be rendered with `<code>`, so it is
+best to separate things with spaces only, not commas or anything else.
+
 ## Publishing changes (for lecturers)
 
 Please commit changes to a new branch, and submit a pull request with the
