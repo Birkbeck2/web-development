@@ -1,9 +1,8 @@
 # Custom
 demo
 workshops/**/submissions/
-autograder/results/
+workshops/results.json
 *.zip
-results.json
 .vitepress/cache
 .vitepress/dist
 

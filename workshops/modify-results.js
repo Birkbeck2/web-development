@@ -1,6 +1,6 @@
 import { readFile, writeFile } from 'node:fs/promises'
 
-const resultsFile = new URL('../../results/results.json', import.meta.url).pathname
+const resultsFile = new URL('results.json', import.meta.url).pathname
 // console.info(`Opening ${resultsFile}`)
 const report = JSON.parse(await readFile(resultsFile))
 report.tests = []
@@ -9,19 +9,29 @@ let total = 0
 for (const suiteIndex in report.suites) {
   for (const specIndex in report.suites[suiteIndex].specs) {
     const spec = report.suites[suiteIndex].specs[specIndex]
+    const test = Object.assign({}, spec)
     if (spec.ok === true) {
       numPassed += 1
-      report.suites[suiteIndex].specs[specIndex].status = 'passed'
+      test.status = 'passed'
     } else {
-      report.suites[suiteIndex].specs[specIndex].status = 'failed'
+      test.status = 'failed'
     }
     total += 1
-    report.suites[suiteIndex].specs[specIndex].name = spec.title
-    delete report.suites[suiteIndex].specs[specIndex].title
+    test.name = spec.title
+    delete test.title
     if (spec.title === 'HTML is valid') {
-      // print stderr to student view
+      const validationError = JSON.parse(spec.tests[0].results[0].stderr[0].text)
+      test.output = `
+        ${validationError.message}
+
+        Line: ${validationError.line}
+
+        Read about this rule:
+
+        ${validationError.ruleUrl}
+      `
     }
-    report.tests.push(report.suites[suiteIndex].specs[specIndex])
+    report.tests.push(test)
   }
 }
 delete report.suites

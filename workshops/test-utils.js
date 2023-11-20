@@ -109,7 +109,7 @@ function logValidationErrors (result, filePath) {
   if (!result.isValid && showValidationErrors) {
     for (const error of result.errors) {
       error.submissionFile = filePath
-      console.info(error)
+      console.error(JSON.stringify(error))
     }
   }
 }
