@@ -1,12 +1,14 @@
 {
+  "imports": {
+    "#test-utils": "./workshops/test-utils.js"
+  },
   "scripts": {
     "dev": "vitepress dev",
     "build": "vitepress build",
     "preview": "vitepress preview",
-    "test": "vitest",
-    "gradescope": "vitest run --reporter=./source/reporter.js --outputFile.json=./results/results.json",
-    "gradescope-local": "vitest run --reporter=./gradescope/reporter.js --outputFile.json=./gradescope/results.json",
-    "zip": "node gradescope/create-zips.js"
+    "grade": "pnpm exec playwright test --reporter=dot",
+    "gradescope": "PATH=/root/.local/share/pnpm/:$PATH PLAYWRIGHT_JSON_OUTPUT_NAME=../results/results.json pnpm exec playwright test --reporter=json",
+    "zip": "node workshops/create-zips.js"
   },
   "repository": {
     "type": "git",
@@ -18,13 +20,15 @@
     "JavaScript"
   ],
   "author": "Joseph Muller",
-  "license": "MIT",
+  "license": "AGPL 3.0",
   "bugs": {
     "url": "https://github.com/Birkbeck2/web-development/issues"
   },
   "homepage": "https://github.com/Birkbeck2/web-development#readme",
   "type": "module",
   "devDependencies": {
+    "@playwright/test": "^1.39.0",
+    "@types/node": "^20.9.0",
     "vitepress": "^1.0.0-rc.20"
   },
   "dependencies": {

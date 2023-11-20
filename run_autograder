@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# For use on Gradescope
+# See https://gradescope-autograders.readthedocs.io
+
+cd /autograder/
+mkdir -p source/workshops/workshop/submissions/
+cp -r submission source/workshops/workshop/submissions/
+cd source/
+mkdir -p /autograder/results/
+npm run gradescope
+node ./workshops/modify-results.js

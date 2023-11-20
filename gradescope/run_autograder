@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-
-cp -r /autograder/submission/ /autograder/source/submission/
-cd /autograder/
-npm run gradescope
