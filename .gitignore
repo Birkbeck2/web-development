@@ -1,6 +1,6 @@
 # Custom
 demo
-workshops/**/submission
+workshops/**/submissions/
 autograder/results/
 *.zip
 results.json
@@ -31,3 +31,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
