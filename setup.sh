@@ -1,4 +1,7 @@
-#!/usr/bin/env bash
+#!/bin/bash
+
+# For use on Gradescope
+# See https://gradescope-autograders.readthedocs.io
 
 apt-get install apt-utils
 apt-get install -y ca-certificates curl gnupg
@@ -11,5 +14,5 @@ apt-get install nodejs -y
 curl -fsSL https://get.pnpm.io/install.sh | sh -
 PATH=/root/.local/share/pnpm/:$PATH
 
-cp /autograder/source/package.json /autograder/package.json
-cd /autograder/ && pnpm install
+cd /autograder/source/ && pnpm install
+pnpm exec playwright install --with-deps chromium

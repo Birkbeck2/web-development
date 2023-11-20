@@ -1,44 +1,41 @@
 import { opendir } from 'node:fs/promises'
 import path from 'node:path'
-import { readFileSync } from 'node:fs'
+import { existsSync, readFileSync } from 'node:fs'
+import { rename, copyFile } from 'node:fs/promises'
 import { JSDOM } from 'jsdom'
 import yaml from 'yaml'
 import AdmZip from 'adm-zip'
+import validator from 'html-validator'
+import playwrightConfig from '../playwright.config.js'
 
 const showValidationErrors = true
-
-// Figure out if this is running on Gradescope's servers
-// or a local instructor laptop
-function onGradescope () {
-  if (__dirname.includes('/autograder/')) {
-    return true
-  } else {
-    return false
-  }
-}
 
 async function extractZipAt (dir) {
   for await (const d of await opendir(dir)) {
     if (!d.name.startsWith('.') && d.name.endsWith('.zip')) {
       const zip = new AdmZip(path.join(dir, d.name))
-      const zipBaseWithoutExt = path.parse(d.name).base.replace(path.extname(d.name), '')
-      zip.extractAllTo(path.join(dir, zipBaseWithoutExt), true)
+      zip.extractAllTo(dir, true)
     }
   }
 }
 
-async function * yieldSubmissions (dir) {
-  if (onGradescope()) {
-    extractZipAt(dir)
-    yield dir
-  } else {
-    for await (const d of await opendir(dir)) {
-      if (!d.name.startsWith('.')) {
-        const entry = path.join(dir, d.name)
-        if (d.isDirectory()) {
-          extractZipAt(entry)
-          yield entry
-        }
+export async function * yieldDirectories (dir) {
+  for await (const d of await opendir(dir)) {
+    if (!d.name.startsWith('.')) {
+      const entry = path.join(dir, d.name, '/')
+      if (d.isDirectory()) {
+        yield entry
+      }
+    }
+  }
+}
+
+export async function * yieldFiles (dir) {
+  for await (const d of await opendir(dir)) {
+    if (!d.name.startsWith('.')) {
+      const entry = path.join(dir, d.name)
+      if (d.isFile()) {
+        yield entry
       }
     }
   }
@@ -54,21 +51,13 @@ export async function * walk (dir) {
   }
 }
 
-async function determineSubmissionDir (workshopDir) {
-  if (onGradescope()) {
-    return 'submission'
-  } else {
-    return path.join(workshopDir, 'submission')
-  }
-}
-
 function loadGradescopeMetadata (submissionDir) {
   const metadataFilename = path.join(submissionDir, 'submission_metadata.yml')
-  try {
+  if (existsSync(metadataFilename)) {
     const yamlMetadata = readFileSync(metadataFilename, 'utf8')
     const metadata = yaml.parse(yamlMetadata)
     return metadata
-  } catch (error) {
+  } else {
     console.info('No Gradescope metadata file')
   }
 }
@@ -76,9 +65,7 @@ function loadGradescopeMetadata (submissionDir) {
 function identifyCoder (submission, metadata) {
   const folder = submission.split(path.sep).pop()
   // console.info(folder)
-  if (onGradescope()) {
-    return folder
-  } else if (metadata && metadata[folder]) {
+  if (metadata && metadata[folder]) {
     // console.info(metadata[folder])
     return metadata[folder][':submitters'][0][':name']
   } else {
@@ -102,25 +89,8 @@ export async function loadDoc (submission) {
   }
 }
 
-export async function * findSubmissions (workshopDir, submissionFile) {
-  const submissionDir = await determineSubmissionDir(workshopDir)
-  const metadata = loadGradescopeMetadata(submissionDir)
-  for await (const submission of yieldSubmissions(submissionDir)) {
-    const coder = identifyCoder(submission, metadata)
-    let fileFound = false
-    for await (const filename of walk(submission)) {
-      const base = path.parse(filename).base
-      if (base === submissionFile) {
-        fileFound = true
-        yield [coder, filename]
-      }
-    }
-    if (!fileFound) yield [coder, '']
-  }
-}
-
 export async function validateHtml (filePath) {
-  const validator = require('html-validator')
+  // console.info(filePath)
   const options = {
     validator: 'WHATWG',
     format: 'text',
@@ -144,14 +114,56 @@ function logValidationErrors (result, filePath) {
   }
 }
 
-export function hasUniqueAttribute (el, attr, group) {
-  let unique = true
-  Array.from(group).forEach(other => {
-    if (el !== other) {
-      if (el.getAttribute(attr) === other.getAttribute(attr)) {
-        unique = false
+export async function propagateTestsToSubmissions () {
+  const workshopsPath = path.parse(new URL(import.meta.url).pathname).dir
+  for await (const workshopPath of yieldDirectories(workshopsPath)) {
+    for await (const filePath of yieldFiles(workshopPath)) {
+      if (filePath.endsWith('.grade.js')) {
+        const gradePath = filePath
+        // console.log(`Found test source ${gradePath}`)
+        const testFile = path.parse(gradePath).base.replace('.grade.js', '.test.js')
+        const submissionDir = path.join(workshopPath, 'submissions/')
+        if (existsSync(submissionDir)) {
+          for await (const submission of yieldDirectories(submissionDir)) {
+            const testPath = path.join(submission, testFile)
+            try {
+              await copyFile(gradePath, testPath)
+              if (existsSync(testPath)) {
+                // console.log(`Updated ${testPath}`)
+              } else {
+                // console.log(`Copied to ${testPath}`)
+              }
+            } catch {
+              console.error(`Could not copy ${gradePath} to ${testPath}`)
+            }
+          }
+        }
       }
     }
-  })
-  return unique
+  }
+}
+
+export async function renameSubmissionsByCoder () {
+  // const workshopsPath = path.parse(new URL(import.meta.url).pathname).dir
+  // for await (const workshopPath of yieldDirectories(workshopsPath)) {
+  //   const submissionDir = await determineSubmissionDir(workshopPath)
+  //   const metadata = loadGradescopeMetadata(submissionDir)
+  //   if (existsSync(submissionDir) && metadata) {
+  //     for await (const submission of yieldSubmissions('submissions')) {
+  //       const coder = identifyCoder(submission, metadata)
+  //       if (coder && metadata[coder]) {
+  //         const namedFolder = coder.replaceAll(' ', '-')
+  //         const numberedFolder = submission.split(path.sep).pop()
+  //         const namedSubmission = submission.replace(numberedFolder, namedFolder)
+  //         await rename(submission, namedSubmission)
+  //       }
+  //     }
+  //   }
+  // }
+}
+
+export function determineBaseURL (testURL) {
+  const testFile = path.parse(testURL).base
+  const submissionPath = testURL.split('/workshops/')[1].replace(testFile, '')
+  return new URL(submissionPath, playwrightConfig.use.baseURL)
 }
