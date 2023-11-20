@@ -1,6 +1,6 @@
 import { readFile, writeFile } from 'node:fs/promises'
 
-const resultsFile = new URL('../../results/results.json', import.meta.url).pathname
+const resultsFile = new URL('results.json', import.meta.url).pathname
 // console.info(`Opening ${resultsFile}`)
 const report = JSON.parse(await readFile(resultsFile))
 report.tests = []

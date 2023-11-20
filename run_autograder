@@ -7,6 +7,7 @@ cd /autograder/
 mkdir -p source/workshops/workshop/submissions/
 cp -r submission source/workshops/workshop/submissions/
 cd source/
-mkdir -p /autograder/results/
 npm run gradescope
-node ./workshops/modify-results.js
+node workshops/modify-results.js
+mkdir -p /autograder/results/
+ln -s /autograder/source/workshops/results.json /autograder/results/results.json
