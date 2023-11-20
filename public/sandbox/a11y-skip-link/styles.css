@@ -43,11 +43,23 @@ li a:active, li a.selected {
   color: white;
 }
 
-/* #region focus */
+/* #region skip */
+.skip-to-main a {
+  position: absolute;
+  top: -500px;
+  left: 0;
+  padding: 12px;
+  background-color: white;
+}
+
+.skip-to-main a:focus {
+  top: 0;
+}
+/* #endregion skip */
+
 :focus {
   outline: black 1rem solid;
 }
-/* #endregion focus */
 
 h1 {
   clear: both; /* Clear float */
