@@ -6,7 +6,7 @@
     "dev": "vitepress dev",
     "build": "vitepress build",
     "preview": "vitepress preview",
-    "grade": "pnpm exec playwright test --reporter=dot",
+    "grade": "pnpm exec playwright test --reporter=line",
     "gradescope": "PATH=/root/.local/share/pnpm/:$PATH PLAYWRIGHT_JSON_OUTPUT_NAME=./workshops/results.json pnpm exec playwright test --reporter=json",
     "zip": "node workshops/create-zips.js"
   },
@@ -32,6 +32,7 @@
     "vitepress": "^1.0.0-rc.20"
   },
   "dependencies": {
+    "@axe-core/playwright": "^4.8.1",
     "adm-zip": "^0.5.10",
     "autoprefixer": "^10.4.14",
     "canvas": "^2.11.2",

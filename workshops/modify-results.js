@@ -19,17 +19,32 @@ for (const suiteIndex in report.suites) {
     total += 1
     test.name = spec.title
     delete test.title
+    if (spec.title.includes('Axe')) {
+      test.output = ''
+      const a11yErrors = JSON.parse(atob(spec.tests[0].results[0].attachments[0].body))
+      for (const error of a11yErrors) {
+        test.output += `
+          ${error.help}
+          Impact: ${error.impact}
+          Tags: ${error.tags.join(', ')}
+          Description: ${error.description}
+          More info:
+          ${error.helpUrl}
+        `
+      }
+    }
     if (spec.title === 'HTML is valid') {
-      const validationError = JSON.parse(spec.tests[0].results[0].stderr[0].text)
-      test.output = `
-        ${validationError.message}
-
-        Line: ${validationError.line}
-
-        Read about this rule:
-
-        ${validationError.ruleUrl}
-      `
+      test.output = ''
+      const validationErrors = spec.tests[0].results[0].stderr
+      for (const error of validationErrors) {
+        const errorJSON = JSON.parse(error.text)
+        test.output += `
+          ${errorJSON.message}
+          Line: ${errorJSON.line}
+          More info:
+          ${errorJSON.ruleUrl}
+        `
+      }
     }
     report.tests.push(test)
   }
