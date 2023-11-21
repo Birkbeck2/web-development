@@ -34,13 +34,6 @@ export const outline = [
         code: 'table br p strong b em i figure img figcaption ul ol li div span header nav main aside article section footer'
       },
       {
-        text: 'Forms',
-        link: '/lectures/html-forms.html',
-        lecturer: 'Joseph Muller',
-        concepts: 'HTTP request methods, front end and back end',
-        code: 'form method action type label for input textarea name button'
-      },
-      {
         text: 'Workshop on semantic HTML',
         link: '/workshops/semantic-html/index.html',
         lecturer: 'Joseph Muller'
@@ -70,6 +63,36 @@ export const outline = [
         lecturer: 'Helena Wee',
       }
     ]
+  },
+  {
+    text: 'Accessibility',
+    items: [
+      {
+        text: 'Will it work? Using sandboxes to run code experiments',
+        link: '/lectures/will-it-work-using-sandboxes-to-test-code.html',
+        lecturer: 'Joseph Muller',
+        concepts: 'sandboxes'
+      },
+      {
+        text: 'Accessibility',
+        link: '/lectures/accessibility.html',
+        lecturer: 'Joseph Muller',
+        concepts: 'digital accessibility, disability, mainstream and assistive technology, standards',
+        code: ':focus outline header nav main section footer aria-label aria-labelledby'
+      },
+      {
+        text: 'Forms',
+        link: '/lectures/html-forms.html',
+        lecturer: 'Joseph Muller',
+        concepts: 'HTTP request methods, front end and back end',
+        code: 'form method action type label for input textarea name button'
+      },
+      {
+        text: 'Workshop: Accessiblity',
+        link: '/workshops/accessibility/index.html',
+        lecturer: 'Joseph Muller',
+      }
+    ]
   }
 ]
 
@@ -85,16 +108,9 @@ export function filterClassMeeting (meetings, pathStart) {
 }
 
 // {
-//   text: 'Will it work? Using sandboxes to run code experiments',
-//   link: '/lectures/will-it-work-using-sandboxes-to-test-code.html',
-//   lecturer: 'Joseph Muller',
-//   concepts: 'sandboxes'
-// },
-// {
 //   text: 'Behind-the-scenes HTML',
 //   link: '/lectures/behind-the-scenes-html.html',
 //   lecturer: 'Joseph Muller',
 //   concepts: 'social media cards, web search indexing, code comments, character encoding',
 //   code: 'head meta name content title description og:image twitter:image charset utf-8 style src link rel href script defer <!-- --> hidden'
 // },
-
