@@ -59,16 +59,21 @@ Mysteries Club”, a fake landing page created by
 [web.dev](https://web.dev/learn/accessibility)
 and made intentionally inaccessible.
 
-1. Download the starter code from
-   [inaccessible-landing-page](https://github.com/Birkbeck2/inaccessible-landing-page).
+![The original landing page for the Medical Mysteries
+Club](../../lectures/images/medical-mysteries-club.png)
 
-   Download it as a zip file (or clone it if you know Git).
+1. Download the starter code from GitHub:
+
+   [github.com/Birkbeck2/web-development-accessibility](https://github.com/Birkbeck2/web-development-accessibility).
+
+   You can download it as a zip file or create a repository from the
+   template (requires Git / GitHub knowledge).
 
    ![Download GitHub repo as zip file](../../lectures/images/download-repo-as-zip.png)
 
 2. Unzip or extract the files from the zip and open them in your editor.
 
-## Check it with automatic tools
+### Check it with automatic tools
 
 3. As a first step, please run an automatic accessibility checker. Modify the
    HTML or CSS to bring it up to accessible design standards.
@@ -78,17 +83,38 @@ The homework autograder for this session uses a free CLI version of Axe, so you
 can submit a working version of the homework on Gradescope.eu to see Axe errors.
 :::
 
-## Check it with mainstream technology
+### Check it with mainstream technology
 
 4. Once your checker is returning a good score, try manually inspecting the page,
    comparing it against what you know of WCAG, accessible design patterns from
    the lecture, semantic HTML, and responsive CSS. Are there any further
    improvements you can make?
 
-## Check it with assistive technology
+### Check it with assistive technology
 
 5. Finally, please examine it using a screen reader. What do you notice about the 
    usability that you missed with the checker and mainstream tech inspection?
+
+## Expand the form
+
+In the second part of the workshop, you’re asked to expand the form from
+a subscription form into a contact form.
+
+6. Add fields for first name, last name, email address, and message, and
+   change the text on the submit button to something like “Send”.
+
+7. Please make sure your form meets these requirements:
+
+    - Specify a form method.
+
+    - Choose the appropriate HTML elements and attributes for
+      each piece of information in the form.
+
+    - Give each input an appropriate name to serve as the variable name for the data.
+
+    - Make sure each input has a label that is fully accessible.
+
+    - Include a button for submitting the form with the appropriate markup.
 
 ## References
 
