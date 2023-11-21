@@ -25,12 +25,14 @@ accessible.
 Recall this unified definition of accessibility from your reading (Helen Petrie
 et al):
 
+<div class="my-8">
 <blockquote class="text-2xl">
-“All people, particularly disabled and older people, can use websites in
-a range of contexts of use, including mainstream and assistive
-technologies; to achieve this, websites need to be designed and developed
-to support usability across these contexts.” 
+  “All people, particularly disabled and
+  older people, can use websites in a range of contexts of use, including
+  mainstream and assistive technologies; to achieve this, websites need to
+  be designed and developed to support usability across these contexts.”
 </blockquote>
+</div>
 
 This definition helps us in several ways to remember a few key circumstances of
 accessible design:
