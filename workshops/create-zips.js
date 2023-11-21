@@ -18,7 +18,11 @@ for await (const workshopPath of yieldDirectories(allWorkshopsPath)) {
   zip.addLocalFile(setupSh)
   zip.addLocalFile(runAutograder)
   for await (const d of await fs.opendir(workshopPath)) {
-    if (!d.name.includes('submissions') && !d.name.endsWith('.zip')) {
+    if (
+      !d.name.includes('submissions')
+      && !d.name.includes('template-repo')
+      && !d.name.endsWith('.zip')
+    ) {
       const localPath = new URL(d.name, workshopURL).pathname
       if (d.isFile()) {
         const zipPath = path.join(zipBase, 'workshop')

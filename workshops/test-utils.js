@@ -1,6 +1,6 @@
 import { opendir } from 'node:fs/promises'
 import path from 'node:path'
-import { existsSync, readFileSync } from 'node:fs'
+import { mkdirSync, existsSync, readFileSync } from 'node:fs'
 import { rename, copyFile } from 'node:fs/promises'
 import { JSDOM } from 'jsdom'
 import yaml from 'yaml'
@@ -123,19 +123,23 @@ export async function propagateTestsToSubmissions () {
         // console.log(`Found test source ${gradePath}`)
         const testFile = path.parse(gradePath).base.replace('.grade.js', '.test.js')
         const submissionDir = path.join(workshopPath, 'submissions/')
-        if (existsSync(submissionDir)) {
-          for await (const submission of yieldDirectories(submissionDir)) {
-            const testPath = path.join(submission, testFile)
-            try {
-              await copyFile(gradePath, testPath)
-              if (existsSync(testPath)) {
-                // console.log(`Updated ${testPath}`)
-              } else {
-                // console.log(`Copied to ${testPath}`)
-              }
-            } catch {
-              console.error(`Could not copy ${gradePath} to ${testPath}`)
+        if (!existsSync(submissionDir)) {
+          console.log(`Created ${submissionDir}`)
+          mkdirSync(submissionDir, { recursive: true }, (error) => {
+            if (error) throw error
+          })
+        }
+        for await (const submission of yieldDirectories(submissionDir)) {
+          const testPath = path.join(submission, testFile)
+          try {
+            await copyFile(gradePath, testPath)
+            if (existsSync(testPath)) {
+              // console.log(`Updated ${testPath}`)
+            } else {
+              // console.log(`Copied to ${testPath}`)
             }
+          } catch {
+            console.error(`Could not copy ${gradePath} to ${testPath}`)
           }
         }
       }

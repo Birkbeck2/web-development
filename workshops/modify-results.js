@@ -20,6 +20,11 @@ for (const suiteIndex in report.suites) {
     test.name = spec.title
     delete test.title
     if (spec.title.includes('Axe')) {
+      // Refactor this to make it more flexible per test
+      total += 11
+      if (spec.status === 'passed') {
+        numPassed += 11
+      }
       test.output = ''
       const a11yErrors = JSON.parse(atob(spec.tests[0].results[0].attachments[0].body))
       for (const error of a11yErrors) {
