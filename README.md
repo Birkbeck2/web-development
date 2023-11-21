@@ -30,7 +30,7 @@ it up:
 
 1. [Install Git for Windows](https://gitforwindows.org/)
 
-2. Inside VS Code, [set Git Bash as your 
+2. Inside VS Code, [set Git Bash as your
    default terminal](https://code.visualstudio.com/docs/sourcecontrol/intro-to-git#_git-bash-on-windows)
 
 3. Then run the commands below inside the VS Code terminal
@@ -158,9 +158,9 @@ Workshops require a bit more structure.
    instructions for students to read during the workshop.
 
 3. If you have starter files for the workshop that you want students to
-   download, you can provide them in a subfolder called `starter-files`
-   (actually you can name it anything). Consider zipping them so that you
-   can create an easy download link in `index.md`.
+   download, you can provide them in a subfolder called `starter-files`.
+   To provide them to students, you can link to them individually in
+   `index.md` or zip them and link the zip in `index.md`.
 
 ## Adding navigation for lectures and workshops
 
@@ -219,7 +219,7 @@ workshops.
    Directory”](https://vitepress.dev/guide/asset-handling#the-public-directory)
    for why). For example:
 
-   ``` 
+   ```
    http://localhost:5173/web-development/sandbox/css-hover/index.html
    ```
 

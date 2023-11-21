@@ -206,7 +206,7 @@ Inside `index.html`:
 6. wrong host
 -->
 
-[Open in sandbox](/sandbox/images-and-other-paths/index.html){target="_self"}
+[View in browser](/sandbox/images-and-other-paths/index.html){target="_blank"}
 
 ## References
 

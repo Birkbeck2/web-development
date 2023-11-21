@@ -7,7 +7,6 @@ _"Enter card details", GOV.UK Design System, licensed under the [Open
 Government License
 3.0](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/)._
 
-
 So far we have covered how to present information on a webpage.
 
 What if you want to collect information from visitors? This could be text they
@@ -51,7 +50,7 @@ If the user buys something, that's another post request, because the
 server has to remember what they ordered, when it's supposed to be sent,
 and how they are going to pay for it.
 
-![You can see post requests happen in the network activity tab of your browser inspector](images/post-method-network-activity.png).
+![You can see post requests happen in the network activity tab of your browser inspector](images/post-method-network-activity.png)
 
 ## Check your understanding
 1. If I like or comment on something  on social media, does that use a get
@@ -71,22 +70,9 @@ user input.
 
 Here's a simple example:
 
-![The birthday form rendered in the browser](images/html-form-birthday.png)
+<<< @/public/sandbox/html-form/index.html#form{html}
 
-```html
-<h1>What's your birthday?</h1>
-<form method="post" action="save-birthday-data">
-  <div>
-    <label for="first-name">Your name</label>
-    <input id="first-name" name="first-name" type="text">
-  </div>
-  <div>
-    <label for="birthday">Your birthday</label>
-    <input id="birthday" name="birthday" type="date">
-  </div>
-  <button type="submit">Submit</button>
-</form>
-```
+[View in browser](/sandbox/html-form/index.html){target="_blank"}
 
 Let's go through each part of this.
 
@@ -110,11 +96,11 @@ can be relative or absolute. If you leave it out, the data will be
 returned to the same URL as the form page.
 
 ```html
-<form action="save-birthday-data"></form>
+<form action="save-birthday-data.html"></form>
 ```
 
 The example above assumes we have some JavaScript or Python or other code
-callable at the relative URL `save-birthday-data` that will save the data
+callable at the relative URL `save-birthday-data.html` that will save the data
 in a database on the server. Handling the data in this way is beyond the
 scope of this module.
 
@@ -167,6 +153,9 @@ The birthday field uses `type="date"`. This also takes advantage of the
 browser's built-in date-picker widget, which you can override with CSS
 styling.
 
+You can also make the input `required` if you wish. This will prevent the
+user from submitting the form unless valid data has been provided.
+
 ## `textarea`
 
 If you expect users to type a paragraph rather than one line of text, you
@@ -197,7 +186,7 @@ action URL when the user clicks this button.
 
 1. If I have an input with `id="destination"` and `class="vacation"`, 
    what attributes should the corresponding `label` element have?
-2. True or false: it's fine to have an `input` that has no `name` attribute.
+2. True or false: it's fine to have an `input` that has no `name` attribute. Why?
 3. What's the point of the `type` attribute on `input`?
 4. Which form elements are self-closing? 
 5. True or false: it's fine to leave the method off the form.
@@ -215,8 +204,13 @@ action URL when the user clicks this button.
 
 ## References
 
-“POST,” Mozilla Developer Network, last updated September 9, 2022, [https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST).
+“POST,” Mozilla Developer Network, last updated September 9, 2022,
+[https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST).
 
-“Your first form,” Mozilla Developer Network, last updated October 27, 2022, [https://developer.mozilla.org/en-US/docs/Learn/Forms/Your_first_form](https://developer.mozilla.org/en-US/docs/Learn/Forms/Your_first_form).
+“Your first form,” Mozilla Developer Network, last updated October 27,
+2022,
+[https://developer.mozilla.org/en-US/docs/Learn/Forms/Your_first_form](https://developer.mozilla.org/en-US/docs/Learn/Forms/Your_first_form).
 
-“Forms,” *HTML: The Living Standard: Edition for Web Developers,* last updated November 24, 2022, [https://html.spec.whatwg.org/dev/forms.html](https://html.spec.whatwg.org/dev/forms.html).
+“Forms,” *HTML: The Living Standard: Edition for Web Developers,* last
+updated November 24, 2022,
+[https://html.spec.whatwg.org/dev/forms.html](https://html.spec.whatwg.org/dev/forms.html).
