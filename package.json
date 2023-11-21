@@ -6,7 +6,8 @@
     "dev": "vitepress dev",
     "build": "vitepress build",
     "preview": "vitepress preview",
-    "grade": "pnpm exec playwright test --reporter=line",
+    "workshop": "pnpm exec vite",
+    "grade": "pnpm exec playwright test --reporter=html",
     "gradescope": "PATH=/root/.local/share/pnpm/:$PATH PLAYWRIGHT_JSON_OUTPUT_NAME=./workshops/results.json pnpm exec playwright test --reporter=json",
     "zip": "node workshops/create-zips.js"
   },
