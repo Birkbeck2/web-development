@@ -26,6 +26,9 @@ dependencies:
   jsdom:
     specifier: ^22.1.0
     version: 22.1.0(canvas@2.11.2)
+  pnpm:
+    specifier: ^8.10.5
+    version: 8.10.5
   postcss:
     specifier: ^8.4.27
     version: 8.4.31
@@ -1953,6 +1956,12 @@ packages:
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
+
+  /pnpm@8.10.5:
+    resolution: {integrity: sha512-nBYfQz2FVRxY8bOhCxjMPfcrWgLSyu5lZswFtvIK3e+UfnldkMOQM7+S3lUXfq1p2H9iqdqtyR56LjtY9JNToA==}
+    engines: {node: '>=16.14'}
+    hasBin: true
+    dev: false
 
   /postcss-import@15.1.0(postcss@8.4.31):
     resolution: {integrity: sha512-hpr+J05B2FVYUAXHeK1YyI267J/dDDhMU6B6civm8hSY1jYJnBXxzKDKDswzJmtLHryrjhnDjqqp/49t8FALew==}

@@ -3,7 +3,7 @@
 # Web Development and User Experience
 
 This repository holds lecture notes, code examples, workshops, and
-auto-markers for the corresponding MA module.
+autograders for the corresponding MA module.
 
 ## Getting started
 
@@ -149,18 +149,8 @@ You can add a new lecture part by adding a Markdown file inside
 `/lectures/`. It should then be available as an HTML file at the same
 relative path on the website.
 
-Workshops require a bit more structure.
-
-1. Add a subfolder named with the short name of your workshop in
-   `/workshops/`.
-
-2. Add an `index.md` inside that folder. This will hold the workshop
-   instructions for students to read during the workshop.
-
-3. If you have starter files for the workshop that you want students to
-   download, you can provide them in a subfolder called `starter-files`.
-   To provide them to students, you can link to them individually in
-   `index.md` or zip them and link the zip in `index.md`.
+Workshops require a bit more structure. See the [workshops
+readme](workshops/WORKSHOPS-README.md)
 
 ## Adding navigation for lectures and workshops
 
@@ -201,12 +191,12 @@ is looking for help with a particular mark or word they encounter or are
 expected to use in code. It will be rendered with `<code>`, so it is
 best to separate things with spaces only, not commas or anything else.
 
-## Publishing changes (for lecturers)
+## Publishing changes
 
 Please commit changes to a new branch, and submit a pull request with the
 maintainer (currently Joseph Muller) as a reviewer.
 
-## Teaching with sandboxes (for lecturers)
+## Teaching with sandboxes
 
 The `/public/sandbox/` folder has demo code showing a variety of concepts
 and patterns. Here’s one good workflow for using these during lectures and
@@ -225,62 +215,6 @@ workshops.
 
 2. Open the sandbox code in your IDE, on the projector screen. Make
    changes, switch to the browser, and refresh to see the changes.
-
-## Running auto-markers (for lecturers)
-
-The auto-markers are written using [Vitest](https://vitest.dev/),
-a user-friendly unit test framework in JavaScript from the makers of
-Vue.js.
-
-The tests are located in their corresponding workshop files, and there’s
-one `test-utils.js` module that helps you run the tests on any
-number of example or student repositories found in `submission`
-subfolders. The test utils expect this structure:
-
-```
-.
-└─ workshops
-   └─ basic-html
-      ├─ basic-html-instructions.md
-      ├─ road-users.test.js                       // first part of filename should match file to test
-      └─ submission                               // the contents of this folder are git-ignored
-         ├─ web-development-basic-html-student1   // this can be a Git repository
-         │  └─ road-users.html                    // this file will be tested
-         ├─ web-development-basic-html-student2
-         │  └─ road-users.html                    // this file will be tested too
-         └─ web-development-basic-html-instructor // make a private/internal instructor repository
-            │                                     // with correct submission, to test your tests
-            └─ road-users.html                    // this file will be tested too
-```
-
-Here are all the instructor answer repositories, which are set as
-`internal` to the `birkbeck2` GitHub organization:
-
-- [web-development-basic-html-instructor](https://github.com/Birkbeck2/web-development-basic-html-instructor)
-- [web-development-semantic-html-instructor](https://github.com/Birkbeck2/web-development-semantic-html-instructor)
-
-To run tests on all the matching files in subfolders of `submission`, clone
-the repository, install dependencies, and run the test command:
-
-```shell
-npm install
-npm run test
-```
-
-You should then see a summary in the terminal with the test results:
-
-![Vitest results](lectures/images/vitest-report.png)
-
-To run tests on
-[Gradescope](https://gradescope-autograders.readthedocs.io/en/latest/),
-generate zip files for the workshops using this script:
-
-```shell
-npm run zip
-```
-
-Then upload the correct zip file to the Gradescope assignment and check
-that it has built the testing environment successfully.
 
 ## Rights
 
