@@ -10,7 +10,7 @@ for (const suiteIndex in report.suites) {
   for (const specIndex in report.suites[suiteIndex].specs) {
     const spec = report.suites[suiteIndex].specs[specIndex]
     const test = Object.assign({}, spec)
-    if (spec.ok === true) {
+    if (spec.ok) {
       numPassed += 1
       test.status = 'passed'
     } else {
@@ -22,7 +22,7 @@ for (const suiteIndex in report.suites) {
     if (spec.title.includes('Axe')) {
       // Refactor this to make it more flexible per test
       total += 7
-      if (spec.status === 'passed') {
+      if (spec.ok) {
         numPassed += 7
       }
       test.output = ''
