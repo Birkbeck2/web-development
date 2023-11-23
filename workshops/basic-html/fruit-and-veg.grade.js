@@ -21,7 +21,8 @@ test('h1 used', async ({ page }) => {
 })
 test('h1 includes correct text', async ({ page }) => {
   await page.goto(targetURL)
-  await expect(page.locator('body h1')).toContainText(/veg|Veg/)
+  const locator = page.locator('body h1')
+  await expect(locator).toContainText('veg', {ignoreCase : true})
 })
 test('p used', async ({ page }) => {
   await page.goto(targetURL)
