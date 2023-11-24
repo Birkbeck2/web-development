@@ -9,7 +9,12 @@
 <template>
   <div v-for="meeting of meetings.data">
     <h2 :id="slugify(meeting.text)">
-      <a :href="'#'+slugify(meeting.text)">{{ meeting.text }}</a>
+      {{ meeting.text }}
+      <a
+        :href="'#'+slugify(meeting.text)"
+        :aria-label="'Permalink to '+meeting.text"
+        class="header-anchor">
+      </a>
     </h2>
     <div v-for="item of meeting.items">
       <h3><VPLink :href="item.link">{{ item.text }}</VPLink></h3>
