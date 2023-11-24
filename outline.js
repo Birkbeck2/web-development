@@ -103,57 +103,71 @@ export const outline = [
   {
     text: 'Unix shell, Git and GitHub',
     lecturer: 'Joseph Muller',
+    items: [
+    //   {
+    //     text: 'Using the command line',
+    //     link: '/lectures/command-line-interface.html',
+    //     concepts: 'command line interface, Unix shell',
+    //     code: 'pwd ls cat touch mkdir mv cp rm'
+    //   },
+    //   {
+    //     text: 'Understanding and Using Git',
+    //     link: '/lectures/git.html',
+    //     concepts: 'command line interface, Unix shell',
+    //     code: 'pwd ls cat touch mkdir mv cp rm'
+    //   },
+    ]
   },
   {
     text: 'Introduction to programming with JavaScript',
     lecturer: 'Joseph Muller',
     items: [
-      {
-        text: 'Setup',
-        link: '/lectures/javascript-setup.html',
-        concepts: 'programming language, running JavaScript code, comments',
-        code: 'script node console.log // /* */'
-      },
-      {
-        text: 'Values and data types',
-        link: '/lectures/javascript-values-and-data-types.html',
-        concepts: 'values, data types, strings, escaping',
-        code: '" \\ numbers booleans true false undefined null typeof'
-      },
-      {
-        text: 'Evaluation with operators',
-        link: '/lectures/javascript-evaluation-with-operators.html',
-        concepts: 'operators',
-        code: '+ == != < > - / *'
-      },
-      {
-        text: 'Workshop: Intro JavaScript',
-        link: '/workshops/js-values.html',
-      },
+    //   {
+    //     text: 'Setup',
+    //     link: '/lectures/javascript-setup.html',
+    //     concepts: 'programming language, running JavaScript code, comments',
+    //     code: 'script node console.log // /* */'
+    //   },
+    //   {
+    //     text: 'Values and data types',
+    //     link: '/lectures/javascript-values-and-data-types.html',
+    //     concepts: 'values, data types, strings, escaping',
+    //     code: '" \\ numbers booleans true false undefined null typeof'
+    //   },
+    //   {
+    //     text: 'Evaluation with operators',
+    //     link: '/lectures/javascript-evaluation-with-operators.html',
+    //     concepts: 'operators',
+    //     code: '+ == != < > - / *'
+    //   },
+    //   {
+    //     text: 'Workshop: Intro JavaScript',
+    //     link: 'https://github.com/Birkbeck2/wdux2223-workshop-js-values',
+    //   },
     ]
   },
   {
     text: 'JavaScript conditionals and functions',
     lecturer: 'Joseph Muller and Helena Wee',
     items: [
-      {
-        text: 'Variables',
-        link: '/lectures/assigning-variables.html',
-        concepts: 'statements, variables',
-        code: '; = let const var'
-      },
-      {
-        text: 'Conditionals',
-        link: '/lectures/setting-up-conditional-statements.html',
-        concepts: 'conditionals, block scope',
-        code: 'if else while {}'
-      },
-      {
-        text: 'Functions',
-        link: '/lectures/writing-functions-to-make-programs-modular.html',
-        concepts: 'functions, function scope',
-        code: 'function return {}'
-      },
+    //   {
+    //     text: 'Variables',
+    //     link: '/lectures/javascript-variables.html',
+    //     concepts: 'statements, variables',
+    //     code: '; = let const var'
+    //   },
+    //   {
+    //     text: 'Conditionals',
+    //     link: '/lectures/javascript-conditionals.html',
+    //     concepts: 'conditionals, block scope',
+    //     code: 'if else while {}'
+    //   },
+    //   {
+    //     text: 'Functions',
+    //     link: '/lectures/javascript-functions.html',
+    //     concepts: 'functions, function scope',
+    //     code: 'function return {}'
+    //   },
     ]
   }
 ]
