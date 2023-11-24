@@ -45,12 +45,6 @@ test('.dropdown-content set to display none', async ({ page }) => {
   await expect(locator).toHaveCSS('display', 'none');
 })
 
-test('.dropdown-content set to display none', async ({ page }) => {
-  await page.goto(targetURL)
-  const locator = page.locator('.dropdown-content')
-  await expect(locator).toHaveCSS('display', 'none');
-})
-
 test('.dropdown:hover set to display block', async ({ page }) => {
   await page.goto(targetURL)
   const locator = page.locator('.dropdown:hover')

@@ -1,4 +1,4 @@
-c# Workshop: Advanced CSS
+# Workshop: Advanced CSS
 
 ## CSS navigation bars
 
