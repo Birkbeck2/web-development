@@ -135,7 +135,8 @@ If any tests failed, Playwright will open an HTML page for you to go through
 the failure messages. Anything you log to the console will be available under
 the “stdout” details section.
 
-![Playwright HTML results](lectures/images/playwright-html-reporter.png)
+![Playwright HTML
+results](../lectures/images/playwright-html-reporter.png)
 
 ## Running on Gradescope
 

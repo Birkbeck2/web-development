@@ -8,7 +8,7 @@ export default defineConfig({
   lastUpdated: true,
   description: 'Course materials for Web Development and User Experience, a module in the Birkbeck School of Creative Arts, Culture and Communication',
   base: '/web-development/',
-  srcExclude: ['README.md', 'LICENSE.md', 'WORKSHOPS-README.md'],
+  srcExclude: ['**/*README.md', 'LICENSE.md'],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
