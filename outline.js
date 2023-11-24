@@ -96,17 +96,6 @@ export const outline = [
   }
 ]
 
-export function filterClassMeeting (meetings, pathStart) {
-  const filteredItems = []
-  meetings.forEach(meeting => {
-    meeting.items = meeting.items.filter(lecturePart => {
-      return lecturePart.link.startsWith(pathStart)
-    })
-    if (meeting.items) filteredItems.push(meeting)
-  })
-  return filteredItems
-}
-
 // {
 //   text: 'Behind-the-scenes HTML',
 //   link: '/lectures/behind-the-scenes-html.html',
@@ -114,3 +103,14 @@ export function filterClassMeeting (meetings, pathStart) {
 //   concepts: 'social media cards, web search indexing, code comments, character encoding',
 //   code: 'head meta name content title description og:image twitter:image charset utf-8 style src link rel href script defer <!-- --> hidden'
 // },
+
+export function filterClassMeeting (meetings, pathStart) {
+  const filteredItems = []
+  meetings.forEach(meeting => {
+    meeting.items = meeting.items.filter(lecturePart => {
+      return lecturePart.link.startsWith(pathStart)
+    })
+    if (meeting.items.length) filteredItems.push(meeting)
+  })
+  return filteredItems
+}
