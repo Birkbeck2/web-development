@@ -10,7 +10,7 @@ export default async function propagateGradeFileToTestFiles () {
     for await (const filePath of yieldFiles(workshopPath)) {
       if (filePath.endsWith('.grade.js')) {
         const gradePath = filePath
-        console.log(`Found test source ${gradePath}`)
+        // console.log(`Found test source ${gradePath}`)
         const testFile = path.parse(gradePath).base.replace('.grade.js', '.test.js')
         const submissionDir = path.join(workshopPath, 'submissions', '/')
         try {
@@ -23,7 +23,7 @@ export default async function propagateGradeFileToTestFiles () {
           const testPath = path.join(submission, testFile)
           try {
             await copyFile(gradePath, testPath)
-            console.log(`Copied to ${testPath}`)
+            // console.log(`Copied to ${testPath}`)
           } catch {
             console.error(`Could not copy ${gradePath} to ${testPath}`)
           }
