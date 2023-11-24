@@ -3,15 +3,15 @@
 ## CSS navigation bars
 
 1)	In a new folder, create a basic empty HTML page, and external CSS file. Call it index.html, and name the external CSS file styles.css.
-2)	Create a simple header for your page using a heading tag and style it how you want. The heading should be your first name and then "'s website".
-3)	Using HTML and CSS create a horizontal navigation bar with 3 links on it: “Home”, “Hobbies”, and then “Contact me”.
+2)	Create a simple header for your page using a semantic heading tag with a main heading. The main heading should contain your first name and then "'s website".
+3)	Using HTML and CSS to create a horizontal navigation bar (with list class topnav) with 3 links on it: “Home”, “Hobbies”, and then “Contact me”.
 4)	This page is now your home page. Make copies of the file, so that there are the same number of pages in your website’s folder as there are in your navigation bar. Rename each one according to your navigation bar links.
 5)	Make the navigation bar on each page link to the appropriate files.
 
 ## CSS dropdown and breadcrumb menus
 
-1)	In the “Home” html document of the last task, create and style a dropdown menu for your “Hobbies” navigation link with 3 links to new pages, all with the same navigation system as the home page. These new pages are subpages of the “Hobbies” page, and their titles should be appropriate to the theme you have chosen. For example for “Hobbies” subpages these might be called: “Films”, “Walking”, “Reading” etc.
-2)	Create a breadcrumb system of links for each page in your website. 
+1)	In the “Home” html document of the last task, create and style a dropdown menu (with overall class dropdown) for your “Hobbies” navigation link with a container (class dropdown-content) with 3 links to new pages, all with the same navigation system as the home page. These new pages are subpages of the “Hobbies” page, and for the purposes of this workshop the titles should be: “Films”, “Galleries”, “Reading”. The file names for each for these are films.html, galleries.html, reading.html respectively.
+2)	Create a breadcrumb system of links (with list class breadcrumb) for each page in your website. 
 
 ## CSS positioning, z-index and float
 
