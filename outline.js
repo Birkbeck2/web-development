@@ -1,96 +1,90 @@
 export const outline = [
   {
     text: 'Basic HTML',
+    lecturer: 'Helena Wee',
     items: [
       {
         text: 'Workshop on basic HTML',
         link: '/workshops/basic-html/index.html',
-        lecturer: 'Helena Wee'
       }
     ]
   },
   {
     text: 'Semantic HTML',
+    lecturer: 'Joseph Muller',
     items: [
       {
         text: 'HTML attributes',
         link: '/lectures/html-attributes.html',
-        lecturer: 'Joseph Muller',
         concepts: 'variable, attribute, attribute name, attribute value',
         code: '= " lang id class a href'
       },
       {
         text: 'Images and other files in HTML',
         link: '/lectures/images-and-other-files-in-html.html',
-        lecturer: 'Joseph Muller',
         concepts: 'alt text, absolute and relative paths, files',
         code: 'img src alt width height index.html'
       },
       {
         text: 'Meaning and presentation in HTML',
         link: '/lectures/meaning-and-presentation-in-html.html',
-        lecturer: 'Joseph Muller',
         concepts: 'meaning, presentation, semantic HTML, HTML history',
         code: 'table br p strong b em i figure img figcaption ul ol li div span header nav main aside article section footer'
       },
       {
         text: 'Workshop on semantic HTML',
         link: '/workshops/semantic-html/index.html',
-        lecturer: 'Joseph Muller'
       }
     ]
   },
   {
     text: 'Intro to CSS',
+    lecturer: 'Helena Wee',
     // concepts: 'stylesheets, style and content, internal and external CSS, selector, declaration, property, value, cascade, fonts, box model, margins, padding, borders, alignment, hover, display',
     // code: '{ } . # ; " class id color background-color width height text-align text-decoration font-family margin padding border :hover display'
     items: [
       {
         text: 'Workshop on Intro CSS',
         link: '/workshops/intro-css/index.html',
-        lecturer: 'Helena Wee',
       }
     ]
   },
   {
     text: 'Responsive CSS',
+    lecturer: 'Helena Wee',
     // concepts: 'responsive design, media queries, flexible layouts, grid layouts',
     // code: 'media flex grid'
     items: [
       {
         text: 'Workshop: Responsive CSS',
         link: '/workshops/responsive/index.html',
-        lecturer: 'Helena Wee',
       }
     ]
   },
   {
     text: 'Accessibility',
+    lecturer: 'Joseph Muller',
     items: [
       {
         text: 'Will it work? Using sandboxes to run code experiments',
         link: '/lectures/will-it-work-using-sandboxes-to-test-code.html',
-        lecturer: 'Joseph Muller',
         concepts: 'sandboxes'
       },
       {
         text: 'Accessibility',
         link: '/lectures/accessibility.html',
-        lecturer: 'Joseph Muller',
         concepts: 'digital accessibility, disability, mainstream and assistive technology, standards',
         code: ':focus outline header nav main section footer aria-label aria-labelledby'
       },
       {
         text: 'Forms',
         link: '/lectures/html-forms.html',
-        lecturer: 'Joseph Muller',
         concepts: 'HTTP request methods, front end and back end',
         code: 'form method action type label for input textarea name button'
       },
       {
         text: 'Workshop: Accessiblity',
         link: '/workshops/accessibility/index.html',
-        lecturer: 'Joseph Muller',
       }
     ]
   },
@@ -104,6 +98,62 @@ export const outline = [
         link: '/workshops/advanced/index.html',
         lecturer: 'Helena Wee',
       }
+    ]
+  },
+  {
+    text: 'Unix shell, Git and GitHub',
+    lecturer: 'Joseph Muller',
+  },
+  {
+    text: 'Introduction to programming with JavaScript',
+    lecturer: 'Joseph Muller',
+    items: [
+      {
+        text: 'Setup',
+        link: '/lectures/javascript-setup.html',
+        concepts: 'programming language, running JavaScript code, comments',
+        code: 'script node console.log // /* */'
+      },
+      {
+        text: 'Values and data types',
+        link: '/lectures/javascript-values-and-data-types.html',
+        concepts: 'values, data types, strings, escaping',
+        code: '" \\ numbers booleans true false undefined null typeof'
+      },
+      {
+        text: 'Evaluation with operators',
+        link: '/lectures/javascript-evaluation-with-operators.html',
+        concepts: 'operators',
+        code: '+ == != < > - / *'
+      },
+      {
+        text: 'Workshop: Intro JavaScript',
+        link: '/workshops/js-values.html',
+      },
+    ]
+  },
+  {
+    text: 'JavaScript conditionals and functions',
+    lecturer: 'Joseph Muller and Helena Wee',
+    items: [
+      {
+        text: 'Variables',
+        link: '/lectures/assigning-variables.html',
+        concepts: 'statements, variables',
+        code: '; = let const var'
+      },
+      {
+        text: 'Conditionals',
+        link: '/lectures/setting-up-conditional-statements.html',
+        concepts: 'conditionals, block scope',
+        code: 'if else while {}'
+      },
+      {
+        text: 'Functions',
+        link: '/lectures/writing-functions-to-make-programs-modular.html',
+        concepts: 'functions, function scope',
+        code: 'function return {}'
+      },
     ]
   }
 ]
