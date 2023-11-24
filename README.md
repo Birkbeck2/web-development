@@ -90,6 +90,13 @@ Once you have Git and NPM, here are the installation steps:
    ls node_modules
    ```
 
+5. If you are going to use Playwright to write autograders, run
+   this line to install playwright and the Chrome browser engine:
+
+   ```
+   npx playwright install --with-deps chromium
+   ```
+
 ## Running the website
 
 Once you install the dependencies, you should be able to run the website
