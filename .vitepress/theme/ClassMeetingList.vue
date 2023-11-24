@@ -13,6 +13,7 @@
       <a
         :href="'#'+slugify(meeting.text)"
         :aria-label="'Permalink to '+meeting.text"
+        tabindex="-1"
         class="header-anchor">
       </a>
     </h2>
