@@ -19,6 +19,7 @@ What are sandboxes? Check out the [sandbox guide](/lectures/will-it-work-using-s
     <a
       :href="'#'+slugify(sandbox.text)"
       :aria-label="'Permalink to '+sandbox.text"
+      tabindex="-1"
       class="header-anchor">
     </a>
   </h2>
