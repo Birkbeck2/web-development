@@ -17,6 +17,7 @@
         class="header-anchor">
       </a>
     </h2>
+    <p v-if="meeting.lecturer">{{ meeting.lecturer }}</p>
     <div v-for="item of meeting.items">
       <h3><VPLink :href="item.link">{{ item.text }}</VPLink></h3>
       <p v-if="item.lecturer">{{ item.lecturer }}</p>

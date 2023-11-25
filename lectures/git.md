@@ -35,8 +35,3 @@ Once you understand the concepts, it's time to integrate Git into your workflow.
 Morten Rand-Hendriksen, "Git from Scratch," LinkedIn Learning, June 30, 2022, [https://www.linkedin.com/learning/git-from-scratch](https://www.linkedin.com/learning/git-from-scratch).
 
 "Using Git source control in VS Code," Visual Studio Code, May 27, 2022, [https://code.visualstudio.com/docs/sourcecontrol/overview](https://code.visualstudio.com/docs/sourcecontrol/overview).
-
-## Rights
-Copyright Birkbeck, University of London
-
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Licence" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.

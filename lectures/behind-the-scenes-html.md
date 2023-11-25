@@ -4,15 +4,13 @@
 
 _“Behind the scenes Photographer Levitation Magic [explore #496]” by Louish Pixel is licensed under [CC BY-NC-ND 2.0](https://creativecommons.org/licenses/by-nc-nd/2.0/?ref=openverse)._
 
-Now that you know about attributes, you are ready to code some of the hidden, behind-the-scenes aspects of HTML.
-
-For example, have you ever noticed that when you post a link to something on social media, or you send a link to a friend on a messenger app like WhatsApp, it automatically populates a box containing the title and description of the thing, along with a picture of it? 
+Have you ever noticed that when you post a link to something on social media, or you send a link to a friend on a messenger app like WhatsApp, it automatically populates a box containing the title and description of the thing, along with a picture of it? 
 
 Here's an example from WhatsApp:
 
 ![Whatsapp loads the image, title, and description of a link](images/whatsapp-fireworks-link.png)
 
-How does it get there? It gets there because WhatsApp does some things behind the scenes that it doesn't show you. WhatsApp opens the link, loads the HTML document, and looks inside the HTML `head` element for information about what image, title, and description to use to represent that webpage inside WhatsApp.
+How does it get there? Behind the scenes, WhatsApp opens the link, loads the HTML document, and looks inside the HTML `head` element for information about what image, title, and description to use when rendering the preview card that you see in WhatsApp.
 
 This means that, as a web developer, you have to think about the instructions you give to third-party websites that link to your website. And the way you give those instructions has to do with attributes inside special elements in the `head` element.
 
@@ -33,11 +31,10 @@ We already know one thing that goes into the `head`, the `title`.
 ```html
 <!DOCTYPE html>
 <html lang="en-GB">
-    <head>
-        <title>Victorian Occultism and the Art of Synesthesia</title>
-    </head>
-    <body>
-    </body>
+  <head>
+    <title>Victorian Occultism and the Art of Synesthesia</title>
+  </head>
+  <body></body>
 </html>
 ```
 
@@ -83,19 +80,17 @@ You also include `og:` in the value of the `property` attribute to differentiate
 
 ```html
 <meta
-    property="og:image"
-    content="https://the-public-domain-review.imgix.net/essays/victorian-occultism-and-the-art-of-synesthesia/thoughtformsthumb.jpg"
-    alt="Colorful drawn shapes ripple outward above a cathedral in a field"
->
+  property="og:image"
+  content="https://the-public-domain-review.imgix.net/essays/victorian-occultism-and-the-art-of-synesthesia/thoughtformsthumb.jpg"
+  alt="Colorful drawn shapes ripple outward above a cathedral in a field">
 ```
 
 For Twitter, you use `name` and `content`, but you include `twitter:` inside the value.
 ```html
 <meta
-    name="twitter:image"
-    content="https://the-public-domain-review.imgix.net/essays/victorian-occultism-and-the-art-of-synesthesia/thoughtformsthumb.jpg"
-    alt="Colorful drawn shapes ripple outward above a cathedral in a field"
->
+  name="twitter:image"
+  content="https://the-public-domain-review.imgix.net/essays/victorian-occultism-and-the-art-of-synesthesia/thoughtformsthumb.jpg"
+  alt="Colorful drawn shapes ripple outward above a cathedral in a field">
 ```
 
 As with any image, you include alt text.
@@ -109,16 +104,15 @@ If somebody posts a link to the page below in a group on WhatsApp, what will the
 
 ```html
 <html lang="en">
-    <head>
-    </head>
-    <body>
-        <img
-            src="images/leaf-shed-in-autumn.jpg"
-            alt="A light brown maple leaf spread out on a white background"
-            width="400"
-            height="400"
-        >
-    </body>
+  <head>
+  </head>
+  <body>
+    <img
+      src="images/leaf-shed-in-autumn.jpg"
+      alt="A light brown maple leaf spread out on a white background"
+      width="400"
+      height="400">
+  </body>
 </html>
 ```
 
@@ -163,14 +157,14 @@ The first way to put style in the head is by wrapping CSS code with the `style` 
 
 ```html
 <head>
-    <style>
-        p { color: red; }
-        h2 { font-family: sans-serif; }
-    </style>
+  <style>
+    p { color: red; }
+    h2 { font-family: sans-serif; }
+  </style>
 </head>
 <body>
-    <h2>Autumn</h2>
-    <p>Leaves are falling.</p>
+  <h2>Autumn</h2>
+  <p>Leaves are falling.</p>
 </body>
 ```
 
@@ -192,11 +186,11 @@ In `index.html`:
 
 ```html
 <head>
-    <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <h2>Autumn</h2>
-    <p>Leaves are falling.</p>
+  <h2>Autumn</h2>
+  <p>Leaves are falling.</p>
 </body>
 ```
 
@@ -213,8 +207,8 @@ While we're on style, you need to know about one other way to include CSS in HTM
 
 ```html
 <body>
-    <h2 style="font-family: sans-serif;">Autumn</h2>
-    <p style="color: red;">Leaves are falling.</p>
+  <h2 style="font-family: sans-serif;">Autumn</h2>
+  <p style="color: red;">Leaves are falling.</p>
 </body>
 ```
 
@@ -230,9 +224,9 @@ The `script` element works just like the `style` element, except it wraps *JavaS
 
 ```html
 <head>
-    <script>
-        alert("Hello!");
-    </script>
+  <script>
+    alert("Hello!");
+  </script>
 </head>
 ```
 
@@ -250,7 +244,7 @@ In `index.html`:
 
 ```html
 <head>
-    <script src="scripts/main.js" defer></script>
+  <script src="scripts/main.js" defer></script>
 </head>
 ```
 
@@ -275,33 +269,30 @@ Here are all these elements put together.
 ```html
 <!DOCTYPE html>
 <html lang="en-GB">
-    <head>
-        <meta charset="utf-8">
-        <title>The Seasons</title>
-        <meta
-            name="description"
-            content="The seasons are described in terse, overly structured banalities"
-        >
-        <meta
-            property="og:image"
-            content="images/leaf-shed-in-autumn.png"
-            alt="A light brown maple leaf spread out on a white background"
-        >
-        <meta
-            name="twitter:image"
-            content="images/leaf-shed-in-autumn.png"
-            alt="A light brown maple leaf spread out on a white background"
-        >
-        <link rel="stylesheet" href="styles/main.css">
-        <script src="scripts/main.js" defer></script>
-    </head>
-    <body>
-        <h1>The seasons</h1>
-        <section>
-            <h2>Autumn</h2>
-            <p>Leaves are falling.</p>
-        </section>
-    </body>
+  <head>
+    <meta charset="utf-8">
+    <title>The Seasons</title>
+    <meta
+      name="description"
+      content="The seasons are described in terse, overly structured banalities">
+    <meta
+      property="og:image"
+      content="images/leaf-shed-in-autumn.png"
+      alt="A light brown maple leaf spread out on a white background">
+    <meta
+      name="twitter:image"
+      content="images/leaf-shed-in-autumn.png"
+      alt="A light brown maple leaf spread out on a white background">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/main.js" defer></script>
+  </head>
+  <body>
+    <h1>The seasons</h1>
+    <section>
+      <h2>Autumn</h2>
+      <p>Leaves are falling.</p>
+    </section>
+  </body>
 </html>
 ```
 
@@ -358,8 +349,3 @@ Until you know how to do that, you may just find it useful to set some parts of 
 <a name="breen"></a>Benjamin Breen, “Victorian Occultism and the Art of Synesthesia,” _The Public Domain Review_, March 19, 2014, [https://publicdomainreview.org/essay/victorian-occultism-and-the-art-of-synesthesia](https://publicdomainreview.org/essay/victorian-occultism-and-the-art-of-synesthesia). This article was originally published in The Public Domain Review under a Creative Commons Attribution-ShareAlike 3.0. If you wish to reuse it please see [publicdomainreview.org/legal](https://publicdomainreview.org/legal/).
 
 *HTML: The Living Standard: Edition for Web Developers,* last updated September 28, 2022, https://html.spec.whatwg.org/dev/.
-
-## Rights
-Copyright Birkbeck, University of London
-
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Licence" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
