@@ -46,7 +46,7 @@ a test file. You can therefore run the tests on any number of example or
 student repositories found in folders like
 `workshops/my_workshop/submissions/student_a/` or
 `workshops/my_workshop/submissions/student_b/`, while only editing one
-main test script. 
+main test script.
 
 ## Instructor answers
 
@@ -66,6 +66,14 @@ GitHub organization.
 By cloning each of these repositories into the appropriate `submissions`
 folder, you give your autograder something to run on even before you have
 student submissions.
+
+NOTE: If you use VS Code, please enable scanning nested Git repositories:
+
+1. Open up the settings pane with File > Preferences > Settings
+
+2. Search for “Git: Repository Scan Max Depth”.
+
+3. Set the value to 5.
 
 ## Writing tests
 
@@ -173,7 +181,7 @@ https://github.com/Birkbeck2/web-development-my-workshop-instructor
 ```
 
 You also want to be able to pull changes *from* the template to the
-answers, if you change the workshop in the future. 
+answers, if you change the workshop in the future.
 
 Normally this situation could be handled by a GitHub fork, but you want
 them both to be on the Birkbeck2 organization.
