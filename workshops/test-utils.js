@@ -1,3 +1,4 @@
+import { fileURLToPath } from 'node:url'
 import { opendir } from 'node:fs/promises'
 import path from 'node:path'
 import { mkdirSync, existsSync, readFileSync } from 'node:fs'
@@ -114,39 +115,6 @@ function logValidationErrors (result, filePath) {
   }
 }
 
-export async function propagateTestsToSubmissions () {
-  const workshopsPath = path.parse(new URL(import.meta.url).pathname).dir
-  for await (const workshopPath of yieldDirectories(workshopsPath)) {
-    for await (const filePath of yieldFiles(workshopPath)) {
-      if (filePath.endsWith('.grade.js')) {
-        const gradePath = filePath
-        // console.log(`Found test source ${gradePath}`)
-        const testFile = path.parse(gradePath).base.replace('.grade.js', '.test.js')
-        const submissionDir = path.join(workshopPath, 'submissions/')
-        if (!existsSync(submissionDir)) {
-          console.log(`Created ${submissionDir}`)
-          mkdirSync(submissionDir, { recursive: true }, (error) => {
-            if (error) throw error
-          })
-        }
-        for await (const submission of yieldDirectories(submissionDir)) {
-          const testPath = path.join(submission, testFile)
-          try {
-            await copyFile(gradePath, testPath)
-            if (existsSync(testPath)) {
-              // console.log(`Updated ${testPath}`)
-            } else {
-              // console.log(`Copied to ${testPath}`)
-            }
-          } catch {
-            console.error(`Could not copy ${gradePath} to ${testPath}`)
-          }
-        }
-      }
-    }
-  }
-}
-
 export async function renameSubmissionsByCoder () {
   // const workshopsPath = path.parse(new URL(import.meta.url).pathname).dir
   // for await (const workshopPath of yieldDirectories(workshopsPath)) {
@@ -166,8 +134,11 @@ export async function renameSubmissionsByCoder () {
   // }
 }
 
-export function determineBaseURL (testURL) {
-  const testFile = path.parse(testURL).base
-  const submissionPath = testURL.split('/workshops/')[1].replace(testFile, '')
-  return new URL(submissionPath, playwrightConfig.use.baseURL)
+export function determineBaseURL (testImportMetaURL) {
+  const testPath = fileURLToPath(new URL(testImportMetaURL))
+  const testFile = path.parse(testPath).base
+  const splitPath = path.parse(testPath).dir.split(path.sep)
+  const submissionPath = path.join('/', ...splitPath.slice(splitPath.indexOf('workshops')), '/')
+  const baseURL = new URL(submissionPath, playwrightConfig.use.baseURL)
+  return baseURL
 }

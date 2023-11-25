@@ -93,6 +93,18 @@ export const outline = [
         lecturer: 'Joseph Muller',
       }
     ]
+  },
+  {
+    text: 'Advanced CSS',
+    // concepts: 'positioning, z-index, float, navigation bar, dropdown menu, breadcumb menu',
+    // code: 'positioning navigation dropdown'
+    items: [
+      {
+        text: 'Workshop: Advanced CSS',
+        link: '/workshops/advanced/index.html',
+        lecturer: 'Helena Wee',
+      }
+    ]
   }
 ]
 
