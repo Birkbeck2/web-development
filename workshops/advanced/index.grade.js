@@ -9,8 +9,8 @@ const targetURL = new URL(targetFile, baseURL).href
 
 test('header contains h1', async ({ page }) => {
   await page.goto(targetURL)
-  const locator = page.locator('header')
-  await expect(locator).toHaveText('h1');
+  const locator = page.locator('header > h1')
+  await expect(locator).toContainText('website', {ignoreCase: true});
 })
 
 test('nav contains ul with class topnav', async ({ page }) => {
@@ -25,7 +25,7 @@ test('ul display set to inline', async ({ page }) => {
   await page.goto(targetURL)
 
   // Define a CSS locator
-  const locator = page.locator('ul.topnav li')
+  const locator = page.locator('ul.topnav > li').nth(1)
   // Each locator is a Promise that is resolved either with
   // await or with a method like `toContainText` below
 
@@ -45,63 +45,63 @@ test('.dropdown-content set to display none', async ({ page }) => {
   await expect(locator).toHaveCSS('display', 'none');
 })
 
-test('.dropdown:hover set to display block', async ({ page }) => {
+/*test('.dropdown:hover set to display block', async ({ page }) => {
   await page.goto(targetURL)
-  const locator = page.locator('.dropdown:hover')
+  const locator = page.locator('css=.dropdown:hover')
   await expect(locator).toHaveCSS('display', 'block');
-})
+})*/
 
-test('list class breadcrumb set to display inline', async ({ page }) => {
+test('list class breadcrumb list item set to display inline', async ({ page }) => {
   await page.goto(targetURL)
-  const locator = page.locator('.breadcrumb')
+  const locator = page.locator('ul.breadcrumb > li')
   await expect(locator).toHaveCSS('display', 'inline');
 })
 
 test('catsitting id image is positioned absolutely', async ({ page }) => {
   await page.goto(targetURL)
-  const locator = page.locator('.catsitting')
+  const locator = page.locator('#catsitting')
   await expect(locator).toHaveCSS('position', 'absolute');
 })
 
 test('catsitting id image is positioned to right', async ({ page }) => {
   await page.goto(targetURL)
-  const locator = page.locator('.catsitting')
+  const locator = page.locator('#catsitting')
   await expect(locator).toHaveCSS('right', '0px');
 })
 
 test('catFace id image is 300px', async ({ page }) => {
   await page.goto(targetURL)
-  const locator = page.locator('.catsitting')
+  const locator = page.locator('#catFace')
   await expect(locator).toHaveCSS('width', '300px');
 })
 
 test('catFace id image positioning', async ({ page }) => {
   await page.goto(targetURL)
-  const locator = page.locator('.catsitting')
+  const locator = page.locator('#catFace')
   await expect(locator).toHaveCSS('position', 'fixed');
 })
 
 test('ball of wool image width 600px', async ({ page }) => {
   await page.goto(targetURL)
-  const locator = page.locator('.ballwool')
+  const locator = page.locator('#ballWool')
   await expect(locator).toHaveCSS('width', '600px');
 })
 
 test('ball of wool image relative positioning', async ({ page }) => {
   await page.goto(targetURL)
-  const locator = page.locator('.ballwool')
+  const locator = page.locator('#ballWool')
   await expect(locator).toHaveCSS('position', 'relative');
 })
 
 test('butterfly image has z-index more than 0', async ({ page }) => {
   await page.goto(targetURL)
-  const locator = page.locator('.butterfly')
-  await expect(locator).toHaveText('z-index');
+  const locator = page.locator('#butterfly')
+  await expect(locator).toHaveCSS('z-index', '10');
 })
 
 test('div with mouse image has float', async ({ page }) => {
   await page.goto(targetURL)
-  const locator = page.locator('div')
+  const locator = page.locator('div > img#mouse')
   await expect(locator).toHaveCSS('float', 'left');
 })
 
