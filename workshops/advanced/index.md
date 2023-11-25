@@ -18,7 +18,7 @@
 1)	Download the images zip folder from moodle. Extract the images and put them in an images folder in the root of your website folder.
 2)	In your index.html add the images Blue-Butterfly.png, catbg.png, cat.jp and ballofwool.png to a new section element, keeping the images in that specific order in the HTML code.
 3)	Give the catbg.png image an id of catsitting and use absolute positioning to put it to the right of the viewport.
-4)	Give the cat.jpg image an id of catFace and use CSS to make ot 300px wide, positioning so it stays in the same place near the bottom left corner of the viewport, even if the page is scrolled.
+4)	Give the cat.jpg image an id of catFace and use CSS to make it 300px wide, positioning so it stays in the same place near the bottom left corner of the viewport, even if the page is scrolled.
 5)	Give the ballofwool.png image an id of ballWool and use CSS to make it 600px wide and use relative positioning to place it between the sitting cat and the cat face images.
 6)	Give the Blue-Butterfly.png image an id of butterfly use CSS to make the width 80px and position it over the picture of the cat sitting (specify it is 10 'levels' above the cat), resting just on its forehead.
 7)   In the HTML create a div under all these images (in CSS make it 700p widex) positioning it between the cat sitting and the cat face but above the ball of wool. Inside this div place the image of the computer mouse (giving it an id mouse) in the top left corner (use CSS to make it 200px wide) and wrap the following text, making it small so it fits as best as possible, around the image to its right:  
