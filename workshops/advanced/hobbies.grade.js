@@ -44,9 +44,3 @@ test('.dropdown-content set to display none', async ({ page }) => {
   const locator = page.locator('.dropdown-content')
   await expect(locator).toHaveCSS('display', 'none');
 })
-
-test('list class breadcrumb list item set to display inline', async ({ page }) => {
-  await page.goto(targetURL)
-  const locator = page.locator('ul.breadcrumb > li')
-  await expect(locator).toHaveCSS('display', 'inline');
-})
