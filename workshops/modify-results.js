@@ -38,7 +38,7 @@ for (const suiteIndex in report.suites) {
         `
       }
     }
-    if (spec.title === 'HTML is valid') {
+    if (spec.title.includes('HTML is valid')) {
       test.output = ''
       const validationErrors = spec.tests[0].results[0].stderr
       for (const error of validationErrors) {
