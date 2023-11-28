@@ -1085,7 +1085,11 @@ For more on teamwork with Git and merging branches, see the next section on GitH
 
 ## References
 
-Carmena, Rachel. “How to Teach Git.” Rachel M. Carmena, December 12, 2018. https://rachelcarmena.github.io/2018/12/12/how-to-teach-git.html.
+Carmena, Rachel. “How to Teach Git.” Rachel M. Carmena, December 12, 2018.
+https://rachelcarmena.github.io/2018/12/12/how-to-teach-git.html.
 
 Straub, Ben. “Git Basics.” In Pro Git Book, 2nd edition., 2014.
 https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository.
+
+Villalobos, Ray. “Learning Git and GitHub.” LinkedIn Learning, August 27,
+2021. https://www.linkedin.com/learning/learning-git-and-github-14213624.

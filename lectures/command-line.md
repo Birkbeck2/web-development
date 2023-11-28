@@ -90,3 +90,5 @@ https://github.com/RehanSaeed/Bash-Cheat-Sheet.
 Mozilla Developer Network. “Command Line Crash Course - Learn Web
 Development,” August 11, 2023.
 https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Command_line.
+
+“Git for Windows.” Accessed November 25, 2023. https://gitforwindows.org/.
