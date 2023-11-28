@@ -45,22 +45,30 @@ confusing version names](./images/version-hell.png)
 
 Without a version control system, your code projects will start to look like this.
 
-Only worse, because with code, you have these constraints.
+Only worse, because with code, you have these constraints:
 
-1. **Interdependence of files**. One change might involve touching several
-   files, so you can’t label a change using file names.
+::: details Interdependence of files
+One change might involve touching several
+files, so you can’t label a change using file names.
+:::
 
-2. **File names**. You can’t just change the names of files to describe the
-   version - file names have to be exact for the code to work.
+::: details File names
+You can’t just change the names of files to describe the
+version - file names have to be exact for the code to work.
+:::
 
-3. **Bugs and bugfixes**. Getting the version wrong could break everything,
-   because one line of code could break everything.
+::: details Bugs and bugfixes
+Getting the version wrong could break everything,
+because one line of code could break everything.
+:::
 
-4. **Longevity and teamwork**. The lifespan of a code project could be many
-   years, and new people might enter a project halfway through, so you cannot
-   rely on your memory of when you saved which files, or how multiple versions
-   relate to each other. You have to have a system of labeling or notekeeping
-   that makes the history clear to anyone.
+::: details Longevity and teamwork
+The lifespan of a code project could be many
+years, and new people might enter a project halfway through, so you cannot
+rely on your memory of when you saved which files, or how multiple versions
+relate to each other. You have to have a system of labeling or notekeeping
+that makes the history clear to anyone.
+:::
 
 ## Why not use Google Drive or another cloud syncing service?
 
@@ -68,37 +76,49 @@ Git was designed in 2005, before the advent of "the cloud" changed the way we
 collaborate and keep track of files. So why not use a newer, general-purpose
 file syncing service to keep track of code?
 
-1. **Control**. Cloud services are generally too automatic for code, while Git
-   waits for your explicit instruction at each step.
+::: details Control
+Cloud services are generally too automatic for code, while Git
+waits for your explicit instruction at each step.
+:::
 
-2. **Metadata**. Cloud services do not prompt you to label versions, so
-   exploring the history to troubleshoot problems is more difficult.
-   Git encourages good notekeeping through commit messages.
+::: details Metadata
+Cloud services do not prompt you to label versions, so
+exploring the history to troubleshoot problems is more difficult.
+Git encourages good notekeeping through commit messages.
+:::
 
-3. **Branching**. Cloud services do not generally provide for branching and
-   merging, which is essential for a team working on an application that is
-   also running in production.
+::: details Branching
+Cloud services do not generally provide for branching and
+merging, which is essential for a team working on an application that is
+also running in production.
+:::
 
-5. **Momentum**. Most professional development teams use Git.
+::: details Momentum
+Most professional development teams use Git.
+:::
 
-4. **Flexibility**. Cloud services often cost money and are controlled by
-   through proprietary software by a central service provider. Git is
-   free and open source and uses distributed architecture. If needed, an entire
-   Git project can be restored from any copy, even if GitHub crashes or your
-   organization has to leave GitHub.
+::: details Flexibility
+Cloud services often cost money and are controlled by
+through proprietary software by a central service provider. Git is
+free and open source and uses distributed architecture. If needed, an entire
+Git project can be restored from any copy, even if GitHub crashes or your
+organization has to leave GitHub.
+:::
 
-6. **Integration**. Git integrates with services like GitHub and GitLab, which
-   Web development teams depend on for issue tracking, code reviews, data
-   backups, and static page hosting services. It also integrates with IDEs to
-   show you visualisations of your project branches and commit history.
+::: details Integration
+Git integrates with services like GitHub and GitLab, which
+Web development teams depend on for issue tracking, code reviews, data
+backups, and static page hosting services. It also integrates with IDEs to
+show you visualisations of your project branches and commit history.
+:::
 
 ## Git is a distributed version control system
 
 <div
   class="relative flex flex-col bg-gray-800"
   role="img"
-  aria-description="Four boxes. The one above is remote repository, which is on
-  a server. The three blow are in the development environment. They are the
+  aria-description="Four boxes. The one above is the remote repository, which
+  is on a server. The three blow are in the development environment. They are the
   working directory, the staging area, and the local repository.">
   <div class="relative border-4 border-dotted border-blue-400
   self-end flex m-4 mt-12">
@@ -140,7 +160,9 @@ file syncing service to keep track of code?
 
 <div class="relative flex flex-col bg-gray-800"
   role="img"
-  aria-description="The same four boxes. This time there is a line representing the git clone command. Git clone copies the remote repository into both the working directory and the local repository.">
+  aria-description="The same four boxes. This time there is a line representing
+  the git clone command. Git clone copies the remote repository into both the
+  working directory and the local repository.">
 
   <!-- small- lines -->
   <div class="md:hidden absolute left-4 right-52 top-28 h-2 bg-yellow-400"></div>
@@ -166,7 +188,8 @@ file syncing service to keep track of code?
   style="clip-path: polygon(0% 0%, 100% 0%, 50% 100%);"></div>
   <div class="max-md:hidden absolute right-56 top-28 bottom-48 w-2
   bg-yellow-400"></div>
-  <div class="max-md:hidden absolute right-52 bottom-44 h-10 w-10 bg-yellow-400" style="clip-path: polygon(0% 0%, 100% 0%, 50% 100%);"></div>
+  <div class="max-md:hidden absolute right-52 bottom-44 h-10 w-10
+  bg-yellow-400" style="clip-path: polygon(0% 0%, 100% 0%, 50% 100%);"></div>
 
   <div class="absolute top-4 left-4">
     <strong class="max-md:text-lg md:text-2xl font-mono font-extrabold">
@@ -213,7 +236,8 @@ file syncing service to keep track of code?
 
 <div class="relative flex flex-col bg-gray-800"
   role="img"
-  aria-description="The development environment. For files in the working directory, there are two alternative states: tracked and untracked.">
+  aria-description="The development environment. For files in the working
+  directory, there are two alternative states: tracked and untracked.">
 
   <div class="absolute top-4 left-4">
     <strong class="max-md:text-lg md:text-2xl font-mono font-extrabold">
@@ -230,7 +254,8 @@ file syncing service to keep track of code?
         tracked
       </strong>
     </div>
-    <div class="absolute max-md:right-24 md:left-24 -top-4 h-1 w-16 bg-yellow-400 max-md:rotate-45 md:-rotate-45"></div>
+    <div class="absolute max-md:right-24 md:left-24 -top-4 h-1 w-16
+    bg-yellow-400 max-md:rotate-45 md:-rotate-45"></div>
     <div class="absolute bottom-full py-2
     max-md:right-0 md:left-0 max-md:text-right">
       <strong class="text-xl font-sans font-semibold">
@@ -247,7 +272,8 @@ file syncing service to keep track of code?
         untracked
       </strong>
     </div>
-    <div class="absolute max-md:right-24 md:left-24 -bottom-4 h-1 w-16 bg-yellow-400 max-md:-rotate-45 md:rotate-45"></div>
+    <div class="absolute max-md:right-24 md:left-24 -bottom-4 h-1 w-16
+    bg-yellow-400 max-md:-rotate-45 md:rotate-45"></div>
     <div class="max-md:hidden bg-blue-200 m-3 text-black px-4 py-8 text-xl uppercase
     text-center rounded-2xl font-mono font-semibold">
       staging<br> area
@@ -263,7 +289,8 @@ file syncing service to keep track of code?
 
 <div class="relative flex flex-col bg-gray-800"
   role="img"
-  aria-description="With fetch, you can update just the local repository, without touching the working directory or the staging area.">
+  aria-description="With log, you can read the commit history
+  in the local repository">
 
   <div class="absolute top-4 left-4">
     <strong class="max-md:text-lg md:text-2xl font-mono font-extrabold">
@@ -318,7 +345,9 @@ file syncing service to keep track of code?
 
 <div class="relative flex flex-col bg-gray-800"
   role="img"
-  aria-description="To put changes from the working directory in the staging area, use  add the add command. To put them from staging into the local repository, use commit. To extend them to the remote repository, use push.">
+  aria-description="To put changes from the working directory in the staging
+  area, use the add command. To put them from staging into the local
+  repository, use commit. To extend them to the remote repository, use push.">
 
   <div class="max-md:hidden absolute top-4 left-4">
     <strong class="max-md:text-lg md:text-2xl font-mono font-extrabold">
@@ -370,7 +399,8 @@ file syncing service to keep track of code?
       add
     </strong>
   </div>
-  <div class="md:hidden absolute left-4 right-56 bottom-56 h-2 bg-yellow-400"></div>
+  <div class="md:hidden absolute left-4 right-56 bottom-56 h-2
+  bg-yellow-400"></div>
   <div class="md:hidden absolute right-52 bottom-52 h-10 w-10
   bg-yellow-400 clip" style="clip-path: polygon(0% 0%, 100% 50%, 0%
   100%);"></div>
@@ -391,8 +421,9 @@ file syncing service to keep track of code?
   bg-yellow-400"></div>
   <div class="max-md:hidden absolute right-[25rem] bottom-4 h-10 w-2
   bg-yellow-400"></div>
-  <div class="max-md:hidden absolute right-[24rem] bottom-8 h-10 w-10 bg-yellow-400"
-  style="clip-path: polygon(50% 0%, 100% 100%, 00% 100%);"></div>
+  <div class="max-md:hidden absolute right-[24rem] bottom-8 h-10 w-10
+  bg-yellow-400" style="clip-path: polygon(50% 0%, 100% 100%, 00%
+  100%);"></div>
 
   <div class="max-md:hidden absolute left-[22rem] bottom-60">
     <strong class="text-2xl font-mono font-extrabold text-yellow-400">
@@ -460,7 +491,11 @@ file syncing service to keep track of code?
 
 <div class="relative flex flex-col bg-gray-800"
   role="img"
-  aria-description="The development environment. For files in the working directory, there are two alternative states: tracked and untracked.">
+  aria-description="Diff shows you the differences between the areas in your
+  development environment, as well as between commits. Run diff alone to show
+  changes in the working directory. Run diff --staged to show differences in
+  the staging area. Run diff with a commit hash or reference to show
+  differences in the commit history.">
 
   <div class="absolute top-4 left-4">
     <strong class="max-md:text-lg md:text-2xl font-mono font-extrabold">
@@ -469,17 +504,20 @@ file syncing service to keep track of code?
   </div>
 
   <div class="absolute max-md:top-32 md:bottom-8 max-md:left-4 md:left-16">
-    <strong class="max-md:text-lg md:text-xl font-mono font-extrabold text-yellow-400">
+    <strong class="max-md:text-lg md:text-xl font-mono font-extrabold
+    text-yellow-400">
       diff
     </strong>
   </div>
   <div class="absolute max-md:top-72 md:bottom-4 max-md:left-4 md:left-64">
-    <strong class="max-md:text-lg md:text-xl font-mono font-extrabold text-yellow-400">
+    <strong class="max-md:text-lg md:text-xl font-mono font-extrabold
+    text-yellow-400">
       diff<br> --staged
     </strong>
   </div>
   <div class="absolute max-md:bottom-32 md:bottom-4 max-md:left-4 md:right-36">
-    <strong class="max-md:text-lg md:text-xl font-mono font-extrabold text-yellow-400">
+    <strong class="max-md:text-lg md:text-xl font-mono font-extrabold
+    text-yellow-400">
       diff<br> &lt;commit&gt;
     </strong>
   </div>
@@ -496,7 +534,8 @@ file syncing service to keep track of code?
     <div class="relative bg-blue-200 m-3 text-black px-4 py-8 text-xl
     text-center rounded-2xl font-mono font-semibold max-md:mb-8">
       <span class="uppercase">working<br> directory</span>
-      <div class="absolute bg-gray-700 inset-x-4 -bottom-6 p-2 text-center text-yellow-400 rounded-2xl">
+      <div class="absolute bg-gray-700 inset-x-4 -bottom-6 p-2 text-center
+      text-yellow-400 rounded-2xl">
         <strong class="text-lg font-mono font-bold">
           modified
         </strong>
@@ -505,7 +544,8 @@ file syncing service to keep track of code?
     <div class="relative bg-blue-200 m-3 text-black px-4 py-8 text-xl
     text-center rounded-2xl font-mono font-semibold max-md:mb-8">
       <span class="uppercase">staging<br> area</span>
-      <div class="absolute bg-gray-700 inset-x-4 -bottom-6 p-2 text-center text-yellow-400 rounded-2xl">
+      <div class="absolute bg-gray-700 inset-x-4 -bottom-6 p-2 text-center
+      text-yellow-400 rounded-2xl">
         <strong class="text-lg font-mono font-bold">
           staged
         </strong>
@@ -514,7 +554,8 @@ file syncing service to keep track of code?
     <div class="relative bg-blue-200 m-3 text-black px-4 py-8 text-xl
     text-center rounded-2xl font-mono font-semibold max-md:mb-8">
       <span class="uppercase">local<br> repository</span>
-      <div class="absolute bg-gray-700 inset-x-4 -bottom-6 p-2 text-center text-yellow-400 rounded-2xl">
+      <div class="absolute bg-gray-700 inset-x-4 -bottom-6 p-2 text-center
+      text-yellow-400 rounded-2xl">
         <strong class="text-lg font-mono font-bold">
           committed
         </strong>
@@ -527,7 +568,8 @@ file syncing service to keep track of code?
 
 <div class="relative flex flex-col bg-gray-800"
   role="img"
-  aria-description="With fetch, you can update just the local repository, without touching the working directory or the staging area.">
+  aria-description="With fetch, you can update just the local repository,
+  without touching the working directory or the staging area.">
 
   <div class="absolute top-4 left-4">
     <strong class="max-md:text-lg md:text-2xl font-mono font-extrabold">
@@ -602,7 +644,9 @@ file syncing service to keep track of code?
 
 <div class="relative flex flex-col bg-gray-800"
   role="img"
-  aria-description="With fetch, you can update just the local repository, without touching the working directory or the staging area.">
+  aria-description="With pull, you can update the local repository and also
+  apply those changes on top of changes you have made locally, updating the
+  working environment.">
 
   <div class="absolute top-4 left-4">
     <strong class="max-md:text-lg md:text-2xl font-mono font-extrabold">
@@ -710,7 +754,9 @@ file syncing service to keep track of code?
 
 <div class="relative flex flex-col bg-gray-800"
   role="img"
-  aria-description="With fetch, you can update just the local repository, without touching the working directory or the staging area.">
+  aria-description="You can also pull and rebase at the same time with the
+  rebase flag. This fetches the code from the remote repository, and then
+  replays your local commits on top of the fetched changes.">
 
   <div class="absolute top-4 left-4">
     <strong class="max-md:text-lg md:text-2xl font-mono font-extrabold">
@@ -761,7 +807,8 @@ file syncing service to keep track of code?
   bg-yellow-400"></div>
   <div class="max-md:hidden absolute right-56 top-28 bottom-48 w-2
   bg-yellow-400"></div>
-  <div class="max-md:hidden absolute right-52 bottom-44 h-10 w-10 bg-yellow-400" style="clip-path: polygon(0% 0%, 100% 0%, 50% 100%);"></div>
+  <div class="max-md:hidden absolute right-52 bottom-44 h-10 w-10
+  bg-yellow-400" style="clip-path: polygon(0% 0%, 100% 0%, 50% 100%);"></div>
 
   <div class="max-md:hidden absolute left-52 top-32">
     <strong class="text-2xl font-mono font-extrabold text-yellow-400">
@@ -818,10 +865,11 @@ file syncing service to keep track of code?
 
 <div class="relative flex flex-col bg-gray-800"
   role="img"
-  aria-description="With fetch, you can update just the local repository, without touching the working directory or the staging area.">
+  aria-description="The branch command creates a new branch in the local
+  repository with the name you pass.">
 
-  <div class="absolute top-4 left-4">
-    <strong class="max-md:text-lg md:text-2xl font-mono font-extrabold">
+  <div class="absolute top-4 left-4"> <strong class="max-md:text-lg md:text-2xl
+  font-mono font-extrabold">
       git branch &lt;branch&gt;
     </strong>
   </div>
@@ -862,7 +910,9 @@ file syncing service to keep track of code?
 
 <div class="relative flex flex-col bg-gray-800"
   role="img"
-  aria-description="With fetch, you can update just the local repository, without touching the working directory or the staging area.">
+  aria-description="The switch command changes to the named branch, effectively
+  copying the changes in that branch from the local repository into the working
+  directory.">
 
   <div class="absolute top-4 left-4">
     <strong class="max-md:text-lg md:text-2xl font-mono font-extrabold">
@@ -937,10 +987,11 @@ file syncing service to keep track of code?
 
 <div class="relative flex flex-col bg-gray-800"
   role="img"
-  aria-description="To put changes from the working directory in the staging area, use  add the add command. To put them from staging into the local repository, use commit. To extend them to the remote repository, use push.">
+  aria-description="To push a new branch, use the -u flag with origin and the
+  name of the branch.">
 
-  <div class="max-md:hidden absolute top-4 left-4">
-    <strong class="max-md:text-lg md:text-2xl font-mono font-extrabold">
+  <div class="max-md:hidden absolute top-4 left-4"> <strong
+  class="max-md:text-lg md:text-2xl font-mono font-extrabold">
       git push -u origin &lt;branch&gt;
     </strong>
   </div>
@@ -1017,7 +1068,8 @@ file syncing service to keep track of code?
       text-center rounded-2xl font-mono font-semibold mt-4">
         main
       </div>
-      <div class="relative max-md:right-12 md:left-12 border-4 border-black bg-blue-200 p-2 text-black text-xl
+      <div class="relative max-md:right-12 md:left-12 border-4 border-black
+      bg-blue-200 p-2 text-black text-xl
       uppercase text-center rounded-2xl font-mono font-semibold mt-4">
         branch
       </div>
