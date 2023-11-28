@@ -63,6 +63,7 @@ GitHub organization.
 - [web-development-semantic-html-instructor](https://github.com/Birkbeck2/web-development-semantic-html-instructor)
 - [web-development-accessibility-instructor](https://github.com/Birkbeck2/web-development-accessibility-instructor)
 - [web-development-advanced-css-instructor](https://github.com/Birkbeck2/web-development-advanced-css-instructor)
+- [web-development-git-instructor](https://github.com/Birkbeck2/web-development-git-instructor)
 
 By cloning each of these repositories into the appropriate `submissions`
 folder, you give your autograder something to run on even before you have

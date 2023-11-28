@@ -6,39 +6,41 @@ const report = JSON.parse(await readFile(resultsFile))
 report.tests = []
 let numPassed = 0
 let total = 0
+
 for (const suiteIndex in report.suites) {
   for (const specIndex in report.suites[suiteIndex].specs) {
     const spec = report.suites[suiteIndex].specs[specIndex]
+    const attachments = spec.tests[0].results[0].attachments
+    const customPoints = attachments.filter(att => att.name === 'autograder-points')?.pop()
+    const points = customPoints ? JSON.parse(atob(customPoints.body)).points : 1
     const test = Object.assign({}, spec)
     if (spec.ok) {
-      numPassed += 1
+      numPassed += points
       test.status = 'passed'
     } else {
       test.status = 'failed'
     }
-    total += 1
+    total += points
     test.name = spec.title
-    delete test.title
+
     if (spec.title.includes('Axe')) {
-      // Refactor this to make it more flexible per test
-      total += 7
-      if (spec.ok) {
-        numPassed += 7
-      }
       test.output = ''
-      const a11yErrors = JSON.parse(atob(spec.tests[0].results[0].attachments[0].body))
-      for (const error of a11yErrors) {
-        test.output += `
-          ${error.help}
-          Impact: ${error.impact}
-          Tags: ${error.tags.join(', ')}
-          Description: ${error.description}
-          More info:
-          ${error.helpUrl}
-        `
+      const axeAttachment = attachments.filter(att => att.name === 'accessibility-scan-results')?.pop()
+      if (axeAttachment) {
+        const a11yErrors = JSON.parse(atob(axeAttachment.body))
+        for (const error of a11yErrors) {
+          test.output += `
+            ${error.help}
+            Impact: ${error.impact}
+            Tags: ${error.tags.join(', ')}
+            Description: ${error.description}
+            More info:
+            ${error.helpUrl}
+          `
+        }
       }
     }
-    if (spec.title === 'HTML is valid') {
+    if (spec.title.includes('HTML is valid')) {
       test.output = ''
       const validationErrors = spec.tests[0].results[0].stderr
       for (const error of validationErrors) {

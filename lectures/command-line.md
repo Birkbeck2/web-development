@@ -1,86 +1,94 @@
-# Command Line Tools
+# The Command Line
 
-The command line is an essential medium for programmers. While most things
-can be done through graphical interfaces, programmers often fall back to
-command-line tools for simplicity, efficiency, and interoperability.
+![A command line interface showing commands like mkdir,
+touch, ls, and cat](./images/zsh-on-ubuntu.png)
 
-They use the command line to configure and maintain development and server
-environments, install fameworks and dependencies, perform version control,
-write instructions for each other, and write and run code.
+The longer you work in web design and development, you will be asked to
+run things on the command line.
 
-By becoming familiar with shell commands, you can ensure that you can
-collaborate effectively, follow tutorials and instructions, and take
-charge of your digital toolbox.
+In this segment we will attempt to help you feel more like a confident
+hacker in a movie, and less like someone who is about to destroy your
+computer.
 
-## Shell language commands
+## Why use it?
+
+1. **Low-level control**. User interfaces often do not provide the nitty
+   gritty detail you need as a programmer, especially when installing
+   things or fixing a problem.
+
+2. **Universality**. With the Unix shell available or installable on all
+   nearly all computers, the command line becomes a universal interface
+   for performing actions in a dependable way, and communicating with
+   other developers about how to do things (installation, configuration,
+   etc.). This includes web servers, which do not have graphical user
+   interfaces.
+
+3. **Automation**. You can package several commands up into a script and
+   save them in files ending with `.sh`, so that they can be run all
+   together with a single command.
+
+4. **Continuity**. The Unix shell has been around for decades, while many
+   GUIs have come and gone. So if you invest time in a project that uses
+   it, the project will have a longer lifespan too, because it won't
+   depend on something that might fall out of fashion.
+
+5. **Usability**. OK, the user experience of the command line does leave
+   much to be desired, at first. But once you learn it, you will find it
+   is highly interactive, fast, endlessly customisable with colors,
+   symbols, emoji, colors, and animation.
+
+## Unix shell
 
 When you open a shell on Windows, Mac, or Linux, you automatically have
 access to a small language of commands that are known as *shell commands*.
 
-There are different dialects, including BASH, ZSH, and Powershell,
-depending on your operating systems and which shell you have configured,
-but many of the most basic commands are similar if not the same.
+There are different dialects, and the most popular one is **Unix**, which
+describes a set of commands that are available on Linux and Mac OSX, and
+which can be installed for free on Windows. 
 
-Shell commands let you perform basic file management functions like
-viewing, naming, renaming, moving, and deleting files and folders.
+### Windows options
 
-It is worth saving a list of common commands and trying them out until
-they start to become muscle memory. One popular sheet is Rehan Saheed’s
-“[Bash Cheat Sheet](https://github.com/RehanSaeed/Bash-Cheat-Sheet).” You
-can use most of these commands in [Git Bash](https://gitforwindows.org/)
-(Windows) or Terminal (Mac / Linux).
+- Git Bash (included with Git for Windows)
 
-## Application-specific commands
+- Windows Subsystem for Linux
 
-Many common applications like code editors and web browsers are mapped to
-shell commands of their own. Examples:
+## Learning the Unix shell
 
-```shell
-firefox index.html  	# Open the HTML file in Firefox
-code script.js      	# Open the JavaScript file in VS Code
-```
+The command line is highly interactive, so the best way to learn is to get
+a list of commands and try them out.
 
-These allow you to use the shell as the launchpad for viewing
-and editing environments. 
+One popular cheat sheet is Rehan Saheed’s “[Bash Cheat
+Sheet](https://github.com/RehanSaeed/Bash-Cheat-Sheet).”
 
-Most programming languages also have their own commands that you can run
-programs with. Examples:
+## Try it out
 
-```shell 
-node script.js		# Run the JavaScript file using Node.js
-python manage.py	# Run the Python file with Python
-```
+Try these commands out in a safe [sandbox
+environment](https://github.com/Birkbeck2/web-development/tree/main/public/sandbox/command-line).
 
-## Git commands
+Starting with the contents of this folder, can you accomplish these tasks
+just with shell commands?
 
-Ah, your old friend!
+1. Move the images to their own folder
 
-Git was designed first and foremost as a commnand-line utility. Spending
-time using Git at the command line will not be time wasted, if you plan to
-work anywhere in or near web design or software development.
+2. Make some more copies of the images
 
-There are two ways we recommend learning Git at the command line:
+3. Create an empty index.html
 
-1. Follow a high-quality video course such as [“Learning Git and GitHub” by Ray Villalobos](https://www.linkedin.com/learning/learning-git-and-github-14213624)
+4. Create an empty styles.css
 
-2. Get a list of commands and practice them. Cheat sheets in multiple
-   languages can be downloaded from [GitHub’s training kit](https://training.github.com/).
-
-### GitHub authentication
-
-One snafu you might encounter is the challenge of configuring Git
-authentication so that you can smoothly push code to GitHub.
-
-The best way to get past this hurdle is to configure an SSH key. GitHub
-has detailed [instructions for different operating
-systems](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
-
-It may seem daunting to follow these instructions, but doing so is a good
-way of building your command-line skills.
+5. Delete the old code
 
 ## References
 
-Maybell Obadoni, “How to Use the Command Line Interface - For Beginners,” freeCodeCamp, Sep 27, 2022, [https://www.freecodecamp.org/news/how-to-use-the-cli-beginner-guide/](https://www.freecodecamp.org/news/how-to-use-the-cli-beginner-guide/)
+Martinez, Bellatrix. “The Command Line from a Designer’s View.” Medium
+(blog), July 30, 2018.
+https://medium.com/@bellatrixmartinez/the-command-line-from-a-designers-view-c4a8c8cebf51.
 
-Ray Villalobos, “Learning Git and GitHub”, August 27, 2021,
-[https://www.linkedin.com/learning/learning-git-and-github-14213624](https://www.linkedin.com/learning/learning-git-and-github-14213624)
+Saeed, Muhammad Rehan. “Bash Cheat Sheet,” November 24, 2023.
+https://github.com/RehanSaeed/Bash-Cheat-Sheet.
+
+Mozilla Developer Network. “Command Line Crash Course - Learn Web
+Development,” August 11, 2023.
+https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Command_line.
+
+“Git for Windows.” Accessed November 25, 2023. https://gitforwindows.org/.

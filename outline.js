@@ -101,21 +101,30 @@ export const outline = [
     ]
   },
   {
-    text: 'Unix shell, Git and GitHub',
+    text: 'Command line, Git and GitHub',
     lecturer: 'Joseph Muller',
     items: [
-    //   {
-    //     text: 'Using the command line',
-    //     link: '/lectures/command-line-interface.html',
-    //     concepts: 'command line interface, Unix shell',
-    //     code: 'pwd ls cat touch mkdir mv cp rm'
-    //   },
-    //   {
-    //     text: 'Understanding and Using Git',
-    //     link: '/lectures/git.html',
-    //     concepts: 'command line interface, Unix shell',
-    //     code: 'pwd ls cat touch mkdir mv cp rm'
-    //   },
+      {
+        text: 'The command line',
+        link: '/lectures/command-line.html',
+        concepts: 'command line interface, Unix shell',
+        code: 'pwd ls cat touch mkdir mv cp rm ""'
+      },
+      {
+        text: 'Git',
+        link: '/lectures/git.html',
+        concepts: 'distributed version control, free and open source software, remote repository, local repository, staging area, working directory',
+        code: 'clone status add commit -m Esc+:wq push diff fetch pull merge rebase branch switch -u origin'
+      },
+      {
+        text: 'GitHub',
+        link: '/lectures/github.html',
+        concepts: 'GitHub, pull request, code review, merge, conflict, GitHub Pages',
+      },
+      {
+        text: 'Workshop on Git and GitHub',
+        link: '/worshops/git/index.html',
+      },
     ]
   },
   {

@@ -26,6 +26,10 @@ test('Axe finds no WCAG 2.1 AA violations (50%)', async ({ page }, testInfo) => 
     body: JSON.stringify(accessibilityScanResults.violations),
     contentType: 'application/json'
   })
+  await testInfo.attach('autograder-points', {
+    body: JSON.stringify({'points': 8}),
+    contentType: 'application/json'
+  })
   expect(accessibilityScanResults.violations).toEqual([])
 })
 test('form has method', async ({ page }) => {
