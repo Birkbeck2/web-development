@@ -123,7 +123,7 @@ export const outline = [
       },
       {
         text: 'Workshop on Git and GitHub',
-        link: '/worshops/git/index.html',
+        link: '/workshops/git/index.html',
       },
     ]
   },
