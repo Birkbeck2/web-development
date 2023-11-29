@@ -128,43 +128,43 @@ export const outline = [
     ]
   },
   {
-    text: 'Introduction to programming with JavaScript',
+    text: 'Intro to JavaScript',
     lecturer: 'Joseph Muller',
     items: [
-    //   {
-    //     text: 'Setup',
-    //     link: '/lectures/javascript-setup.html',
-    //     concepts: 'programming language, running JavaScript code, comments',
-    //     code: 'script node console.log // /* */'
-    //   },
-    //   {
-    //     text: 'Values and data types',
-    //     link: '/lectures/javascript-values-and-data-types.html',
-    //     concepts: 'values, data types, strings, escaping',
-    //     code: '" \\ numbers booleans true false undefined null typeof'
-    //   },
-    //   {
-    //     text: 'Evaluation with operators',
-    //     link: '/lectures/javascript-evaluation-with-operators.html',
-    //     concepts: 'operators',
-    //     code: '+ == != < > - / *'
-    //   },
-    //   {
-    //     text: 'Workshop: Intro JavaScript',
-    //     link: 'https://github.com/Birkbeck2/wdux2223-workshop-js-values',
-    //   },
+      {
+        text: 'Introduction',
+        link: '/lectures/intro-javascript.html',
+        concepts: 'programming language, JavaScript history, running JavaScript code, comments',
+        code: 'script node console.log() // /* */'
+      },
+      {
+        text: 'Values',
+        link: '/lectures/javascript-values.html',
+        concepts: 'values, data types, strings, escaping',
+        code: '" \\ numbers booleans true false undefined null typeof'
+      },
+      {
+        text: 'Operators',
+        link: '/lectures/javascript-operators.html',
+        concepts: 'operators',
+        code: '+ == != < > - / *'
+      },
+      // {
+      //   text: 'Variables',
+      //   link: '/lectures/javascript-variables.html',
+      //   concepts: 'statements, variables',
+      //   code: '; = let const var'
+      // },
+      // {
+      //   text: 'Workshop: Intro JavaScript',
+      //   link: 'https://github.com/Birkbeck2/wdux2223-workshop-js-values',
+      // },
     ]
   },
   {
-    text: 'JavaScript conditionals and functions',
+    text: 'Simple programs in JavaScript',
     lecturer: 'Joseph Muller and Helena Wee',
     items: [
-    //   {
-    //     text: 'Variables',
-    //     link: '/lectures/javascript-variables.html',
-    //     concepts: 'statements, variables',
-    //     code: '; = let const var'
-    //   },
     //   {
     //     text: 'Conditionals',
     //     link: '/lectures/javascript-conditionals.html',
