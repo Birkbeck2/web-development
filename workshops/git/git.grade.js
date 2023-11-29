@@ -30,21 +30,12 @@ for (const coder of ['a', 'b']) {
     const result = await validateHtml(targetPath)
     expect(result.isValid).toBeTruthy()
   })
-  test(`${targetFile} was modified by at least 2 people (worth x3 points)`, async ({}, testInfo) => {
-    await testInfo.attach('autograder-points', {
-      body: JSON.stringify({'points': 3}),
-      contentType: 'application/json'
-    })
-    const commits = await git.log({fs, dir: targetDir, filepath: targetFile})
-    const committers = new Set(commits.map(commit => commit.commit.committer.email))
-    expect(committers.size).toBeGreaterThanOrEqual(2)
-  })
   test(`${targetFile} has an email link`, async ({ page }) => {
     await page.goto(targetURL)
     const locator = page.locator('a[href^="mailto:"]')
     await expect(locator).toBeAttached()
   })
-  test(`coder ${coder} made at least 2 local commits (worth x3 points)`, async ({ page }, testInfo) => {
+  test(`coder ${coder} made at least 2 commits on their computer (worth x3 points)`, async ({ page }, testInfo) => {
     await testInfo.attach('autograder-points', {
       body: JSON.stringify({'points': 3}),
       contentType: 'application/json'
@@ -56,6 +47,15 @@ for (const coder of ['a', 'b']) {
     const coderCommits = commits.filter(commit => commit.commit.committer.email === email)
     expect(coderCommits.length).toBeGreaterThanOrEqual(2)
   })
+  test(`${targetFile} was modified by at least 2 people (worth x3 points)`, async ({}, testInfo) => {
+    await testInfo.attach('autograder-points', {
+      body: JSON.stringify({'points': 3}),
+      contentType: 'application/json'
+    })
+    const commits = await git.log({fs, dir: targetDir, filepath: targetFile})
+    const committers = new Set(commits.map(commit => commit.commit.committer.email))
+    expect(committers.size).toBeGreaterThanOrEqual(2)
+  })
   test(`${targetFile} has a GitHub Pages link`, async ({ page }) => {
     await page.goto(targetURL)
     const locator = page.locator('a[href*=".github.io"]')
@@ -63,7 +63,7 @@ for (const coder of ['a', 'b']) {
   })
 }
 
-test('at least two merges (worth x6 points)', async ({}, testInfo) => {
+test('at least 2 merges (worth x6 points)', async ({}, testInfo) => {
   await testInfo.attach('autograder-points', {
     body: JSON.stringify({'points': 6}),
     contentType: 'application/json'
@@ -72,10 +72,11 @@ test('at least two merges (worth x6 points)', async ({}, testInfo) => {
   const merges = commits.filter(commit => commit.commit.parent.length > 1)
   expect(merges.length).toBeGreaterThanOrEqual(2)
 })
-test('at least two merges were done on GitHub', async () => {
+test('at least 2 merges were done on GitHub', async () => {
   const commits = await git.log({fs, dir: targetDir})
-  const merges = commits.filter(commit => commit.commit.committer.email.includes('github.com'))
-  expect(merges.length).toBeGreaterThanOrEqual(2)
+  const merges = commits.filter(commit => commit.commit.parent.length > 1)
+  const mergesOnGitHub = merges.filter(commit => commit.commit.committer.email.includes('github.com'))
+  expect(mergesOnGitHub.length).toBeGreaterThanOrEqual(2)
 })
 test('README.md file', async () => {
   expect(await fs.access(readme))
