@@ -150,7 +150,7 @@ help if your partner gets stuck.
 ## Modify each other's pages.
 
 ::: warning IMPORTANT
-Coder A should do step 24, THEN Coder B.
+Coder A should do step 26, THEN Coder B.
 :::
 
 26. Using the same workflow (branching, committing, pushing, pull
