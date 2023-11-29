@@ -115,7 +115,7 @@ show you visualisations of your project branches and commit history.
 ## Git is a distributed version control system
 
 <div
-  class="relative flex flex-col bg-gray-800"
+  class="relative flex flex-col bg-gray-800 text-gray-200"
   role="img"
   aria-description="Four boxes. The one above is the remote repository, which
   is on a server. The three blow are in the development environment. They are the
@@ -158,7 +158,7 @@ show you visualisations of your project branches and commit history.
 
 ## Cloning a repository
 
-<div class="relative flex flex-col bg-gray-800"
+<div class="relative flex flex-col bg-gray-800 text-gray-200"
   role="img"
   aria-description="The same four boxes. This time there is a line representing
   the git clone command. Git clone copies the remote repository into both the
@@ -234,7 +234,7 @@ show you visualisations of your project branches and commit history.
 
 ## Making changes to the working directory
 
-<div class="relative flex flex-col bg-gray-800"
+<div class="relative flex flex-col bg-gray-800 text-gray-200"
   role="img"
   aria-description="The development environment. For files in the working
   directory, there are two alternative states: tracked and untracked.">
@@ -287,7 +287,7 @@ show you visualisations of your project branches and commit history.
 
 ## Updating the repositories
 
-<div class="relative flex flex-col bg-gray-800"
+<div class="relative flex flex-col bg-gray-800 text-gray-200"
   role="img"
   aria-description="With log, you can read the commit history
   in the local repository">
@@ -343,7 +343,7 @@ show you visualisations of your project branches and commit history.
 <hr>
 
 
-<div class="relative flex flex-col bg-gray-800"
+<div class="relative flex flex-col bg-gray-800 text-gray-200"
   role="img"
   aria-description="To put changes from the working directory in the staging
   area, use the add command. To put them from staging into the local
@@ -489,7 +489,7 @@ show you visualisations of your project branches and commit history.
 
 ## Tracing differences in the development environment
 
-<div class="relative flex flex-col bg-gray-800"
+<div class="relative flex flex-col bg-gray-800 text-gray-200"
   role="img"
   aria-description="Diff shows you the differences between the areas in your
   development environment, as well as between commits. Run diff alone to show
@@ -566,7 +566,7 @@ show you visualisations of your project branches and commit history.
 
 ## Updating the development environment
 
-<div class="relative flex flex-col bg-gray-800"
+<div class="relative flex flex-col bg-gray-800 text-gray-200"
   role="img"
   aria-description="With fetch, you can update just the local repository,
   without touching the working directory or the staging area.">
@@ -642,7 +642,7 @@ show you visualisations of your project branches and commit history.
 
 <br>
 
-<div class="relative flex flex-col bg-gray-800"
+<div class="relative flex flex-col bg-gray-800 text-gray-200"
   role="img"
   aria-description="With pull, you can update the local repository and also
   apply those changes on top of changes you have made locally, updating the
@@ -752,7 +752,7 @@ show you visualisations of your project branches and commit history.
 
 <br>
 
-<div class="relative flex flex-col bg-gray-800"
+<div class="relative flex flex-col bg-gray-800 text-gray-200"
   role="img"
   aria-description="You can also pull and rebase at the same time with the
   rebase flag. This fetches the code from the remote repository, and then
@@ -863,7 +863,7 @@ show you visualisations of your project branches and commit history.
 
 ## Branching
 
-<div class="relative flex flex-col bg-gray-800"
+<div class="relative flex flex-col bg-gray-800 text-gray-200"
   role="img"
   aria-description="The branch command creates a new branch in the local
   repository with the name you pass.">
@@ -908,7 +908,7 @@ show you visualisations of your project branches and commit history.
 
 <hr>
 
-<div class="relative flex flex-col bg-gray-800"
+<div class="relative flex flex-col bg-gray-800 text-gray-200"
   role="img"
   aria-description="The switch command changes to the named branch, effectively
   copying the changes in that branch from the local repository into the working
@@ -985,7 +985,7 @@ show you visualisations of your project branches and commit history.
 
 <hr>
 
-<div class="relative flex flex-col bg-gray-800"
+<div class="relative flex flex-col bg-gray-800 text-gray-200"
   role="img"
   aria-description="To push a new branch, use the -u flag with origin and the
   name of the branch.">
