@@ -1,6 +1,11 @@
 # Introduction to JavaScript
 
-![JavaScript code that manipulates dates in a webpage](./images/javascript-code.png)
+
+![A simple 2D platform game scene with a lava pit, platforms, and a box
+representing the player](./images/darkblue.png)
+
+*A scene from Dark Blue by Thomas Palef, in Marijn Haverbeke, chapter 16
+of Eloquent JavaScript, 3rd edition.*
 
 ## JavaScript as a programming language
 So far, you have learned about a few different kinds of computer languages.
@@ -28,6 +33,8 @@ objects, including documents like HTML and CSS as well as datasets, and that
 can listen for and interpret many kinds of user inputs, which forms the basis
 of an interactive user experience.
 :::
+
+![JavaScript code that manipulates dates in a webpage](./images/javascript-code.png)
 
 ## Brief history of JavaScript
 

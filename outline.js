@@ -149,16 +149,16 @@ export const outline = [
         concepts: 'operators',
         code: '+ == != < > - / *'
       },
-      // {
-      //   text: 'Variables',
-      //   link: '/lectures/javascript-variables.html',
-      //   concepts: 'statements, variables',
-      //   code: '; = let const var'
-      // },
-      // {
-      //   text: 'Workshop: Intro JavaScript',
-      //   link: 'https://github.com/Birkbeck2/wdux2223-workshop-js-values',
-      // },
+      {
+        text: 'Variables',
+        link: '/lectures/javascript-variables.html',
+        concepts: 'statements, constants, variables',
+        code: 'let const var = ;'
+      },
+      {
+        text: 'Workshop: Intro JavaScript',
+        link: '/workshops/intro-javascript/index.html',
+      },
     ]
   },
   {
