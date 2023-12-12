@@ -1,6 +1,7 @@
 export const outline = [
   {
     text: 'Basic HTML',
+    collapsed: true,
     lecturer: 'Helena Wee',
     items: [
       {
@@ -11,6 +12,7 @@ export const outline = [
   },
   {
     text: 'Semantic HTML',
+    collapsed: true,
     lecturer: 'Joseph Muller',
     items: [
       {
@@ -39,6 +41,7 @@ export const outline = [
   },
   {
     text: 'Intro to CSS',
+    collapsed: true,
     lecturer: 'Helena Wee',
     // concepts: 'stylesheets, style and content, internal and external CSS, selector, declaration, property, value, cascade, fonts, box model, margins, padding, borders, alignment, hover, display',
     // code: '{ } . # ; " class id color background-color width height text-align text-decoration font-family margin padding border :hover display'
@@ -51,6 +54,7 @@ export const outline = [
   },
   {
     text: 'Responsive CSS',
+    collapsed: true,
     lecturer: 'Helena Wee',
     // concepts: 'responsive design, media queries, flexible layouts, grid layouts',
     // code: 'media flex grid'
@@ -63,6 +67,7 @@ export const outline = [
   },
   {
     text: 'Accessibility',
+    collapsed: true,
     lecturer: 'Joseph Muller',
     items: [
       {
@@ -90,6 +95,7 @@ export const outline = [
   },
   {
     text: 'Advanced CSS',
+    collapsed: true,
     // concepts: 'positioning, z-index, float, navigation bar, dropdown menu, breadcumb menu',
     // code: 'positioning navigation dropdown'
     items: [
@@ -102,6 +108,7 @@ export const outline = [
   },
   {
     text: 'Command line, Git and GitHub',
+    collapsed: true,
     lecturer: 'Joseph Muller',
     items: [
       {
@@ -129,6 +136,7 @@ export const outline = [
   },
   {
     text: 'Intro to JavaScript',
+    collapsed: true,
     lecturer: 'Joseph Muller',
     items: [
       {
@@ -162,8 +170,9 @@ export const outline = [
     ]
   },
   {
-    text: 'Simple programs in JavaScript',
-    lecturer: 'Joseph Muller and Helena Wee',
+    text: 'Conditions and functions',
+    // collapsed: true,
+    lecturer: 'Helena Wee',
     items: [
     //   {
     //     text: 'Conditionals',
@@ -178,7 +187,32 @@ export const outline = [
     //     code: 'function return {}'
     //   },
     ]
-  }
+  },
+  {
+    text: 'Objects, loops, and files',
+    lecturer: 'Joseph Muller',
+    items: []
+  },
+  {
+    text: 'JavaScript in the browser',
+    lecturer: 'Joseph Muller',
+    items: []
+  },
+  {
+    text: 'Data visualization with JavaScript',
+    lecturer: 'Helena Wee',
+    items: []
+  },
+  {
+    text: 'Component-based apps with Vue.js',
+    lecturer: 'Helena Wee',
+    items: []
+  },
+  {
+    text: 'Inputs, conditions, and lists in Vue.js',
+    lecturer: 'Joseph Muller',
+    items: []
+  },
 ]
 
 // {
