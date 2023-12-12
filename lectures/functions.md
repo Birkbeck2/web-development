@@ -1,9 +1,3 @@
-![Birkbeck, University of London](images/birkbeck-logo.jpg)
-
-Visual Design and Web Project | Coding Sessions | Helena Wee
-
-[Previous](setting-up-conditional-statements.md) | [All](README.md)  | [Next](forming-data-sets-with-arrays.md)
-
 # Writing functions to make programs modular
 
 ## Functions
@@ -20,6 +14,7 @@ A function declaration uses the `function` keyword, followed by:
 - The JavaScript statements that define the function, enclosed in curly brackets `{}`.
 
 Example:
+
 ```
 function pets(cats, dogs){
   return cats + dogs;
@@ -57,13 +52,6 @@ The difference between global and local variables:
 - Local variables are declared INSIDE functions. They are thrown away when the function returns.
 
 
-
-
 ## References
 [https://eloquentjavascript.net/02_program_structure.html](https://eloquentjavascript.net/02_program_structure.html)  
 [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)
-
-## Rights
-Copyright Birkbeck, University of London
-
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Licence" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.

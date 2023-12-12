@@ -1,18 +1,14 @@
-![Birkbeck, University of London](images/birkbeck-logo.jpg)
-
 Visual Design and Web Project | Coding Sessions | Helena Wee
-
-[Previous](APIs-and-fetching-data.md) | [All](README.md) | [Next](command-line-tools.md)
 
 ## Drawing shapes, text and transformations
 
-![Drawing shapes, text and transformations](images/shapes.jpg)
+![Drawing shapes, text and transformations](./images/shapes.jpg)
 
 ## SVG
 
 SVG stands for scalable vector graphics.
 
-It is DOM-based and is a document-markup language that focuses on shapes rather than text. You can embed an SVG document directly in an HTML document or include it with an <img> tag.
+It is DOM-based and is a document-markup language that focuses on shapes rather than text. You can embed an SVG document directly in an HTML document or include it with an `<img>` tag.
 
 This is an example of SVG embedded within HTML:
 
@@ -27,7 +23,7 @@ This is an example of SVG embedded within HTML:
 
 The xmlns attribute changes the element and its children to a different XML namespace. `<circle>` and `<rect>` tags don't exist in HTML but are used in SVG to draw shapes at a certain position determined by their x and y attributes.
 
-These are DOM elements like normal HTML elements and can thus be changed using scripts. The following script changes the <circle> element to be coloured cyan instead:
+These are DOM elements like normal HTML elements and can thus be changed using scripts. The following script changes the `<circle>` element to be coloured cyan instead:
 
 ```
 let circle = document.querySelector("circle");
@@ -40,7 +36,7 @@ Canvas graphics are drawn onto the `<canvas>` element, which can be given a widt
 
 There are two types of drawing: "2d" for two-dimensional graphics and "webgl" for three-dimensional graphics through the OpenGL interface. We will just look at "2d" graphics.
 
-You can create a context object using the getContext method on the `<canvas>` DOM element. This object has methods with which you can draw on the <canvas>.
+You can create a context object using the getContext method on the `<canvas>` DOM element. This object has methods with which you can draw on the `<canvas>`.
 
 The coordinate system that canvas uses puts (0, 0) at the top-left corner with the positive y-axis going down from there, and the x-axis going up to the right.
 
@@ -233,7 +229,7 @@ The textBaseline property sets the vertical position to "top", "middle", or "bot
 
 ## Canvas images
 
-You can create an <img> element using code, and load an image file into it. To do this a "load" event handler is used to do the drawing after the image has loaded.
+You can create an `<img>` element using code, and load an image file into it. To do this a "load" event handler is used to do the drawing after the image has loaded.
 
 context.drawImage(img,x,y);
 context.drawImage(img,x,y,width,height);
@@ -312,9 +308,3 @@ https://eloquentjavascript.net/17_canvas.html
 https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API  
 https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes  
 https://www.w3schools.com/tags/ref_canvas.asp  
-
-## Rights
-Copyright Birkbeck, University of London
-
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Licence" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
-

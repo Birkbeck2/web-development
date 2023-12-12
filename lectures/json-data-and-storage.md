@@ -1,12 +1,8 @@
-![Birkbeck, University of London](images/birkbeck-logo.jpg)
-
-Visual Design and Web Project | Coding Sessions | Helena Wee
-
-[Previous](bugs-and-errors.md) | [All](README.md) | [Next](APIs-and-fetching-data.md)
-
 # Visualising data with Javascript
 
-![Visualising data with JavaScript](images/data.png)
+![Visualising data with JavaScript](./images/data.png)
+
+*[Image](https://www.freepik.com/free-vector/business-performance-analysis-with-graphs_3425212.htm) by rawpixel.com on Freepik*
 
 ## JSON data and storage
 
@@ -87,7 +83,7 @@ Numbers in JSON must be an integer or a floating point.
 
 ## JSON vs JavaScript object
 
-![JSON vs JavaScript object](images/table.png)
+![JSON vs JavaScript object](./images/table.png)
 
 ## JSON.parse()
 
@@ -256,14 +252,4 @@ https://www.w3schools.com/js/js_json_objects.asp
 https://www.w3schools.com/js/js_json_arrays.asp  
 https://github.com/jdorfman/awesome-json-datasets  
 https://jsonbeautify.com/  
-
-## Rights
-Copyright Birkbeck, University of London
-
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Licence" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
-
-
-
-
-
 

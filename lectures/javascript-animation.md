@@ -1,12 +1,6 @@
-![Birkbeck, University of London](images/birkbeck-logo.jpg)
-
-Visual Design and Web Project | Coding Sessions | Helena Wee
-
-[Previous](command-line-tools.md) | [All](README.md)
-
 # JavaScript Animation
 
-![JavaScript Animation](images/jsAnim.jpg)
+![JavaScript Animation](./images/jsAnim.jpg)
 
 ## Timing in JavaScript
 
@@ -315,9 +309,3 @@ https://p5js.org/
 https://openprocessing.org/  
 https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API  
 https://threejs.org/  
-
-## Rights
-Copyright Birkbeck, University of London
-
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Licence" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
-

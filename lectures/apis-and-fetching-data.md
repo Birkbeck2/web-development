@@ -1,12 +1,8 @@
-![Birkbeck, University of London](images/birkbeck-logo.jpg)
-
-Visual Design and Web Project | Coding Sessions | Helena Wee
-
-[Previous](JSON-data-and-storage.md) | [All](README.md) | [Next](Drawing-shapes-text-and-transformations.md)
-
 ## APIs and fetching data
 
-![APIs and fetching data](images/fetch.jpg)
+![APIs and fetching data](./images/fetch.jpg)
+
+*[Image](https://pixsector.com/photos/dog-carrying-stick-photo/514) by Mental Cinephile*
 
 ## APIs in client-side JavaScript
 
@@ -17,7 +13,7 @@ They are constructs made to make complex functionality simpler. They abstract co
 Common browser APIs include:
 -	The DOM (Document Object Model) API for manipulating HTML and CSS.
 -	The Fetch API which fetches data from servers.
--	The Canvas API for updating pixel data contained in the <canvas> element.
+-	The Canvas API for updating pixel data contained in the `<canvas>` element.
 -	The Web Storage API to store data (such as JSON) on the client’s computer.
   
 Common third-party APIs include:
@@ -161,9 +157,3 @@ https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/responseText
 https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/load_event  
 https://livecodestream.dev/post/5-ways-to-make-http-requests-in-javascript/#xmlhttprequest  
 https://www.w3schools.com/Js/js_ajax_http_send.asp  
-
-## Rights
-Copyright Birkbeck, University of London
-
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Licence" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
-

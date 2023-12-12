@@ -1,9 +1,3 @@
-![Birkbeck, University of London](images/birkbeck-logo.jpg)
-
-Visual Design and Web Project | Coding Sessions | Helena Wee
-
-[Previous](assigning-variables.md) | [All](README.md) | [Next](writing-functions-to-make-programs-modular.md)
-
 # Setting up conditional statements
 
 ## Conditionals
@@ -129,9 +123,3 @@ Block scope: Variables declared with let inside {} cannot be accessed outside of
 [https://eloquentjavascript.net/02_program_structure.html](https://eloquentjavascript.net/02_program_structure.html)  
 [https://www.w3schools.com/jsref/jsref_dowhile.asp](https://www.w3schools.com/jsref/jsref_dowhile.asp)  
 [https://www.w3schools.com/js/js_scope.asp](https://www.w3schools.com/js/js_scope.asp)
-
-
-## Rights
-Copyright Birkbeck, University of London
-
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Licence" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
