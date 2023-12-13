@@ -98,7 +98,7 @@ already accessible if used well.
 | Operable | `<title>About - My Website</title>` | 
 | Operable | `<nav><ul><li>About</li><li>Contact</li></ul></nav>`  |
 | Understandable | `<footer>My Footer</footer>` `<footer>My Footer</footer>` |
-| Understandable | `<html lang="en">` |
+| Understandable | `<html lang="en-GB">` |
 
 ## Keyboard usability
 

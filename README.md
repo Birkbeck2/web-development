@@ -1,5 +1,3 @@
-![Birkbeck, University of London](/birkbeck-logo.jpg)
-
 # Web Development and User Experience
 
 This repository holds lecture notes, code examples, workshops, and
