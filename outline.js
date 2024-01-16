@@ -174,6 +174,10 @@ export const outline = [
     // collapsed: true,
     lecturer: 'Helena Wee',
     items: [
+        {
+          text: 'Conditionals and Functions: Pre-sessional activities',
+          link: '/lectures/conditionals-and-functions.html',
+        },
        {
          text: 'Conditionals',
          link: '/lectures/conditionals.html',
