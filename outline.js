@@ -171,7 +171,7 @@ export const outline = [
   },
   {
     text: 'Conditions and functions',
-    // collapsed: true,
+    collapsed: true,
     lecturer: 'Helena Wee',
     items: [
         {
