@@ -174,18 +174,22 @@ export const outline = [
     // collapsed: true,
     lecturer: 'Helena Wee',
     items: [
-    //   {
-    //     text: 'Conditionals',
-    //     link: '/lectures/javascript-conditionals.html',
-    //     concepts: 'conditionals, block scope',
-    //     code: 'if else while {}'
-    //   },
-    //   {
-    //     text: 'Functions',
-    //     link: '/lectures/javascript-functions.html',
-    //     concepts: 'functions, function scope',
-    //     code: 'function return {}'
-    //   },
+       {
+         text: 'Conditionals',
+         link: '/lectures/conditionals.html',
+         concepts: 'conditionals, block scope',
+         code: 'if else while {}'
+       },
+       {
+         text: 'Functions',
+         link: '/lectures/functions.html',
+         concepts: 'functions, function scope',
+         code: 'function return {}'
+       },
+       {
+        text: 'Workshop: Conditionals and Functions',
+        link: '/workshops/conditionals-functions/index.html',
+      },
     ]
   },
   {
