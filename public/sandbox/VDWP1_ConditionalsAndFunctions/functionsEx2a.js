@@ -11,9 +11,13 @@ function fishTale(){
         sleepy = true;
     }
     if(sleepy == true){
-        console.log("My goldfish are sleepy today.");
+        let sleepState = "My goldfish are sleepy today.";
+        console.log(sleepState);
+        return sleepState;
     } else {
-        console.log("My goldfish are awake today.");
+        let sleepState = "My goldfish are awake today.";
+        console.log(sleepState);
+        return sleepState;
     }
 }
 
@@ -22,7 +26,7 @@ function fishTank(goldfish, carp, totalFish){
     console.log("I have " + carp + " carp.");
     totalFish = goldfish + carp;
     console.log("In total I have " + totalFish + " fish.");
-    let goldfishHealth = fishTale();
 }
 
 fishTank(numGoldfish, numCarp, numFish);
+let goldfishHealth = fishTale();
