@@ -1,7 +1,7 @@
-# Web Development and User Experience
+# Web Development
 
 This repository holds lecture notes, code examples, workshops, and
-autograders for the corresponding MA module.
+autograders for the corresponding MA modules.
 
 ## Getting started
 
