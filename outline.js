@@ -174,32 +174,44 @@ export const outline = [
     collapsed: true,
     lecturer: 'Helena Wee',
     items: [
-        {
-          text: 'Conditionals and Functions: Pre-sessional activities',
-          link: '/lectures/conditionals-and-functions.html',
-        },
-       {
-         text: 'Conditionals',
-         link: '/lectures/conditionals.html',
-         concepts: 'conditionals, block scope',
-         code: 'if else while {}'
-       },
-       {
-         text: 'Functions',
-         link: '/lectures/functions.html',
-         concepts: 'functions, function scope',
-         code: 'function return {}'
-       },
-       {
-        text: 'Workshop: Conditionals and Functions',
-        link: '/workshops/conditionals-functions/index.html',
+      {
+        text: 'Conditionals and Functions: Pre-sessional activities',
+        link: '/lectures/conditionals-and-functions.html',
+      },
+      {
+        text: 'Conditionals',
+        link: '/lectures/conditionals.html',
+        concepts: 'conditionals, block scope',
+        code: 'if else while {}'
+      },
+      {
+        text: 'Functions',
+        link: '/lectures/functions.html',
+        concepts: 'functions, function scope',
+        code: 'function return {}'
+      },
+      {
+       text: 'Workshop: Conditionals and Functions',
+       link: '/workshops/conditionals-functions/index.html',
       },
     ]
   },
   {
     text: 'Objects, loops, and files',
+    collapsed: true,
     lecturer: 'Joseph Muller',
-    items: []
+    items: [
+      {
+        text: 'Prep',
+        link: '/lectures/objects-loops-files.html',
+        concepts: 'objects, keys and values, methods, iteration, importing and exporting files',
+        code: '{} [] for ... of forEach import export'
+      },
+      // {
+      //   text: 'Workshop',
+      //   link: '/workshops/objects/index.html',
+      // },
+    ]
   },
   {
     text: 'JavaScript in the browser',
