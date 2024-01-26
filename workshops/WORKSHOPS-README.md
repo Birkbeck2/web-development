@@ -65,6 +65,7 @@ GitHub organization.
 - [web-development-advanced-css-instructor](https://github.com/Birkbeck2/web-development-advanced-css-instructor)
 - [web-development-git-instructor](https://github.com/Birkbeck2/web-development-git-instructor)
 - [web-development-intro-javascript-instructor](https://github.com/Birkbeck2/web-development-intro-javascript-instructor)
+- [web-development-objects-instructor](https://github.com/Birkbeck2/web-development-objects-instructor)
 
 By cloning each of these repositories into the appropriate `submissions`
 folder, you give your autograder something to run on even before you have
