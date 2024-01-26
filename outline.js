@@ -204,13 +204,15 @@ export const outline = [
       {
         text: 'Prep',
         link: '/lectures/objects-loops-files.html',
-        concepts: 'objects, keys and values, methods, iteration, importing and exporting files',
-        code: '{} [] for ... of forEach import export'
       },
-      // {
-      //   text: 'Workshop',
-      //   link: '/workshops/objects/index.html',
-      // },
+      {
+        text: 'Live coding',
+        link: '/lectures/objects-loops-files-live-coding.html',
+      },
+      {
+        text: 'Workshop',
+        link: '/workshops/objects/index.html',
+      },
     ]
   },
   {
