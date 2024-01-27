@@ -7,11 +7,11 @@ The practical part of today’s workshop is contained in two files,
 your own versions to get started. Then follow the instructions in
 “shapes.js”.
 
-[Download shapes.js](/workshops/objects/starter-files/shapes.js){download}
+[Download shapes.js](https://github.com/Birkbeck2/web-development/blob/main/workshops/objects/starter-files/shapes.js)
 
 <<< @/workshops/objects/starter-files/shapes.js{js}
 
-[Download extraColors.js](/workshops/objects/starter-files/extraColors.js){download}
+[Download extraColors.js](https://github.com/Birkbeck2/web-development/blob/main/workshops/objects/starter-files/extraColors.js)
 
 <<< @/workshops/objects/starter-files/extraColors.js{js}
 
@@ -53,11 +53,9 @@ think of any? Try these.
 
 ### Starter code
 
-[Download songData.js](/workshops/objects/starter-files/songData.js){download}
+[Download songData.js](https://github.com/Birkbeck2/web-development/blob/main/workshops/objects/starter-files/songData.js) (too long to show here)
 
-[View songData.js in new tab](/workshops/objects/starter-files/songData.js){target="_blank"} (too long to show here)
-
-[Download songs.js](/workshops/objects/starter-files/songs.js){download}
+[Download songs.js](https://github.com/Birkbeck2/web-development/blob/main/workshops/objects/starter-files/songs.js)
 
 <<< @/workshops/objects/starter-files/songs.js{js}
 
@@ -78,7 +76,7 @@ colors, and save them all as files in the folder called “output”.
 
 ### Starter code
 
-[Download images.js](/workshops/objects/starter-files/images.js){download}
+[Download images.js](https://github.com/Birkbeck2/web-development/blob/main/workshops/objects/starter-files/images.js)
 
 <<< @/workshops/objects/starter-files/images.js{js}
 
