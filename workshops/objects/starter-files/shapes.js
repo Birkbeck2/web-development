@@ -54,21 +54,16 @@
 // 11b. OPTIONAL
 // The next two steps involve exporting and importing with a pattern from ES
 // modules. We did not cover all the steps in class, so they are optional.
-// Create a file called 'package.json' and paste in this code (without the
-// forward slashes.)
-//
-// {
-//   "type": "module"
-// }
-//
-// Here is a one minute video explanation:
+// Make sure you've downloaded the file package.json and saved it in the same
+// folder as this one.
+// Here is a one minute video demo of "type":"module" in package.json:
 // https://www.youtube.com/watch?v=I4gR-1qMjk0
 
 // 12. OPTIONAL
-// Make sure you've downloaded the file extraColors.js and saved it in the same
-// folder as this one. Modify the line where the pinkAndYellow object is
-// defined, so that it is exported. Then import it below, in this file, and log
-// it to the console.
+// Make sure you've downloaded the file extraColors.js and saved
+// it in the same folder as this one. Modify the line where the pinkAndYellow
+// object is defined, so that it is exported. Then import it below, in this
+// file, and log it to the console.
 
 
 // 13. OPTIONAL
