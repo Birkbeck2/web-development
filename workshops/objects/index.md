@@ -2,10 +2,13 @@
 
 ## Part 1: Practical
 
-The practical part of today’s workshop is contained in two files,
-“shapes.js” and “extraColors.js”. Download both files or copy-paste into
-your own versions to get started. Then follow the instructions in
-“shapes.js”.
+The practical part of today’s workshop is mostly in one file, “shapes.js”.
+Download it to get started.
+
+There are some optional steps at the end that also require two other files:
+“extraColors.js” and “package.json”. Download both files or
+copy-paste into your own versions to get started. Then follow the
+instructions in “shapes.js”.
 
 [Download shapes.js](https://github.com/Birkbeck2/web-development/blob/main/workshops/objects/starter-files/shapes.js)
 
@@ -14,6 +17,10 @@ your own versions to get started. Then follow the instructions in
 [Download extraColors.js](https://github.com/Birkbeck2/web-development/blob/main/workshops/objects/starter-files/extraColors.js)
 
 <<< @/workshops/objects/starter-files/extraColors.js{js}
+
+[Download package.json](https://github.com/Birkbeck2/web-development/blob/main/workshops/objects/starter-files/package.json)
+
+<<< @/workshops/objects/starter-files/package.json{json}
 
 ## Part 2: Creative
 
