@@ -51,14 +51,28 @@
 // it, please use a for loop that goes over your colors object, rather than
 // retyping the codes. Then log the array to the console.
 
+// 11b. OPTIONAL
+// The next two steps involve exporting and importing with a pattern from ES
+// modules. We did not cover all the steps in class, so they are optional.
+// Create a file called 'package.json' and paste in this code (without the
+// forward slashes.)
+//
+// {
+//   "type": "module"
+// }
+//
+// Here is a one minute video explanation:
+// https://www.youtube.com/watch?v=I4gR-1qMjk0
 
-// 12. Make sure you've downloaded the file extraColors.js and saved it in the same
+// 12. OPTIONAL
+// Make sure you've downloaded the file extraColors.js and saved it in the same
 // folder as this one. Modify the line where the pinkAndYellow object is
 // defined, so that it is exported. Then import it below, in this file, and log
 // it to the console.
 
 
-// 13. Write a loop that goes through pinkAndYellow. Inside the loop, add each
+// 13. OPTIONAL
+// Write a loop that goes through pinkAndYellow. Inside the loop, add each
 // new color to your colors object. Log the updated colors object to the console.
 
 
