@@ -218,7 +218,12 @@ export const outline = [
   {
     text: 'JavaScript in the browser',
     lecturer: 'Joseph Muller',
-    items: []
+    items: [
+      {
+        text: 'Prep',
+        link: '/lectures/events.html',
+      },
+    ]
   },
   {
     text: 'Data visualization with JavaScript',
