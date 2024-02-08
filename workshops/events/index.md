@@ -8,7 +8,7 @@ Scenario: You’re building an app where people can create geometric shapes
 in different colors and make them move with simple animations. The
 structure of the HTML and CSS has been written by another developer.
 
-[Get the starter files here](https://www.github.com/web-development/tree/main/workshops/events/starter-files/). Be sure to download both `index.html` and `styles.css`.
+[Get the starter files here](https://www.github.com/Birkbeck2/web-development/tree/main/workshops/events/starter-files/). Be sure to download both `index.html` and `styles.css`.
 
 Task: Your job is to add the JavaScript for interactivity. To do this, you will
 need to write event listeners and JS functions to modify the HTML on user
