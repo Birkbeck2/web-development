@@ -223,6 +223,14 @@ export const outline = [
         text: 'Prep',
         link: '/lectures/events.html',
       },
+      {
+        text: 'Live coding',
+        link: '/lectures/events-live-coding.html',
+      },
+      {
+        text: 'Workshop',
+        link: '/workshops/events/index.html',
+      },
     ]
   },
   {
