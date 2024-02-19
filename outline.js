@@ -217,6 +217,7 @@ export const outline = [
   },
   {
     text: 'JavaScript in the browser',
+    collapsed: true,
     lecturer: 'Joseph Muller',
     items: [
       {
@@ -235,6 +236,7 @@ export const outline = [
   },
   {
     text: 'Visualising Data with JavaScript',
+    collapsed: true,
     lecturer: 'Helena Wee',
     items: [
       {
