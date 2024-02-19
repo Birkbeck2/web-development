@@ -234,9 +234,14 @@ export const outline = [
     ]
   },
   {
-    text: 'Data visualization with JavaScript',
+    text: 'Visualising Data with JavaScript',
     lecturer: 'Helena Wee',
-    items: []
+    items: [
+      {
+        text: 'Visualising Data with JavaScript: Pre-sessional activities',
+        link: '/lectures/visualising-data-js.html',
+      },
+    ]
   },
   {
     text: 'Component-based apps with Vue.js',
