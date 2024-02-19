@@ -9,9 +9,9 @@
 - [https://www.youtube.com/watch?v=5VCY9yCZnlc&ab_channel=dcode](https://www.youtube.com/watch?v=5VCY9yCZnlc&ab_channel=dcode) (1.9 mins)
 - [https://www.youtube.com/watch?v=p88rNckccmg&ab_channel=BananaCoding](https://www.youtube.com/watch?v=p88rNckccmg&ab_channel=BananaCoding) (8.7 mins)
 - [https://www.youtube.com/watch?v=EutvXK3eh0I&list=PLN0tvDAN1yvSNbkHAwPzJ5O4pP_e2vyme&index=2&ab_channel=BananaCoding](https://www.youtube.com/watch?v=EutvXK3eh0I&list=PLN0tvDAN1yvSNbkHAwPzJ5O4pP_e2vyme&index=2&ab_channel=BananaCoding) (10.3 mins)
-- [EJS](https://eloquentjavascript.net/index.html) chapters 11
+- [EJS](https://eloquentjavascript.net/index.html) chapter 11
 
 ## Also recommended
 - [https://www.youtube.com/watch?v=Oive66jrwBs&ab_channel=TraversyMedia](https://www.youtube.com/watch?v=Oive66jrwBs&ab_channel=TraversyMedia) (30.9 mins)
 - [https://www.youtube.com/watch?v=-wSn49DV9qU&list=PLN0tvDAN1yvSNbkHAwPzJ5O4pP_e2vyme&index=4&ab_channel=BananaCoding](https://www.youtube.com/watch?v=-wSn49DV9qU&list=PLN0tvDAN1yvSNbkHAwPzJ5O4pP_e2vyme&index=4&ab_channel=BananaCoding) (10.65 mins)
-- [EJS](https://eloquentjavascript.net/index.html) chapters 4(section on JSON) & 17
+- [EJS](https://eloquentjavascript.net/index.html) chapters 4 (section on JSON) & 17
