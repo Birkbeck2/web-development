@@ -1,5 +1,5 @@
 ---
-title: All lectures
+title: All sandboxes
 outline: false
 
 ---
