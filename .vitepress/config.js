@@ -16,6 +16,7 @@ export default defineConfig({
       { text: 'Lectures', link: '/lectures/index.html' },
       { text: 'Workshops', link: '/workshops/index.html' },
       { text: 'Sandboxes', link: '/sandboxes.html' },
+      { text: 'Projects', link: '/projects.html' },
       { text: 'Moodle', link: 'https://moodle.bbk.ac.uk/my/' },
       { text: 'Gradescope', link: 'https://www.gradescope.eu/' }
     ],
