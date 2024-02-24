@@ -4,6 +4,9 @@
 
 *[Image](https://www.freepik.com/free-vector/business-performance-analysis-with-graphs_3425212.htm) by rawpixel.com on Freepik*
 
+## JSON vs JavaScript object
+
+![JSON vs JavaScript object](./images/table.png)
 
 ## JSON.parse()
 

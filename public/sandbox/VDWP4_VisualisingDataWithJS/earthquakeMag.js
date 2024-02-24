@@ -20,6 +20,7 @@ fetch('https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojso
     let y = geoArray[i].geometry.coordinates[1];
     console.log(y);
     let location = geoArray[i].properties.place;
+    //cx.resetTransform();
     cx.translate(180, 90);
     cx.beginPath();     // method of Canvas 2D API starts a new path
     cx.arc(x, y, magnitude, 0, 2 * Math.PI);     // arc(x, y, radius, startAngle, endAngle)
