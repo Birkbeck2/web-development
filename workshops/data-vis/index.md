@@ -5,7 +5,7 @@
 - Create an HTML file and a linked JavaScript file.
 - Create a constant which equates to a JSON string with 5 name/value pairs naming five people and their pets.
 - Use JSON.parse() to convert the JSON string into a JSON object literal.
-- Create five variables and make each one equal a sentence contining one of the name/value pairs.
+- Create five variables and make each one equal a sentence containing one of the name/value pairs.
 - Print each sentence to its own paragraph tag on the page.
 
 - Create another constant which equates to a JavaScript object with 3 name/value pairs naming three people and their favourite fruit.
