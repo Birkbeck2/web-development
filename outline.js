@@ -243,6 +243,22 @@ export const outline = [
         text: 'Visualising Data with JavaScript: Pre-sessional activities',
         link: '/lectures/visualising-data-js.html',
       },
+      {
+        text: 'Visualising Data with JavaScript',
+        link: '/lectures/visualising-data-js-1.html',
+      },
+      {
+        text: 'APIs and Fetching Data',
+        link: '/lectures/visualising-data-js-2.html',
+      },
+      {
+        text: 'Drawing shapes and text',
+        link: '/lectures/visualising-data-js-3.html',
+      },
+      {
+        text: 'Workshop',
+        link: '/workshops/data-vis/index.html',
+      },
     ]
   },
   {
