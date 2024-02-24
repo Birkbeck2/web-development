@@ -24,6 +24,10 @@ Example:
 
 Example:
 
+<<< @/public/sandbox/VDWP4_VisualisingDataWithJS/earthquakeMag.js#snippet{js}
+
+Example:
+
 <<< @/public/sandbox/VDWP4_VisualisingDataWithJS/setIntervalExample.js{js}
 
 
