@@ -18,7 +18,7 @@
 - Use the fetch API to get emoji data from: [https://api.github.com/emojis](https://api.github.com/emojis)
 - Use [https://jsonbeautify.com/](https://jsonbeautify.com/) to look at the JSON and format/beautify it.
 - Pick one of the emojis which start with "smile", "smiling" or "smiley".
-- Using context.drawImage() place 25 of the emojis randomly on a canvas that is 800 x 600 pixels.
+- Using context.drawImage() place 25 of the emojis randomly on a canvas that is 800 x 600 pixels. (Hint: you need to use Image() [https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/Image](https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/Image), and then specify its src and what happens onload of the image [https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement)).
 
 ## Experimenting with open JSON data
 
