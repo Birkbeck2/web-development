@@ -1,0 +1,79 @@
+/* Body and container */
+body {
+  background: #202124;
+  font-family: sans-serif;
+  margin: auto;
+  max-width: 800px;
+}
+
+.container {
+  color: #fdfeff;
+  text-align: center;
+  margin: 1rem;
+}
+
+/* Heading */
+h1 {
+  color: #fdfeff;
+}
+a {
+  text-decoration: none;
+}
+
+/* Form */
+form {
+  margin-top: 1rem;
+}
+select,
+button {
+  padding: 0.5rem;
+  font-size: 1.1rem;
+}
+
+/* Shape gallery */
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+@media screen and (min-width: 600px) {
+  .flex-container {
+    flex-direction: row;
+  }
+}
+
+.shape {
+  height: 5rem;
+  width: 5rem;
+  transition: all 0.4s;
+}
+
+/* Colors */
+/* Credit the Open Library of Humanities */
+
+.mustard {
+  background: #c08031;
+}
+.red {
+  background: #e94c33;
+}
+.blue {
+  background: #1579a0;
+}
+
+/* Form */
+form {
+  margin-top: 1rem;
+}
+form label,
+form input,
+form select,
+form button {
+  font-size: 1.1rem;
+  margin: 1rem;
+}
+
