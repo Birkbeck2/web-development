@@ -262,24 +262,26 @@ export const outline = [
     ]
   },
   {
-    text: 'Component-based apps with Vue.js',
+    text: 'Getting started with Vue.js',
     lecturer: 'Helena Wee',
-    items: []
+    items: [
+      {
+        text: 'Prep',
+        link: '/lectures/vue-intro.html',
+      },
+    ]
   },
   {
-    text: 'Inputs, conditions, and lists in Vue.js',
+    text: 'Going further with Vue.js',
     lecturer: 'Joseph Muller',
-    items: []
+    items: [
+      {
+        text: 'Prep',
+        link: '/lectures/vue-components.html',
+      },
+    ]
   },
 ]
-
-// {
-//   text: 'Behind-the-scenes HTML',
-//   link: '/lectures/behind-the-scenes-html.html',
-//   lecturer: 'Joseph Muller',
-//   concepts: 'social media cards, web search indexing, code comments, character encoding',
-//   code: 'head meta name content title description og:image twitter:image charset utf-8 style src link rel href script defer <!-- --> hidden'
-// },
 
 export function filterClassMeeting (meetings, pathStart) {
   const filteredItems = []
