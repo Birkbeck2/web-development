@@ -1,3 +1,4 @@
+// #region snippet
 let cx = document.querySelector("canvas").getContext("2d");
 let worldMap = document.createElement("img");
 worldMap.src = "images/worldMap.jpg";
@@ -23,7 +24,7 @@ setInterval(function () {
     cx.resetTransform();
   })
 }, 120);
-
+// #endregion snippet
 
 // async await fetch
 /*

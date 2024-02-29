@@ -1,3 +1,4 @@
+// #region snippet
 let cx = document.querySelector("canvas").getContext("2d");
 let patternImg = new Image();
 
@@ -21,7 +22,7 @@ fetch("https://api.github.com/emojis")
     cx.stroke();
   }
 });
-
+// #endregion snippet
 // async await fetch
 /*
 async function drawEmojis(file) {

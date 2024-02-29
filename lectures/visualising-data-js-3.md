@@ -16,11 +16,11 @@ A shape can be filled (its area is a certain colour) or stroked (a line is drawn
 
 Example:
 
-<<< @/public/sandbox/VDWP4_VisualisingDataWithJS/CanvasEmojisPaths.js{js}
+<<< @/public/sandbox/VDWP4_VisualisingDataWithJS/CanvasEmojisPaths.js#snippet{js}
 
 Example:
 
-<<< @/public/sandbox/VDWP4_VisualisingDataWithJS/CanvasRectUSpopulationSince1960.js{js}
+<<< @/public/sandbox/VDWP4_VisualisingDataWithJS/CanvasRectUSpopulationSince1960.js#snippet{js}
 
 Example:
 
@@ -28,7 +28,7 @@ Example:
 
 Example:
 
-<<< @/public/sandbox/VDWP4_VisualisingDataWithJS/setIntervalExample.js{js}
+<<< @/public/sandbox/VDWP4_VisualisingDataWithJS/setIntervalExample.js#snippet{js}
 
 
 

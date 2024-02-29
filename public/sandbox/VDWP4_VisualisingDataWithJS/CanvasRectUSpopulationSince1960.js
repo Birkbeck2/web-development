@@ -1,3 +1,4 @@
+// #region snippet
 let USpopulation = [];
 let canvas = document.querySelector("canvas");
 let cx = canvas.getContext("2d");
@@ -26,7 +27,7 @@ fetch('http://api.worldbank.org/v2/countries/USA/indicators/SP.POP.TOTL?per_page
       cx.fillRect(x, y, width, height);
     }
 });
-
+// #endregion snippet
 
 // async await fetch
 /*
