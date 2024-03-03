@@ -1,7 +1,6 @@
 # Pre-Sessional Activities: Getting started with Vue
 
-## Videos and
-readings
+## Videos and readings
 
 Please set aside time to watch the following priority
 videos before class.
