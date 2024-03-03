@@ -20,7 +20,7 @@ JavaScript:
 Please set aside time to watch the following priority
 videos before class.
 
-Together the priority videos are **50 minutes**.
+Together the priority videos are **70 minutes**.
 
 If you learn best by reading, check out the assigned chapters of the online
 textbook _Eloquent JavaScript_.
