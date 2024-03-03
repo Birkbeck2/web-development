@@ -262,6 +262,16 @@ export const outline = [
     ]
   },
   {
+    text: 'Timeouts, Debugging and Packages',
+    lecturer: 'Helena Wee and Joseph Muller',
+    items: [
+      {
+        text: 'Prep',
+        link: '/lectures/debugging.html',
+      },
+    ]
+  },
+  {
     text: 'Getting started with Vue.js',
     lecturer: 'Helena Wee',
     items: [
