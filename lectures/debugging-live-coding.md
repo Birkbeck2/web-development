@@ -29,10 +29,40 @@ Here's an example using `setInterval()` to create trails:
 
 <<< @/public/sandbox/VDWP6_JSAnimation/rain.js{js}
 
+## Debugging with console.log
+
+For all debugging, you need two things:
+
+- :world_map: a map of the path taken through the program
+
+- :flashlight: a torch to shine a light where JavaScript went astray
+
+For the map, you can use your knowledge of the order in which the program
+runs. If you’re not sure, start at the very beginning and work it out bit
+by bit.
+
+For the torch, you have several options:
+
+- Error messages (syntax, runtime, logical) provided in the console when
+  the program runs
+
+- `console.log` statements placed at possible wrong turns
+
+- The `debugger` statement and related tools in editors and browsers
+
+Here’s a buggy program to practice on:
+
+<<< @/public/sandbox/js-debugging/index.html#script{html}
+
+<<< @/public/sandbox/js-debugging/index.html#form{html}
+
+<<< @/public/sandbox/js-debugging/app.js{js}
+
 
 ## Installing an NPM package
 
-[Example repository](/sandbox/js-dom/index.html){target="_blank"}
+[Example
+repository](https://github.com/Birkbeck2/sandbox-npm-install){target="_blank"}
 
 To add a package like [chalk](https://www.npmjs.com/package/chalk) to your
 project, run this at the command line:
