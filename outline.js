@@ -270,6 +270,10 @@ export const outline = [
         link: '/lectures/debugging.html',
       },
       {
+        text: 'Live Coding',
+        link: '/lectures/debugging-live-coding.html',
+      },
+      {
         text: 'Workshop',
         link: '/workshops/web-project-prep/index.html',
       },
