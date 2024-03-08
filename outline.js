@@ -269,6 +269,10 @@ export const outline = [
         text: 'Prep',
         link: '/lectures/debugging.html',
       },
+      {
+        text: 'Workshop',
+        link: '/workshops/web-project-prep/index.html',
+      },
     ]
   },
   {
