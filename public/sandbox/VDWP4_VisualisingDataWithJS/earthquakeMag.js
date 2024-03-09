@@ -29,8 +29,6 @@ fetch('https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojso
     cx.font = "14px Arial";
     cx.fillStyle = "blue";
     cx.fillText(location, x, y+8);
-    console.log(location);
-    document.getElementById("earthquake").innerHTML = location;
   }
 });
 
