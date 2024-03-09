@@ -19,15 +19,15 @@ These can be using in conjunction with CSS styles on document object model eleme
 
 Here's an example using `setTimeout()`:
 
-<<< @/public/sandbox/VDWP6_ConditionalsAndFunctions/setTimeoutEmojis.js{js}
+<<< @/public/sandbox/VDWP6_JSAnimation/setTimeoutEmojis.js{js}
 
 Here's an example using `setInterval()` to create trails:
 
-<<< @/public/sandbox/VDWP6_ConditionalsAndFunctions/setIntervalEmojis.js{js}
+<<< @/public/sandbox/VDWP6_JSAnimation/setIntervalEmojis.js{js}
 
 `requestAnimationFrame()` allows you to execute code on the next available screen repaint, syncing with the user’s browser and hardware to make changes to the screen:
 
-<<< @/public/sandbox/VDWP6_ConditionalsAndFunctions/rain.js{js}
+<<< @/public/sandbox/VDWP6_JSAnimation/rain.js{js}
 
 
 

@@ -3,12 +3,11 @@
 fetch('https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson')
 // #endregion snippet
     .then(data => {
-        //console.log(data.json());
         return data.json();
     })
-    .then(JSobj => {
-        //console.log(JSobj.metadata.title + " - data fetched!");
-        console.log(JSobj.features[0].properties.place + " - data fetched!" + JSobj.features[0].properties.ids);
+    .then(post => {
+        console.log(post.metadata.title + " - data fetched!");
+        //console.log(post.features[0].properties.place + " - data fetched!");
     });
 
 
