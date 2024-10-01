@@ -6,7 +6,7 @@ outline: [2, 4]
 
 # Workshop: Reading and Writing Markdown
 
-![Markdown logo](../../lectures/images/Markdown-mark.svg)
+![Markdown logo](../../lectures/images/markdown-mark.svg)
 Dustin Curtis, CC0, via Wikimedia Commons
 
 ## Part 1: Practical
