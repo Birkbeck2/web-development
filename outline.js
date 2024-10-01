@@ -1,12 +1,20 @@
 export const outline = [
   {
-    text: 'Basic HTML',
-    collapsed: true,
-    lecturer: 'Helena Wee',
+    text: 'Getting started with coding',
+    // collapsed: true,
+    lecturer: 'Joseph Muller',
     items: [
       {
-        text: 'Workshop on basic HTML',
-        link: '/workshops/basic-html/index.html',
+        text: 'Prep',
+        link: '/lectures/markdown-and-github-prep.html',
+      },
+      {
+        text: 'Live coding',
+        link: '/lectures/markdown-live-coding.html',
+      },
+      {
+        text: 'Workshop on Markdown and GitHub',
+        link: '/workshops/markdown/index.html',
       }
     ]
   },
