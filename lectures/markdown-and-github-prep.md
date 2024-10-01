@@ -1,3 +1,9 @@
+---
+
+outline: [2, 4]
+
+---
+
 # Getting started with coding
 
 In this session we will make sure you are set up and familiar with the tools we will code with all year, including GitHub repositories, forums, and pages.
@@ -18,10 +24,10 @@ Students will be able to:
 
 - publish a webpage using GitHub Pages
 
-## Pre-sessional activities.
+## Pre-sessional activities
 
 ::: info
-Pre-sessional activities could be readings, videos, or interactive tutorials. Please complete as many as possible before the session, at least the ones listed as Priority.
+Pre-sessional activities could be readings, videos, or interactive tutorials. Please complete as many as you can before the session, at least the ones listed as Priority.
 :::
 
 ::: tip

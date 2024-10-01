@@ -45,7 +45,7 @@ Luna reminded herself:
 > Not all those who wander are lost.
 
 M
-`****`
+`**Luna was fearless** as she stepped into the dark forest.`
 
 N
 | Item          | Description      | Quantity  |
