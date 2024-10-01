@@ -18,7 +18,6 @@ export default defineConfig({
       { text: 'Sandboxes', link: '/sandboxes.html' },
       { text: 'Projects', link: '/projects.html' },
       { text: 'Moodle', link: 'https://moodle.bbk.ac.uk/my/' },
-      { text: 'Gradescope', link: 'https://www.gradescope.eu/' }
     ],
     search: {
       provider: 'local'
