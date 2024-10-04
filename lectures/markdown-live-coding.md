@@ -6,7 +6,7 @@ will happen when it is run.
 
 ## Identify purpose of markup
 
-What is the purpose of each of the syntax you see in each of these examples?
+What is the purpose of the syntax you see in each of these examples?
 What do you expect to see?
 
 ```markdown
