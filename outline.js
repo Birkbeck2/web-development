@@ -1,5 +1,10 @@
 export const outline = [
   {
+    text: 'Welcome and orientation',
+    // collapsed: true,
+    link: '/lectures/welcome-orientation.html',
+  },
+  {
     text: 'Markdown and GitHub',
     // collapsed: true,
     lecturer: 'Joseph Muller',

@@ -6,13 +6,14 @@ outline: [2, 4]
 
 # Welcome and orientation
 
-![Nested neon green code staggers across a black
-screen](./images/martin-m-stranger-things-code.png)
+![Light spills onto the square from Birkbeck’s Malet St building at
+night](./images/birkbeck-malet-night.jpg)
 
-*Image by [Martin M.](https://martin-m.org/2018/11/28/stranger-things-basic/)*
+*Image by Danere. CC [BY-SA
+4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en).*
 
-Welcome! This page is an orientation to the coding side of both of Birkbeck’s
-postgraduate modules on digital media design. 
+Welcome! This page is an orientation to the coding side of both of
+Birkbeck’s postgraduate modules on digital media design. 
 
 * Web Development and User Experience
 * Visual Design and Web Project
