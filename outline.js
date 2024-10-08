@@ -1,6 +1,6 @@
 export const outline = [
   {
-    text: 'Getting started with coding',
+    text: 'Markdown and GitHub',
     // collapsed: true,
     lecturer: 'Joseph Muller',
     items: [
