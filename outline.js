@@ -3,6 +3,7 @@ export const outline = [
     text: 'Welcome and orientation',
     // collapsed: true,
     link: '/lectures/welcome-orientation.html',
+    items: [],
   },
   {
     text: 'Markdown and GitHub',
