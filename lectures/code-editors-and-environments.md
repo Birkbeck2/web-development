@@ -1,7 +1,5 @@
 # Code editors and environments
 
-![Meme of Nicolas Cage faces reacting to scenarios in which code runs and he doesn't know why, code doesn't run and he knows why, and code doesn't run and he doesn't know why](images/code-run-why-nicolas-cage.png)
-
 There are a lot of different ways to edit text and save it. You can use Microsoft Word, Google Docs, the Notes app on your phone, or Gmail.
 
 But these won't work for writing HTML, because they are too smart and helpful, and they aren't literal enough. To write HTML, you need an application that
