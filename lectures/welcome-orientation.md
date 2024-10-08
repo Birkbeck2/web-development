@@ -144,8 +144,6 @@ Birkbeck’s [Moodle](https://moodle.bbk.ac.uk) is the starting place for these
 modules and serves as the source of truth, if in doubt about something like
 a link, due date, or pre-sessional activities.
 
-Moodle is the source of truth.
-
 ### Web Development (this website)
 
 Lecture materials are generally published and stored on this website. It is
