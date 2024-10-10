@@ -24,35 +24,20 @@ export const outline = [
       }
     ]
   },
-  // {
-  //   text: 'Semantic HTML',
-  //   collapsed: true,
-  //   lecturer: 'Joseph Muller',
-  //   items: [
-  //     {
-  //       text: 'HTML attributes',
-  //       link: '/lectures/html-attributes.html',
-  //       concepts: 'variable, attribute, attribute name, attribute value',
-  //       code: '= " lang id class a href'
-  //     },
-  //     {
-  //       text: 'Images and other files in HTML',
-  //       link: '/lectures/images-and-other-files-in-html.html',
-  //       concepts: 'alt text, absolute and relative paths, files',
-  //       code: 'img src alt width height index.html'
-  //     },
-  //     {
-  //       text: 'Meaning and presentation in HTML',
-  //       link: '/lectures/meaning-and-presentation-in-html.html',
-  //       concepts: 'meaning, presentation, semantic HTML, HTML history',
-  //       code: 'table br p strong b em i figure img figcaption ul ol li div span header nav main aside article section footer'
-  //     },
-  //     {
-  //       text: 'Workshop on semantic HTML',
-  //       link: '/workshops/semantic-html/index.html',
-  //     }
-  //   ]
-  // },
+  {
+    text: 'HTML',
+    lecturer: 'Joseph Muller',
+    items: [
+      {
+        text: 'Prep',
+        link: '/lectures/html-prep.html',
+      },
+      {
+        text: 'Live coding',
+        link: '/lectures/html-live-coding.html',
+      },
+    ]
+  },
   // {
   //   text: 'Intro to CSS',
   //   collapsed: true,
