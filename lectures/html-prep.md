@@ -10,7 +10,7 @@ Students will be able to:
 * write HTML markup using effective patterns
 * publish HTML pages on GitHub
 
-## Pre-sessional activieis
+## Pre-sessional activities
 
 ### Priority
 
