@@ -12,7 +12,7 @@ Students will be able to:
 
 ## Pre-sessional activieis
 
-### Primary
+### Priority
 
 CoderCoder and freeCodeCamp,
 “[HTML tutorial: How to make a super simple website](https://youtu.be/PlxWf493en4),”
