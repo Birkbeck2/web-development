@@ -28,11 +28,11 @@ development projects.
 
 <div class="bg-slate-600 p-8 max-w-sm">
   <div class="relative h-64 text-3xl font-mono">
-    <div class="absolute top-0 left-24">Creative</div>
+    <div class="absolute top-0 left-24 text-white">Creative</div>
     <div class="absolute left-20 top-10 w-1 h-16 rotate-45 bg-white"></div>
-    <div class="absolute bottom-28 left-0">Practical</div>
+    <div class="absolute bottom-28 left-0 text-white">Practical</div>
     <div class="absolute left-24 bottom-10 w-1 h-16 -rotate-45 bg-white"></div>
-    <div class="absolute bottom-0 left-32">Critical</div>
+    <div class="absolute bottom-0 left-32 text-white">Critical</div>
     <div class="absolute left-48 bottom-12 w-1 h-40 -rotate-12 bg-white"></div>
   </div>
 </div>
