@@ -36,6 +36,10 @@ export const outline = [
         text: 'Live coding',
         link: '/lectures/html-live-coding.html',
       },
+      {
+        text: 'Workshop on HTML',
+        link: '/workshops/html/index.html',
+      }
     ]
   },
   // {
