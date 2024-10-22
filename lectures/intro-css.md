@@ -1,4 +1,4 @@
-# Intro to CSS: Prep
+# Introduction to CSS: Prep
 
 ## Learning outcomes
 
