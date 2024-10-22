@@ -37,7 +37,7 @@ Matt McElreath, "[How to clone a GitHub repository with VS Code](https://youtu.b
 
 ### Also recommended
 
-Kevin Powell, "[How to get started with VS Code](https://youtu.be/EUJlVYggR1Y)", YouTube, 17m 47s, Sepptember 2023.
+Kevin Powell, "[How to get started with VS Code](https://youtu.be/EUJlVYggR1Y)", YouTube, 17m 47s, September 2023.
 
 CoderCoder,
 "[Git, GitHub, & GitHub Desktop for beginners](https://youtu.be/8Dd7KRpKeaE)", YouTube, February 2022, 22m 15s.
