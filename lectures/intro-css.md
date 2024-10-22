@@ -37,6 +37,16 @@ Matt McElreath, "[How to clone a GitHub repository with VS Code](https://youtu.b
 
 ### Also recommended
 
+Robbins, Jennifer, "[Formatting Text](https://ebookcentral.proquest.com/lib/bbk/reader.action?docID=5412749&ppg=281)", Learning Web Design : A Beginner's Guide to HTML, CSS, JavaScript, and Web Graphics.
+
+MDN Web Docs, "[Backgrounds and borders](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Backgrounds_and_borders)".
+
+MDN Web Docs, "[Sizing items in CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Sizing_items_in_CSS)".
+
+MDN Web Docs, "[List style type](https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type)".
+
+MDN Web Docs, "[Display](https://developer.mozilla.org/en-US/docs/Web/CSS/display)".
+
 Kevin Powell, "[How to get started with VS Code](https://youtu.be/EUJlVYggR1Y)", YouTube, 17m 47s, September 2023.
 
 CoderCoder,
