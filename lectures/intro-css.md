@@ -33,11 +33,11 @@ Bro Code, "[Learn CSS background in 3 minutes](https://www.youtube.com/watch?v=Y
 
 Bro Code, "[Learn CSS display property in 4 minutes!](https://www.youtube.com/watch?v=9T8uxp5hQ60)", YouTube, 4 mins 13 seconds, September 2023.
 
-Kevin Powell, "[How to get started with VS Code](https://youtu.be/EUJlVYggR1Y)", YouTube, 17m 47s, Sep 2023.
+Matt McElreath, "[How to clone a GitHub repository with VS Code](https://youtu.be/Nl0J_tcnhQ4?feature=shared)", YouTube, 2m 18s, May 2022.
 
 ### Also recommended
 
-Matt McElreath, "[How to clone a GitHub repository with VS Code](https://youtu.be/Nl0J_tcnhQ4?feature=shared)", YouTube, 2m 18s, May 2022.
+Kevin Powell, "[How to get started with VS Code](https://youtu.be/EUJlVYggR1Y)", YouTube, 17m 47s, Sep 2023.
 
 CoderCoder,
 "[Git, GitHub, & GitHub Desktop for beginners](https://youtu.be/8Dd7KRpKeaE)", YouTube, Feb 2022, 22m 15s.
