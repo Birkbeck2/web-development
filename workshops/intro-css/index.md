@@ -1,6 +1,6 @@
 # Workshop: Introduction to CSS
 
-Whilst logged into GitHub with your Birkbeck email address, get the starter repository at https://classroom.github.com/a/NhyJRdGc. Clone it using Visual Studio Code following the instructions in the prep video [How to clone a GitHub repository with VS Code](https://www.youtube.com/watch?v=Nl0J_tcnhQ4&ab_channel=AutomationCreations).
+Whilst logged into GitHub with your Birkbeck email address, get the starter repository from the link in moodle. Clone it using Visual Studio Code following the instructions in the prep video [How to clone a GitHub repository with VS Code](https://www.youtube.com/watch?v=Nl0J_tcnhQ4&ab_channel=AutomationCreations).
 
 ## Styling text:
 
