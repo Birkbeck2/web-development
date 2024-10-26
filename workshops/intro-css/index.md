@@ -1,32 +1,28 @@
 # Workshop: Introduction to CSS
 
-## Style an HTML page:
+Whilst logged into GitHub with your Birkbeck email address, get the starter repository at https://classroom.github.com/a/NhyJRdGc. Clone it using Visual Studio Code following the instructions in the prep video [How to clone a GitHub repository with VS Code](https://www.youtube.com/watch?v=Nl0J_tcnhQ4&ab_channel=AutomationCreations).
 
-1)	Add a link to a stylesheet file in the head of the ufo-Utsuro-bune.html file. You can name the stylesheet anything you want, but often it is called styles.css. This CSS file will be your external stylesheet. Make sure your stylesheet file is in the correct location in your folder system for your html file to correctly link to it.
-2)	Look at the original article called “Unidentified Floating Object: Edo Images of Utsuro-bune”: https://publicdomainreview.org/collection/utsuro-bune/
-and add CSS rules to your own stylesheet to make your html page look like the original in the following way:
-  -	Make the header image page width (approx., or the widest image on the page)
-  -	Centre all images and text
-  -	Replace the style=”font-style: italic;” in all the `<span>` tags with a class for italic style fonts instead.
-  -	Make the heading text, blockquote text and main body text a serif font (you don’t have to use exactly the same font as in the original page)
-  -	Make the caption text a sans-serif font (you don’t have to use exactly the same font as in the original page)
-  -	Add an appropriate hover state to all the links (it does not have to be the same as on the original page)
-3)	Now let’s add a table. Goto https://en.wikipedia.org/wiki/List_of_reported_UFO_sightings and use only data from 19th Century UFO sightings to create a table underneath the last image and caption on the page. Let’s use this table and style it with a few more CSS Selectors:
-  -	Make the first row of table headings (Date, Name, Location, Description) a bigger font size compared to the rest of paragraphs.
-  -	Make the other text a specific color using an element selector.
-  -	Make dates and the date table header label right aligned.
-  -	Use an id selector to make the table cell with the description of the utsuro-bune have a different background-color.
-4)	Internal CSS. First let’s put some CSS in a `<style>` element inside the head. This is called internal CSS:
-  -	Using the text-decoration property, underline the heading of the article.
-  -	Now change the heading to a different web safe font, including the appropriate fallback fonts in case a user doesn’t have the preferred font.
-5)	Inline CSS. If you want to only style one part of a paragraph instead of all of it, use the `<span>` tag. Do the following using only inline CSS:
-  -	Give the blockquote a different background color (make sure the text is readable against the new background color).
-  -	Change the width and height of the first paragraph of text to 50px. Notice what happens when the amount of text is too much for its container. Then change the width and height of the article to a suitable amount so that all the text is visible. Try using different units for the widths and heights and see what happens (px, em, %, auto).
-  -	Apply text-transform to the first paragraph to see what it does. Try out all three transforms on the first paragraph: lowercase, uppercase, capitalize; sticking with the text-transform you prefer from a design point of view.
-  -	Try out different text spacing properties and values to the first paragraph to see what they do.
-  -	Give your article heading a text-shadow in a color other than black.
-6)	CSS box model:
-  -	Using concepts learnt from the CSS Box Model (margin, padding, border) style the blockquote to create a design you like.
-  -	Add color to the margin, padding or border of the images of the page to help create an interesting page design.
+## Styling text:
 
+1.	In the HTML template page (index.html), create a top heading and 3 paragraphs of text using one of the lorum ipsum alternative sites on this page: https://www.justinmind.com/blog/awesome-lorem-ipsum-alternatives/.
+2. Create an external stylesheet for your CSS rules.
+3. Change the width of the main element so it is less than 100% (but over 50%). Centre it horizontally using margin.
+4. Using an appropriate element selector, style the top heading using your choice of font from https://fonts.google.com/.
+5. Using an appropriate element selector, style the paragraphs in a web safe font of your choice (https://www.cssfontstack.com/).
+6. Choose a colour of your choice for the top heading, and another colour for the paragraphs, adding these colours in hexadecimal form to the appropriate element selectors.
+7. Add one link to a selection of text (a word, or a few words) in each paragraph, and use a class to change the colour of all the links. Make the links a different colour when you hover over them.
+8. Make a selection of text (a word, or a few words) in each paragraph bold and or italic, changing its colour and/or underlining it. Style each text selection in a unique way using a different id each time as the selector for your style declarations.
 
+## Styling boxes and adding backgrounds:
+
+1. Underneath your three paragraphs, create three divs of the same or different widths.
+2. Add a list with 5 items into each div, making two lists unordered and one ordered, and changing each list-style-type to something else of your choosing (https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type).
+3. Change the display of each div to be either block or inline-block according to preference, adjusting widths as needed to create the layout you want.
+4. Add a background colour to each box (all different, one different, or all the same colour), making sure the list text inside it contrasts the background enough to be read easily.
+5. Add colour to either the border and/or the margin to outline the div boxes in the style you want.
+6. Add a background image to the body of the page (https://www.pexels.com/search/background/). Style it using background-repeat, background-position and/or background-size.
+
+## Styling tables (optional):
+
+1. Change the styles of the animalsHumans.html file according to taste.
+2. Alternatively create your own table with interesting information, and style that page and table as you wish.
