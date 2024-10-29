@@ -59,19 +59,23 @@ export const outline = [
       }
     ]
   },
-  // {
-  //   text: 'Responsive CSS',
-  //   collapsed: true,
-  //   lecturer: 'Helena Wee',
-  //   // concepts: 'responsive design, media queries, flexible layouts, grid layouts',
-  //   // code: 'media flex grid'
-  //   items: [
-  //     {
-  //       text: 'Workshop: Responsive CSS',
-  //       link: '/workshops/responsive/index.html',
-  //     }
-  //   ]
-  // },
+  {
+    text: 'Responsive CSS and flexbox',
+    // collapsed: true,
+    lecturer: 'Helena Wee',
+    // concepts: 'responsive design, media queries, flexible layouts, grid layouts',
+    // code: 'media flex grid'
+    items: [
+      {
+        text: 'Prep',
+        link: '/lectures/responsive-css-flexbox.html',
+      }
+  //    {
+  //      text: 'Workshop: Responsive CSS',
+  //      link: '/workshops/responsive/index.html',
+  //    }
+    ]
+  }
   // {
   //   text: 'Accessibility',
   //   collapsed: true,
