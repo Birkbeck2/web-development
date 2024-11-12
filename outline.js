@@ -86,6 +86,10 @@ export const outline = [
         text: 'Prep',
         link: '/lectures/accessibility-prep.html',
       },
+      {
+        text: 'Live coding',
+        link: '/lectures/accessibility-live-coding.html',
+      },
       // {
       //   text: 'Will it work? Using sandboxes to run code experiments',
       //   link: '/lectures/will-it-work-using-sandboxes-to-test-code.html',

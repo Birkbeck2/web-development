@@ -1,0 +1,46 @@
+body {
+  font-family: sans-serif;
+  font-size: 1.4rem;
+  background: #36565f;
+  margin: 0;
+}
+
+.site-title {
+  color: #fdf3e3;
+  margin: auto;
+  max-width: fit-content;
+  padding: 1rem;
+}
+
+/* #region ul */
+/* Reset default browser styles */
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.site-nav a {
+  text-decoration: none;
+}
+
+/* Style the elements how I want */
+.site-nav-flex-container {
+  margin: auto;
+  max-width: min-content;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.site-nav-flex-container a {
+  color: #fdf3e3;
+  display: block;
+  padding: 1rem;
+}
+
+@media (width > 50rem) {
+  .site-nav-flex-container {
+    flex-direction: row;
+  }
+}
+/* #endregion ul */
