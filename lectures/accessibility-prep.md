@@ -21,8 +21,8 @@ In this session you will learn:
 ### Priority
 
 Selections from Fredrik Ridderfalk, [Learn Accessibility - Full a11y
-tutorial](https://youtu.be/e2nkq3h1P68), freeCodeCamp.org, YouTube, 66m, 1 Feb
-2024.
+tutorial](https://youtu.be/e2nkq3h1P68), freeCodeCamp.org, YouTube, ~60m,
+1 Feb 2024.
 
   * (0:00:00) Accessible Development Intro
   * (0:01:32) Understanding web accessibility
@@ -31,9 +31,7 @@ tutorial](https://youtu.be/e2nkq3h1P68), freeCodeCamp.org, YouTube, 66m, 1 Feb
   * (0:11:23) Text contrast
   * (0:17:56) Aside - Alternative Text
   * (0:25:13) Aside - Links
-  * (0:32:36) Links and alternative text
   * (0:37:46) Aside - Labels
-  * (0:44:02) Aside - Radio Buttons
   * (0:45:54) Labels
   * (0:49:07) Semantic HTML
   * (0:54:55) Lists

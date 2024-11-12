@@ -1,0 +1,44 @@
+body {
+  font-family: sans-serif;
+  background: #fdf3e3;
+}
+
+/* #region form */
+h1,
+p,
+form label,
+form input,
+form button {
+  display: block;
+  margin: 0.5rem;
+}
+
+form input,
+form button {
+  padding: 0.5rem;
+}
+
+input {
+  font: inherit;
+  border: 1px solid #36565f;
+  background-color: #fdf3e3;
+}
+
+button {
+  font: inherit;
+  font-size: 1.2rem;
+  color: #fdf3e3;
+  border: none;
+  background-color: #bb4e30;
+}
+
+input:hover,
+input:focus,
+button:hover,
+button:focus {
+  outline-color: #36565f;
+  outline-style: dashed;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+/* #endregion form */
