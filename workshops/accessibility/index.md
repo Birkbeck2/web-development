@@ -9,7 +9,21 @@ outline: [2, 4]
 In this workshop, you will make a short interactive web page, and then you
 will do accessibility testing on someone else’s web page.
 
+
+
 ## Part 1: Make a webpage (required for homework)
+
+1. Create a GitHub repository with the link in Moodle.
+
+   ::: tip Optional: Connect GitHub and VS Code if you can
+   You can connect GitHub and VS Code by “cloning” the repository to your computer.
+
+   “[Clone a repository locally](https://code.visualstudio.com/docs/sourcecontrol/intro-to-git#_clone-a-repository-locally),” Visual Studio Code, last modified 29 Oct 2024.
+
+   Matt McElreath, “[How to clone a GitHub repository with VS
+   Code](https://youtu.be/Nl0J_tcnhQ4?feature=shared),” YouTube, 2m 18s, 29 May
+   2022.
+   :::
 
 1. Please create a short webpage that shows a photo, asks the user
    a question about the photo, and lets the user give a response through
@@ -24,8 +38,9 @@ will do accessibility testing on someone else’s web page.
       a similar site.
 
     - Does not have a white background. This is just so that you have to
-    think a bit about color contrasts rather than just leaving it black text
-    on a white background.
+    think a bit about color contrasts (tip: try the [contrast
+    finder](https://app.contrast-finder.org/?lang=en)) rather than just
+    leaving it black text on a white background.
 
     - Use at least one element for user input like `input`, `textarea`, or `select`.
 
