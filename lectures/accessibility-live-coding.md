@@ -8,8 +8,6 @@ A simple form demo, with focus styles and high color contrast ratios.
 
 <<< @/public/sandbox/html-form/index.css#form{css}
 
-[View in browser](/sandbox/html-form/index.html){target="_blank"}
-
 ## Landmark regions
 
 The typical arrangement of main landmark regions on many webpages.
@@ -23,5 +21,3 @@ How to restyle a `ul` while maintaining semantic properties.
 <<< @/public/sandbox/css-ul-flex/index.html#ul{html}
 
 <<< @/public/sandbox/css-ul-flex/index.css#ul{css}
-
-[View in browser](/sandbox/css-ul-flex/index.html){target="_blank"}
