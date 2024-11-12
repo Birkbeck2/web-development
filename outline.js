@@ -79,9 +79,13 @@ export const outline = [
   },
   {
     text: 'Accessibility in HTML and CSS',
-    // collapsed: true,
+    collapsed: false,
     lecturer: 'Joseph Muller',
     items: [
+      {
+        text: 'Prep',
+        link: '/lectures/accessibility-prep.html',
+      },
       // {
       //   text: 'Will it work? Using sandboxes to run code experiments',
       //   link: '/lectures/will-it-work-using-sandboxes-to-test-code.html',

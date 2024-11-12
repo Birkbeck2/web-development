@@ -22,14 +22,14 @@ will do accessibility testing on someone else’s web page.
 
     - Includes a picture. Please choose a free-to-use photo from Unsplash or
       a similar site.
-  
+
     - Does not have a white background. This is just so that you have to
     think a bit about color contrasts rather than just leaving it black text
     on a white background.
-  
-    - Use at least one `input` (or `textarea`).
 
-    - Use at least one `button`.
+    - Use at least one element for user input like `input`, `textarea`, or `select`.
+
+    - Use at least one `button` element.
 
 2. When you are done with the webpage, please share the GitHub repository
    with one of your fellow students (hopefully someone who was not sitting
@@ -70,21 +70,12 @@ will do accessibility testing on someone else’s web page.
 
 ## Part 3: Create an accessible color scheme (optional)
 
-Develop the color scheme you used in your webpage further into a system of
-complementary colors that can be used together for text, backgrounds, and
-accents in the webpage. Use at least four colors (can include shades of white,
+Taking inspiration from the colors in your photograph, develop the color scheme
+you used in your webpage further into a system of complementary colors that can
+be used together for text, backgrounds, and accents in the webpage.
+
+Use at least four colors (can include shades of white,
 grey, or black). Define which color pairs can be used together as foreground
 and background, while still meeting a contrast ratio of 4.5. Define what each
 color should typically be used for and not be used for (text, icons, borders,
 page backgrounds, button backgrounds/fills, etc.).
-
-## References
-
-Fisher, Carie, Alexandra White, and Rachel Andrew. “Learn Accessibility.”
-web.dev. Accessed November 14, 2023. https://web.dev/learn/accessibility.
-
-Mankoff, Jennifer, Holly Fait, and Tu Tran. “Is Your Web Page Accessible?
-A Comparative Study of Methods for Assessing Web Page Accessibility for
-the Blind.” In Proceedings of the SIGCHI Conference on Human Factors in
-Computing Systems, 41–50. CHI ’05. New York, NY, USA: Association for
-Computing Machinery, 2005. https://doi.org/10.1145/1054972.1054979.
