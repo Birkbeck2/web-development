@@ -1,120 +1,82 @@
-# Workshop on Accessibility
+---
 
-In this workshop we will attempt to put into practice this finding (Mankoff et
-al):
+outline: [2, 4]
 
-<div class="my-8">
-<blockquote class="text-2xl">
-  “Multiple evaluators using a combination of a screen reader and monitor
-  were most consistently effective at finding both empirical and WCAG
-  accessibility problems.”
-</blockquote>
-</div>
+---
 
-## Getting set up
+# Workshop: Accessibility in HTML and CSS
 
-### “Multiple evaluators”
+In this workshop, you will make a short interactive web page, and then you
+will do accessibility testing on someone else’s web page.
 
-Developers sometimes find it helpful to pair up with each other while they
-are writing code. Optimistically, “pair programming” offers:
+## Part 1: Make a webpage (required for homework)
 
-- half the feeling of banging your head against the machine
+1. Please create a short webpage that shows a photo, asks the user
+   a question about the photo, and lets the user give a response through
+   form elements.
 
-- double the chances of getting unstuck quickly
+   Make the webpage as accessible as you can.
 
-- one person can look up something while the other writes code
+2. In addition to being accessible, the webpage must meet these
+   requirements:
 
-- you might learn new coding patterns because their brain is different from yours
+    - Includes a picture. Please choose a free-to-use photo from Unsplash or
+      a similar site.
+  
+    - Does not have a white background. This is just so that you have to
+    think a bit about color contrasts rather than just leaving it black text
+    on a white background.
+  
+    - Use at least one `input` (or `textarea`).
 
-So, we will ask you go get into pairs.
+    - Use at least one `button`.
 
-::: info
-You will also be able to submit the homework together with your partner. You’ll only have
-to submit one website, and it will give you both credit.
-:::
+2. When you are done with the webpage, please share the GitHub repository
+   with one of your fellow students (hopefully someone who was not sitting
+   next to you in the workshop), and then invite them to review the pull
+   request called “Feedback”.
 
-### “Screen reader and monitor”
+   ::: info Steps
+   [Managing teams and people with access to your
+   repository](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/managing-teams-and-people-with-access-to-your-repository)
 
-Try to form pairs where: 
+   [Requesting a pull request
+   review](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/requesting-a-pull-request-review)
+   :::
 
-- At least one person in each pair will have headphones they can listen to and
-  a computer with a screen reader on it. Common ones include
-  [NVDA](https://www.nvaccess.org/),
-  [Apple Voiceover](https://support.apple.com/en-gb/guide/voiceover/welcome/mac), and
-  [JAWS (costs money)](https://www.freedomscientific.com/products/software/jaws/).
+## Part 2: Test someone else’s webpage (required for homework)
 
-- At least one person will have a screen they can inspect visually
+1. Please do at least two types of testing on the webpage that you have
+   been invited to review.
 
-- Finally, because automatic tools have improved a lot since 2005, when the
-  Mankoff study was done, at least one person will have a browser tool or
-  plugin that checks accessibility. Common ones include
-  [WAVE](https://wave.webaim.org/),
-  [Lighthouse](https://developer.chrome.com/docs/lighthouse/), and
-  [Axe (costs money)](https://www.deque.com/get-started-axe-devtools-browser-extension/).
+   ::: info Types of accessibility testing
+   [Automated accessibility
+   testing](https://web.dev/learn/accessibility/test-automated)
 
-## Improve the design of an inaccessible website
+   [Manual accessibility testing](https://web.dev/learn/accessibility/test-manual)
 
-Your main workshop task is to improve the accessibility of “Medical
-Mysteries Club”, a fake landing page created by
-[web.dev](https://web.dev/learn/accessibility)
-and made intentionally inaccessible.
+   [Assistive Technology testing](https://web.dev/learn/accessibility/test-assistive-technology)
+   :::
 
-![The original landing page for the Medical Mysteries
-Club](../../lectures/images/medical-mysteries-club.png)
+2. Write the results of your tests as comments on the pull request on GitHub.
+   With each accessibility violation, be sure to give enough info that the
+   webpage author can understand how you discovered the error and reproduce it
+   for themselves.
 
-1. Download the starter code from GitHub:
+   ::: info Steps
+   [Reviewing proposed changes in a pull
+   request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/reviewing-proposed-changes-in-a-pull-request#about-reviewing-pull-requests)
+   :::
 
-   [github.com/Birkbeck2/web-development-accessibility](https://github.com/Birkbeck2/web-development-accessibility).
+## Part 3: Create an accessible color scheme (optional)
 
-   You can download it as a zip file or create a repository from the
-   template (requires Git / GitHub knowledge).
-
-   ![Download GitHub repo as zip file](../../lectures/images/download-repo-as-zip.png)
-
-2. Unzip or extract the files from the zip and open them in your editor.
-
-### Check it with automatic tools
-
-3. As a first step, please run an automatic accessibility checker. Modify the
-   HTML or CSS to bring it up to accessible design standards.
-
-::: info
-The homework autograder for this session uses a free CLI version of Axe, so you
-can submit a working version of the homework on Gradescope.eu to see Axe errors.
-:::
-
-### Check it with mainstream technology
-
-4. Once your checker is returning a good score, try manually inspecting the page,
-   comparing it against what you know of WCAG, accessible design patterns from
-   the lecture, semantic HTML, and responsive CSS. Are there any further
-   improvements you can make?
-
-### Check it with assistive technology
-
-5. Finally, please examine it using a screen reader. What do you notice about the 
-   usability that you missed with the checker and mainstream tech inspection?
-
-## Expand the form
-
-In the second part of the workshop, you’re asked to expand the form from
-a subscription form into a contact form.
-
-6. Add fields for first name, last name, email address, and message, and
-   change the text on the submit button to something like “Send”.
-
-7. Please make sure your form meets these requirements:
-
-    - Specify a form method.
-
-    - Choose the appropriate HTML elements and attributes for
-      each piece of information in the form.
-
-    - Give each input an appropriate name to serve as the variable name for the data.
-
-    - Make sure each input has a label that is fully accessible.
-
-    - Include a button for submitting the form with the appropriate markup.
+Develop the color scheme you used in your webpage further into a system of
+complementary colors that can be used together for text, backgrounds, and
+accents in the webpage. Use at least four colors (can include shades of white,
+grey, or black). Define which color pairs can be used together as foreground
+and background, while still meeting a contrast ratio of 4.5. Define what each
+color should typically be used for and not be used for (text, icons, borders,
+page backgrounds, button backgrounds/fills, etc.).
 
 ## References
 
