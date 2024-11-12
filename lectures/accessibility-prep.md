@@ -61,9 +61,26 @@ Jordie Howell, [Screen reader demonstration with
 Jordie](https://youtu.be/auUwAuJ8P-I), Digital Access, Vision Australia,
 YouTube, 3m 50s, 8 May 2023.
 
+Install a screen reader like [NVDA](https://www.nvaccess.org/) or
+[JAWS](https://www.freedomscientific.com/products/software/jaws/) (paid),
+or use [Apple
+Voiceover](https://support.apple.com/en-gb/guide/voiceover/welcome/mac).
+Find a list of commands, and try browse some websites you are familiar
+with, and some you are not familiar with, only using the technology.
+
 Tyler Schrenk, [Assistive technologies: quadriplegic man Tyler Schrenk
 controls an iPhone hands free](https://youtu.be/ucU0vCr0rW8), YouTube, 2m
 9s, 24 Jan 2017.
+
+Try navigating a few websites without using the mouse or touchpad at all,
+just the keyboard. Try websites you're familiar with and also ones that
+you are less familiar with.
+
+Try testing a website with an automated tool like LightHouse or WAVE:
+
+  - [Lighthouse](https://developer.chrome.com/docs/lighthouse/), Chrome for Developers, accessed 14 Nov 2023.
+
+  - [WAVE](https://wave.webaim.org/), WebAIM, accessed 14 Nov 14, 2023.
 
 [Web Content Accessibility Guidelines (WCAG)
 2.2](https://www.w3.org/TR/WCAG22/), World Wide Web Consortium (W3C).
