@@ -1,13 +1,13 @@
 export const outline = [
   {
     text: 'Welcome and orientation',
-    // collapsed: true,
+    collapsed: true,
     link: '/lectures/welcome-orientation.html',
     items: [],
   },
   {
     text: 'Markdown and GitHub',
-    // collapsed: true,
+    collapsed: true,
     lecturer: 'Joseph Muller',
     items: [
       {
@@ -26,6 +26,7 @@ export const outline = [
   },
   {
     text: 'HTML',
+    collapsed: true,
     lecturer: 'Joseph Muller',
     items: [
       {
@@ -44,7 +45,7 @@ export const outline = [
   },
   {
     text: 'Introduction to CSS',
-    // collapsed: true,
+    collapsed: true,
     lecturer: 'Helena Wee',
     // concepts: 'stylesheets, style and content, internal and external CSS, selector, declaration, property, value, cascade, fonts, box model, margins, padding, borders, alignment, hover, display',
     // code: '{ } . # ; " class id color background-color width height text-align text-decoration font-family margin padding border :hover display'
@@ -75,35 +76,35 @@ export const outline = [
         link: '/workshops/responsive/index.html',
       }
     ]
-  }
-  // {
-  //   text: 'Accessibility',
-  //   collapsed: true,
-  //   lecturer: 'Joseph Muller',
-  //   items: [
-  //     {
-  //       text: 'Will it work? Using sandboxes to run code experiments',
-  //       link: '/lectures/will-it-work-using-sandboxes-to-test-code.html',
-  //       concepts: 'sandboxes'
-  //     },
-  //     {
-  //       text: 'Accessibility',
-  //       link: '/lectures/accessibility.html',
-  //       concepts: 'digital accessibility, disability, mainstream and assistive technology, standards',
-  //       code: ':focus outline header nav main section footer aria-label aria-labelledby'
-  //     },
-  //     {
-  //       text: 'Forms',
-  //       link: '/lectures/html-forms.html',
-  //       concepts: 'HTTP request methods, front end and back end',
-  //       code: 'form method action type label for input textarea name button'
-  //     },
-  //     {
-  //       text: 'Workshop: Accessiblity',
-  //       link: '/workshops/accessibility/index.html',
-  //     }
-  //   ]
-  // },
+  },
+  {
+    text: 'Accessibility in HTML and CSS',
+    // collapsed: true,
+    lecturer: 'Joseph Muller',
+    items: [
+      // {
+      //   text: 'Will it work? Using sandboxes to run code experiments',
+      //   link: '/lectures/will-it-work-using-sandboxes-to-test-code.html',
+      //   concepts: 'sandboxes'
+      // },
+      // {
+      //   text: 'Accessibility',
+      //   link: '/lectures/accessibility.html',
+      //   concepts: 'digital accessibility, disability, mainstream and assistive technology, standards',
+      //   code: ':focus outline header nav main section footer aria-label aria-labelledby'
+      // },
+      // {
+      //   text: 'Forms',
+      //   link: '/lectures/html-forms.html',
+      //   concepts: 'HTTP request methods, front end and back end',
+      //   code: 'form method action type label for input textarea name button'
+      // },
+      {
+        text: 'Workshop: Accessiblity',
+        link: '/workshops/accessibility/index.html',
+      }
+    ]
+  },
   // {
   //   text: 'Advanced CSS',
   //   collapsed: true,
