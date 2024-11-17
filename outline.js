@@ -62,7 +62,7 @@ export const outline = [
   },
   {
     text: 'Responsive CSS and flexbox',
-    // collapsed: true,
+    collapsed: true,
     lecturer: 'Helena Wee',
     // concepts: 'responsive design, media queries, flexible layouts, grid layouts',
     // code: 'media flex grid'
@@ -79,7 +79,7 @@ export const outline = [
   },
   {
     text: 'Accessibility in HTML and CSS',
-    collapsed: false,
+    collapsed: true,
     lecturer: 'Joseph Muller',
     items: [
       {
@@ -113,19 +113,24 @@ export const outline = [
       }
     ]
   },
-  // {
-  //   text: 'Advanced CSS',
-  //   collapsed: true,
-  //   // concepts: 'positioning, z-index, float, navigation bar, dropdown menu, breadcumb menu',
-  //   // code: 'positioning navigation dropdown'
-  //   items: [
+  {
+  text: 'Grids and other CSS concepts',
+  collapsed: false,
+  lecturer: 'Helena Wee',
+  //   // concepts: 'grids, positioning, z-index, navigation',
+  //   // code: 'grids positioning navigation'
+  items: [
+    {
+      text: 'Prep',
+      link: '/lectures/grids-other-css-concepts.html',
+    }
   //     {
-  //       text: 'Workshop: Advanced CSS',
-  //       link: '/workshops/advanced/index.html',
-  //       lecturer: 'Helena Wee',
+  //       text: 'Workshop: Grids and other CSS concepts',
+  //       link: '/workshops/grids/index.html',
+  //       
   //     }
-  //   ]
-  // },
+    ]
+  },
   // {
   //   text: 'Command line, Git and GitHub',
   //   collapsed: true,
