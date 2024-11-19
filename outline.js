@@ -120,15 +120,15 @@ export const outline = [
   //   // concepts: 'grids, positioning, z-index, navigation',
   //   // code: 'grids positioning navigation'
   items: [
-    {
-      text: 'Prep',
-      link: '/lectures/grids-other-css-concepts.html',
-    }
-  //     {
-  //       text: 'Workshop: Grids and other CSS concepts',
-  //       link: '/workshops/grids/index.html',
-  //       
-  //     }
+      {
+        text: 'Prep',
+        link: '/lectures/grids-other-css-concepts.html',
+      },
+      {
+        text: 'Workshop: Grids and other CSS concepts',
+        link: '/workshops/grid/index.html',
+        
+      }
     ]
   },
   // {
