@@ -1,6 +1,6 @@
 # Advanced work with images: Prep
 
-In this session we will learn about grids, positioning, pseudo elements and pseudo classes. Also we will be using CSS to create navigation features and some basic layouts.
+This session takes a focused look at the technical methods for using images in websites. You will learn about the pros and cons of formats like PNG, JPEG, AVIF, WEBP, and SVG, as well as some HTML and CSS patterns commonly used.
 
 ## Learning outcomes
 
