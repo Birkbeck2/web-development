@@ -20,7 +20,7 @@ Thomas D., "[Inside Web Image Formats](https://www.youtube.com/watch?v=YG5ViRYh0
 
 Buddy Media, "[Vector vs Raster Graphics](https://www.youtube.com/watch?v=p2thSkOa_Xg)", 2 mins 36 seconds, 2 July 2017
 
-Before Semicolon, "[When to use img, figure and picture tag](https://youtu.be/Xn5_gDQFyJg)", 2 mins 20 seconds, 2 June
+Before Semicolon, "[When to use img, figure and picture tag](https://youtu.be/Xn5_gDQFyJg)", 2 mins 20 seconds, 2 June 2020
 
 ### Also recommended
 
