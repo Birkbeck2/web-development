@@ -115,7 +115,7 @@ export const outline = [
   },
   {
   text: 'Grids and other CSS concepts',
-  collapsed: false,
+  collapsed: true,
   lecturer: 'Helena Wee',
   //   // concepts: 'grids, positioning, z-index, navigation',
   //   // code: 'grids positioning navigation'
@@ -131,6 +131,24 @@ export const outline = [
       }
     ]
   },
+  {
+    text: 'Advanced work with images',
+    collapsed: false,
+    lecturer: 'Helena Wee',
+    //   // concepts: 'grids, positioning, z-index, navigation',
+    //   // code: 'grids positioning navigation'
+    items: [
+        {
+          text: 'Prep',
+          link: '/lectures/advanced-images.html',
+        }
+    //    {
+    //      text: 'Workshop: Grids and other CSS concepts',
+    //      link: '/workshops/grid/index.html',
+    //      
+    //    }
+      ]
+    },
   // {
   //   text: 'Command line, Git and GitHub',
   //   collapsed: true,
