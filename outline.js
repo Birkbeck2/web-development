@@ -141,12 +141,12 @@ export const outline = [
         {
           text: 'Prep',
           link: '/lectures/advanced-images.html',
+        },
+        {
+          text: 'Workshop: Advanced work with images',
+          link: '/workshops/advanced-images/index.html',
+          
         }
-    //    {
-    //      text: 'Workshop: Grids and other CSS concepts',
-    //      link: '/workshops/grid/index.html',
-    //      
-    //    }
       ]
     },
   // {
