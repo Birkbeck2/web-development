@@ -1,5 +1,19 @@
 # Organizing Your CSS: Prep
 
+This session will cover common strategies to implement design
+systems and organizational conventions in CSS
+code, with a look forward to component-based development.
+
+## Learning outcomes
+
+By the end of this session, you will be able to:
+
+* Create a CSS organization strategy based on design needs
+* Discuss the pros and cons of common CSS authoring conventions like BEM and ITCSS
+* Avoid unnecessary repetition of CSS code through the use of variables and settings
+* Organize CSS code into multiple files
+* Work with the cascade to make a CSS codebase more maintainable and usable over time
+
 ## Pre-sessional activities
 
 ### Priority

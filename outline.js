@@ -145,10 +145,32 @@ export const outline = [
         {
           text: 'Workshop: Advanced work with images',
           link: '/workshops/advanced-images/index.html',
-          
-        }
-      ]
-    },
+        },
+    //    {
+    //      text: 'Workshop: Grids and other CSS concepts',
+    //      link: '/workshops/grid/index.html',
+    //    }
+    ]
+  },
+  {
+    text: 'Organizing your CSS',
+    collapsed: false,
+    lecturer: 'Joseph Muller',
+    items: [
+      {
+        text: 'Prep',
+        link: '/lectures/organizing-css-prep.html',
+      },
+      // {
+      //   text: 'Live coding',
+      //   link: '',
+      // },
+      // {
+      //   text: 'Workshop: Organizing your CSS',
+      //   link: '',
+      // }
+    ]
+  },
   // {
   //   text: 'Command line, Git and GitHub',
   //   collapsed: true,
