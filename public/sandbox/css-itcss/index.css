@@ -1,0 +1,130 @@
+/* Settings */
+
+@font-face {
+  font-family: 'Poppins Regular';
+  src: url('./fonts/Poppins-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Poppins Bold';
+  src: url('./fonts/Poppins-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Space Mono';
+  src: url('./fonts/SpaceMono-Regular.ttf') format('truetype');
+}
+
+:root {
+  --color-text: #fdf3e3;
+  --color-background: #36565f;
+  --font-poppins-regular: 'Poppins Regular', sans-serif;
+  --font-poppins-bold: 'Poppins Bold', sans-serif;
+  --font-space-mono: 'Space Mono', monospace;
+
+  --container-max-width: 72rem;
+  --prose-max-width: 40rem;
+}
+
+
+
+/* Resets */
+
+/* The following are a few examples from Andy Bell’s reset.
+ * https://piccalil.li/blog/a-more-modern-css-reset/
+ * */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Make images easier to work with */
+img, picture,
+video, canvas, svg {
+  max-width: 100%;
+  display: block;
+}
+
+
+
+/* Elements */
+
+body {
+  font-family: var(--font-poppins-regular);
+  font-size: 1.2rem;
+  color: var(--color-text);
+  background-color: var(--color-background);
+}
+
+h1 {
+  font-family: var(--font-space-mono);
+}
+
+h2 {
+  font-family: var(--font-space-mono);
+}
+
+a {
+  color: var(--color-text);
+}
+
+strong {
+  font-weight: unset;
+  font-family: var(--font-poppins-bold);
+}
+
+
+
+/* Components */
+
+.page-container {
+  max-width: 72rem;
+  margin: auto;
+  padding-inline: 2rem;
+}
+
+.page-heading {
+  margin: auto;
+  max-width: fit-content;
+  padding: 1rem;
+}
+
+.prose {
+  max-width: var(--prose-max-width);
+}
+
+
+
+/* Utilities */
+.flex {
+  display: flex;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.gap-0-5 {
+  gap: 0.5rem;
+}
+.gap-1 {
+  gap: 1rem;
+}
+.gap-2 {
+  gap: 2rem;
+}
+@media (width <= 50rem) {
+  .direction-column-small {
+    flex-direction: column;
+  }
+  .direction-row-small {
+    flex-direction: row;
+  }
+}
+@media (width > 50rem) {
+  .direction-column-large {
+    flex-direction: column;
+  }
+  .direction-row-large {
+    flex-direction: row;
+  }
+}

@@ -1,0 +1,54 @@
+body {
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  color: #fdf3e3;
+  background-color: #36565f;
+}
+.page-container {
+  max-width: 72rem;
+  margin: auto;
+  padding-inline: 2rem;
+}
+.page-heading {
+  margin: auto;
+  max-width: fit-content;
+  padding: 1rem;
+}
+.prose {
+  max-width: var(--prose-max-width);
+}
+
+/* #region bem */
+/* BEM trio block for a group of three images */
+.trio {
+  display: block;
+}
+.trio__container {
+  margin: auto;
+  max-width: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+@media (width <= 50rem) {
+  .trio__container {
+    flex-direction: column;
+  }
+}
+.trio__item,
+.trio__item {
+  box-shadow: 5px 10px #010d0b;
+}
+.trio__item-impatient:hover,
+.trio__item-impatient:focus {
+  animation: 0.1s wiggle infinite alternate;
+}
+@keyframes wiggle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(1deg);
+  }
+}
+/* #endregion bem */

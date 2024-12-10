@@ -161,14 +161,14 @@ export const outline = [
         text: 'Prep',
         link: '/lectures/organizing-css-prep.html',
       },
-      // {
-      //   text: 'Live coding',
-      //   link: '',
-      // },
-      // {
-      //   text: 'Workshop: Organizing your CSS',
-      //   link: '',
-      // }
+      {
+        text: 'Live coding',
+        link: '/lectures/organizing-css-live-coding.html',
+      },
+      {
+        text: 'Workshop: Organizing your CSS',
+        link: '/workshops/organizing-css/index.html',
+      }
     ]
   },
   // {
