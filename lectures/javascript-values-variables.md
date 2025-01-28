@@ -56,3 +56,5 @@ book _Eloquent JavaScript_, 4th ed. (2024), Marijn Haverbeke.
 [#19 JS Logical Operators](https://youtu.be/-L41L0IZuv4), 11m 43s, Dev Dreamer (Amit), YouTube, 8 Mar 2021.
 
 “[Reserved keywords](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#keywords),” Lexical grammar, Mozilla Developer Network, last updated 25 Nov 2024.
+
+Yuankai Xue, Hanlin Chen, Gina R. Bai, Robert Tairas, and Yu Huang. 2024. [Does ChatGPT Help With Introductory Programming? An Experiment of Students Using ChatGPT in CS1](https://doi.org/10.1145/3639474.3640076). In Proceedings of the 46th International Conference on Software Engineering: Software Engineering Education and Training (ICSE-SEET '24). Association for Computing Machinery, New York, NY, USA, 331–341. https://doi.org/10.1145/3639474.3640076
