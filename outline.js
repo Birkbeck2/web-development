@@ -180,10 +180,10 @@ export const outline = [
         text: 'Prep',
         link: '/lectures/javascript-values-variables.html',
       },
-      // {
-      //   text: 'Workshop: Intro JavaScript',
-      //   link: '/workshops/intro-javascript/index.html',
-      // },
+      {
+        text: 'Workshop: JavaScript Values and Variables',
+        link: '/workshops/values-variables/index.html',
+      },
     ]
   },
   // {
@@ -198,14 +198,10 @@ export const outline = [
   //     {
   //       text: 'Conditionals',
   //       link: '/lectures/conditionals.html',
-  //       concepts: 'conditionals, block scope',
-  //       code: 'if else while {}'
   //     },
   //     {
   //       text: 'Functions',
   //       link: '/lectures/functions.html',
-  //       concepts: 'functions, function scope',
-  //       code: 'function return {}'
   //     },
   //     {
   //      text: 'Workshop: Conditionals and Functions',
