@@ -114,12 +114,12 @@ export const outline = [
     ]
   },
   {
-  text: 'Grids and other CSS concepts',
-  collapsed: true,
-  lecturer: 'Helena Wee',
-  //   // concepts: 'grids, positioning, z-index, navigation',
-  //   // code: 'grids positioning navigation'
-  items: [
+    text: 'Grids and other CSS concepts',
+    collapsed: true,
+    lecturer: 'Helena Wee',
+    //   // concepts: 'grids, positioning, z-index, navigation',
+    //   // code: 'grids positioning navigation'
+    items: [
       {
         text: 'Prep',
         link: '/lectures/grids-other-css-concepts.html',
@@ -127,34 +127,34 @@ export const outline = [
       {
         text: 'Workshop: Grids and other CSS concepts',
         link: '/workshops/grid/index.html',
-        
+
       }
     ]
   },
   {
     text: 'Advanced work with images',
-    collapsed: false,
+    collapsed: true,
     lecturer: 'Helena Wee',
     //   // concepts: 'grids, positioning, z-index, navigation',
     //   // code: 'grids positioning navigation'
     items: [
-        {
-          text: 'Prep',
-          link: '/lectures/advanced-images.html',
-        },
-        {
-          text: 'Workshop: Advanced work with images',
-          link: '/workshops/advanced-images/index.html',
-        },
-    //    {
-    //      text: 'Workshop: Grids and other CSS concepts',
-    //      link: '/workshops/grid/index.html',
-    //    }
+      {
+        text: 'Prep',
+        link: '/lectures/advanced-images.html',
+      },
+      {
+        text: 'Workshop: Advanced work with images',
+        link: '/workshops/advanced-images/index.html',
+      },
+      //    {
+      //      text: 'Workshop: Grids and other CSS concepts',
+      //      link: '/workshops/grid/index.html',
+      //    }
     ]
   },
   {
     text: 'Organizing your CSS',
-    collapsed: false,
+    collapsed: true,
     lecturer: 'Joseph Muller',
     items: [
       {
@@ -171,69 +171,21 @@ export const outline = [
       }
     ]
   },
-  // {
-  //   text: 'Command line, Git and GitHub',
-  //   collapsed: true,
-  //   lecturer: 'Joseph Muller',
-  //   items: [
-  //     {
-  //       text: 'The command line',
-  //       link: '/lectures/command-line.html',
-  //       concepts: 'command line interface, Unix shell',
-  //       code: 'pwd ls cat touch mkdir mv cp rm ""'
-  //     },
-  //     {
-  //       text: 'Git',
-  //       link: '/lectures/git.html',
-  //       concepts: 'distributed version control, free and open source software, remote repository, local repository, staging area, working directory',
-  //       code: 'clone status add commit -m Esc+:wq push diff fetch pull merge rebase branch switch -u origin'
-  //     },
-  //     {
-  //       text: 'GitHub',
-  //       link: '/lectures/github.html',
-  //       concepts: 'GitHub, pull request, code review, merge, conflict, GitHub Pages',
-  //     },
-  //     {
-  //       text: 'Workshop on Git and GitHub',
-  //       link: '/workshops/git/index.html',
-  //     },
-  //   ]
-  // },
-  // {
-  //   text: 'Intro to JavaScript',
-  //   collapsed: true,
-  //   lecturer: 'Joseph Muller',
-  //   items: [
-  //     {
-  //       text: 'Introduction',
-  //       link: '/lectures/intro-javascript.html',
-  //       concepts: 'programming language, JavaScript history, running JavaScript code, comments',
-  //       code: 'script node console.log() // /* */'
-  //     },
-  //     {
-  //       text: 'Values',
-  //       link: '/lectures/javascript-values.html',
-  //       concepts: 'values, data types, strings, escaping',
-  //       code: '" \\ numbers booleans true false undefined null typeof'
-  //     },
-  //     {
-  //       text: 'Operators',
-  //       link: '/lectures/javascript-operators.html',
-  //       concepts: 'operators',
-  //       code: '+ == != < > - / *'
-  //     },
-  //     {
-  //       text: 'Variables',
-  //       link: '/lectures/javascript-variables.html',
-  //       concepts: 'statements, constants, variables',
-  //       code: 'let const var = ;'
-  //     },
-  //     {
-  //       text: 'Workshop: Intro JavaScript',
-  //       link: '/workshops/intro-javascript/index.html',
-  //     },
-  //   ]
-  // },
+  {
+    text: 'JavaScript Values and Variables',
+    collapsed: false,
+    lecturer: 'Joseph Muller',
+    items: [
+      {
+        text: 'Prep',
+        link: '/lectures/javascript-values-variables.html',
+      },
+      // {
+      //   text: 'Workshop: Intro JavaScript',
+      //   link: '/workshops/intro-javascript/index.html',
+      // },
+    ]
+  },
   // {
   //   text: 'Conditions and functions',
   //   collapsed: true,
@@ -366,7 +318,7 @@ export const outline = [
   // },
 ]
 
-export function filterClassMeeting (meetings, pathStart) {
+export function filterClassMeeting(meetings, pathStart) {
   const filteredItems = []
   meetings.forEach(meeting => {
     meeting.items = meeting.items.filter(lecturePart => {
