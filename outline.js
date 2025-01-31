@@ -181,6 +181,10 @@ export const outline = [
         link: '/lectures/javascript-values-variables.html',
       },
       {
+        text: 'Live Coding',
+        link: '/lectures/values-variables-live-coding.html',
+      },
+      {
         text: 'Workshop: JavaScript Values and Variables',
         link: '/workshops/values-variables/index.html',
       },
