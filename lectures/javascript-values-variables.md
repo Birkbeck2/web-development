@@ -96,7 +96,7 @@ Yuankai Xue, Hanlin Chen, Gina R. Bai, Robert Tairas, and Yu Huang. 2024. [Does 
     - c. `'False'`
     - d. `"on"`
 
-7.  How can we calculate the money left over?
+7.  Are there any problems with this program?
 
     <<< @/public/sandbox/js-variables/variable-script.js#check1{js}
 

@@ -68,14 +68,14 @@ let pizza = 9;
 let numPizzas = 2;
 let drinks = 8;
 let cash = 40;
-let moneyLeftOver = '?';
+let moneyLeftOver = cash - pizza + numPizzas + drinks;
 console.log(moneyLeftOver);
 // #endregion check1
 
 // #region check2
-First episode name == 'Pilot ;             EpisodesWatched = 8;
-episodeCount = 5;
-console.log(episodesWatched);
+First episode name == 'Pilot';
+episodeCount = 8
+console.log(episodeCount);
 // #endregion check2
 
 // #region check3
@@ -83,9 +83,6 @@ const mostCommonOrder = 'juice ';
 let order1 = mostCommonOrder;
 order1 = 'tea ';
 let order2 = 'tea ';
-let jonsOrder = order2;
-order2 = 'coffee ';
-let samsOrder = mostCommonOrder + order2;
-let table5Order = samsOrder + order1;
+let table5Order = order1 + order2;
 console.log(table5Order);
 // #endregion check3
