@@ -5,11 +5,11 @@
 By the end of this session students will be able to do the following with
 JavaScript:
 
-* Describe how JavaScript differs from HTML and CSS
-* Run JavaScript in the console and a code editor
-* Declare values in JavaScript
-* Use operators to combine, compare, and do arithmetic with values in JavaScript
-* Assign and re-assign JavaScript variables
+- Describe how JavaScript differs from HTML and CSS
+- Run JavaScript in the console and a code editor
+- Declare values in JavaScript
+- Use operators to combine, compare, and do arithmetic with values in JavaScript
+- Assign and re-assign JavaScript variables
 
 ## Videos and readings
 
@@ -58,3 +58,52 @@ book _Eloquent JavaScript_, 4th ed. (2024), Marijn Haverbeke.
 “[Reserved keywords](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#keywords),” Lexical grammar, Mozilla Developer Network, last updated 25 Nov 2024.
 
 Yuankai Xue, Hanlin Chen, Gina R. Bai, Robert Tairas, and Yu Huang. 2024. [Does ChatGPT Help With Introductory Programming? An Experiment of Students Using ChatGPT in CS1](https://doi.org/10.1145/3639474.3640076). In Proceedings of the 46th International Conference on Software Engineering: Software Engineering Education and Training (ICSE-SEET '24). Association for Computing Machinery, New York, NY, USA, 331–341. https://doi.org/10.1145/3639474.3640076
+
+## Check your understanding
+
+1.  Can you make a string like this?
+
+    ```js
+    'Hello"
+    ```
+
+2.  How many valid strings does this line have? Where do they start and end?
+
+    ```js
+    "There are many "ways" you can "interpret" things."
+    ```
+
+3.  Is this a valid string?
+
+    ```js
+    "I told him I'm \"excited\" 🙄";
+    ```
+
+4.  Does JavaScript think this is a number?
+
+    ```js
+    "8,325";
+    ```
+
+5.  How about this?
+    ```js
+    -39.2301;
+    ```
+6.  What data types does JavaScript think these things are?
+
+    - a. `true`
+    - b. `1`
+    - c. `'False'`
+    - d. `"on"`
+
+7.  How can we calculate the money left over?
+
+    <<< @/public/sandbox/js-variables/variable-script.js#check1{js}
+
+8.  What is wrong with this program?
+
+    <<< @/public/sandbox/js-variables/variable-script.js#check2{js}
+
+9.  What will be logged?
+
+    <<< @/public/sandbox/js-variables/variable-script.js#check3{js}
