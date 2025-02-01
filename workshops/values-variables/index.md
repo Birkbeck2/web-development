@@ -10,6 +10,10 @@ For this workshop, practice working with JS values and variables by
 writing a story about a character of your choosing--a pet, a person or thing from
 a movie or a book, etc.
 
+::: tip Aesop’s Fables
+You can use one of Aesop’s fables if you like! There is a nice [edition for children at read.gov](https://www.read.gov/aesop/).
+:::
+
 ::: info Advanced option
 Are you already pretty good at JS values and variables? Then do this workshop by defining an
 object with properties and methods as appropriate, rather than raw variables in the global namespace.
