@@ -1,4 +1,4 @@
-# Prep: Objects, loops, and files
+# Prep: Objects and loops
 
 ## Session goals
 
@@ -21,21 +21,21 @@ If you learn best by reading, check out chapter 4 of _Eloquent JavaScript_.
 
 ### Priority
 
-- [JavaScript Tutorial #21 | Object Literal Basics](https://www.youtube.com/watch?v=kXwDrcsONhA), 9m 30s, Anagh Technologies Inc. (Nirmal Joshi), YouTube, 27 Mar 2020.
+[JavaScript Tutorial #21 | Object Literal Basics](https://www.youtube.com/watch?v=kXwDrcsONhA), 9m 30s, Anagh Technologies Inc. (Nirmal Joshi), YouTube, 27 Mar 2020.
 
 [#14 Template Literals](https://youtu.be/52OJhTbCtoA), 8m 19s, Dev Dreamer (Amit), YouTube, 1 Mar 2021.
 
 [#15 String methods](https://youtu.be/uKKEdtNU5II), 9m 25s, Dev Dreamer (Amit), YouTube, 2 Mar 2021.
 
-- [#27 For...in loop](https://youtu.be/vPB-GnzRiT4), 10m 53s, Dev Dreamer (Amit), YouTube, 19 Mar 2021.
+[#27 For...in loop](https://youtu.be/vPB-GnzRiT4), 10m 53s, Dev Dreamer (Amit), YouTube, 19 Mar 2021.
 
-- [#28 For...of loop](https://youtu.be/virQjbYVvjM), 6m 56s, Dev Dreamer (Amit), YouTube, 19 Mar 2021.
+[#28 For...of loop](https://youtu.be/virQjbYVvjM), 6m 56s, Dev Dreamer (Amit), YouTube, 19 Mar 2021.
 
-- [#29 How to use JS arrays](https://youtu.be/K97CmrUFyQY), 10m 49s, Dev Dreamer (Amit), YouTube, 21 Apr 2021.
+[#29 How to use JS arrays](https://youtu.be/K97CmrUFyQY), 10m 49s, Dev Dreamer (Amit), YouTube, 21 Apr 2021.
 
-- [#30 How to use JS array methods](https://youtu.be/K97CmrUFyQY), 19m 08s, Dev Dreamer (Amit), YouTube, 30 Apr 2021.
+[#30 How to use JS array methods](https://youtu.be/K97CmrUFyQY), 19m 08s, Dev Dreamer (Amit), YouTube, 30 Apr 2021.
 
-- [Data Structures: Objects and Arrays](https://eloquentjavascript.net/04_data.html), chapter from book _Eloquent JavaScript_, 3rd ed. (2018), Marijn Haverbeke
+[Data Structures: Objects and Arrays](https://eloquentjavascript.net/04_data.html), chapter from book _Eloquent JavaScript_, 3rd ed. (2018), Marijn Haverbeke
 
 ### Also recommended
 
