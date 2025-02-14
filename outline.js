@@ -213,25 +213,25 @@ export const outline = [
   //     },
   //   ]
   // },
-  // {
-  //   text: 'Objects, loops, and files',
-  //   collapsed: true,
-  //   lecturer: 'Joseph Muller',
-  //   items: [
-  //     {
-  //       text: 'Prep',
-  //       link: '/lectures/objects-loops-files.html',
-  //     },
-  //     {
-  //       text: 'Live coding',
-  //       link: '/lectures/objects-loops-files-live-coding.html',
-  //     },
-  //     {
-  //       text: 'Workshop',
-  //       link: '/workshops/objects/index.html',
-  //     },
-  //   ]
-  // },
+  {
+    text: 'Objects and loops',
+    collapsed: false,
+    lecturer: 'Joseph Muller',
+    items: [
+      {
+        text: 'Prep',
+        link: '/lectures/objects-loops.html',
+      },
+      {
+        text: 'Live coding',
+        link: '/lectures/objects-loops-live-coding.html',
+      },
+      // {
+      //   text: 'Workshop',
+      //   link: '/workshops/objects/index.html',
+      // },
+    ]
+  },
   // {
   //   text: 'JavaScript in the browser',
   //   collapsed: true,
