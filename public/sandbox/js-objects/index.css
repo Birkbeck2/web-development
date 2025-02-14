@@ -1,0 +1,16 @@
+body {
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  color: #fdf3e3;
+  background-color: #36565f;
+}
+
+h1,
+h2 {
+  font-family: monospace;
+}
+
+.container {
+  max-width: 48rem;
+  margin: 10vh auto;
+}
