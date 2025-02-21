@@ -1,111 +1,58 @@
-# Workshop on JavaScript objects, loops, and files
+# Workshop on JavaScript objects and loops
 
-## Part 1: Practical
+For this workshop, tell a story using JavaScript objects, arrays, and loops.
 
-The practical part of today’s workshop is mostly in one file, “shapes.js”.
-Download it to get started.
+You can use any story you like, including re-using the story you wrote for the [JS
+Values and Variables](http://localhost:5173/web-development/workshops/values-variables/)
+workshop. Try having a browse through [Aesop’s
+fables](https://www.read.gov/aesop/) to see if one of those
+stories captures your imagination.
 
-There are some optional steps at the end that also require two other files:
-“extraColors.js” and “package.json”. Download both files or
-copy-paste into your own versions to get started. Then follow the
-instructions in “shapes.js”.
+Here are a few promising fables that have a nice story, action, and even some repetition that can be used for arrays and loops:
 
-[Download shapes.js](https://github.com/Birkbeck2/web-development/blob/main/workshops/objects/starter-files/shapes.js)
+- [The Crow & the Pitcher](https://www.read.gov/aesop/012.html)
 
-<<< @/workshops/objects/starter-files/shapes.js{js}
+- [The Oak and the Reeds](https://www.read.gov/aesop/011.html)
 
-[Download extraColors.js](https://github.com/Birkbeck2/web-development/blob/main/workshops/objects/starter-files/extraColors.js)
+- [The Heron](https://www.read.gov/aesop/015.html)
 
-<<< @/workshops/objects/starter-files/extraColors.js{js}
+- [The Hare and the Tortoise](https://www.read.gov/aesop/025.html)
 
-[Download package.json](https://github.com/Birkbeck2/web-development/blob/main/workshops/objects/starter-files/package.json)
+- [The North Wind and the Sun](https://www.read.gov/aesop/143.html)
 
-<<< @/workshops/objects/starter-files/package.json{json}
+## Steps
 
-## Part 2: Creative
+1. Create a GitHub repository from the link on Moodle.
 
-Choose one of the three options below.
+2. Create an `index.html`, an `index.js` or `script.js`, and link them together.
 
-## Creative option A: Make something!
+3. Write your story in the JS file. Your program does not have to modify or
+   output anything to the HTML, just the browser console.
 
-Scenario: Choose something that you can represent in code with arrays and
-objects. It can be info about some of your favorite songs, TV shows,
-clothes, hobbies, pets, work, etc. 
+::: tip Structure tip
+Try breaking the story down into sections, like
+the situation, the action, and the result. Before you start writing code,
+write the structure out using comments so you can see the overall shape.
+:::
 
-Goal: Write a program including arrays, objects, and loops that uses that
-info to tell a story or investigate the answer to some questions about the
-info.
+::: tip Objects tip
+Make your characters into objects, assign their qualities as object properties,
+and program their behaviors by means of object methods.
+:::
 
-## Creative option B: Explore 1980s hit song data
+::: tip Arrays and loops tip
+To use an array in your program, think about what part of the story is repeated
+several times. Then write an array that contains the information about the repeated
+actions. Then loop over that array to make the action happen.
+:::
 
-### Scenario
+## Requirements checklist
 
-You are a developer working on a music streaming app. You use
-JavaScript to work with data about songs, albums, artists, and audio
-generally. You’ve been provided with a list of top singles from the UK in
-the 1980s (see starter files below).
+For homework credit, here are the main things to try to get right:
 
-### Goal
-
-Ask some questions that the data can answer, using loops. Can’t
-think of any? Try these.
-
-  1. What’s the longest song title (in terms of number of characters)?
-  2. What’s the shortest title?
-  3. Is “I” or “You” used more often? How about “Me”? How about “Love”?
-  4. What was the top ranked song for each year?
-  5. Which artist appears on the list most often?
-  6. Can you use a for loop to write an HTML document (a string) with markup
-     for a `ul` and `li` items, using the data?
-
-### Starter code
-
-[Download songData.js](https://github.com/Birkbeck2/web-development/blob/main/workshops/objects/starter-files/songData.js) (too long to show here)
-
-[Download songs.js](https://github.com/Birkbeck2/web-development/blob/main/workshops/objects/starter-files/songs.js)
-
-<<< @/workshops/objects/starter-files/songs.js{js}
-
-## Creative option C: Image factory (warning: challenging!)
-
-### Scenario
-
-You are a developer working on a web app where users can
-choose a color and download geometric shapes in that color. The shapes are
-made with SVG (scalable vector graphics), which is a markup language that
-can be used to encode graphics like logos, icons, and illustrations.
-
-### Objective
-
-In the starter code below, you are given a square, encoded
-using SVG markup. Create at least five copies of the square in different
-colors, and save them all as files in the folder called “output”.
-
-### Starter code
-
-[Download images.js](https://github.com/Birkbeck2/web-development/blob/main/workshops/objects/starter-files/images.js)
-
-<<< @/workshops/objects/starter-files/images.js{js}
-
-### Clues and tips
-
-- Program structure: First create an array with all the color codes you want, or an
-  object with color names and color codes as key-value pairs. Then you can
-  iterate over this with a for loop to create one copy of the image for each
-  color.
-
-- SVG format: Don’t worry if you haven’t used SVG markup before--you
-  already know some of it, because it’s similar to HTML and CSS in many
-  ways. Look for familiar patterns. Can you tell where the color is
-  defined in the code?
-
-- Changing the colors: Once you have found the color definition in the SVG
-  code, you’ll want to change it. Try looking up how the `replace()`
-  method works on strings.
-
-- Saving each file: You’ll need the built-in function called `writeFileSync()`,
-  which is already imported for you on line 1. It is used like this:
-  `writeFileSync('output-folder-name/file-name.txt', 'content of file as
-  a string')`. Note: on Windows, you have to use backslash (`\`) between
-  the folder name and file name, and on Mac and Linux, you have to use
-  forward slash (`/`).
+- At least one object with properties that are accessed or changed in the program.
+- At least one array (or string) that is iterated over using a loop.
+- The variable, property, and method names make sense and are consistently styled.
+- The program tells a story.
+- Key information is logged to the console.
+- There are no errors when the program runs.

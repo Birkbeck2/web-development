@@ -226,10 +226,10 @@ export const outline = [
         text: 'Live coding',
         link: '/lectures/objects-loops-live-coding.html',
       },
-      // {
-      //   text: 'Workshop',
-      //   link: '/workshops/objects/index.html',
-      // },
+      {
+        text: 'Workshop',
+        link: '/workshops/objects/index.html',
+      },
     ]
   },
   // {
