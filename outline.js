@@ -173,7 +173,7 @@ export const outline = [
   },
   {
     text: 'JavaScript Values and Variables',
-    collapsed: false,
+    collapsed: true,
     lecturer: 'Joseph Muller',
     items: [
       {
@@ -230,6 +230,25 @@ export const outline = [
         text: 'Workshop',
         link: '/workshops/objects/index.html',
       },
+    ]
+  },
+  {
+    text: 'The Document Object Model',
+    collapsed: false,
+    lecturer: 'Joseph Muller',
+    items: [
+      {
+        text: 'Prep',
+        link: '/lectures/dom.html',
+      },
+      {
+        text: 'Live coding',
+        link: '/lectures/dom-live-coding.html',
+      },
+      // {
+      //   text: 'Workshop',
+      //   link: '/workshops/dom/index.html',
+      // },
     ]
   },
   // {
