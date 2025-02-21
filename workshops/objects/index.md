@@ -3,7 +3,7 @@
 For this workshop, tell a story using JavaScript objects, arrays, and loops.
 
 You can use any story you like, including re-using the story you wrote for the [JS
-Values and Variables](http://localhost:5173/web-development/workshops/values-variables/)
+Values and Variables](../values-variables/)
 workshop. Try having a browse through [Aesop’s
 fables](https://www.read.gov/aesop/) to see if one of those
 stories captures your imagination.
