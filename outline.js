@@ -215,7 +215,7 @@ export const outline = [
   },
   {
     text: 'Objects and loops',
-    collapsed: false,
+    collapsed: true,
     lecturer: 'Joseph Muller',
     items: [
       {
@@ -234,7 +234,7 @@ export const outline = [
   },
   {
     text: 'The Document Object Model',
-    collapsed: false,
+    collapsed: true,
     lecturer: 'Joseph Muller',
     items: [
       {
