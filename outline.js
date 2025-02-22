@@ -190,29 +190,29 @@ export const outline = [
       },
     ]
   },
-  // {
-  //   text: 'Conditions and functions',
-  //   collapsed: true,
-  //   lecturer: 'Helena Wee',
-  //   items: [
-  //     {
-  //       text: 'Conditionals and Functions: Pre-sessional activities',
-  //       link: '/lectures/conditionals-and-functions.html',
-  //     },
-  //     {
-  //       text: 'Conditionals',
-  //       link: '/lectures/conditionals.html',
-  //     },
-  //     {
-  //       text: 'Functions',
-  //       link: '/lectures/functions.html',
-  //     },
-  //     {
-  //      text: 'Workshop: Conditionals and Functions',
-  //      link: '/workshops/conditionals-functions/index.html',
-  //     },
-  //   ]
-  // },
+  {
+    text: 'Conditions and functions',
+    collapsed: true,
+    lecturer: 'Helena Wee',
+    items: [
+      {
+        text: 'Prep',
+        link: '/lectures/conditions-and-functions.html',
+      },
+      // {
+      //   text: 'Conditionals',
+      //   link: '/lectures/conditionals.html',
+      // },
+      // {
+      //   text: 'Functions',
+      //   link: '/lectures/functions.html',
+      // },
+      // {
+      //  text: 'Workshop: Conditionals and Functions',
+      //  link: '/workshops/conditionals-functions/index.html',
+      // },
+    ]
+  },
   {
     text: 'Objects and loops',
     collapsed: false,
