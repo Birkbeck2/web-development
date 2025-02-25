@@ -2,7 +2,7 @@
 
 ## What is programming?
 
-*A Computer Glossary*   
+*A Computer Glossary*  
 [https://youtu.be/eIgX6sPOqCY?t=104](https://youtu.be/eIgX6sPOqCY?t=104)  
 Shown at IBM pavilion at the 1968 World's Fair. An Eames film with animation by Glen Fleck and original score by Elmer Bernstein.  
 (Whole video can be watched here: [https://www.youtube.com/watch?v=eIgX6sPOqCY&ab_channel=EamesOffice](https://www.youtube.com/watch?v=eIgX6sPOqCY&ab_channel=EamesOffice))
@@ -79,7 +79,7 @@ Sometimes you want to repeat an operation many times. You could do this by writi
 
 Example:
 
-```
+```js
 console.log(0);
 console.log(2);
 console.log(4);
@@ -95,7 +95,7 @@ Loops are a more efficient way of doing REPETITION in programming.
 
 One type of loop makes something happen whilst a condition is true. This is called a `while` loop.
 
-Example: 
+Example:  
 
 <<< @/public/sandbox/VDWP1_ConditionalsAndFunctions/conditionalsEx4.js{js}
 
@@ -104,6 +104,7 @@ If you forget to increase the variable used in the condition, the loop will neve
 Block scope: Variables declared with let inside {} cannot be accessed outside of this block. Variables declared with var inside {} can be accessed outside this block.
 
 ## References
-[https://eloquentjavascript.net/02_program_structure.html](https://eloquentjavascript.net/02_program_structure.html) 
+
+[https://eloquentjavascript.net/02_program_structure.html](https://eloquentjavascript.net/02_program_structure.html)  
 [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch)  
 [https://www.w3schools.com/js/js_scope.asp](https://www.w3schools.com/js/js_scope.asp)  
