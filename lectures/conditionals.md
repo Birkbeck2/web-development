@@ -3,9 +3,8 @@
 ## What is programming?
 
 *A Computer Glossary*  
-[https://youtu.be/eIgX6sPOqCY?t=104](https://youtu.be/eIgX6sPOqCY?t=104)  
+[![A Computer Glossary](images/program.jpg)](https://www.youtube.com/watch?v=eIgX6sPOqCY&t=104s&ab_channel=EamesOffice)
 Shown at IBM pavilion at the 1968 World's Fair. An Eames film with animation by Glen Fleck and original score by Elmer Bernstein.  
-(Whole video can be watched here: [https://www.youtube.com/watch?v=eIgX6sPOqCY&ab_channel=EamesOffice](https://www.youtube.com/watch?v=eIgX6sPOqCY&ab_channel=EamesOffice))
 
 A program is a set of instructions for performing computer operations.  
 
