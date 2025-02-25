@@ -9,6 +9,7 @@ Functions are the ACTION part of programming.
 To define a function in JavaScript you use the function keyword.
 
 A function declaration uses the `function` keyword, followed by:
+
 - The name of the function.
 - The parameters of the function, enclosed in brackets `(parameter1, parameter2)` after the name, separated by commas.
 - If a function has no parameters the name is followed by an empty pair of brackets `()`.
@@ -45,6 +46,7 @@ Example:
 Function scope: Variables declared within a function, cannot be accessed outside of it. Local variables have function scope and can only be accessed from within a function.
 
 The difference between global and local variables:
+
 - Global variables are declared OUTSIDE functions (typically at the beginning of the program). They are retained throughout the entire program lifetime.
 - Local variables are declared INSIDE functions. They are thrown away when the function returns.
 
@@ -56,8 +58,8 @@ Example:
 
 <<< @/public/sandbox/VDWP1_ConditionalsAndFunctions/functionsEx2a.js{js}
 
-
 ## References
+
 [https://eloquentjavascript.net/02_program_structure.html](https://eloquentjavascript.net/02_program_structure.html)  
 [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)  
 [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/return](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/return)
