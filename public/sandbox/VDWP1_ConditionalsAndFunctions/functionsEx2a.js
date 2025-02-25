@@ -1,6 +1,5 @@
 let numGoldfish = Math.floor(Math.random() * 10);
 let numCarp = Math.floor(Math.random() * 10);
-let numFish = 0;
 let sleepy = true;
 
 function fishTale(){
@@ -21,12 +20,12 @@ function fishTale(){
     }
 }
 
-function fishTank(goldfish, carp, totalFish){
+function fishTank(goldfish, carp){
     console.log("I have " + goldfish + " goldfish.");
     console.log("I have " + carp + " carp.");
-    totalFish = goldfish + carp;
+    let totalFish = goldfish + carp;
     console.log("In total I have " + totalFish + " fish.");
 }
 
-fishTank(numGoldfish, numCarp, numFish);
+fishTank(numGoldfish, numCarp);
 let goldfishHealth = fishTale();
