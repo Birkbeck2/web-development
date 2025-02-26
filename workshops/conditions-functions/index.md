@@ -1,6 +1,6 @@
 # Workshop: Conditions and Functions
 
-Get a GitHub repository for this workshop in moodle. Homework will be to finish this workshop within 5 days.
+Get a GitHub repository for this workshop in moodle. Homework will be to finish this workshop and publish your code to GitHub Pages, within 5 days.
 
 In an alternate future you are a survivor of the recent Climate War that lasted decades. The world outside has been irradiated through heavy use of nuclear weaponry, and deadly airborne infections are rife. Your only contact with the outside is through your browser console. In this universe the console acts as a one way messaging system to the side who won the war and who now also control food and supplies.
 
