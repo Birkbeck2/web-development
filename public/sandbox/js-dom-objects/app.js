@@ -15,12 +15,3 @@ for (let song of songs) {
   song.addEventListener('click', remove)
   // song.addEventListener('click', highlightBlue)
 }
-
-// OR using forEach
-
-// songs.forEach(
-//   function (song) {
-//     song.addEventListener('click', remove)
-//     song.addEventListener('click', highlightBlue)
-//   }
-// )

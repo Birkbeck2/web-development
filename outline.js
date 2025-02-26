@@ -251,25 +251,25 @@ export const outline = [
       },
     ]
   },
-  // {
-  //   text: 'JavaScript in the browser',
-  //   collapsed: true,
-  //   lecturer: 'Joseph Muller',
-  //   items: [
-  //     {
-  //       text: 'Prep',
-  //       link: '/lectures/events.html',
-  //     },
-  //     {
-  //       text: 'Live coding',
-  //       link: '/lectures/events-live-coding.html',
-  //     },
-  //     {
-  //       text: 'Workshop',
-  //       link: '/workshops/events/index.html',
-  //     },
-  //   ]
-  // },
+  {
+    text: 'Interaction and events',
+    collapsed: true,
+    lecturer: 'Joseph Muller',
+    items: [
+      {
+        text: 'Prep',
+        link: '/lectures/events.html',
+      },
+      {
+        text: 'Live coding',
+        link: '/lectures/events-live-coding.html',
+      },
+      {
+        text: 'Workshop',
+        link: '/workshops/events/index.html',
+      },
+    ]
+  },
   // {
   //   text: 'Visualising Data with JavaScript',
   //   collapsed: true,
