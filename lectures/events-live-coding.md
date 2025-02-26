@@ -1,16 +1,8 @@
 # Live coding: JavaScript in the browser
 
-## Changing the DOM with JavaScript
-
-[Browser](/sandbox/js-dom/index.html){target="_blank"}
-
-<<< @/public/sandbox/js-dom/index.html{html}
-
-<<< @/public/sandbox/js-dom/app.js{js}
-
 ## Event listener with named function
 
-[Browser](/sandbox/js-event-listener-named-function/index.html){target="_blank"}
+[View in browser](/web-development/sandbox/js-event-listener-named-function/index.html){target="_blank"}
 
 <<< @/public/sandbox/js-event-listener-named-function/index.html#button{html}
 
@@ -18,7 +10,7 @@
 
 ## Event listener with anonymous function
 
-[Browser](/sandbox/js-event-listener-anonymous-function/index.html){target="_blank"}
+[View in browser](/web-development/sandbox/js-event-listener-anonymous-function/index.html){target="_blank"}
 
 <<< @/public/sandbox/js-event-listener-anonymous-function/index.html#button{html}
 
@@ -26,7 +18,7 @@
 
 ## Working with DOM objects
 
-[Browser](/sandbox/js-dom-objects/index.html){target="_blank"}
+[View in browser](/web-development/sandbox/js-dom-objects/index.html){target="_blank"}
 
 <<< @/public/sandbox/js-dom-objects/index.html#section{html}
 
@@ -34,7 +26,7 @@
 
 ## Using JavaScript on forms
 
-[Browser](/sandbox/js-form/index.html){target="_blank"}
+[View in browser](/web-development/sandbox/js-form/index.html){target="_blank"}
 
 <<< @/public/sandbox/js-form/index.html#form{html}
 
