@@ -26,5 +26,7 @@ Watch up to 1:04, through the “Working with Attributes” section, stopping be
 
 ## Also recommended
 
+[Learn DOM Manipulation in 18 Minutes](https://youtu.be/y17RuWkWdn8), 18m 36s, Web Dev Simplified, YouTube, 8 Dec 2020.
+
 Watch the rest of the above DOM video tutorial, including “Events” and “Using Event
 Delegation...”
