@@ -46,3 +46,73 @@ If you learn best by reading, check out chapter 4 of _Eloquent JavaScript_.
 [What is Object oriented programming](https://youtu.be/FMIuwvt0vGQ), 12m 52s, procademy, YouTube, 4 May 2021.
 
 [Learning Functional Programming with JavaScript](https://youtu.be/e-5obm1G_FY), 29m 56s, Anjana Vakil, JSUnconf, YouTube, 14 Jul 2016.
+
+## Check your understanding
+
+What will be logged to the console?
+
+### 1
+```js
+function nameTag(name="Felicia") {
+  return `Hello, my name is ${name}`
+};
+console.log(nameTag("Jack"));
+```
+
+### 2
+```js
+function nameTag(name="Felicia") {
+  return `Hello, my name is ${name}`
+};
+console.log(nameTag());
+```
+
+### 3
+```js
+function nameTag(name="Felicia") {
+  return `Hello, my name is ${name}`
+};
+console.log(nameTag);
+```
+
+### 4
+```js
+function nameTag(name="Felicia") {
+  return `Hello, my name is ${name}`
+};
+```
+
+### 5
+```js
+let names = ['Felicia', 'Jack']
+for (let name of names) {
+  console.log(name);
+}
+```
+
+### 6
+```js
+let player = {
+  firstName: 'Felicia',
+  username: 'winner',
+}
+player.username = 'happygolucky';
+console.log(player.username);
+```
+
+### 7
+```js
+let players = [
+  {
+    firstName: 'Felicia',
+    username: 'winner',
+  },
+  {
+    firstName: 'Jack',
+    username: 'keanu99',
+  }
+]
+for (let player of players) {
+  console.log(players.username);
+}
+```
