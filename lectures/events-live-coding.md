@@ -16,18 +16,18 @@
 
 <<< @/public/sandbox/js-event-listener-anonymous-function/app.js{js}
 
-## Working with DOM objects
+## Events on buttons
 
-[View in browser](/web-development/sandbox/js-dom-objects/index.html){target="_blank"}
+[View in browser](/web-development/sandbox/js-button-event/index.html){target="_blank"}
 
-<<< @/public/sandbox/js-dom-objects/index.html#section{html}
+<<< @/public/sandbox/js-button-event/index.html#buttons{html}
 
-<<< @/public/sandbox/js-dom-objects/app.js{js}
+<<< @/public/sandbox/js-button-event/app.js{js}
 
-## Using JavaScript on forms
+## Debugging
 
-[View in browser](/web-development/sandbox/js-form/index.html){target="_blank"}
+[View in browser](/web-development/sandbox/js-debugging/index.html){target="_blank"}
 
-<<< @/public/sandbox/js-form/index.html#form{html}
+<<< @/public/sandbox/js-debugging/index.html#buttons{html}
 
-<<< @/public/sandbox/js-form/app.js{js}
+<<< @/public/sandbox/js-debugging/app.js{js}
