@@ -28,5 +28,9 @@ Watch up to 1:04, through the “Working with Attributes” section, stopping be
 
 [Learn DOM Manipulation in 18 Minutes](https://youtu.be/y17RuWkWdn8), 18m 36s, Web Dev Simplified, YouTube, 8 Dec 2020.
 
+[DOM Visualizer](https://0xedward.github.io/dom-visualizer/), 0xedward, GitHub, last updated 1 Feb 2025.
+
 Watch the rest of the above DOM video tutorial, including “Events” and “Using Event
 Delegation...”
+
+[Modules](https://eloquentjavascript.net/10_modules.html), chapter from book _Eloquent JavaScript_, 4th ed. (2020), Marijn Haverbeke
