@@ -270,17 +270,17 @@ export const outline = [
       },
     ]
   },
-  // {
-  //   text: 'Visualising Data with JavaScript',
-  //   collapsed: true,
-  //   lecturer: 'Helena Wee',
-  //   items: [
+  {
+    text: 'Visualising Data',
+    collapsed: true,
+    lecturer: 'Helena Wee',
+    items: [
+      {
+        text: 'Prep',
+        link: '/lectures/visualising-data.html',
+      },
   //     {
-  //       text: 'Visualising Data with JavaScript: Pre-sessional activities',
-  //       link: '/lectures/visualising-data-js.html',
-  //     },
-  //     {
-  //       text: 'Visualising Data with JavaScript',
+  //       text: 'Visualising Data',
   //       link: '/lectures/visualising-data-js-1.html',
   //     },
   //     {
@@ -295,8 +295,8 @@ export const outline = [
   //       text: 'Workshop',
   //       link: '/workshops/data-vis/index.html',
   //     },
-  //   ]
-  // },
+    ]
+  },
   // {
   //   text: 'Timeouts, Debugging and Packages',
   //   lecturer: 'Helena Wee and Joseph Muller',
