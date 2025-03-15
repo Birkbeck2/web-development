@@ -1,28 +1,24 @@
-# Workshop: Visualising Data with JavaScript
+# Workshop: Visualising Data
 
-## JSON vs JavaScript objects
+Get a GitHub repository for this workshop in moodle. Homework will be to finish this workshop and publish your code to GitHub Pages, within 5 days.  
 
-- Create an HTML file and a linked JavaScript file.
-- Create a constant which equates to a JSON string with 5 name/value pairs naming five people and their pets.
-- Use JSON.parse() to convert the JSON string into a JSON object literal.
-- Create five variables and make each one equal a sentence containing one of the name/value pairs.
-- Print each sentence to its own paragraph tag on the page.
+## Drawing with open JSON data from the web
 
-- Create another constant which equates to a JavaScript object with 3 name/value pairs naming three people and their favourite fruit.
-- Use JSON.stringify() to convert it into a JSON string.
-- Print the resulting JSON string to another paragraph element on the page.
+Create an HTML file and a linked JavaScript file.  
 
-## Retrieving open JSON data from the web
+Use the fetch API to get some open data from the web.  
+Examples of APIs you could use include:  
+[Emojis API](https://api.github.com/emojis)  
+[Rick and Morty API](https://rickandmortyapi.com/)  
+[Pokemon API](https://pokeapi.co/)  
+Or look at some open data sources on this page:  
+[Awesome JSON datasets](https://github.com/jdorfman/awesome-json-datasets).  
+Some of the links here might not work, but many will.  
 
-- Create an HTML file and a linked JavaScript file.
-- Use the fetch API to get emoji data from: [https://api.github.com/emojis](https://api.github.com/emojis)
-- Use [https://jsonbeautify.com/](https://jsonbeautify.com/) to look at the JSON and format/beautify it.
-- Pick one of the emojis which start with "smile", "smiling" or "smiley".
-- Using context.drawImage() place 25 of the emojis randomly on a canvas that is 800 x 600 pixels. (Hint: you need to use Image() [https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/Image](https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/Image), and then specify its src and what happens onload of the image [https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement)).
+Use [JSON Beautify](https://jsonbeautify.com/) to look at the JSON and format/beautify it.  
 
-## Experimenting with open JSON data
+If your JSON data links images use context.drawImage() to place some of the images on a canvas. (Hint: you need to use `Image()` [the Image Element](https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/Image), and then specify its src and what happens onload of the image).  
 
-- Create an HTML file and a linked JavaScript file.
-- Look at some open data sources on this page:
-[https://github.com/jdorfman/awesome-json-datasets](https://github.com/jdorfman/awesome-json-datasets).
-- Incorporate JSON data into a creative JavaScript program using either event handlers and the DOM, or canvas commands.
+Or if you have chosen an API which has text or numerical data, draw a representation of one (or more) aspect(s) of this data on the canvas element.  
+
+Incorporate the JSON data into a creative JavaScript program using canvas commands.  
