@@ -279,23 +279,23 @@ export const outline = [
         text: 'Prep',
         link: '/lectures/visualising-data.html',
       },
-  //     {
-  //       text: 'Visualising Data',
-  //       link: '/lectures/visualising-data-js-1.html',
-  //     },
-  //     {
-  //       text: 'APIs and Fetching Data',
-  //       link: '/lectures/visualising-data-js-2.html',
-  //     },
-  //     {
-  //       text: 'Drawing shapes and text',
-  //       link: '/lectures/visualising-data-js-3.html',
-  //     },
-  //     {
-  //       text: 'Workshop',
-  //       link: '/workshops/data-vis/index.html',
-  //     },
-    ]
+      {
+        text: 'Visualising Data',
+        link: '/lectures/visualising-data-js-1.html',
+      },
+      {
+        text: 'APIs and Fetching Data',
+        link: '/lectures/visualising-data-js-2.html',
+      },
+      {
+        text: 'Drawing shapes and text',
+        link: '/lectures/visualising-data-js-3.html',
+      },
+      {
+        text: 'Workshop',
+        link: '/workshops/data-vis/index.html',
+      },
+  ]
   },
   // {
   //   text: 'Timeouts, Debugging and Packages',
