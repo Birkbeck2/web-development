@@ -23,4 +23,4 @@ Or if you have chosen an API which has text or numerical data, draw a representa
 
 Incorporate the JSON data into a creative JavaScript program using canvas commands.
 
-If you have time, add interactivity to your program through an event which manipulates the DOM in some way.  
+If you have time, add interactivity to your program through an event which manipulates what is drawn to the canvas in some way.  
