@@ -1,5 +1,5 @@
 //setTimeout(function() {
-    getText("https://temp.staticsave.com/65d8d1d3d272f.txt");
+    getText("https://temp.staticsave.com/67d53f98ba08b.txt");
 //}, 8000);
 /*
 setTimeout(getTxt(), 8000);
