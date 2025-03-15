@@ -21,4 +21,6 @@ If your JSON data links images use context.drawImage() to place some of the imag
 
 Or if you have chosen an API which has text or numerical data, draw a representation of one (or more) aspect(s) of this data on the canvas element.  
 
-Incorporate the JSON data into a creative JavaScript program using canvas commands.  
+Incorporate the JSON data into a creative JavaScript program using canvas commands.
+
+If you have time, add interactivity to your program through an event which manipulates the DOM in some way.  
