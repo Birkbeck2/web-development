@@ -1,6 +1,9 @@
 // #region snippet
 let cx = document.querySelector("canvas").getContext("2d");     // creates a context object on the <canvas> element
 let geoDataObj;
+let worldMap = document.createElement("img");
+worldMap.src = "images/vector-world-map.jpg";
+worldMap.style.zIndex = 0;
 
 
 // fetch.then
@@ -12,23 +15,29 @@ fetch('https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojso
 })
 .then(geoDataObj => {
   let geoArray = geoDataObj.features;
+  cx.drawImage(worldMap, 0, 0, 1172, 760);
+  cx.translate(552, 465);
   for (let i = 0; i < geoArray.length; i++){
     let magnitude = geoArray[i].properties.mag * 10;
-    console.log(magnitude);
-    let x = geoArray[i].geometry.coordinates[0];
-    console.log(x);
-    let y = geoArray[i].geometry.coordinates[1];
-    console.log(y);
+    let x = geoArray[i].geometry.coordinates[0] * 3.26;   // longitude * 3.26 accounts for width of map image and 360 degrees of longitude shown across map width
+    let y = -(geoArray[i].geometry.coordinates[1] * 4.22);   // latitude * 4.22 accounts for height of map image and 180 degrees of latitude shown across map height
     let location = geoArray[i].properties.place;
-    //cx.resetTransform();
-    cx.translate(180, 90);
+    //console.log(`${location}: latitude = ${x}, longitude = ${y}, magnitude = ${magnitude/10}.`);
+    if(x < -552){
+      x = x + 1172;   // x = x plus map img width
+    }
     cx.beginPath();     // method of Canvas 2D API starts a new path
     cx.arc(x, y, magnitude, 0, 2 * Math.PI);     // arc(x, y, radius, startAngle, endAngle)
-    cx.strokeStyle = "red";
+    cx.fillStyle = 'rgba(255,255,30,' + 0.5 + ')';
+    cx.fill();
+    cx.font = "12px Arial";
+    cx.fillStyle = "white";
+    cx.fillText(location, x+((i+1)*28), y+((i+1)*28));
+    cx.beginPath();
+    cx.moveTo(x+((i+1)*28), y+((i+1)*28));
+    cx.lineTo(x, y);
+    cx.strokeStyle = 'rgba(255,255,255,' + 0.5 + ')';
     cx.stroke();
-    cx.font = "14px Arial";
-    cx.fillStyle = "blue";
-    cx.fillText(location, x, y+8);
   }
 });
 
@@ -46,23 +55,25 @@ async function fetchGeoData() {
 function parseGeoDataObj(responseJSONObj){
   let geoArray = responseJSONObj.features;
   //console.log(geoArray);
+  cx.translate(552, 465);
   for (let i = 0; i < geoArray.length; i++){
-    let location = geoArray[i].properties.place;
-    console.log("Location = " + location);
     let magnitude = geoArray[i].properties.mag * 10;
-    console.log("Magnitude = " + magnitude);
-    let x = geoArray[i].geometry.coordinates[0];
-    console.log("Longitude = " + x);
-    let y = geoArray[i].geometry.coordinates[1];
-    console.log("Latitude = " + y);
-    cx.translate(180, 90);
+    let x = geoArray[i].geometry.coordinates[0] * 3.26;
+    let y = geoArray[i].geometry.coordinates[1] * 4.22;
+    let location = geoArray[i].properties.place;
+    console.log(`${location}: latitude = ${x}, longitude = ${y}, magnitude = ${magnitude/10}.`);
     cx.beginPath();     // method of Canvas 2D API starts a new path
     cx.arc(x, y, magnitude, 0, 2 * Math.PI);     // arc(x, y, radius, startAngle, endAngle)
-    cx.strokeStyle = "red";
+    cx.fillStyle = 'rgba(255,255,30,' + 0.5 + ')';
+    cx.fill();
+    cx.font = "12px Arial";
+    cx.fillStyle = "white";
+    cx.fillText(location, x+((i+1)*28), y+((i+1)*28));
+    cx.beginPath();
+    cx.moveTo(x+((i+1)*28), y+((i+1)*28));
+    cx.lineTo(x, y);
+    cx.strokeStyle = 'rgba(255,255,255,' + 0.5 + ')';
     cx.stroke();
-    cx.font = "14px Arial";
-    cx.fillStyle = "blue";
-    cx.fillText(location, x, y+8);
   }
 }
 
