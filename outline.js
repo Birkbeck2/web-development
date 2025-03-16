@@ -297,6 +297,17 @@ export const outline = [
       },
   ]
   },
+  {
+    text: 'Animating Data',
+    collapsed: true,
+    lecturer: 'Helena Wee',
+    items: [
+      {
+        text: 'Prep',
+        link: '/lectures/animating-data.html',
+      },
+  ]
+  },
   // {
   //   text: 'Timeouts, Debugging and Packages',
   //   lecturer: 'Helena Wee and Joseph Muller',
