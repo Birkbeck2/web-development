@@ -306,6 +306,14 @@ export const outline = [
         text: 'Prep',
         link: '/lectures/animating-data.html',
       },
+      {
+        text: 'Animating Data',
+        link: '/lectures/animating-data-1.html',
+      },
+      {
+        text: 'Workshop',
+        link: '/workshops/animating-data/index.html',
+      },
   ]
   },
   // {

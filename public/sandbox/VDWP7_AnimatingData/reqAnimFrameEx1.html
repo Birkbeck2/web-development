@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #mydiv{
+      position: relative;
+      border: 3px solid purple;
+      width: 10px;
+      height: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="mydiv"></div>
+
+<script>
+// requestAnimationFrame() used in a similar way to setTimeout()
+var adiv = document.getElementById('mydiv')
+var leftpos = 0
+requestAnimationFrame(function(timestamp){
+    leftpos += 5
+    adiv.style.left = leftpos + 'px'
+})
+
+// using requestAnimationFrame() recursively for frame by frame animation
+/*var adiv = document.getElementById('mydiv');
+var leftpos = 0;
+function movediv(timestamp){
+    leftpos += 5;
+    adiv.style.left = leftpos + 'px';
+    requestAnimationFrame(movediv); // call requestAnimationFrame again to animate next frame
+  }
+  requestAnimationFrame(movediv); // call requestAnimationFrame and pass into it animation function*/
+</script>
+
+</body>
+</html>
