@@ -11,7 +11,7 @@ Examples of APIs you could use include:
 [Emojis API](https://api.github.com/emojis)  
 [Rick and Morty API](https://rickandmortyapi.com/)  
 [Pokemon API](https://pokeapi.co/)  
-[Open Weather Map](https://openweathermap.org/)
+[Open Weather Map](https://openweathermap.org/)  
 Or look at some open data sources on this page:  
 [Awesome JSON datasets](https://github.com/jdorfman/awesome-json-datasets).  
 Some of the links here might not work, but many will.  
