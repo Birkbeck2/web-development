@@ -1,0 +1,67 @@
+/* <weight>: Use a value from 400 to 700
+   <uniquifier>: Use a unique and descriptive class name */
+
+.dynapuff-fun {
+  font-family: "DynaPuff", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+body{
+  background-color: lightyellow;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  canvas{
+    position: absolute;
+    top: 292px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+  }
+  
+  h1 {
+    font-size: 28px;
+    color: #3657ea;
+  }
+
+  p{
+    color: #3657ea;
+    font-family: cursive;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+    font-family: cursive;
+  }
+  
+  button {
+    background-color: #ab34c9;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: cursive;
+  }
+  
+  button:hover {
+    background-color: #3657ea;
+  }
+  
+  #weatherData {
+    margin-top: 20px;
+  }

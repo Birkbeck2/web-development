@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Window.requestAnimationFrame() Method
+    </title>
+</head>
+
+<body>
+    <div id="mydiv">
+        <h1 style="color:green;">Moving heading</h1>
+    </div>
+
+    <script type="text/javascript">
+
+        // Setting the start point for animation
+        var start = null;
+        var element = document.getElementById('mydiv');
+
+        function startAnim(timestamp) {
+
+            // Timestamp is an integer that represents the number
+            // of seconds elapsed since January 1 1970.
+            if (!start) start = timestamp;
+
+            // Setting the difference between timestamp
+            // and the set start point as our progress
+            var progress = timestamp - start;
+
+            // Moving our div element
+            element.style.transform =
+            'translateX(' + Math.min(progress / 10, 1200) + 'px)';
+            window.requestAnimationFrame(startAnim);
+        }
+
+        window.requestAnimationFrame(startAnim);
+    </script>
+</body>
+
+</html>
