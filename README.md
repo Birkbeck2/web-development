@@ -221,6 +221,48 @@ workshops.
 2. Open the sandbox code in your IDE, on the projector screen. Make
    changes, switch to the browser, and refresh to see the changes.
 
+## Anonymizing student repositories
+
+Here is a checklist for anonymizing student repositories (if student
+prefers) before putting the repository on the Projects page:
+
+1. Do a plain text search of the code for name or identifying info of the
+   student. Replace any occurrences with fake info.
+
+2. Strip image metadata by using [ExifTool](https://exiftool.org), except for
+   image color profiles, which should be kept.
+
+   ```sh
+   cd ImageExifTool-XX.XX ./exiftool -all= -TagsFromFile
+   @ -ColorSpaceTags ./path/to/images/
+   ```
+
+   Remove any backups of the original images--they’ll have the suffix
+   “_original” in the file name.
+
+   You can search the cleaned metadata for the student name by reading and
+   piping it to ripgrep or similar:
+
+   ```sh
+   ./exiftool ./path/to/images/ | rg searchterm
+   ```
+
+   Note that you'll see a warning message: "Warning: ICC_Profile deleted. Image colors may be affected." But this is because the profile data is removed and added back. Run this to confirm that it is still there:
+
+   ```sh
+   ./exiftool -ColorSpaceTags ./path/to/images/
+   ```
+
+3. Remove any links to the GitHub classroom from the README.md file.
+
+4. Once you are happy with your changes, delete the git repository folder
+   `.git`. It is sometimes possible to anonymise a git history but it would be
+   too time consuming and tricky in most cases, so better to just remove the
+   whole history and start over.
+
+5. Initialize another repository, and commit the anonymized code with a commit
+   message like “anonymized   repository by [fake name]".
+
 ## Rights
 
 Lectures are copyright Birkbeck, University of London. Pictures and

@@ -35,8 +35,8 @@ been done previously and get ideas for your own projects.
       </a>
     </h3>
     <div class="flex gap-8">
-      <a v-if="project.pages" :href="project.pages" target="_blank">View on GitHub Pages</a>
-      <a v-if="project.code" :href="project.code" target="_blank">View Code</a>
+      <a v-if="project.pages" :href="project.pages" target="_blank">Live site</a>
+      <a v-if="project.code" :href="project.code" target="_blank">Source code</a>
     </div>
   </div>
 </div>
