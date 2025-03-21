@@ -233,8 +233,8 @@ prefers) before putting the repository on the Projects page:
    image color profiles, which should be kept.
 
    ```sh
-   cd ImageExifTool-XX.XX ./exiftool -all= -TagsFromFile
-   @ -ColorSpaceTags ./path/to/images/
+   cd ImageExifTool-XX.XX
+   ./exiftool -all= -TagsFromFile @ -ColorSpaceTags ./path/to/images/
    ```
 
    Remove any backups of the original images--they’ll have the suffix
