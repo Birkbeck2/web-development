@@ -7,6 +7,12 @@ export const projects = [
         pages: 'https://birkbeck2.github.io/web-development-website-project-danie-pixel/',
       },
       {
+        name: 'Diet Right',
+        pages: 'https://avauga03.github.io/DietRight/',
+        code: 'https://github.com/avauga03/DietRight/',
+      },
+
+      {
         name: 'Maria Jonas Photography',
         pages: 'https://birkbeck2.github.io/web-development-and-user-experience---assessment-02-harshi-chandwani/',
       },
@@ -32,6 +38,7 @@ export const projects = [
       {
         name: 'BookGlobe',
         pages: 'https://birkbeck2.github.io/web-project-avauga03/',
+        code: 'https://github.com/Birkbeck2/web-project-avauga03',
       },
       {
         name: 'Happy Forecast',
