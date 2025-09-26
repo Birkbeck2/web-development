@@ -42,13 +42,12 @@ James H. Coombs, Allen H. Renear, and Steven J. DeRose. ‘Markup Systems and th
 
 Garen Torikian, “[Markdown Tutorial](https://www.markdowntutorial.com/).”
 
-Italo Santos, João Felipe Pimentel, Igor Wiese, Igor Steinmacher, Anita Sarma, and Marco A. Gerosa. ‘Designing for Cognitive Diversity: Improving the GitHub Experience for Newcomers’. In 2023 IEEE/ACM 45th International Conference on Software Engineering: Software Engineering in Society (ICSE-SEIS), 1–12, 2023. https://doi.org/10.1109/ICSE-SEIS58686.2023.00007.
-
 Brian O’Grady, Nakita Mc Cool, [What is GitHub](https://youtu.be/BUE2LaSzijM), Code Institute, YouTube, 28 Sept 2022, 7m 20s.
+
+Italo Santos, João Felipe Pimentel, Igor Wiese, Igor Steinmacher, Anita Sarma, and Marco A. Gerosa. ‘Designing for Cognitive Diversity: Improving the GitHub Experience for Newcomers’. In 2023 IEEE/ACM 45th International Conference on Software Engineering: Software Engineering in Society (ICSE-SEIS), 1–12, 2023. https://doi.org/10.1109/ICSE-SEIS58686.2023.00007.
 
 ### Also recommended
 
-GitHub Docs, “[Basic formatting
-syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).”
+GitHub Docs, “[Basic formatting syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).”
 
 Liliana Bounegru. ‘The Platformisation of Software Development: Connective Coding and Platform Vernaculars on GitHub’. Convergence: The International Journal of Research into New Media Technologies, 20 November 2023, 13548565231205867. https://doi.org/10.1177/13548565231205867.
