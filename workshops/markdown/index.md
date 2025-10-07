@@ -16,14 +16,9 @@ Time estimate: 30 minutes
 
 ## Getting set up
 
-1. Create an [account on GitHub](https://github.com/signup) and log in. Note that your
-   Birkbeck email address must be tied to the GitHub account, either as the
-   main email associated with the account or as a secondary one.
+1. Create an [account on GitHub](https://github.com/signup) and log in. Note that your Birkbeck email address must be tied to the GitHub account, either as the main email associated with the account or as a secondary one.
 
-2. Create a GitHub repository that is associated with [Birkbeck2 organization on
-   GitHub](https://github.com/Birkbeck2). To do this, you need to go to
-   Moodle and find today’s tile. Click on the special link there that says
-   **Create GitHub Repository**.
+2. Create a GitHub repository that is associated with [Birkbeck2 organization on GitHub](https://github.com/Birkbeck2). To do this, you need to go to Moodle and find today’s tile. Click on the special link there that says **Create GitHub Repository**.
 
 ## Creating your content
 
@@ -46,17 +41,11 @@ Time estimate: 30 minutes
    Iggy
 
    ::: tip
-   To include the image, upload it separately (try a new browser tab
-   if you have unsaved edits in the text file), and then type out the filename in the
-   parenthetical Markdown reference.
+   To include the image, upload it separately (try a new browser tab if you have unsaved edits in the text file), and then type out the filename in the parenthetical Markdown reference.
    :::
 
    ::: info
-   GitHub also lets you drag and drop the image into
-   the text editor, which creates a `user-attachments` link. But user
-   attachments can’t be updated or edited manually and don’t belong to the version
-   control of the repository, so it’s best to avoid relying on them when
-   working in repositories.
+   GitHub also lets you drag and drop the image into the text editor, which creates a `user-attachments` link. But user attachments can’t be updated or edited manually and don’t belong to the version control of the repository, so it’s best to avoid relying on them when working in repositories.
    :::
 
 6. Use the **Preview** tab to check the output.
@@ -70,13 +59,23 @@ Time estimate: 30 minutes
    ::: info
    Not sure how? Here are resources for this step:
 
-   - [Configuring a publishing source for your GitHub Pages
-     site](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-from-a-branch),
-     GitHub Pages, GitHub Docs.
+   - [Configuring a publishing source for your GitHub Pages site](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-from-a-branch), GitHub Pages, GitHub Docs.
 
-   - [Host your website on github for free in just
-      2 minutes](https://youtu.be/BT4WzyT2g8k), 2m 22s, Akriti Goswami,
-      YouTube, 2023
+   - [Host your website on github for free in just 2 minutes](https://youtu.be/BT4WzyT2g8k), 2m 22s, Akriti Goswami, YouTube, 2023
    :::
 
 9. Check out your rendered website at the URL provide by GitHub Pages. Is everything displaying as intended? If not, go back and make changes with more commits.
+
+## Requirements checklist
+
+Here are the minimum requirements for credit when you turn this workshop in as homework.
+
+- At least two heading levels
+- At least one link
+- At least one image with appropriate alt text
+- At least one list
+- Some other formatting like bold, italics, or strikethrough
+- Saved to an `index.md` file in the proper Git repository owned by the `Birkbeck2` organization
+- Published to GitHub Pages so that instructors can visit the generated link and view the rendered site
+
+But by all means, don’t stop there if the creativity is flowing!

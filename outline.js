@@ -15,6 +15,10 @@ export const outline = [
         link: '/lectures/markdown-and-github-prep.html',
       },
       {
+        text: 'Slides',
+        link: '/lectures/markdown-and-github-slidedeck.html',
+      },
+      {
         text: 'Live coding',
         link: '/lectures/markdown-live-coding.html',
       },
