@@ -7,7 +7,7 @@ export const outline = [
   },
   {
     text: 'Markdown and GitHub',
-    collapsed: false,
+    collapsed: true,
     lecturer: 'Joseph Muller',
     items: [
       {
@@ -28,25 +28,25 @@ export const outline = [
       }
     ]
   },
-  // {
-  //   text: 'HTML',
-  //   collapsed: true,
-  //   lecturer: 'Joseph Muller',
-  //   items: [
-  //     {
-  //       text: 'Prep',
-  //       link: '/lectures/html-prep.html',
-  //     },
-  //     {
-  //       text: 'Live coding',
-  //       link: '/lectures/html-live-coding.html',
-  //     },
-  //     {
-  //       text: 'Workshop on HTML',
-  //       link: '/workshops/html/index.html',
-  //     }
-  //   ]
-  // },
+  {
+    text: 'HTML',
+    collapsed: false,
+    lecturer: 'Joseph Muller',
+    items: [
+      {
+        text: 'Prep',
+        link: '/lectures/html-prep.html',
+      },
+      {
+        text: 'Live coding',
+        link: '/lectures/html-live-coding.html',
+      },
+      {
+        text: 'Workshop on HTML',
+        link: '/workshops/html/index.html',
+      }
+    ]
+  },
   // {
   //   text: 'Introduction to CSS',
   //   collapsed: true,
