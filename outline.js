@@ -30,7 +30,7 @@ export const outline = [
   },
   {
     text: 'HTML',
-    collapsed: false,
+    collapsed: true,
     lecturer: 'Joseph Muller',
     items: [
       {
@@ -47,23 +47,23 @@ export const outline = [
       }
     ]
   },
-  // {
-  //   text: 'Introduction to CSS',
-  //   collapsed: true,
-  //   lecturer: 'Helena Wee',
-  //   // concepts: 'stylesheets, style and content, internal and external CSS, selector, declaration, property, value, cascade, fonts, box model, margins, padding, borders, alignment, hover, display',
-  //   // code: '{ } . # ; " class id color background-color width height text-align text-decoration font-family margin padding border :hover display'
-  //   items: [
-  //     {
-  //       text: 'Prep',
-  //       link: '/lectures/intro-css.html',
-  //     },
-  //     {
-  //       text: 'Workshop on Intro to CSS',
-  //       link: '/workshops/intro-css/index.html',
-  //     }
-  //   ]
-  // },
+  {
+    text: 'Introduction to CSS',
+    collapsed: false,
+    lecturer: 'Helena Wee',
+    // concepts: 'stylesheets, style and content, internal and external CSS, selector, declaration, property, value, cascade, fonts, box model, margins, padding, borders, alignment, hover, display',
+    // code: '{ } . # ; " class id color background-color width height text-align text-decoration font-family margin padding border :hover display'
+    items: [
+      {
+        text: 'Prep',
+        link: '/lectures/intro-css.html',
+      }
+      // {
+      //   text: 'Workshop on Intro to CSS',
+      //   link: '/workshops/intro-css/index.html',
+      // }
+    ]
+  },
   // {
   //   text: 'Responsive CSS and flexbox',
   //   collapsed: true,
