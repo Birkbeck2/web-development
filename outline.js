@@ -58,10 +58,10 @@ export const outline = [
         text: 'Prep',
         link: '/lectures/intro-css.html',
       }
-      // {
-      //   text: 'Workshop on Intro to CSS',
-      //   link: '/workshops/intro-css/index.html',
-      // }
+      {
+        text: 'Workshop on Intro to CSS',
+        link: '/workshops/intro-css/index.html',
+      }
     ]
   },
   // {
@@ -81,19 +81,19 @@ export const outline = [
   //     }
   //   ]
   // },
-  {
-    text: 'Accessibility in HTML and CSS',
-    collapsed: true,
-    lecturer: 'Joseph Muller',
-    items: [
-      {
-        text: 'Prep',
-        link: '/lectures/accessibility-prep.html',
-      },
-      {
-        text: 'Live coding',
-        link: '/lectures/accessibility-live-coding.html',
-      },
+  // {
+  //   text: 'Accessibility in HTML and CSS',
+  //   collapsed: true,
+  //   lecturer: 'Joseph Muller',
+  //   items: [
+  //     {
+  //       text: 'Prep',
+  //       link: '/lectures/accessibility-prep.html',
+  //     },
+  //     {
+  //       text: 'Live coding',
+  //       link: '/lectures/accessibility-live-coding.html',
+  //     },
       // {
       //   text: 'Will it work? Using sandboxes to run code experiments',
       //   link: '/lectures/will-it-work-using-sandboxes-to-test-code.html',
