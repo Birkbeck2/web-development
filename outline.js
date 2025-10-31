@@ -111,12 +111,12 @@ export const outline = [
       //   concepts: 'HTTP request methods, front end and back end',
       //   code: 'form method action type label for input textarea name button'
       // },
-      {
-        text: 'Workshop: Accessiblity',
-        link: '/workshops/accessibility/index.html',
-      }
-    ]
-  },
+  //     {
+  //       text: 'Workshop: Accessiblity',
+  //       link: '/workshops/accessibility/index.html',
+  //     }
+  //   ]
+  // },
   // {
   //   text: 'Grids and other CSS concepts',
   //   collapsed: true,
