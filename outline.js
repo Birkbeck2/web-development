@@ -57,7 +57,7 @@ export const outline = [
       {
         text: 'Prep',
         link: '/lectures/intro-css.html',
-      }
+      },
       {
         text: 'Workshop on Intro to CSS',
         link: '/workshops/intro-css/index.html',
