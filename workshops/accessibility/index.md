@@ -10,29 +10,29 @@ In this workshop, you will make a short interactive web page, and then you
 will do accessibility testing on someone else’s web page.
 
 
-
-## Part 1: Make a webpage (required for homework)
+## Setup
 
 1. Create a GitHub repository with the link in Moodle.
 
-   ::: tip Optional: Connect GitHub and VS Code if you can
-   You can connect GitHub and VS Code by “cloning” the repository to your computer.
+   ::: tip
+   Optional: Connect GitHub and VS Code if you can You can connect GitHub and VS Code by “cloning” the repository to your computer.
 
    “[Clone a repository locally](https://code.visualstudio.com/docs/sourcecontrol/intro-to-git#_clone-a-repository-locally),” Visual Studio Code, last modified 29 Oct 2024.
 
-   Matt McElreath, “[How to clone a GitHub repository with VS
-   Code](https://youtu.be/Nl0J_tcnhQ4?feature=shared),” YouTube, 2m 18s, 29 May
-   2022.
+   Matt McElreath, “[How to clone a GitHub repository with VS Code](https://youtu.be/Nl0J_tcnhQ4?feature=shared),” YouTube, 2m 18s, 29 May 2022.
    :::
 
-1. Please create a short webpage that shows a photo, asks the user
-   a question about the photo, and lets the user give a response through
-   form elements.
+2. Create an `index.html` page and publish it to GitHub Pages.
+
+   Or, if you are already in VS Code, open the `index.html` page with the [Live Server extension](https://code.visualstudio.com/docs/getstarted/extensions). This way you can see your code side by side with the rendered page.
+
+## Make a webpage
+
+3. Please create a short webpage that shows a photo, asks the user a question about the photo, and lets the user give a response through form elements.
 
    Make the webpage as accessible as you can.
 
-2. In addition to being accessible, the webpage must meet these
-   requirements:
+4. In addition to being accessible, the webpage must meet these requirements:
 
     - Includes a picture. Please choose a free-to-use photo from Unsplash or
       a similar site.
@@ -46,10 +46,11 @@ will do accessibility testing on someone else’s web page.
 
     - Use at least one `button` element.
 
-2. When you are done with the webpage, please share the GitHub repository
-   with one of your fellow students (hopefully someone who was not sitting
-   next to you in the workshop), and then invite them to review the pull
-   request called “Feedback”.
+5. When you are done with the webpage, please publish it via GitHub Pages, and then find someone in the class who is willing to test it. Hopefully it will be someone who was not sitting next to you in the workshop.
+
+   In order for the person to test it, they will need to be able to view the repository on GitHub, in addition to the Pages site. So let the instructor know who you want to share your site with, and they will share the repository with your reviewer. If you are doing the workshop remotely, send them an email.
+
+   Or, if you are confident with GitHub, you can do this steps yourself by inviting them to review the pull request called “Feedback”.
 
    ::: info Steps
    [Managing teams and people with access to your
@@ -59,10 +60,9 @@ will do accessibility testing on someone else’s web page.
    review](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/requesting-a-pull-request-review)
    :::
 
-## Part 2: Test someone else’s webpage (required for homework)
+## Test someone else’s webpage
 
-1. Please do at least two types of testing on the webpage that you have
-   been invited to review.
+6. Please do at least two types of testing on the webpage that you have been invited to review.
 
    ::: info Types of accessibility testing
    [Automated accessibility
@@ -73,24 +73,25 @@ will do accessibility testing on someone else’s web page.
    [Assistive Technology testing](https://web.dev/learn/accessibility/test-assistive-technology)
    :::
 
-2. Write the results of your tests as comments on the pull request on GitHub.
-   With each accessibility violation, be sure to give enough info that the
-   webpage author can understand how you discovered the error and reproduce it
-   for themselves.
+7. Write the results of your tests as comments on the pull request on GitHub. With each accessibility violation, be sure to give enough info that the webpage author can understand how you discovered the error and reproduce it for themselves.
+
+   ::: warning
+   Don’t go easy. Raise everything that you think might be an accessibility issue.
+   :::
 
    ::: info Steps
    [Reviewing proposed changes in a pull
    request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/reviewing-proposed-changes-in-a-pull-request#about-reviewing-pull-requests)
    :::
 
-## Part 3: Create an accessible color scheme (optional)
+## Requirements checklist
 
-Taking inspiration from the colors in your photograph, develop the color scheme
-you used in your webpage further into a system of complementary colors that can
-be used together for text, backgrounds, and accents in the webpage.
+Here are the minimum requirements for credit when you turn this workshop in as homework.
 
-Use at least four colors (can include shades of white,
-grey, or black). Define which color pairs can be used together as foreground
-and background, while still meeting a contrast ratio of 4.5. Define what each
-color should typically be used for and not be used for (text, icons, borders,
-page backgrounds, button backgrounds/fills, etc.).
+- The repository is published to GH Pages and the `index.html` page loads at the GH Pages url
+- Effort has been made to communicate the content of the photo to users who cannot see it
+- The background is not white, and effort has been made to provide proper colour contrast
+- Effort has been to help users navigating with the Tab key or another switch device
+- Effort has been made to help the user perceive the question even if they cannot see the page
+- Effort has been made to help the user answer the question even if they cannot see the page
+- Two types of testing have been done on a classmate’s webpage

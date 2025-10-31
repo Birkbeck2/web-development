@@ -81,42 +81,42 @@ export const outline = [
   //     }
   //   ]
   // },
-  // {
-  //   text: 'Accessibility in HTML and CSS',
-  //   collapsed: true,
-  //   lecturer: 'Joseph Muller',
-  //   items: [
-  //     {
-  //       text: 'Prep',
-  //       link: '/lectures/accessibility-prep.html',
-  //     },
-  //     {
-  //       text: 'Live coding',
-  //       link: '/lectures/accessibility-live-coding.html',
-  //     },
-  //     // {
-  //     //   text: 'Will it work? Using sandboxes to run code experiments',
-  //     //   link: '/lectures/will-it-work-using-sandboxes-to-test-code.html',
-  //     //   concepts: 'sandboxes'
-  //     // },
-  //     // {
-  //     //   text: 'Accessibility',
-  //     //   link: '/lectures/accessibility.html',
-  //     //   concepts: 'digital accessibility, disability, mainstream and assistive technology, standards',
-  //     //   code: ':focus outline header nav main section footer aria-label aria-labelledby'
-  //     // },
-  //     // {
-  //     //   text: 'Forms',
-  //     //   link: '/lectures/html-forms.html',
-  //     //   concepts: 'HTTP request methods, front end and back end',
-  //     //   code: 'form method action type label for input textarea name button'
-  //     // },
-  //     {
-  //       text: 'Workshop: Accessiblity',
-  //       link: '/workshops/accessibility/index.html',
-  //     }
-  //   ]
-  // },
+  {
+    text: 'Accessibility in HTML and CSS',
+    collapsed: true,
+    lecturer: 'Joseph Muller',
+    items: [
+      {
+        text: 'Prep',
+        link: '/lectures/accessibility-prep.html',
+      },
+      {
+        text: 'Live coding',
+        link: '/lectures/accessibility-live-coding.html',
+      },
+      // {
+      //   text: 'Will it work? Using sandboxes to run code experiments',
+      //   link: '/lectures/will-it-work-using-sandboxes-to-test-code.html',
+      //   concepts: 'sandboxes'
+      // },
+      // {
+      //   text: 'Accessibility',
+      //   link: '/lectures/accessibility.html',
+      //   concepts: 'digital accessibility, disability, mainstream and assistive technology, standards',
+      //   code: ':focus outline header nav main section footer aria-label aria-labelledby'
+      // },
+      // {
+      //   text: 'Forms',
+      //   link: '/lectures/html-forms.html',
+      //   concepts: 'HTTP request methods, front end and back end',
+      //   code: 'form method action type label for input textarea name button'
+      // },
+      {
+        text: 'Workshop: Accessiblity',
+        link: '/workshops/accessibility/index.html',
+      }
+    ]
+  },
   // {
   //   text: 'Grids and other CSS concepts',
   //   collapsed: true,
