@@ -1,6 +1,6 @@
 # Workshop: Introduction to CSS
 
-Whilst logged into GitHub with your Birkbeck email address, get the starter repository from the link in moodle. When logged into GitHub create a GitHub repository called puffin-workshop-03-intro-to-css-name, where name is your name or GitHub login username. Instructions for creating a [new repository](https://docs.github.com/en/get-started/start-your-journey/uploading-a-project-to-github#step-1-create-a-new-repository-for-your-project). Download the starter code or clone it using Visual Studio Code following the instructions in the prep video [How to clone a GitHub repository with VS Code](https://www.youtube.com/watch?v=Nl0J_tcnhQ4&ab_channel=AutomationCreations).
+Whilst logged into GitHub with your Birkbeck email address, get the starter repository using the link in moodle. Download the starter code or clone it using Visual Studio Code following the instructions in the prep video [How to clone a GitHub repository with VS Code](https://www.youtube.com/watch?v=Nl0J_tcnhQ4&ab_channel=AutomationCreations).
 
 ## Styling text
 
