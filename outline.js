@@ -49,7 +49,7 @@ export const outline = [
   },
   {
     text: 'Introduction to CSS',
-    collapsed: false,
+    collapsed: true,
     lecturer: 'Helena Wee',
     // concepts: 'stylesheets, style and content, internal and external CSS, selector, declaration, property, value, cascade, fonts, box model, margins, padding, borders, alignment, hover, display',
     // code: '{ } . # ; " class id color background-color width height text-align text-decoration font-family margin padding border :hover display'
@@ -64,23 +64,23 @@ export const outline = [
       }
     ]
   },
-  // {
-  //   text: 'Responsive CSS and flexbox',
-  //   collapsed: true,
-  //   lecturer: 'Helena Wee',
-  //   // concepts: 'responsive design, media queries, flexible layouts, grid layouts',
-  //   // code: 'media flex grid'
-  //   items: [
-  //     {
-  //       text: 'Prep',
-  //       link: '/lectures/responsive-css-flexbox.html',
-  //     },
-  //     {
-  //       text: 'Workshop: Responsive CSS and flexbox',
-  //       link: '/workshops/responsive/index.html',
-  //     }
-  //   ]
-  // },
+  {
+    text: 'Responsive CSS and flexbox',
+    collapsed: false,
+    lecturer: 'Helena Wee',
+    // concepts: 'responsive design, media queries, flexible layouts, grid layouts',
+    // code: 'media flex grid'
+    items: [
+      {
+        text: 'Prep',
+        link: '/lectures/responsive-css-flexbox.html',
+      }//,
+      // {
+      //   text: 'Workshop: Responsive CSS and flexbox',
+      //   link: '/workshops/responsive/index.html',
+      // }
+    ]
+  },
   // {
   //   text: 'Accessibility in HTML and CSS',
   //   collapsed: true,
