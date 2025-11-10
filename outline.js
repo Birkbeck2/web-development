@@ -74,11 +74,11 @@ export const outline = [
       {
         text: 'Prep',
         link: '/lectures/responsive-css-flexbox.html',
-      }//,
-      // {
-      //   text: 'Workshop: Responsive CSS and flexbox',
-      //   link: '/workshops/responsive/index.html',
-      // }
+      },
+      {
+        text: 'Workshop: Responsive CSS and flexbox',
+        link: '/workshops/responsive/index.html',
+      }
     ]
   },
   // {
