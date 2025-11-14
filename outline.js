@@ -66,7 +66,7 @@ export const outline = [
   },
   {
     text: 'Responsive CSS and flexbox',
-    collapsed: false,
+    collapsed: true,
     lecturer: 'Helena Wee',
     // concepts: 'responsive design, media queries, flexible layouts, grid layouts',
     // code: 'media flex grid'
@@ -81,19 +81,19 @@ export const outline = [
       }
     ]
   },
-  // {
-  //   text: 'Accessibility in HTML and CSS',
-  //   collapsed: true,
-  //   lecturer: 'Joseph Muller',
-  //   items: [
-  //     {
-  //       text: 'Prep',
-  //       link: '/lectures/accessibility-prep.html',
-  //     },
-  //     {
-  //       text: 'Live coding',
-  //       link: '/lectures/accessibility-live-coding.html',
-  //     },
+  {
+    text: 'Accessibility in HTML and CSS',
+    collapsed: false,
+    lecturer: 'Joseph Muller',
+    items: [
+      {
+        text: 'Prep',
+        link: '/lectures/accessibility-prep.html',
+      },
+      {
+        text: 'Live coding',
+        link: '/lectures/accessibility-live-coding.html',
+      },
       // {
       //   text: 'Will it work? Using sandboxes to run code experiments',
       //   link: '/lectures/will-it-work-using-sandboxes-to-test-code.html',
@@ -111,12 +111,12 @@ export const outline = [
       //   concepts: 'HTTP request methods, front end and back end',
       //   code: 'form method action type label for input textarea name button'
       // },
-  //     {
-  //       text: 'Workshop: Accessiblity',
-  //       link: '/workshops/accessibility/index.html',
-  //     }
-  //   ]
-  // },
+      {
+        text: 'Workshop: Accessiblity',
+        link: '/workshops/accessibility/index.html',
+      }
+    ]
+  },
   // {
   //   text: 'Grids and other CSS concepts',
   //   collapsed: true,
