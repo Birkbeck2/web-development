@@ -83,7 +83,7 @@ export const outline = [
   },
   {
     text: 'Accessibility in HTML and CSS',
-    collapsed: false,
+    collapsed: true,
     lecturer: 'Joseph Muller',
     items: [
       {
@@ -117,24 +117,24 @@ export const outline = [
       }
     ]
   },
-  // {
-  //   text: 'Grids and other CSS concepts',
-  //   collapsed: true,
-  //   lecturer: 'Helena Wee',
-  //   //   // concepts: 'grids, positioning, z-index, navigation',
-  //   //   // code: 'grids positioning navigation'
-  //   items: [
-  //     {
-  //       text: 'Prep',
-  //       link: '/lectures/grids-other-css-concepts.html',
-  //     },
-  //     {
-  //       text: 'Workshop: Grids and other CSS concepts',
-  //       link: '/workshops/grid/index.html',
+  {
+    text: 'Grids and other CSS concepts',
+    collapsed: false,
+    lecturer: 'Helena Wee',
+    //   // concepts: 'grids, positioning, z-index, navigation',
+    //   // code: 'grids positioning navigation'
+    items: [
+      {
+        text: 'Prep',
+        link: '/lectures/grids-other-css-concepts.html',
+      }//,
+      // {
+      //   text: 'Workshop: Grids and other CSS concepts',
+      //   link: '/workshops/grid/index.html',
 
-  //     }
-  //   ]
-  // },
+      // }
+    ]
+  },
   // {
   //   text: 'Advanced work with images',
   //   collapsed: true,
