@@ -127,12 +127,12 @@ export const outline = [
       {
         text: 'Prep',
         link: '/lectures/grids-other-css-concepts.html',
-      }//,
-      // {
-      //   text: 'Workshop: Grids and other CSS concepts',
-      //   link: '/workshops/grid/index.html',
+      },
+      {
+        text: 'Workshop: Grids and other CSS concepts',
+        link: '/workshops/grid/index.html',
 
-      // }
+      }
     ]
   },
   // {
