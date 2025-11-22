@@ -135,27 +135,23 @@ export const outline = [
       }
     ]
   },
-  // {
-  //   text: 'Advanced work with images',
-  //   collapsed: true,
-  //   lecturer: 'Helena Wee',
-  //   //   // concepts: 'grids, positioning, z-index, navigation',
-  //   //   // code: 'grids positioning navigation'
-  //   items: [
-  //     {
-  //       text: 'Prep',
-  //       link: '/lectures/advanced-images.html',
-  //     },
+  {
+    text: 'Advanced work with images',
+    collapsed: true,
+    lecturer: 'Helena Wee',
+    //   // concepts: 'grids, positioning, z-index, navigation',
+    //   // code: 'grids positioning navigation'
+    items: [
+      {
+        text: 'Prep',
+        link: '/lectures/advanced-images.html',
+      }//,
   //     {
   //       text: 'Workshop: Advanced work with images',
   //       link: '/workshops/advanced-images/index.html',
-  //     },
-  //     //    {
-  //     //      text: 'Workshop: Grids and other CSS concepts',
-  //     //      link: '/workshops/grid/index.html',
-  //     //    }
-  //   ]
-  // },
+  //     }
+    ]
+  },
   // {
   //   text: 'Organizing your CSS',
   //   collapsed: true,
