@@ -119,7 +119,7 @@ export const outline = [
   },
   {
     text: 'Grids and other CSS concepts',
-    collapsed: false,
+    collapsed: true,
     lecturer: 'Helena Wee',
     //   // concepts: 'grids, positioning, z-index, navigation',
     //   // code: 'grids positioning navigation'
@@ -137,7 +137,7 @@ export const outline = [
   },
   {
     text: 'Advanced work with images',
-    collapsed: true,
+    collapsed: false,
     lecturer: 'Helena Wee',
     //   // concepts: 'grids, positioning, z-index, navigation',
     //   // code: 'grids positioning navigation'
