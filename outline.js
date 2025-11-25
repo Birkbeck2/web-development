@@ -152,25 +152,25 @@ export const outline = [
       }
     ]
   },
-  // {
-  //   text: 'Organizing your CSS',
-  //   collapsed: true,
-  //   lecturer: 'Joseph Muller',
-  //   items: [
-  //     {
-  //       text: 'Prep',
-  //       link: '/lectures/organizing-css-prep.html',
-  //     },
-  //     {
-  //       text: 'Live coding',
-  //       link: '/lectures/organizing-css-live-coding.html',
-  //     },
-  //     {
-  //       text: 'Workshop: Organizing your CSS',
-  //       link: '/workshops/organizing-css/index.html',
-  //     }
-  //   ]
-  // },
+  {
+    text: 'CSS animation',
+    collapsed: false,
+    lecturer: 'Joseph Muller',
+    items: [
+      {
+        text: 'Prep',
+        link: '/lectures/animation-prep.html',
+      },
+      // {
+      //   text: 'Live coding',
+      //   link: '/lectures/organizing-css-live-coding.html',
+      // },
+      // {
+      //   text: 'Workshop: Organizing your CSS',
+      //   link: '/workshops/organizing-css/index.html',
+      // }
+    ]
+  },
   // {
   //   text: 'JavaScript Values and Variables',
   //   collapsed: true,
