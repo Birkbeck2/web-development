@@ -1,0 +1,45 @@
+body {
+  font-family: sans-serif;
+  color: #fdf3e3;
+  background-color: #262522;
+  margin: 0;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  padding: 1rem;
+  position: relative;
+  overflow-y: hidden;
+}
+
+.container {
+  max-width: 50rem;
+  margin: auto;
+}
+
+/* #region triangle */
+#triangle {
+  position: absolute;
+  background-color: #fdf3e3;
+  width: 100px;
+  height: 100px;
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+  left: 0;
+  top: 2rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  #triangle {
+    animation-name: fall;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  @keyframes fall {
+    0% {
+      top: calc(0vh - 100px);
+    }
+    100% {
+      top: 100vh;
+    }
+  }
+}
+/* #endregion triangle */

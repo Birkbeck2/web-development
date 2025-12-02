@@ -1,0 +1,56 @@
+/* This example comes from Eric Meyer and Estelle Weyl
+* https://github.com/meyerweb/csstdg5figs/blob/main/19-animation/ball3.html */
+body {
+  background-color: black;
+}
+div {
+  padding: 20px;
+  margin: 20px;
+  border: 5px white solid !important;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 2rem;
+}
+/* #region ball */
+.ball {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: oklch(from red 0.5 0.2 h);
+  animation-name: bounce;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+    animation-timing-function: ease-in;
+  }
+  30% {
+    transform: translateY(100px);
+    animation-timing-function: ease-in;
+  }
+  58% {
+    transform: translateY(200px);
+    animation-timing-function: ease-in;
+  }
+  80% {
+    transform: translateY(300px);
+    animation-timing-function: ease-in;
+  }
+  95% {
+    transform: translateY(360px);
+    animation-timing-function: ease-in;
+  }
+  15%,
+  45%,
+  71%,
+  89%,
+  100% {
+    transform: translateY(380px);
+    animation-timing-function: ease-out;
+  }
+}
+/* #endregion ball */

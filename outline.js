@@ -137,7 +137,7 @@ export const outline = [
   },
   {
     text: 'Advanced work with images',
-    collapsed: false,
+    collapsed: true,
     lecturer: 'Helena Wee',
     //   // concepts: 'grids, positioning, z-index, navigation',
     //   // code: 'grids positioning navigation'
@@ -159,16 +159,16 @@ export const outline = [
     items: [
       {
         text: 'Prep',
-        link: '/lectures/animation-prep.html',
+        link: '/lectures/css-animation-prep.html',
       },
-      // {
-      //   text: 'Live coding',
-      //   link: '/lectures/organizing-css-live-coding.html',
-      // },
-      // {
-      //   text: 'Workshop: Organizing your CSS',
-      //   link: '/workshops/organizing-css/index.html',
-      // }
+      {
+        text: 'Live coding',
+        link: '/lectures/css-animation-live-coding.html',
+      },
+      {
+        text: 'Workshop: CSS animation',
+        link: '/workshops/css-animation/index.html',
+      }
     ]
   },
   // {

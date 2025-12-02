@@ -1,0 +1,40 @@
+body {
+  font-family: sans-serif;
+  color: #fdf3e3;
+  background-color: #262522;
+  margin: 0;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  padding: 1rem;
+}
+
+.container {
+  max-width: 50rem;
+  margin: auto;
+}
+
+/* #region title */
+#site-title {
+  margin-top: 8rem;
+  font-size: 2.2rem;
+  font-family: "Space Mono", monospace;
+  max-width: fit-content;
+  padding-block: 1rem;
+}
+#site-title::after {
+  content: "_" / "";
+  animation-duration: 400ms;
+  animation-timing-function: steps(2, jump-none);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-name: blink;
+}
+@keyframes blink {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+/* #endregion title */

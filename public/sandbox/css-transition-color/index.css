@@ -1,0 +1,47 @@
+/* #region root */
+:root {
+  --primary: oklch(0.97 0.02 80);
+  --shadow: oklch(from var(--primary) 0.65 c h);
+  --darker-shadow: oklch(from var(--primary) 0.45 c h);
+  --accent: oklch(from rebeccapurple 0.75 c h)
+}
+/* #endregion root */
+
+body {
+  font-family: sans-serif;
+  color: var(--primary);
+  background-color: #262522;
+  margin: 0;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  padding: 1rem;
+}
+
+.container {
+  padding-block: 4rem;
+  max-width: 50rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* #region button */
+.button {
+  font-family: "Space Mono", monospace;
+  padding: 1rem;
+  background-color: var(--primary);
+  box-shadow: 10px 5px var(--shadow);
+  max-width: 12rem;
+  border: none;
+  transition-property: background-color, box-shadow, translate;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in;
+}
+.button:hover {
+  background-color: var(--accent);
+  box-shadow: 8px 3px var(--darker-shadow);
+  translate: 2px 2px;
+  transition-timing-function: ease-out;
+}
+/* #endregion button */
