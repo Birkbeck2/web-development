@@ -154,7 +154,7 @@ export const outline = [
   },
   {
     text: 'CSS animation',
-    collapsed: false,
+    collapsed: true,
     lecturer: 'Joseph Muller',
     items: [
       {
@@ -171,25 +171,25 @@ export const outline = [
       }
     ]
   },
-  // {
-  //   text: 'JavaScript Values and Variables',
-  //   collapsed: true,
-  //   lecturer: 'Joseph Muller',
-  //   items: [
-  //     {
-  //       text: 'Prep',
-  //       link: '/lectures/javascript-values-variables.html',
-  //     },
-  //     {
-  //       text: 'Live Coding',
-  //       link: '/lectures/values-variables-live-coding.html',
-  //     },
-  //     {
-  //       text: 'Workshop: JavaScript Values and Variables',
-  //       link: '/workshops/values-variables/index.html',
-  //     },
-  //   ]
-  // },
+  {
+    text: 'JavaScript Values and Variables',
+    collapsed: false,
+    lecturer: 'Joseph Muller',
+    items: [
+      {
+        text: 'Prep',
+        link: '/lectures/javascript-values-variables.html',
+      },
+      {
+        text: 'Live Coding',
+        link: '/lectures/values-variables-live-coding.html',
+      },
+      {
+        text: 'Workshop: JavaScript Values and Variables',
+        link: '/workshops/values-variables/index.html',
+      },
+    ]
+  },
   // {
   //   text: 'Conditions and functions',
   //   collapsed: true,
@@ -213,63 +213,63 @@ export const outline = [
   //     },
   //   ]
   // },
-  // {
-  //   text: 'Objects and loops',
-  //   collapsed: true,
-  //   lecturer: 'Joseph Muller',
-  //   items: [
-  //     {
-  //       text: 'Prep',
-  //       link: '/lectures/objects-loops.html',
-  //     },
-  //     {
-  //       text: 'Live coding',
-  //       link: '/lectures/objects-loops-live-coding.html',
-  //     },
-  //     {
-  //       text: 'Workshop',
-  //       link: '/workshops/objects/index.html',
-  //     },
-  //   ]
-  // },
-  // {
-  //   text: 'The Document Object Model',
-  //   collapsed: true,
-  //   lecturer: 'Joseph Muller',
-  //   items: [
-  //     {
-  //       text: 'Prep',
-  //       link: '/lectures/dom.html',
-  //     },
-  //     {
-  //       text: 'Live coding',
-  //       link: '/lectures/dom-live-coding.html',
-  //     },
-  //     {
-  //       text: 'Workshop',
-  //       link: '/workshops/dom/index.html',
-  //     },
-  //   ]
-  // },
-  // {
-  //   text: 'Interaction and events',
-  //   collapsed: true,
-  //   lecturer: 'Joseph Muller',
-  //   items: [
-  //     {
-  //       text: 'Prep',
-  //       link: '/lectures/events.html',
-  //     },
-  //     {
-  //       text: 'Live coding',
-  //       link: '/lectures/events-live-coding.html',
-  //     },
-  //     {
-  //       text: 'Workshop',
-  //       link: '/workshops/events/index.html',
-  //     },
-  //   ]
-  // },
+  {
+    text: 'Objects and loops',
+    collapsed: false,
+    lecturer: 'Joseph Muller',
+    items: [
+      {
+        text: 'Prep',
+        link: '/lectures/objects-loops.html',
+      },
+      {
+        text: 'Live coding',
+        link: '/lectures/objects-loops-live-coding.html',
+      },
+      {
+        text: 'Workshop',
+        link: '/workshops/objects/index.html',
+      },
+    ]
+  },
+  {
+    text: 'The Document Object Model',
+    collapsed: false,
+    lecturer: 'Joseph Muller',
+    items: [
+      {
+        text: 'Prep',
+        link: '/lectures/dom.html',
+      },
+      {
+        text: 'Live coding',
+        link: '/lectures/dom-live-coding.html',
+      },
+      {
+        text: 'Workshop',
+        link: '/workshops/dom/index.html',
+      },
+    ]
+  },
+  {
+    text: 'Interaction and events',
+    collapsed: false,
+    lecturer: 'Joseph Muller',
+    items: [
+      {
+        text: 'Prep',
+        link: '/lectures/events.html',
+      },
+      {
+        text: 'Live coding',
+        link: '/lectures/events-live-coding.html',
+      },
+      {
+        text: 'Workshop',
+        link: '/workshops/events/index.html',
+      },
+    ]
+  },
   // {
   //   text: 'Visualising Data',
   //   collapsed: true,
