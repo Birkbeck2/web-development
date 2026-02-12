@@ -173,7 +173,7 @@ export const outline = [
   },
   {
     text: 'JavaScript Values and Variables',
-    collapsed: false,
+    collapsed: true,
     lecturer: 'Joseph Muller',
     items: [
       {
@@ -190,15 +190,15 @@ export const outline = [
       },
     ]
   },
-  // {
-  //   text: 'Conditions and functions',
-  //   collapsed: true,
-  //   lecturer: 'Helena Wee',
-  //   items: [
-  //     {
-  //       text: 'Prep',
-  //       link: '/lectures/conditions-and-functions.html',
-  //     },
+  {
+    text: 'Conditions and functions',
+    collapsed: false,
+    lecturer: 'Helena Wee',
+    items: [
+      {
+        text: 'Prep',
+        link: '/lectures/conditions-and-functions.html',
+      },
   //     {
   //       text: 'Conditionals',
   //       link: '/lectures/conditionals.html',
@@ -211,8 +211,8 @@ export const outline = [
   //     text: 'Workshop: Conditions and Functions',
   //     link: '/workshops/conditions-functions/index.html',
   //     },
-  //   ]
-  // },
+    ]
+  },
   {
     text: 'Objects and loops',
     collapsed: false,
