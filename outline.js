@@ -208,8 +208,8 @@ export const outline = [
         link: '/lectures/functions.html',
       },
       {
-      text: 'Workshop: Conditions and Functions',
-      link: '/workshops/conditions-functions/index.html',
+       text: 'Workshop: Conditions and Functions',
+       link: '/workshops/conditions-functions/index.html',
      },
     ]
   },
