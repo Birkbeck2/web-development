@@ -1,4 +1,4 @@
-let weatherForecast = "snowing";
+let weatherForecast = 'snowing';
 /*let weatherForecast = 'blue sky';*/
 
 switch(weatherForecast){
