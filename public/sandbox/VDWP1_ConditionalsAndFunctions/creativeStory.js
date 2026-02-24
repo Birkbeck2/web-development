@@ -4,7 +4,7 @@ let totalFish = 0;
 let sleepy = true;
 
 /*let randomNumber = Math.floor(Math.random() * 2);
-if(randomNumber == 0){
+if(randomNumber === 0){
     sleepy = false;
 } else {
     sleepy = true;
@@ -16,12 +16,12 @@ function fishTales(){
     totalFish = numGoldfish + numCarp;
     console.log("In total I have " + totalFish + " fish.");
     let randomNumber = Math.floor(Math.random() * 2);
-    if(randomNumber == 0){
+    if(randomNumber === 0){
         sleepy = false;
     } else {
         sleepy = true;
     }
-    if(sleepy == true){
+    if(sleepy === true){
         let sleepState = "My goldfish are sleepy today.";
         console.log(sleepState);
     } else {

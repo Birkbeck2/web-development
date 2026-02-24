@@ -2,7 +2,7 @@ let numApples = 3;
 let numOranges = 4;
 let fruitInBasket = false;
 
-if(fruitInBasket == true){
+if(fruitInBasket === true){
     let numFruit = numApples + numOranges;
     console.log(numFruit);
 } else {

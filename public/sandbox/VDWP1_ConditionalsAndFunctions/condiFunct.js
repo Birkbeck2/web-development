@@ -9,12 +9,12 @@ function sumNums(){
 
 function myConditional(){
     let randomNumber = Math.floor(Math.random() * 2);
-    if(randomNumber == 0){
+    if(randomNumber === 0){
         trueOrFalse = false;
     } else {
         trueOrFalse = true;
     }
-    if(trueOrFalse == true){
+    if(trueOrFalse === true){
         console.log("I am true");
     } else {
         console.log("I am false");

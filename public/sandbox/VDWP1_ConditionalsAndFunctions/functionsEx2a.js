@@ -4,12 +4,12 @@ let sleepy = true;
 
 function fishTale(){
     let randomNumber = Math.floor(Math.random() * 2);
-    if(randomNumber == 0){
+    if(randomNumber === 0){
         sleepy = false;
     } else {
         sleepy = true;
     }
-    if(sleepy == true){
+    if(sleepy === true){
         let sleepState = "My goldfish are sleepy today.";
         console.log(sleepState);
         return sleepState;
