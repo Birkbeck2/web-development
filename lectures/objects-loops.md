@@ -33,7 +33,7 @@ If you learn best by reading, check out chapter 4 of _Eloquent JavaScript_.
 
 [#29 How to use JS arrays](https://youtu.be/K97CmrUFyQY), 10m 49s, Dev Dreamer (Amit), YouTube, 21 Apr 2021.
 
-[#30 How to use JS array methods](https://youtu.be/K97CmrUFyQY), 19m 08s, Dev Dreamer (Amit), YouTube, 30 Apr 2021.
+[#30 How to use JS array methods](https://youtu.be/0m3lBRVSTH8), 19m 08s, Dev Dreamer (Amit), YouTube, 30 Apr 2021.
 
 [Data Structures: Objects and Arrays](https://eloquentjavascript.net/04_data.html), chapter from book _Eloquent JavaScript_, 3rd ed. (2018), Marijn Haverbeke
 

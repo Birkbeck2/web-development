@@ -9,6 +9,10 @@ create a webpage that displays information of your choosing.
 
 2. Explore the data contained in `eurovisionContestants.js` to see what information you have to work with.
 
+::: tip HINT
+There is a **lot** of data in that array, which means the program might run slowly when you are just getting started. To make it more manageable temporarily, you can shorten the array with the `slice` method.
+:::
+
 3. Write a JavaScript program in `app.js` that uses the data imported in
    `contestants` to populate the webpage `index.html`.
 
