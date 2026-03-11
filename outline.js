@@ -192,7 +192,7 @@ export const outline = [
   },
   {
     text: 'Conditions and functions',
-    collapsed: false,
+    collapsed: true,
     lecturer: 'Helena Wee',
     items: [
       {
@@ -215,7 +215,7 @@ export const outline = [
   },
   {
     text: 'Objects and loops',
-    collapsed: false,
+    collapsed: true,
     lecturer: 'Joseph Muller',
     items: [
       {
@@ -234,7 +234,7 @@ export const outline = [
   },
   {
     text: 'The Document Object Model',
-    collapsed: false,
+    collapsed: true,
     lecturer: 'Joseph Muller',
     items: [
       {
@@ -253,7 +253,7 @@ export const outline = [
   },
   {
     text: 'Interaction and events',
-    collapsed: false,
+    collapsed: true,
     lecturer: 'Joseph Muller',
     items: [
       {
@@ -270,15 +270,15 @@ export const outline = [
       },
     ]
   },
-  // {
-  //   text: 'Visualising Data',
-  //   collapsed: true,
-  //   lecturer: 'Helena Wee',
-  //   items: [
-  //     {
-  //       text: 'Prep',
-  //       link: '/lectures/visualising-data.html',
-  //     },
+  {
+    text: 'Visualising Data',
+    collapsed: false,
+    lecturer: 'Helena Wee',
+    items: [
+      {
+        text: 'Prep',
+        link: '/lectures/visualising-data.html',
+      },
   //     {
   //       text: 'Visualising Data',
   //       link: '/lectures/visualising-data-js-1.html',
@@ -295,8 +295,8 @@ export const outline = [
   //       text: 'Workshop',
   //       link: '/workshops/data-vis/index.html',
   //     },
-  // ]
-  // },
+   ]
+  },
   // {
   //   text: 'Animating Data',
   //   collapsed: true,
