@@ -31,12 +31,12 @@ fetch('https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojso
     cx.fillStyle = 'rgba(255,255,30,' + 0.5 + ')';
     cx.fill();
     cx.font = "12px Arial";
-    cx.fillStyle = "white";
+    cx.fillStyle = "blue";
     cx.fillText(location, x+((i+1)*28), y+((i+1)*28));
     cx.beginPath();
     cx.moveTo(x+((i+1)*28), y+((i+1)*28));
     cx.lineTo(x, y);
-    cx.strokeStyle = 'rgba(255,255,255,' + 0.5 + ')';
+    cx.strokeStyle = 'rgba(255,0,0,' + 0.5 + ')';
     cx.stroke();
   }
 });

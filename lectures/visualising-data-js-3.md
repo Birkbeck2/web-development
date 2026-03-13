@@ -6,7 +6,7 @@
 
 Canvas graphics are drawn onto the `<canvas>` element, which can be given a width and a height in pixels.
 
-There are two types of drawing: "2d" for two-dimensional graphics and "webgl" for three-dimensional graphics through the OpenGL interface. We will just look at "2d" graphics.
+There are two types of drawing: "2d" for two-dimensional graphics and "webGL" and its successor "webGPU" for three-dimensional graphics. We will just look at "2d" graphics.
 
 You can create a context object using the getContext method on the `<canvas>` DOM element. This object has methods with which you can draw on the `<canvas>`.
 
