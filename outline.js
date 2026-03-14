@@ -272,7 +272,7 @@ export const outline = [
   },
   {
     text: 'Visualising Data',
-    collapsed: false,
+    collapsed: true,
     lecturer: 'Helena Wee',
     items: [
       {
