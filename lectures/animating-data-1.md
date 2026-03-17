@@ -63,6 +63,12 @@ Example:
 ```javascript
 let cx = document.querySelector("canvas").getContext("2d");
 
+async function getEmojis(file) {
+  let myObject = await fetch(file);
+  let myJSobj = await myObject.json();
+  return myJSobj;
+}
+
 setTimeout(function() {
   getEmojis("https://api.github.com/emojis")
   .then(emojiData => {
@@ -80,11 +86,6 @@ setTimeout(function() {
   })
 }, 3000);
 
-async function getEmojis(file) {
-  let myObject = await fetch(file);
-  let myJSobj = await myObject.json();
-  return myJSobj;
-}
 ```
 
 Here's another example using `setInterval()` to create trails:
@@ -95,27 +96,6 @@ Example:
 //Emoji trails
 let cx = document.querySelector("canvas").getContext("2d");
 let locs = [];
-
-
-getEmojis("https://api.github.com/emojis")
-.then(emojiData => {
-  for(let i=0; i<25; i++){
-    let locX = Math.round(Math.random() * (736 - 64) + 64);
-    let locY = Math.round(Math.random() * (536 - 64) + 64);
-    locs.push([locX, locY]);
-  }
-  for(let i=0; i<25; i++){
-    let newFace = new Emoji(locs[i][0], locs[i][1], emojiData.smiling_face_with_three_hearts);
-    newFace.faceImg.onload = function(){
-      setInterval(function() {
-        newFace.update();
-        newFace.display();
-        cx.drawImage(newFace.faceImg, newFace.locX, newFace.locY, 64, 64);
-      }, 120);
-    }
-
-  }
-});
 
 async function getEmojis(file) {
   let myObject = await fetch(file);
@@ -147,6 +127,27 @@ class Emoji{
     this.faceImg.style.top = this.locY;
   }
 }
+
+getEmojis("https://api.github.com/emojis")
+.then(emojiData => {
+  for(let i=0; i<25; i++){
+    let locX = Math.round(Math.random() * (736 - 64) + 64);
+    let locY = Math.round(Math.random() * (536 - 64) + 64);
+    locs.push([locX, locY]);
+  }
+  for(let i=0; i<25; i++){
+    let newFace = new Emoji(locs[i][0], locs[i][1], emojiData.smiling_face_with_three_hearts);
+    newFace.faceImg.onload = function(){
+      setInterval(function() {
+        newFace.update();
+        newFace.display();
+        cx.drawImage(newFace.faceImg, newFace.locX, newFace.locY, 64, 64);
+      }, 120);
+    }
+
+  }
+});
+
 ```
 
 You can also use `clearInterval()` to clear a timer set with `setInterval()`. To clear an interval, you make a variable equal `setInterval()`, and then use the id returned from this within the clearInterval(intervalId) method:
