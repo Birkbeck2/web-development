@@ -1,5 +1,11 @@
 let cx = document.querySelector("canvas").getContext("2d");
 
+async function getEmojis(file) {
+  let myObject = await fetch(file);
+  let myJSobj = await myObject.json();
+  return myJSobj;
+}
+
 setTimeout(function() {
   getEmojis("https://api.github.com/emojis")
   .then(emojiData => {
@@ -17,8 +23,3 @@ setTimeout(function() {
   })
 }, 3000);
 
-async function getEmojis(file) {
-  let myObject = await fetch(file);
-  let myJSobj = await myObject.json();
-  return myJSobj;
-}
