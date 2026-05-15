@@ -20,10 +20,8 @@ features:
     details: "This website has learning materials related to two modules
     in the Birkbeck Digital Media Design programme: ARMC243S7 Web
     Development and User Experience, and ARMC244S7 Visual Design and Web
-    Project. It works alongside the Moodle pages for the modules. If in
-    doubt, always check Moodle first, and use it as your source of truth.
-    Moodle will send you here sometimes to follow lecture content,
-    complete workshops, and see code samples."
+    Project. The modules are no longer active, and this site was archived
+    in May 2026."
   - title: How was it made?
     details: "This site is made with GitHub and VitePress, a static site
     generator made by the community behind Vue.js. The content was written
